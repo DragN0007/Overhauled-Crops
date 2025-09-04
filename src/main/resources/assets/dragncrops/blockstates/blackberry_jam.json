@@ -1,0 +1,89 @@
+{
+  "variants": {
+    "jars=1": [
+      {
+        "model": "dragncrops:block/jam/blackberry_jam"
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam",
+        "y": 90
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam",
+        "y": 180
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam",
+        "y": 270
+      }
+    ],
+    "jars=2": [
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_2"
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_2",
+        "y": 90
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_2",
+        "y": 180
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_2",
+        "y": 270
+      }
+    ],
+    "jars=3": [
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_3"
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_3",
+        "y": 90
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_3",
+        "y": 180
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_3",
+        "y": 270
+      }
+    ],
+    "jars=4": [
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_4"
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_4",
+        "y": 90
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_4",
+        "y": 180
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_4",
+        "y": 270
+      }
+    ],
+    "jars=5": [
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_5"
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_5",
+        "y": 90
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_5",
+        "y": 180
+      },
+      {
+        "model": "dragncrops:block/jam/blackberry_jam_5",
+        "y": 270
+      }
+    ]
+  }
+}

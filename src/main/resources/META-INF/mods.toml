@@ -1,0 +1,41 @@
+modLoader="javafml"
+loaderVersion="47,)"
+license="All Rights Reserved, DragN0007"
+#issueTrackerURL="https://discord.gg/2WznNTtVac"
+[[mods]]
+modId="dragncrops"
+version="${1.0}"
+displayName="DragN's Crop Overhaul!"
+logoFile="crop_overhaul_logo.png"
+authors="DragN0007"
+description='''
+An overhaul for crops & food!
+'''
+[[dependencies.dragncrops]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.dragncrops]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1]"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.dragncrops]]
+modId="patchouli"
+mandatory=true
+versionRange = "[1.20.1-84,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.dragncrops]]
+modId="dragnlivestock"
+mandatory=false
+versionRange = "[3.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[mixins]]
+config = "dragncrops.mixins.json"
