@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:rye"
+    },
+    {
+      "item": "dragncrops:rye"
+    },
+    {
+      "item": "dragncrops:rye"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:rye"
+  }
+}

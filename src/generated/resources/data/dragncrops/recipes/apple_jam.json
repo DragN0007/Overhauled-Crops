@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:apples"
+    },
+    {
+      "tag": "forge:apples"
+    },
+    {
+      "tag": "forge:sugar"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:apple_jam"
+  }
+}

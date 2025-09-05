@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:nuts"
+    },
+    {
+      "tag": "forge:nuts"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "tag": "forge:sugar"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:nut_bread"
+  }
+}
