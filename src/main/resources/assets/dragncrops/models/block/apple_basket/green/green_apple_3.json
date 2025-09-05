@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/apple_basket_3",
+	"textures": {
+		"texture": "dragncrops:block/green_apple_basket"
+	}
+}

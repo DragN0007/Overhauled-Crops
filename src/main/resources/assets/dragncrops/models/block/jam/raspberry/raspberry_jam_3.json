@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/three_jam_jars",
+	"textures": {
+		"texture": "dragncrops:block/raspberry_jam"
+	}
+}

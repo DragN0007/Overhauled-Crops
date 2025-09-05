@@ -2,87 +2,82 @@
   "variants": {
     "jars=1": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam"
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam",
-        "y": 90
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam",
-        "y": 180
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam",
-        "y": 270
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam"
       }
     ],
     "jars=2": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_2"
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_2",
-        "y": 90
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_2",
-        "y": 180
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_2",
-        "y": 270
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_2"
       }
     ],
     "jars=3": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_3"
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_3",
-        "y": 90
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_3",
-        "y": 180
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_3",
-        "y": 270
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_3"
       }
     ],
     "jars=4": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_4"
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_4",
-        "y": 90
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_4",
-        "y": 180
-      },
-      {
-        "model": "dragncrops:block/jam/blackberry_jam_4",
-        "y": 270
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_4"
       }
     ],
     "jars=5": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_5"
-      },
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_5"
+      }
+    ],
+    "jars=6": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_5",
-        "y": 90
-      },
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=7": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_5",
-        "y": 180
-      },
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=8": [
       {
-        "model": "dragncrops:block/jam/blackberry_jam_5",
-        "y": 270
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=9": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=10": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=11": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=12": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=13": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=14": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=15": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
+      }
+    ],
+    "jars=16": [
+      {
+        "model": "dragncrops:block/jam/blackberry/blackberry_jam_crate"
       }
     ]
   }

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:apple",
+    "dragncrops:green_apple",
+    "dragncrops:yellow_apple",
+
+    {
+      "id": "quark:green_apple",
+      "required": false
+    },
+
+    {
+      "id": "tfc:red_apple",
+      "required": false
+    },
+
+    {
+      "id": "tfc:green_apple",
+      "required": false
+    }
+  ]
+}

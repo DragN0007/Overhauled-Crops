@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "jars=1": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam"
+      }
+    ],
+    "jars=2": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_2"
+      }
+    ],
+    "jars=3": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_3"
+      }
+    ],
+    "jars=4": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_4"
+      }
+    ],
+    "jars=5": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_5"
+      }
+    ],
+    "jars=6": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=7": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=8": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=9": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=10": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=11": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=12": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=13": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=14": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=15": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ],
+    "jars=16": [
+      {
+        "model": "dragncrops:block/jam/raspberry/raspberry_jam_crate"
+      }
+    ]
+  }
+}

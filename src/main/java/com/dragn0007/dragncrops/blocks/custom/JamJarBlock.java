@@ -26,13 +26,14 @@ import javax.annotation.Nullable;
 
 public class JamJarBlock extends Block implements SimpleWaterloggedBlock {
 
-   public static final int MAX_JARS = 5;
+   public static final int MAX_JARS = 16;
    public static final IntegerProperty JAM_JARS = IntegerProperty.create("jars", 1, MAX_JARS);
    public static final IntegerProperty JARS = JAM_JARS;
    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
    protected static final VoxelShape ONE_AABB = Block.box(6, 0, 6, 10, 5, 10);
    protected static final VoxelShape TWO_AABB = Block.box(3, 0, 3, 13, 5, 13);
    protected static final VoxelShape FIVE_AABB = Block.box(3, 0, 3, 13, 10, 13);
+   protected static final VoxelShape SIX_AABB = Block.box(0, 0, 0, 16, 13, 16);
 
    public JamJarBlock() {
       super(Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion());
@@ -85,6 +86,8 @@ public class JamJarBlock extends Block implements SimpleWaterloggedBlock {
             return TWO_AABB;
          case 5:
             return FIVE_AABB;
+         case 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16:
+            return SIX_AABB;
       }
    }
 

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:peanut",
+
+    {
+      "id": "ecologics:walnut",
+      "required": false
+    }
+  ]
+}

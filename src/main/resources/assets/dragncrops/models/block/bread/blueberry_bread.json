@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/bread",
+	"textures": {
+		"texture": "dragncrops:block/blueberry_bread"
+	}
+}

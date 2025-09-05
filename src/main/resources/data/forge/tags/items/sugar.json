@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sugar",
+    "minecraft:honey_bottle",
+    "dragncrops:sugar_beet",
+
+    {
+      "id": "dffeasts:sugar_beet",
+      "required": false
+    }
+  ]
+}

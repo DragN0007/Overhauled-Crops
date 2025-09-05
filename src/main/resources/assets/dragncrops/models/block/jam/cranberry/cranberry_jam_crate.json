@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/crate",
+	"textures": {
+		"texture": "dragncrops:block/cranberry_jam_crate"
+	}
+}

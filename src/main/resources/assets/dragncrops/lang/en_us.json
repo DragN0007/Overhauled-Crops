@@ -1,6 +1,56 @@
 {
   "itemGroup.overhauled_crops": "Overhauled Crops",
-  "itemGroup.overhauled_crops_food": "Overhauled Crops: Food",
 
-  "block.dragncrops.blackberry_jam": "Blackberry Jam"
+
+  "item.minecraft.apple": "Red Apple",
+  "item.dragncrops.yellow_apple": "Yellow Apple",
+  "item.dragncrops.green_apple": "Green Apple",
+  "item.dragncrops.yellow_carrot": "Yellow Carrot",
+  "item.dragncrops.purple_carrot": "Purple Carrot",
+  "item.dragncrops.red_potato": "Red Potato",
+  "item.dragncrops.purple_potato": "Purple Potato",
+
+  "block.dragncrops.red_apple": "Red Apple",
+  "block.dragncrops.yellow_apple": "Yellow Apple",
+  "block.dragncrops.green_apple": "Green Apple",
+
+
+  "item.minecraft.bread": "Wheat Bread",
+  "item.dragncrops.blueberry_bread": "Blueberry Bread",
+  "item.dragncrops.cranberry_bread": "Cranberry Bread",
+  "item.dragncrops.nut_bread": "Nut Bread",
+  "item.dragncrops.rye_bread": "Rye Bread",
+  "item.dragncrops.white_bread": "White Bread",
+
+  "block.dragncrops.bread": "Wheat Bread",
+  "block.dragncrops.blueberry_bread": "Blueberry Bread",
+  "block.dragncrops.cranberry_bread": "Cranberry Bread",
+  "block.dragncrops.nut_bread": "Nut Bread",
+  "block.dragncrops.rye_bread": "Rye Bread",
+  "block.dragncrops.white_bread": "White Bread",
+
+
+  "item.dragncrops.apple_jam": "Apple Jam",
+  "item.dragncrops.blackberry_jam": "Blackberry Jam",
+  "item.dragncrops.blueberry_jam": "Blueberry Jam",
+  "item.dragncrops.cantaloupe_jam": "Cantaloupe Jam",
+  "item.dragncrops.cherry_jam": "Cherry Jam",
+  "item.dragncrops.cranberry_jam": "Cranberry Jam",
+  "item.dragncrops.mango_jam": "Mango Jam",
+  "item.dragncrops.melon_jam": "Melon Jam",
+  "item.dragncrops.raspberry_jam": "Raspberry Jam",
+  "item.dragncrops.strawberry_jam": "Strawberry Jam",
+  "item.dragncrops.watermelon_jam": "Watermelon Jam",
+
+  "block.dragncrops.apple_jam": "Apple Jam",
+  "block.dragncrops.blackberry_jam": "Blackberry Jam",
+  "block.dragncrops.blueberry_jam": "Blueberry Jam",
+  "block.dragncrops.cantaloupe_jam": "Cantaloupe Jam",
+  "block.dragncrops.cherry_jam": "Cherry Jam",
+  "block.dragncrops.cranberry_jam": "Cranberry Jam",
+  "block.dragncrops.mango_jam": "Mango Jam",
+  "block.dragncrops.melon_jam": "Melon Jam",
+  "block.dragncrops.raspberry_jam": "Raspberry Jam",
+  "block.dragncrops.strawberry_jam": "Strawberry Jam",
+  "block.dragncrops.watermelon_jam": "Watermelon Jam"
 }

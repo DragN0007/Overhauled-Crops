@@ -1,1 +1,17 @@
-// 1.20.1	2025-09-04T04:24:38.9741677	Recipes
+// 1.20.1	2025-09-04T20:32:05.1281996	Recipes
+5c2b8d8ed3260d2ee7841629b83115f4b5350cc5 data/dragncrops/advancements/recipes/misc/apple_jam.json
+7f1b33550ba1025f59d554c1c099814b6cdc27f8 data/dragncrops/advancements/recipes/misc/blackberry_jam.json
+ef08d89262d2bc8195465bf5066b281192988556 data/dragncrops/advancements/recipes/misc/blueberry_bread.json
+3b6df77456541eb83d33b5066a13fbcab3a5526a data/dragncrops/advancements/recipes/misc/blueberry_jam.json
+5deb58b877f418b68e7ec940b40ec61ad75b0347 data/dragncrops/advancements/recipes/misc/cranberry_bread.json
+ef44f963c8ea9ad01c1f6bec2e3a95d0adfe647c data/dragncrops/advancements/recipes/misc/nut_bread.json
+0f46558f25f99c98e72b6fc59bd33008bd5559c7 data/dragncrops/advancements/recipes/misc/rye.json
+2fe7c35f3d2aad1e7e5ea3839b9fc5b0cb31bb52 data/dragncrops/advancements/recipes/misc/white_bread.json
+54bc6fc00ac7539138230485b1ed2d337ba9af4e data/dragncrops/recipes/apple_jam.json
+1876a4f1c949dab0bce7d30079da37f5f395fd5e data/dragncrops/recipes/blackberry_jam.json
+b8c5a191e3887037a690ccc29f3c62ddf7b35c0a data/dragncrops/recipes/blueberry_bread.json
+53fd0cb3385d1d1be2679ded0bddfbf42c1bef87 data/dragncrops/recipes/blueberry_jam.json
+bd9806a28751506d47024a00997fccc4f97bd1f4 data/dragncrops/recipes/cranberry_bread.json
+eaca45ad3f08d8cb75eb6fb8d05e074b150e4b4c data/dragncrops/recipes/nut_bread.json
+07fcc04b14ee216f98b76acbd37c752242e929a9 data/dragncrops/recipes/rye.json
+85533da24a40cedba83f81aba5feac63b693960e data/dragncrops/recipes/white_bread.json

@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/jam_jar",
+	"textures": {
+		"texture": "dragncrops:block/watermelon_jam"
+	}
+}

@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "apples=1": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple"
+      }
+    ],
+    "apples=2": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_2"
+      }
+    ],
+    "apples=3": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_3"
+      }
+    ],
+    "apples=4": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_4"
+      }
+    ],
+    "apples=5": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=6": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=7": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=8": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=9": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=10": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=11": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=12": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=13": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=14": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=15": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ],
+    "apples=16": [
+      {
+        "model": "dragncrops:block/apple_basket/red/red_apple_5"
+      }
+    ]
+  }
+}

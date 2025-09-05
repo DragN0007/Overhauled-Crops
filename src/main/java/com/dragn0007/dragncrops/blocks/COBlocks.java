@@ -1,6 +1,8 @@
 package com.dragn0007.dragncrops.blocks;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
+import com.dragn0007.dragncrops.blocks.custom.BreadBlock;
 import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.world.item.BlockItem;
@@ -17,7 +19,28 @@ public class COBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CropOverhaul.MODID);
 
-    public static final RegistryObject<Block> BLACKBERRY_JAM = registerBlock("blackberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> RED_APPLE = registerBlockWithoutItem("red_apple", AppleBlock::new);
+    public static final RegistryObject<Block> YELLOW_APPLE = registerBlockWithoutItem("yellow_apple", AppleBlock::new);
+    public static final RegistryObject<Block> GREEN_APPLE = registerBlockWithoutItem("green_apple", AppleBlock::new);
+
+    public static final RegistryObject<Block> BREAD = registerBlockWithoutItem("bread", BreadBlock::new);
+    public static final RegistryObject<Block> BLUEBERRY_BREAD = registerBlockWithoutItem("blueberry_bread", BreadBlock::new);
+    public static final RegistryObject<Block> CRANBERRY_BREAD = registerBlockWithoutItem("cranberry_bread", BreadBlock::new);
+    public static final RegistryObject<Block> NUT_BREAD = registerBlockWithoutItem("nut_bread", BreadBlock::new);
+    public static final RegistryObject<Block> RYE_BREAD = registerBlockWithoutItem("rye_bread", BreadBlock::new);
+    public static final RegistryObject<Block> WHITE_BREAD = registerBlockWithoutItem("white_bread", BreadBlock::new);
+
+    public static final RegistryObject<Block> APPLE_JAM = registerBlockWithoutItem("apple_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> BLACKBERRY_JAM = registerBlockWithoutItem("blackberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> BLUEBERRY_JAM = registerBlockWithoutItem("blueberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> CANTALOUPE_JAM = registerBlockWithoutItem("cantaloupe_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> CHERRY_JAM = registerBlockWithoutItem("cherry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> CRANBERRY_JAM = registerBlockWithoutItem("cranberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> MANGO_JAM = registerBlockWithoutItem("mango_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> MELON_JAM = registerBlockWithoutItem("melon_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> RASPBERRY_JAM = registerBlockWithoutItem("raspberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> STRAWBERRY_JAM = registerBlockWithoutItem("strawberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> WATERMELON_JAM = registerBlockWithoutItem("watermelon_jam", JamJarBlock::new);
 
     public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);

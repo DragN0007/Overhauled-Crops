@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/bread/cranberry_bread",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/bread/cranberry_bread"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/bread/cranberry_bread",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/bread/cranberry_bread",
+      "y": 270
+    }
+  }
+}

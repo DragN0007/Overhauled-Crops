@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/bread",
+	"textures": {
+		"texture": "dragncrops:block/white_bread"
+	}
+}
