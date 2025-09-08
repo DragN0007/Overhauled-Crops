@@ -14,6 +14,7 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -37,6 +38,18 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.NUT_BREAD.get(),  COItems.NUT_BREAD.get());
         this.dropOther(COBlocks.RYE_BREAD.get(),  COItems.RYE_BREAD.get());
         this.dropOther(COBlocks.WHITE_BREAD.get(),  COItems.WHITE_BREAD.get());
+
+        LootItemCondition.Builder builder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WHEAT_GRAIN.get());
+        this.add(COBlocks.WHEAT_GRAIN.get(), this.createCropDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));
+
+        LootItemCondition.Builder builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RYE_GRAIN.get());
+        this.add(COBlocks.RYE_GRAIN.get(), this.createCropDrops(COBlocks.RYE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder1));
+
+        LootItemCondition.Builder builder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RICE_GRAIN.get());
+        this.add(COBlocks.RICE_GRAIN.get(), this.createCropDrops(COBlocks.RICE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder2));
+
+        LootItemCondition.Builder builder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CORN_GRAIN.get());
+        this.add(COBlocks.CORN_GRAIN.get(), this.createCropDrops(COBlocks.CORN_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder3));
 
         this.add(COBlocks.APPLE_JAM.get(), createJamDrops(COBlocks.APPLE_JAM.get(), COItems.APPLE_JAM.get()));
         this.add(COBlocks.BLACKBERRY_JAM.get(), createJamDrops(COBlocks.BLACKBERRY_JAM.get(), COItems.BLACKBERRY_JAM.get()));
@@ -62,7 +75,6 @@ public class COBlockLoot extends BlockLootSubProvider {
                                                                 .hasProperty(JamJarBlock.JAM_JARS, integer))))
                 )));
     }
-
 
     @Override
     public Iterable<Block> getKnownBlocks() {

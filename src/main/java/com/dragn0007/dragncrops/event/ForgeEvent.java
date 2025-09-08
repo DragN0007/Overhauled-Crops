@@ -101,6 +101,24 @@ public class ForgeEvent {
             }
         }
 
+        if (itemStack.is(Items.WHEAT)) {
+            BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
+            if (level.isEmptyBlock(blockPos)) {
+                if (!level.isClientSide) {
+                    Direction playerFacing = player.getDirection();
+                    BlockState blockState = COBlocks.WHEAT_GRAIN.get()
+                            .defaultBlockState()
+                            .setValue(HorizontalDirectionalBlock.FACING, playerFacing.getOpposite());
+                    level.setBlock(blockPos, blockState, 3);
+                    if (!player.isCreative()) {
+                        itemStack.shrink(1);
+                    }
+                }
+                event.setCanceled(true);
+                event.setCancellationResult(InteractionResult.SUCCESS);
+            }
+        }
+
         if (itemStack.is(Items.APPLE)) {
             BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
             if (level.isEmptyBlock(blockPos)) {

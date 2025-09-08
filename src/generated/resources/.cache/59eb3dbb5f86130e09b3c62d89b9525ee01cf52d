@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-04T22:46:10.4228534	Loot Tables
+// 1.20.1	2025-09-08T00:03:01.1823443	Loot Tables
 a7d92491ab4289a033db6a3123e93ce62e1b4651 data/dragncrops/loot_tables/blocks/apple_jam.json
 2214f11ee7b05af8fd20f810aa7cd853901bca8d data/dragncrops/loot_tables/blocks/blackberry_jam.json
 11a9ade54389d4c6ea4c372b9a2ff29d5462c852 data/dragncrops/loot_tables/blocks/blueberry_bread.json
@@ -6,6 +6,7 @@ a7d92491ab4289a033db6a3123e93ce62e1b4651 data/dragncrops/loot_tables/blocks/appl
 99068b0b87d6633c6f2737fbd4bf1821c50e1036 data/dragncrops/loot_tables/blocks/bread.json
 561d8c07f87f32de1578b5158e4e2a527e2150f5 data/dragncrops/loot_tables/blocks/cantaloupe_jam.json
 4dd664a8e1ad9c947eb3444f45be3ab683677a4f data/dragncrops/loot_tables/blocks/cherry_jam.json
+64849364e40bf3b70ade2bb0ff5bd9c1914dc364 data/dragncrops/loot_tables/blocks/corn_grain.json
 f4e403bec8272d6a213ec14253ab2e250080953b data/dragncrops/loot_tables/blocks/cranberry_bread.json
 1452e31c5e870619ef2b05457ad5c995b9c8a25d data/dragncrops/loot_tables/blocks/cranberry_jam.json
 1f43c1dde021ad511da5378c0efd4c93db3aa127 data/dragncrops/loot_tables/blocks/green_apple.json
@@ -14,8 +15,11 @@ b2f500bb88f50e6d21fbd1559cd67f535bf6c8f5 data/dragncrops/loot_tables/blocks/melo
 f09c9f7154e8ea0ed8cd846856556063ecc9b75b data/dragncrops/loot_tables/blocks/nut_bread.json
 e9a4d0a7e57836215ebeef67ad4da4bfda2122dc data/dragncrops/loot_tables/blocks/raspberry_jam.json
 c72cb2e30a313d9fceba2690e2a1fa9cdaaafe48 data/dragncrops/loot_tables/blocks/red_apple.json
+c1635c599316098359ae845bd02715755f593e72 data/dragncrops/loot_tables/blocks/rice_grain.json
 96076bbbb8ea18867326658b1289b8abb8888780 data/dragncrops/loot_tables/blocks/rye_bread.json
+2de67554b73949dd450ce33f785c5fbaacb1c4c3 data/dragncrops/loot_tables/blocks/rye_grain.json
 bc2b7f1bc5358429725301765645ea7727e33846 data/dragncrops/loot_tables/blocks/strawberry_jam.json
 29e7b8d5f39424f07cb4c7a8d5fa48018feaddc6 data/dragncrops/loot_tables/blocks/watermelon_jam.json
+ccd2b5643702852aba3fd9b13d7782606201b100 data/dragncrops/loot_tables/blocks/wheat_grain.json
 1f7037f04d241572acd477e7f1fddf2e5495b48f data/dragncrops/loot_tables/blocks/white_bread.json
 9a1935b425c6fcaf71740d91ca1432683d68503f data/dragncrops/loot_tables/blocks/yellow_apple.json

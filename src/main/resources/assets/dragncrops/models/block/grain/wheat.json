@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/grain",
+	"textures": {
+		"texture": "minecraft:item/wheat"
+	}
+}

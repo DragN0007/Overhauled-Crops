@@ -28,6 +28,30 @@ public class COItemGroup {
                         output.accept(Items.POTATO);
                         output.accept(COItems.RED_POTATO.get());
                         output.accept(COItems.PURPLE_POTATO.get());
+                        output.accept(Items.WHEAT);
+                        output.accept(COItems.CORN.get());
+                        output.accept(COItems.RICE.get());
+                        output.accept(COItems.RYE.get());
+                        output.accept(COItems.BLACKBERRY.get());
+                        output.accept(COItems.BLACKBERRY.get());
+                        output.accept(COItems.RASPBERRY.get());
+                        output.accept(COItems.WHITE_RASPBERRY.get());
+                        output.accept(COItems.CRANBERRY.get());
+                        output.accept(COItems.STRAWBERRY.get());
+                        output.accept(COItems.PEANUT.get());
+                        output.accept(COItems.CUCUMBER.get());
+                        output.accept(COItems.GARLIC.get());
+                        output.accept(COItems.SUGAR_BEET.get());
+                        output.accept(COItems.CHERRIES.get());
+                        output.accept(COItems.MANGO.get());
+                        output.accept(COItems.COCONUT.get());
+                        output.accept(COItems.LIME.get());
+                        output.accept(COItems.CILANTRO.get());
+                        output.accept(COItems.OREGANO.get());
+                        output.accept(COItems.ROSEMARY.get());
+
+                        output.accept(COItems.GRAIN.get());
+                        output.accept(COItems.FLOUR.get());
 
                         output.accept(Items.BREAD);
                         output.accept(COItems.BLUEBERRY_BREAD.get());

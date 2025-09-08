@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/grain/corn",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/grain/corn"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/grain/corn",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/grain/corn",
+      "y": 270
+    }
+  }
+}

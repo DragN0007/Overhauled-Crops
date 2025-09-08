@@ -25,6 +25,29 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.PURPLE_CARROT);
         simpleItem(COItems.RED_POTATO);
         simpleItem(COItems.PURPLE_POTATO);
+        simpleItem(COItems.BLACKBERRY);
+        simpleItem(COItems.BLACKBERRY);
+        simpleItem(COItems.RASPBERRY);
+        simpleItem(COItems.WHITE_RASPBERRY);
+        simpleItem(COItems.CRANBERRY);
+        simpleItem(COItems.STRAWBERRY);
+        simpleItem(COItems.PEANUT);
+        simpleItem(COItems.CUCUMBER);
+        simpleItem(COItems.GARLIC);
+        simpleItem(COItems.CORN);
+        simpleItem(COItems.RICE);
+        simpleItem(COItems.RYE);
+        simpleItem(COItems.SUGAR_BEET);
+        simpleItem(COItems.CHERRIES);
+        simpleItem(COItems.MANGO);
+        simpleItem(COItems.COCONUT);
+        simpleItem(COItems.LIME);
+        simpleItem(COItems.CILANTRO);
+        simpleItem(COItems.OREGANO);
+        simpleItem(COItems.ROSEMARY);
+
+        simpleItem(COItems.GRAIN);
+        simpleItem(COItems.FLOUR);
 
         simpleItem(COItems.BLUEBERRY_BREAD);
         simpleItem(COItems.CRANBERRY_BREAD);

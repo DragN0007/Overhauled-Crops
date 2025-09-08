@@ -52,12 +52,14 @@ public class COItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.6F).build())));
     public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build())));
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn",
+            () -> new ItemNameBlockItem(COBlocks.CORN_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RICE = ITEMS.register("rice",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.RICE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RYE = ITEMS.register("rye",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.RYE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> SUGAR_BEET = ITEMS.register("sugar_beet",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
 
     public static final RegistryObject<Item> CHERRIES = ITEMS.register("cherries",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
@@ -74,6 +76,13 @@ public class COItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
     public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
+
+
+    //Ingredients
+    public static final RegistryObject<Item> FLOUR = ITEMS.register("flour",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
+    public static final RegistryObject<Item> GRAIN = ITEMS.register("grain",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
 
 
     //Breads

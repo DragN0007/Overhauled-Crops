@@ -3,11 +3,14 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
 import com.dragn0007.dragncrops.blocks.custom.BreadBlock;
+import com.dragn0007.dragncrops.blocks.custom.GrainBlock;
 import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,6 +21,15 @@ import java.util.function.Supplier;
 public class COBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CropOverhaul.MODID);
+
+    public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+    public static final RegistryObject<Block> RYE_GRAIN = registerBlockWithoutItem("rye_grain",
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+    public static final RegistryObject<Block> RICE_GRAIN = registerBlockWithoutItem("rice_grain",
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+    public static final RegistryObject<Block> CORN_GRAIN = registerBlockWithoutItem("corn_grain",
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
 
     public static final RegistryObject<Block> RED_APPLE = registerBlockWithoutItem("red_apple", AppleBlock::new);
     public static final RegistryObject<Block> YELLOW_APPLE = registerBlockWithoutItem("yellow_apple", AppleBlock::new);
