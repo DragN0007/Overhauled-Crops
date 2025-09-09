@@ -6,8 +6,6 @@ import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
@@ -17,7 +15,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Collections;
-import java.util.function.Function;
 
 public class COBlockstateProvider extends BlockStateProvider {
     public COBlockstateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
