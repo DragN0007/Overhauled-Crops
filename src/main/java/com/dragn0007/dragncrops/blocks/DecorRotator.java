@@ -5,7 +5,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -19,7 +18,7 @@ public class DecorRotator extends HorizontalDirectionalBlock {
     public VoxelShape WEST;
 
     public DecorRotator(VoxelShape north, VoxelShape east, VoxelShape south, VoxelShape west, Properties properties) {
-        super (Properties.copy(Blocks.OAK_PLANKS).noOcclusion().strength(0.2f, 0.2f));
+        super (properties);
 
         NORTH = north;
         EAST = east;

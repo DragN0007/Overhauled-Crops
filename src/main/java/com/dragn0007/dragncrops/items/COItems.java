@@ -2,11 +2,13 @@ package com.dragn0007.dragncrops.items;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.items.custom.FlailItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,13 +27,17 @@ public class COItems {
             () -> new ItemNameBlockItem(COBlocks.YELLOW_APPLE.get(),
                     (new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> PURPLE_CARROT = ITEMS.register("purple_carrot",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.6F).build())));
+            () -> new ItemNameBlockItem(COBlocks.PURPLE_CARROTS.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> YELLOW_CARROT = ITEMS.register("yellow_carrot",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.6F).build())));
+            () -> new ItemNameBlockItem(COBlocks.YELLOW_CARROTS.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> PURPLE_POTATO = ITEMS.register("purple_potato",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.PURPLE_POTATOES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RED_POTATO = ITEMS.register("red_potato",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.RED_POTATOES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
@@ -158,6 +164,9 @@ public class COItems {
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 0.8F).build()))));
 
+    //Tools
+    public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",
+            () -> new FlailItem(Tiers.DIAMOND, 1, -1.4F, new Item.Properties()));
 
     public static final RegistryObject<Item> CROP_OVERHAUL = ITEMS.register("crop_overhaul",
             () -> new Item(new Item.Properties()));

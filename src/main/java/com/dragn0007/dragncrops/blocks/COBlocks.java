@@ -1,6 +1,10 @@
 package com.dragn0007.dragncrops.blocks;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.crop.PurpleCarrotBlock;
+import com.dragn0007.dragncrops.blocks.crop.PurplePotatoBlock;
+import com.dragn0007.dragncrops.blocks.crop.RedPotatoBlock;
+import com.dragn0007.dragncrops.blocks.crop.YellowCarrotBlock;
 import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
 import com.dragn0007.dragncrops.blocks.custom.BreadBlock;
 import com.dragn0007.dragncrops.blocks.custom.GrainBlock;
@@ -10,6 +14,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -22,14 +27,27 @@ public class COBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CropOverhaul.MODID);
 
+    public static final RegistryObject<Block> YELLOW_CARROTS = registerBlockWithoutItem("yellow_carrots",
+            () -> new YellowCarrotBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission()));
+    public static final RegistryObject<Block> PURPLE_CARROTS = registerBlockWithoutItem("purple_carrots",
+            () -> new PurpleCarrotBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission()));
+    public static final RegistryObject<Block> RED_POTATOES = registerBlockWithoutItem("red_potatoes",
+            () -> new RedPotatoBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noCollission()));
+    public static final RegistryObject<Block> PURPLE_POTATOES = registerBlockWithoutItem("purple_potatoes",
+            () -> new PurplePotatoBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noCollission()));
+
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
-            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
     public static final RegistryObject<Block> RYE_GRAIN = registerBlockWithoutItem("rye_grain",
-            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
     public static final RegistryObject<Block> RICE_GRAIN = registerBlockWithoutItem("rice_grain",
-            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
     public static final RegistryObject<Block> CORN_GRAIN = registerBlockWithoutItem("corn_grain",
-            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK)));
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
 
     public static final RegistryObject<Block> RED_APPLE = registerBlockWithoutItem("red_apple", AppleBlock::new);
     public static final RegistryObject<Block> YELLOW_APPLE = registerBlockWithoutItem("yellow_apple", AppleBlock::new);

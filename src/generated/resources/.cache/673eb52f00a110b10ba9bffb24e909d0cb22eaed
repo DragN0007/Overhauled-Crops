@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-07T23:10:46.5451264	Item Models: dragncrops
+// 1.20.1	2025-09-08T18:05:59.8228096	Item Models: dragncrops
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 a8c284182a057bf71212b1fdf654c4c6b1060897 assets/dragncrops/models/item/blackberry.json
 cfd5a32ff38526ebed2107b7fd7f042698a3c21e assets/dragncrops/models/item/blackberry_jam.json
@@ -15,6 +15,7 @@ e1fffc483a818c3ca1ebceb5d88c5886d81bc7b8 assets/dragncrops/models/item/cilantro.
 4010aa18a2de9db59820469863a56fc782ce3186 assets/dragncrops/models/item/cranberry_jam.json
 5d832253be4c3110168f6b0b25a20c43239217e5 assets/dragncrops/models/item/crop_overhaul.json
 0ff4320306cbabf3e1e89ad76eded78f35678d09 assets/dragncrops/models/item/cucumber.json
+de2167e338bd08525ca28576e0c44b8c09704b29 assets/dragncrops/models/item/flail.json
 276e383dfcfe22092acd9caac31cf61802e3d714 assets/dragncrops/models/item/flour.json
 ca1ae55a1b48f1dd4496f44d0dc75d5af75a3070 assets/dragncrops/models/item/garlic.json
 d4aab47677dac6a5fe6dbf9f5f726e0aeda1f38b assets/dragncrops/models/item/grain.json

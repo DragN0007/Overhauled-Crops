@@ -4,9 +4,7 @@ import com.dragn0007.dragncrops.blocks.DecorRotator;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.BooleanOp;
@@ -18,8 +16,7 @@ import java.util.stream.Stream;
 public class GrainBlock extends DecorRotator implements SimpleWaterloggedBlock {
 
     public GrainBlock(Properties properties) {
-        super(NORTH, EAST, SOUTH, WEST, Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.3f, 0.3f)
-                .requiresCorrectToolForDrops().noCollission());
+        super(NORTH, EAST, SOUTH, WEST, properties);
     }
 
     public boolean isPathfindable(BlockState p_53306_, BlockGetter p_53307_, BlockPos p_53308_, PathComputationType p_53309_) {

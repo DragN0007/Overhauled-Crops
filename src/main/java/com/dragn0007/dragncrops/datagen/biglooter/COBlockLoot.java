@@ -1,6 +1,7 @@
 package com.dragn0007.dragncrops.datagen.biglooter;
 
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
 import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -8,13 +9,18 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CarrotBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -28,6 +34,7 @@ public class COBlockLoot extends BlockLootSubProvider {
 
     @Override
     public void generate() {
+
         this.dropOther(COBlocks.RED_APPLE.get(), Items.APPLE);
         this.dropOther(COBlocks.YELLOW_APPLE.get(), COItems.YELLOW_APPLE.get());
         this.dropOther(COBlocks.GREEN_APPLE.get(), COItems.GREEN_APPLE.get());
@@ -40,16 +47,16 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.WHITE_BREAD.get(),  COItems.WHITE_BREAD.get());
 
         LootItemCondition.Builder builder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WHEAT_GRAIN.get());
-        this.add(COBlocks.WHEAT_GRAIN.get(), this.createCropDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));
+        this.add(COBlocks.WHEAT_GRAIN.get(), this.createGrainDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));
 
         LootItemCondition.Builder builder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RYE_GRAIN.get());
-        this.add(COBlocks.RYE_GRAIN.get(), this.createCropDrops(COBlocks.RYE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder1));
+        this.add(COBlocks.RYE_GRAIN.get(), this.createGrainDrops(COBlocks.RYE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder1));
 
         LootItemCondition.Builder builder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RICE_GRAIN.get());
-        this.add(COBlocks.RICE_GRAIN.get(), this.createCropDrops(COBlocks.RICE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder2));
+        this.add(COBlocks.RICE_GRAIN.get(), this.createGrainDrops(COBlocks.RICE_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder2));
 
         LootItemCondition.Builder builder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CORN_GRAIN.get());
-        this.add(COBlocks.CORN_GRAIN.get(), this.createCropDrops(COBlocks.CORN_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder3));
+        this.add(COBlocks.CORN_GRAIN.get(), this.createGrainDrops(COBlocks.CORN_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder3));
 
         this.add(COBlocks.APPLE_JAM.get(), createJamDrops(COBlocks.APPLE_JAM.get(), COItems.APPLE_JAM.get()));
         this.add(COBlocks.BLACKBERRY_JAM.get(), createJamDrops(COBlocks.BLACKBERRY_JAM.get(), COItems.BLACKBERRY_JAM.get()));
@@ -62,6 +69,43 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.RASPBERRY_JAM.get(), createJamDrops(COBlocks.RASPBERRY_JAM.get(), COItems.RASPBERRY_JAM.get()));
         this.add(COBlocks.STRAWBERRY_JAM.get(), createJamDrops(COBlocks.STRAWBERRY_JAM.get(), COItems.STRAWBERRY_JAM.get()));
         this.add(COBlocks.WATERMELON_JAM.get(), createJamDrops(COBlocks.WATERMELON_JAM.get(), COItems.WATERMELON_JAM.get()));
+
+
+        LootItemCondition.Builder cropBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.PURPLE_CARROTS.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.PURPLE_CARROTS.get(),
+                this.applyExplosionDecay(COBlocks.PURPLE_CARROTS.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.PURPLE_CARROT.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder).add(LootItem.lootTableItem(COItems.PURPLE_CARROT.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+
+        LootItemCondition.Builder cropBuilder1 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.YELLOW_CARROTS.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.YELLOW_CARROTS.get(),
+                this.applyExplosionDecay(COBlocks.YELLOW_CARROTS.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.YELLOW_CARROT.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder1).add(LootItem.lootTableItem(COItems.YELLOW_CARROT.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+
+        LootItemCondition.Builder cropBuilder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.PURPLE_POTATOES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.PURPLE_POTATOES.get(),
+                this.applyExplosionDecay(COBlocks.PURPLE_POTATOES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.PURPLE_POTATO.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder2).add(LootItem.lootTableItem(COItems.PURPLE_POTATO.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))
+                                .withPool(LootPool.lootPool().when(cropBuilder2).add(LootItem.lootTableItem(Items.POISONOUS_POTATO)
+                                        .when(LootItemRandomChanceCondition.randomChance(0.02F))))));
+
+        LootItemCondition.Builder cropBuilder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RED_POTATOES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.RED_POTATOES.get(),
+                this.applyExplosionDecay(COBlocks.RED_POTATOES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.RED_POTATO.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder3).add(LootItem.lootTableItem(COItems.RED_POTATO.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))
+                                .withPool(LootPool.lootPool().when(cropBuilder3).add(LootItem.lootTableItem(Items.POISONOUS_POTATO)
+                                        .when(LootItemRandomChanceCondition.randomChance(0.02F))))));
     }
 
     protected LootTable.Builder createJamDrops(Block block, Item item) {
@@ -74,6 +118,10 @@ public class COBlockLoot extends BlockLootSubProvider {
                                                         .setProperties(StatePropertiesPredicate.Builder.properties()
                                                                 .hasProperty(JamJarBlock.JAM_JARS, integer))))
                 )));
+    }
+
+    protected LootTable.Builder createGrainDrops(Block block, Item item, Item item1, LootItemCondition.Builder builder) {
+        return this.applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(builder).otherwise(LootItem.lootTableItem(item1)))).withPool(LootPool.lootPool().when(builder).add(LootItem.lootTableItem(item1).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3)))));
     }
 
     @Override

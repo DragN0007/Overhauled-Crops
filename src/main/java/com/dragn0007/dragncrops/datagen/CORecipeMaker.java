@@ -4,10 +4,9 @@ import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
+import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;
@@ -19,6 +18,17 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.FLAIL.get())
+                .define('A', ItemTags.PLANKS)
+                .define('B', Items.STICK)
+                .pattern("  B")
+                .pattern(" BA")
+                .pattern("B  ")
+                .unlockedBy("has_wood", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(ItemTags.PLANKS).build()))
+                .save(pFinishedRecipeConsumer);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BLUEBERRY_BREAD.get())
                 .requires(COItems.BLUEBERRY.get())

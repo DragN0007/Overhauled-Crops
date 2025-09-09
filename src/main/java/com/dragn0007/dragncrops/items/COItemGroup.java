@@ -50,6 +50,7 @@ public class COItemGroup {
                         output.accept(COItems.OREGANO.get());
                         output.accept(COItems.ROSEMARY.get());
 
+                        output.accept(COItems.FLAIL.get());
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
 

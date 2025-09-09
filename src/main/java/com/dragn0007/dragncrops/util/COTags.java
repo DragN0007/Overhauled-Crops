@@ -2,9 +2,11 @@ package com.dragn0007.dragncrops.util;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
 public class COTags {
 
@@ -47,12 +49,23 @@ public class COTags {
         public static final TagKey<Item> NUTS = forgeTag("nuts");
         public static final TagKey<Item> HERBS = forgeTag("herbs");
 
-
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(CropOverhaul.MODID, name));
         }
         private static TagKey<Item> forgeTag (String name) {
             return ItemTags.create(new ResourceLocation("forge", name));
+        }
+    }
+
+    public static class Blocks {
+
+        public static final TagKey<Block> MINEABLE_WITH_FLAIL = tag("mineable/flail");
+
+        private static TagKey<Block> tag (String name) {
+            return BlockTags.create(new ResourceLocation(CropOverhaul.MODID, name));
+        }
+        private static TagKey<Block> forgeTag (String name) {
+            return BlockTags.create(new ResourceLocation("forge", name));
         }
     }
 
