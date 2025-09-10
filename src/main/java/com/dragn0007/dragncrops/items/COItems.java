@@ -40,13 +40,17 @@ public class COItems {
                     (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
 
     public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.BLACKBERRIES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.BLUEBERRIES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.RASPBERRIES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> WHITE_RASPBERRY = ITEMS.register("white_raspberry",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build())));
+            () -> new ItemNameBlockItem(COBlocks.WHITE_RASPBERRIES.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
 
     public static final RegistryObject<Item> CRANBERRY = ITEMS.register("cranberry",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build())));

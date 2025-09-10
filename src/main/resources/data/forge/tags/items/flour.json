@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:flour",
+
+    {
+      "id": "dffeasts:flour",
+      "required": false
+    },
+    {
+      "id": "medievalembroidery:flour",
+      "required": false
+    }
+  ]
+}

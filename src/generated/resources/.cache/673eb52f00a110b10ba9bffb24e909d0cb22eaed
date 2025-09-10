@@ -1,7 +1,8 @@
-// 1.20.1	2025-09-08T18:05:59.8228096	Item Models: dragncrops
+// 1.20.1	2025-09-10T17:15:04.1579867	Item Models: dragncrops
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 a8c284182a057bf71212b1fdf654c4c6b1060897 assets/dragncrops/models/item/blackberry.json
 cfd5a32ff38526ebed2107b7fd7f042698a3c21e assets/dragncrops/models/item/blackberry_jam.json
+9dce0e172c2f6d6c918a17a682212e9d580081aa assets/dragncrops/models/item/blueberry.json
 63cf1b8873adafee7eab30c87b484f52f731874b assets/dragncrops/models/item/blueberry_bread.json
 c8717dcd61f9033b11130dc783f30091acddf5fc assets/dragncrops/models/item/blueberry_jam.json
 27d9c1ec323701f3a5e4db27039fa65832eef29b assets/dragncrops/models/item/cantaloupe_jam.json

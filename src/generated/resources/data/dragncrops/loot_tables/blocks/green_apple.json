@@ -3,14 +3,224 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "6"
+                  }
+                }
+              ],
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "7"
+                  }
+                }
+              ],
+              "count": 7.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "8"
+                  }
+                }
+              ],
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "9"
+                  }
+                }
+              ],
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "10"
+                  }
+                }
+              ],
+              "count": 10.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "11"
+                  }
+                }
+              ],
+              "count": 11.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "12"
+                  }
+                }
+              ],
+              "count": 12.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "13"
+                  }
+                }
+              ],
+              "count": 13.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "14"
+                  }
+                }
+              ],
+              "count": 14.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "15"
+                  }
+                }
+              ],
+              "count": 15.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:green_apple",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "apples": "16"
+                  }
+                }
+              ],
+              "count": 16.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
           "name": "dragncrops:green_apple"
         }
       ],
