@@ -80,11 +80,11 @@ public class COBlockLoot extends BlockLootSubProvider {
                 wildVanillaBuilder1));
 
         LootItemCondition.Builder wildVanillaBuilder2 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_WHEAT.get());
-        this.add(COBlocks.WILD_WHEAT.get(), this.createMultiDrops(COBlocks.WILD_WHEAT.get(), Items.WHEAT, Items.WHEAT_SEEDS,
+        this.add(COBlocks.WILD_WHEAT.get(), this.createMultiDrops(COBlocks.WILD_WHEAT.get(), Items.WHEAT, Items.WHEAT,
                 wildVanillaBuilder2));
 
         LootItemCondition.Builder wildVanillaBuilder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_BEETROOTS.get());
-        this.add(COBlocks.WILD_BEETROOTS.get(), this.createMultiDrops(COBlocks.WILD_BEETROOTS.get(), Items.BEETROOT, Items.BEETROOT_SEEDS,
+        this.add(COBlocks.WILD_BEETROOTS.get(), this.createMultiDrops(COBlocks.WILD_BEETROOTS.get(), Items.BEETROOT, Items.BEETROOT,
                 wildVanillaBuilder3));
 
 
@@ -196,7 +196,7 @@ public class COBlockLoot extends BlockLootSubProvider {
     }
 
     protected LootTable.Builder createMultiDrops(Block block, Item item, Item item1, LootItemCondition.Builder builder) {
-        return this.applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(builder).otherwise(LootItem.lootTableItem(item1)))).withPool(LootPool.lootPool().when(builder).add(LootItem.lootTableItem(item1).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 1)))));
+        return this.applyExplosionDecay(block, LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(item).when(builder).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 1)).otherwise(LootItem.lootTableItem(item1)))).withPool(LootPool.lootPool().when(builder).add(LootItem.lootTableItem(item1).apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 2)))));
     }
 
     @Override

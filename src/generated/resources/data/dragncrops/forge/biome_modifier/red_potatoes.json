@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_hot/overworld",
+  "features": "dragncrops:red_potatoes",
+  "step": "vegetal_decoration"
+}

@@ -2,6 +2,7 @@ package com.dragn0007.dragncrops.blocks;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.crop.*;
+import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
 import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
 import com.dragn0007.dragncrops.blocks.custom.BreadBlock;
 import com.dragn0007.dragncrops.blocks.custom.GrainBlock;
@@ -10,10 +11,7 @@ import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,30 +35,30 @@ public class COBlocks {
             () -> new WhiteRaspberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
 
     public static final RegistryObject<Block> WILD_CARROTS = registerBlockWithoutItem("wild_carrots",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> WILD_POTATOES = registerBlockWithoutItem("wild_potatoes",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> WILD_WHEAT = registerBlockWithoutItem("wild_wheat",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> WILD_BEETROOTS = registerBlockWithoutItem("wild_beetroots",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> YELLOW_CARROTS = registerBlockWithoutItem("yellow_carrots",
             () -> new YellowCarrotBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission()));
     public static final RegistryObject<Block> WILD_YELLOW_CARROTS = registerBlockWithoutItem("wild_yellow_carrots",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> PURPLE_CARROTS = registerBlockWithoutItem("purple_carrots",
             () -> new PurpleCarrotBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noCollission()));
     public static final RegistryObject<Block> WILD_PURPLE_CARROTS = registerBlockWithoutItem("wild_purple_carrots",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> RED_POTATOES = registerBlockWithoutItem("red_potatoes",
             () -> new RedPotatoBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noCollission()));
     public static final RegistryObject<Block> WILD_RED_POTATOES = registerBlockWithoutItem("wild_red_potatoes",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> PURPLE_POTATOES = registerBlockWithoutItem("purple_potatoes",
             () -> new PurplePotatoBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noCollission()));
     public static final RegistryObject<Block> WILD_PURPLE_POTATOES = registerBlockWithoutItem("wild_purple_potatoes",
-            () -> new FlowerBlock(MobEffects.SATURATION, 8, BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)

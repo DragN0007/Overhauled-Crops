@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_forest",
+  "features": "dragncrops:raspberries",
+  "step": "vegetal_decoration"
+}

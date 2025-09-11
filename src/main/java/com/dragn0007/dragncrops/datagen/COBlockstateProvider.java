@@ -29,11 +29,12 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_POTATOES.get(), models().cross(COBlocks.WILD_POTATOES.getId().getPath(),
                 wildVanillaPlantTexture("potatoes_stage3")).renderType("cutout"));
 
-        simpleBlock(COBlocks.WILD_WHEAT.get(), models().cross(COBlocks.WILD_WHEAT.getId().getPath(),
-                wildVanillaPlantTexture("wheat_stage7")).renderType("cutout"));
+//        simpleBlock(COBlocks.WILD_WHEAT.get(), models().cross(COBlocks.WILD_WHEAT.getId().getPath(),
+//                wildVanillaPlantTexture("wheat_stage7")).renderType("cutout"));
 
         simpleBlock(COBlocks.WILD_BEETROOTS.get(), models().cross(COBlocks.WILD_BEETROOTS.getId().getPath(),
                 wildVanillaPlantTexture("beetroots_stage3")).renderType("cutout"));
+
 
         createBush((OBushBlock) COBlocks.BLACKBERRIES.get(), "blackberries", "blackberries",
                 0, 1, 2, 3, 4);

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "dragncrops:block/blackberries_stage0"
+    },
+    "age=1": {
+      "model": "dragncrops:block/blackberries_stage1"
+    },
+    "age=2": {
+      "model": "dragncrops:block/blackberries_stage2"
+    },
+    "age=3": {
+      "model": "dragncrops:block/blackberries_stage3"
+    },
+    "age=4": {
+      "model": "dragncrops:block/blackberries_stage4"
+    }
+  }
+}

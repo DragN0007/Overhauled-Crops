@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cold/overworld",
+  "features": "dragncrops:purple_carrots",
+  "step": "vegetal_decoration"
+}

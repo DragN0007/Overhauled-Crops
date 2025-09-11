@@ -87,6 +87,14 @@ public class COItems {
     public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
 
+    //Seeds
+    public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
+            () -> new ItemNameBlockItem(COBlocks.CORN_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
+            () -> new ItemNameBlockItem(COBlocks.RICE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> RYE_SEEDS = ITEMS.register("rye_seeds",
+            () -> new ItemNameBlockItem(COBlocks.RYE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
+
 
     //Ingredients
     public static final RegistryObject<Item> FLOUR = ITEMS.register("flour",
