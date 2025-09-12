@@ -89,11 +89,11 @@ public class COItems {
 
     //Seeds
     public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
-            () -> new ItemNameBlockItem(COBlocks.CORN_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
+            () -> new ItemNameBlockItem(COBlocks.CORN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
             () -> new ItemNameBlockItem(COBlocks.RICE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RYE_SEEDS = ITEMS.register("rye_seeds",
-            () -> new ItemNameBlockItem(COBlocks.RYE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
+            () -> new ItemNameBlockItem(COBlocks.RYE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
 
 
     //Ingredients
@@ -175,6 +175,63 @@ public class COItems {
             () -> new ItemNameBlockItem(COBlocks.WATERMELON_JAM.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 0.8F).build()))));
+
+
+    //Tarts
+    public static final RegistryObject<Item> APPLE_TART = ITEMS.register("apple_tart",
+            () -> new ItemNameBlockItem(COBlocks.APPLE_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> BLACKBERRY_TART = ITEMS.register("blackberry_tart",
+            () -> new ItemNameBlockItem(COBlocks.BLACKBERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> BLUEBERRY_TART = ITEMS.register("blueberry_tart",
+            () -> new ItemNameBlockItem(COBlocks.BLUEBERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANTALOUPE_TART = ITEMS.register("cantaloupe_tart",
+            () -> new ItemNameBlockItem(COBlocks.CANTALOUPE_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CHERRY_TART = ITEMS.register("cherry_tart",
+            () -> new ItemNameBlockItem(COBlocks.CHERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CRANBERRY_TART = ITEMS.register("cranberry_tart",
+            () -> new ItemNameBlockItem(COBlocks.CRANBERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> MANGO_TART = ITEMS.register("mango_tart",
+            () -> new ItemNameBlockItem(COBlocks.MANGO_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> MELON_TART = ITEMS.register("melon_tart",
+            () -> new ItemNameBlockItem(COBlocks.MELON_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> RASPBERRY_TART = ITEMS.register("raspberry_tart",
+            () -> new ItemNameBlockItem(COBlocks.RASPBERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> STRAWBERRY_TART = ITEMS.register("strawberry_tart",
+            () -> new ItemNameBlockItem(COBlocks.STRAWBERRY_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
+
+    public static final RegistryObject<Item> WATERMELON_TART = ITEMS.register("watermelon_tart",
+            () -> new ItemNameBlockItem(COBlocks.WATERMELON_TART.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F).build()))));
 
     //Tools
     public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",

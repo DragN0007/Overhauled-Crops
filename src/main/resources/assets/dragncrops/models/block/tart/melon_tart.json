@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/tart",
+	"textures": {
+		"texture": "dragncrops:block/melon_tart"
+	}
+}

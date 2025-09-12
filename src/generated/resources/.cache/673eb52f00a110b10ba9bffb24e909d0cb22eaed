@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-10T17:15:04.1579867	Item Models: dragncrops
+// 1.20.1	2025-09-11T23:51:32.1111022	Item Models: dragncrops
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 a8c284182a057bf71212b1fdf654c4c6b1060897 assets/dragncrops/models/item/blackberry.json
 cfd5a32ff38526ebed2107b7fd7f042698a3c21e assets/dragncrops/models/item/blackberry_jam.json
@@ -11,6 +11,7 @@ c398b0bdbc730ec18a6056d96ad304f31f556fd8 assets/dragncrops/models/item/cherry_ja
 e1fffc483a818c3ca1ebceb5d88c5886d81bc7b8 assets/dragncrops/models/item/cilantro.json
 6abae7890214b902682c0769f83d8d4c088da49b assets/dragncrops/models/item/coconut.json
 6c318e98eb1e76b5a43ed4dea48b28adf7f48d5b assets/dragncrops/models/item/corn.json
+3db144b3f6a707bc932efdc5e5355711ae9993c9 assets/dragncrops/models/item/corn_seeds.json
 5184f349474f2552bc7b0bf4bbec684af1b1b529 assets/dragncrops/models/item/cranberry.json
 3bca62250578e93aac598d099e58978e65d2a577 assets/dragncrops/models/item/cranberry_bread.json
 4010aa18a2de9db59820469863a56fc782ce3186 assets/dragncrops/models/item/cranberry_jam.json
@@ -34,9 +35,11 @@ e1098db2f2355c248063b39f9e04379fe5d651a0 assets/dragncrops/models/item/nut_bread
 8afe00271256e58759c276bff1ed13f2bea4463f assets/dragncrops/models/item/raspberry_jam.json
 ebbf89efa14c5c76781854cfa4833a2846db62db assets/dragncrops/models/item/red_potato.json
 745af64f5a71c577e6706ff5d8836db6fcf1117e assets/dragncrops/models/item/rice.json
+f4bab4f93709b3db7b6093fa5af919dfac61bdc0 assets/dragncrops/models/item/rice_seeds.json
 73c0a431fca5f5515574518dbc41cc67ba3510c1 assets/dragncrops/models/item/rosemary.json
 5dbbb34cce47aa1f53717a027b70a603e846e380 assets/dragncrops/models/item/rye.json
 06e58eaaf6373d15e3d651aa7d85ca5a383813e6 assets/dragncrops/models/item/rye_bread.json
+40c86f38300351909dc24290d210f1081c4139d3 assets/dragncrops/models/item/rye_seeds.json
 5b69f0c79939bc3bb6e71bdade7dccc1ad7bd0b5 assets/dragncrops/models/item/strawberry.json
 04de4672734ba3789e500978733d9d3d022ff02b assets/dragncrops/models/item/strawberry_jam.json
 cd44f8c0f53dfadb50df93abd1b05ac2bcf27ca4 assets/dragncrops/models/item/sugar_beet.json

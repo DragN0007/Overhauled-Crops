@@ -3,27 +3,31 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
-import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
-import com.dragn0007.dragncrops.blocks.custom.BreadBlock;
-import com.dragn0007.dragncrops.blocks.custom.GrainBlock;
-import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
+import com.dragn0007.dragncrops.blocks.custom.*;
+import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
+import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerContainer;
+import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntity;
+import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerItem;
 import com.dragn0007.dragncrops.items.COItems;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.intellij.lang.annotations.Flow;
 
 import java.util.function.Supplier;
 
 public class COBlocks {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CropOverhaul.MODID);
+    public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES
+            = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CropOverhaul.MODID);
 
     public static final RegistryObject<Block> BLACKBERRIES = registerBlockWithoutItem("blackberries",
             () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
@@ -58,6 +62,17 @@ public class COBlocks {
     public static final RegistryObject<Block> PURPLE_POTATOES = registerBlockWithoutItem("purple_potatoes",
             () -> new PurplePotatoBlock(BlockBehaviour.Properties.copy(Blocks.POTATOES).noCollission()));
     public static final RegistryObject<Block> WILD_PURPLE_POTATOES = registerBlockWithoutItem("wild_purple_potatoes",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+
+
+    public static final RegistryObject<Block> CORN = registerBlockWithoutItem("corn",
+            () -> new CornBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_CORN = registerBlockWithoutItem("wild_corn",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+
+    public static final RegistryObject<Block> RYE = registerBlockWithoutItem("rye",
+            () -> new RyeBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_RYE = registerBlockWithoutItem("wild_rye",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
@@ -96,6 +111,18 @@ public class COBlocks {
     public static final RegistryObject<Block> STRAWBERRY_JAM = registerBlockWithoutItem("strawberry_jam", JamJarBlock::new);
     public static final RegistryObject<Block> WATERMELON_JAM = registerBlockWithoutItem("watermelon_jam", JamJarBlock::new);
 
+    public static final RegistryObject<TartBlock> APPLE_TART = registerPixelPlacerWithoutItem("apple_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> BLACKBERRY_TART = registerPixelPlacerWithoutItem("blackberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> BLUEBERRY_TART = registerPixelPlacerWithoutItem("blueberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> CANTALOUPE_TART = registerPixelPlacerWithoutItem("cantaloupe_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> CHERRY_TART = registerPixelPlacerWithoutItem("cherry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> CRANBERRY_TART = registerPixelPlacerWithoutItem("cranberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> MANGO_TART = registerPixelPlacerWithoutItem("mango_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> MELON_TART = registerPixelPlacerWithoutItem("melon_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> RASPBERRY_TART = registerPixelPlacerWithoutItem("raspberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> STRAWBERRY_TART = registerPixelPlacerWithoutItem("strawberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> WATERMELON_TART = registerPixelPlacerWithoutItem("watermelon_tart", TartBlock::new);
+
     public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);
     }
@@ -109,7 +136,23 @@ public class COBlocks {
                 new Item.Properties()));
     }
 
+    public static final RegistryObject<PixelPlacerContainer> PIXEL_PLACER_CONTAINER = BLOCKS.register("pixel_placer_container", PixelPlacerContainer::new);
+
+    public static final RegistryObject<BlockEntityType<PixelPlacerEntity>> PIXEL_PLACER_ENTITY = BLOCK_ENTITIES.register("pixel_placer_container",
+            () -> BlockEntityType.Builder.of(PixelPlacerEntity::new, PIXEL_PLACER_CONTAINER.get()).build(null));
+
+    protected static <T extends PixelPlacer>RegistryObject<T> registerPixelPlacer(String name, Supplier<T> block){
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        COItems.ITEMS.register(name, () -> new PixelPlacerItem(toReturn.get(), new Item.Properties()));
+        return toReturn;
+    }
+
+    protected static <T extends PixelPlacer>RegistryObject<T> registerPixelPlacerWithoutItem(String name, Supplier<T> block){
+        return BLOCKS.register(name, block);
+    }
+
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
+        BLOCK_ENTITIES.register(eventBus);
     }
 }

@@ -30,6 +30,10 @@
   "item.dragncrops.oregano": "Oregano",
   "item.dragncrops.rosemary": "Rosemary",
 
+  "item.dragncrops.corn_seeds": "Corn Seeds",
+  "item.dragncrops.rye_seeds": "Rye Seeds",
+  "item.dragncrops.rice_seeds": "Rice Seeds",
+
   "block.dragncrops.red_apple": "Red Apple Basket",
   "block.dragncrops.yellow_apple": "Yellow Apple Basket",
   "block.dragncrops.green_apple": "Green Apple Basket",
@@ -127,6 +131,32 @@
   "block.dragncrops.raspberry_jam": "Raspberry Jam",
   "block.dragncrops.strawberry_jam": "Strawberry Jam",
   "block.dragncrops.watermelon_jam": "Watermelon Jam",
+
+
+  "item.dragncrops.apple_tart": "Apple Tart",
+  "item.dragncrops.blackberry_tart": "Blackberry Tart",
+  "item.dragncrops.blueberry_tart": "Blueberry Tart",
+  "item.dragncrops.cantaloupe_tart": "Cantaloupe Tart",
+  "item.dragncrops.cherry_tart": "Cherry Tart",
+  "item.dragncrops.cranberry_tart": "Cranberry Tart",
+  "item.dragncrops.mango_tart": "Mango Tart",
+  "item.dragncrops.melon_tart": "Melon Tart",
+  "item.dragncrops.raspberry_tart": "Raspberry Tart",
+  "item.dragncrops.strawberry_tart": "Strawberry Tart",
+  "item.dragncrops.watermelon_tart": "Watermelon Tart",
+
+  "block.dragncrops.apple_tart": "Apple Tart",
+  "block.dragncrops.blackberry_tart": "Blackberry Tart",
+  "block.dragncrops.blueberry_tart": "Blueberry Tart",
+  "block.dragncrops.cantaloupe_tart": "Cantaloupe Tart",
+  "block.dragncrops.cherry_tart": "Cherry Tart",
+  "block.dragncrops.cranberry_tart": "Cranberry Tart",
+  "block.dragncrops.mango_tart": "Mango Tart",
+  "block.dragncrops.melon_tart": "Melon Tart",
+  "block.dragncrops.raspberry_tart": "Raspberry Tart",
+  "block.dragncrops.strawberry_tart": "Strawberry Tart",
+  "block.dragncrops.watermelon_tart": "Watermelon Tart",
+
 
   "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
   "config.jade.plugin_dragncrops.flail_hint": "Flail Hint",

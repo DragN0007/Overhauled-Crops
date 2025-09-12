@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "dragncrops:block/pixel_placer_container"
+    }
+  }
+}

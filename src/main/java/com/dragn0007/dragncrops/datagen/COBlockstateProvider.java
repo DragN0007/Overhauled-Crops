@@ -69,6 +69,11 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_RED_POTATOES.get(), models().cross(COBlocks.WILD_RED_POTATOES.getId().getPath(),
                 wildPlantTexture("red_potatoes_stage3")).renderType("cutout"));
 
+//        createCrop((OCropBlock) COBlocks.CORN.get(), "corn", "corn",
+//                0, 1, 2, 3, 4, 5, 6, 7);
+//        simpleBlock(COBlocks.WILD_CORN.get(), models().cross(COBlocks.WILD_CORN.getId().getPath(),
+//                wildPlantTexture("corn_stage7")).renderType("cutout"));
+
     }
 
     public void createCrop(OCropBlock block, String modelNamePrefix, String textureNamePrefix, int... stageMap) {

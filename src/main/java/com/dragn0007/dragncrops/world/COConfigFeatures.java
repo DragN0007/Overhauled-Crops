@@ -4,23 +4,17 @@ package com.dragn0007.dragncrops.world;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
-import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-
-import java.util.List;
 
 public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CARROTS = registerKey("carrots");
@@ -38,23 +32,18 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_POTATOES = registerKey("purple_potatoes");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_POTATOES = registerKey("red_potatoes");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CORN = registerKey("corn");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RYE = registerKey("rye");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
-        register(context, CARROTS, Feature.RANDOM_PATCH,
+        register(context, CORN, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CARROTS.get().defaultBlockState())))));
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CORN.get().defaultBlockState())))));
 
-        register(context, POTATOES, Feature.RANDOM_PATCH,
+        register(context, RYE, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_POTATOES.get().defaultBlockState())))));
-
-        register(context, WHEAT, Feature.RANDOM_PATCH,
-                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_WHEAT.get().defaultBlockState())))));
-
-        register(context, BEETROOTS, Feature.RANDOM_PATCH,
-                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_BEETROOTS.get().defaultBlockState())))));
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_RYE.get().defaultBlockState())))));
 
 
         register(context, BLACKBERRIES, Feature.RANDOM_PATCH,
@@ -93,6 +82,23 @@ public class COConfigFeatures {
         register(context, RED_POTATOES, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(8, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_RED_POTATOES.get().defaultBlockState())))));
+
+
+        register(context, CARROTS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CARROTS.get().defaultBlockState())))));
+
+        register(context, POTATOES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_POTATOES.get().defaultBlockState())))));
+
+        register(context, WHEAT, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_WHEAT.get().defaultBlockState())))));
+
+        register(context, BEETROOTS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_BEETROOTS.get().defaultBlockState())))));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

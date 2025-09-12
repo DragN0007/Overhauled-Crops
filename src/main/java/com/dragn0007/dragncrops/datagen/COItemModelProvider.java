@@ -46,6 +46,10 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.OREGANO);
         simpleItem(COItems.ROSEMARY);
 
+        simpleItem(COItems.CORN_SEEDS);
+        simpleItem(COItems.RICE_SEEDS);
+        simpleItem(COItems.RYE_SEEDS);
+
         simpleItem(COItems.FLAIL);
         simpleItem(COItems.GRAIN);
         simpleItem(COItems.FLOUR);
@@ -67,6 +71,18 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_JAM);
         simpleItem(COItems.STRAWBERRY_JAM);
         simpleItem(COItems.WATERMELON_JAM);
+
+        simpleItem(COItems.APPLE_TART);
+        simpleItem(COItems.BLACKBERRY_TART);
+        simpleItem(COItems.BLUEBERRY_TART);
+        simpleItem(COItems.CANTALOUPE_TART);
+        simpleItem(COItems.CHERRY_TART);
+        simpleItem(COItems.CRANBERRY_TART);
+        simpleItem(COItems.MANGO_TART);
+        simpleItem(COItems.MELON_TART);
+        simpleItem(COItems.RASPBERRY_TART);
+        simpleItem(COItems.STRAWBERRY_TART);
+        simpleItem(COItems.WATERMELON_TART);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

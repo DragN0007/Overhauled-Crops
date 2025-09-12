@@ -1,7 +1,7 @@
 package com.dragn0007.dragncrops.blocks.crop.base;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.tags.BlockTags;
+import net.minecraft.util.Mth;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -38,8 +38,8 @@ public class OCropBlock extends CropBlock {
         stateBuilder.add(AGE);
     }
 
-    public int getBonemealAgeIncrease(Level level) {
-        return super.getBonemealAgeIncrease(level) / 7;
+    protected int getBonemealAgeIncrease(Level p_52262_) {
+        return Mth.nextInt(p_52262_.random, 2, 5);
     }
 
     @Override
