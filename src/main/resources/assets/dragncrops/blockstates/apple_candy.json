@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/candy/apple_candy",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/candy/apple_candy"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/candy/apple_candy",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/candy/apple_candy",
+      "y": 270
+    }
+  }
+}

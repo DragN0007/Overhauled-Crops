@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
@@ -32,10 +33,28 @@ public class BiomeHitter {
 
     public static final ResourceKey<BiomeModifier> CORN = registerKey("corn");
     public static final ResourceKey<BiomeModifier> RYE = registerKey("rye");
+    public static final ResourceKey<BiomeModifier> CRANBERRIES = registerKey("cranberries");
+    public static final ResourceKey<BiomeModifier> STRAWBERRIES = registerKey("strawberries");
+    public static final ResourceKey<BiomeModifier> PEANUTS = registerKey("peanuts");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
+
+        context.register(PEANUTS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.PEANUTS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(STRAWBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.STRAWBERRIES)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(CRANBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_COLD_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.CRANBERRIES)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(CORN, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),

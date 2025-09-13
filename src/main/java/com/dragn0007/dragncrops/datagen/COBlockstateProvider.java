@@ -69,6 +69,21 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_RED_POTATOES.get(), models().cross(COBlocks.WILD_RED_POTATOES.getId().getPath(),
                 wildPlantTexture("red_potatoes_stage3")).renderType("cutout"));
 
+        createCrop((OCropBlock) COBlocks.CRANBERRIES.get(), "cranberries", "cranberries",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_CRANBERRIES.get(), models().cross(COBlocks.WILD_CRANBERRIES.getId().getPath(),
+                wildPlantTexture("cranberries_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.STRAWBERRIES.get(), "strawberries", "strawberries",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_STRAWBERRIES.get(), models().cross(COBlocks.WILD_CRANBERRIES.getId().getPath(),
+                wildPlantTexture("strawberries_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.PEANUTS.get(), "peanuts", "peanuts",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_PEANUTS.get(), models().cross(COBlocks.WILD_PEANUTS.getId().getPath(),
+                wildPlantTexture("peanuts_stage3")).renderType("cutout"));
+
 //        createCrop((OCropBlock) COBlocks.CORN.get(), "corn", "corn",
 //                0, 1, 2, 3, 4, 5, 6, 7);
 //        simpleBlock(COBlocks.WILD_CORN.get(), models().cross(COBlocks.WILD_CORN.getId().getPath(),

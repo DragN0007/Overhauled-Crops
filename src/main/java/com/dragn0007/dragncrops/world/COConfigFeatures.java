@@ -15,6 +15,7 @@ import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfigur
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CARROTS = registerKey("carrots");
@@ -34,8 +35,23 @@ public class COConfigFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> CORN = registerKey("corn");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RYE = registerKey("rye");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRANBERRIES = registerKey("cranberries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> STRAWBERRIES = registerKey("strawberries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PEANUTS = registerKey("peanuts");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+
+        register(context, PEANUTS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_PEANUTS.get().defaultBlockState())))));
+
+        register(context, STRAWBERRIES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_STRAWBERRIES.get().defaultBlockState())))));
+
+        register(context, CRANBERRIES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(8, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CRANBERRIES.get().defaultBlockState())))));
 
         register(context, CORN, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,

@@ -31,94 +31,115 @@ public class COPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> CORN = registerKey("corn");
     public static final ResourceKey<PlacedFeature> RYE = registerKey("rye");
+    public static final ResourceKey<PlacedFeature> CRANBERRIES = registerKey("cranberries");
+    public static final ResourceKey<PlacedFeature> STRAWBERRIES = registerKey("strawberries");
+    public static final ResourceKey<PlacedFeature> PEANUTS = registerKey("peanuts");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
+        register(context, PEANUTS, configuredFeatures.getOrThrow(COConfigFeatures.PEANUTS),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, STRAWBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.STRAWBERRIES),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, CRANBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.CRANBERRIES),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
         register(context, CORN, configuredFeatures.getOrThrow(COConfigFeatures.CORN),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, RYE, configuredFeatures.getOrThrow(COConfigFeatures.RYE),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
 
         register(context, BLACKBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.BLACKBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, BLUEBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.BLUEBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, RASPBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.RASPBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, WHITE_RASPBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.WHITE_RASPBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
 
         register(context, PURPLE_CARROTS, configuredFeatures.getOrThrow(COConfigFeatures.PURPLE_CARROTS),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, YELLOW_CARROTS, configuredFeatures.getOrThrow(COConfigFeatures.YELLOW_CARROTS),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, PURPLE_POTATOES, configuredFeatures.getOrThrow(COConfigFeatures.PURPLE_POTATOES),
-                List.of(RarityFilter.onAverageOnceEvery(24),
+                List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, RED_POTATOES, configuredFeatures.getOrThrow(COConfigFeatures.RED_POTATOES),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
 
         register(context, CARROTS, configuredFeatures.getOrThrow(COConfigFeatures.CARROTS),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, POTATOES, configuredFeatures.getOrThrow(COConfigFeatures.POTATOES),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, WHEAT, configuredFeatures.getOrThrow(COConfigFeatures.WHEAT),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
         register(context, BEETROOTS, configuredFeatures.getOrThrow(COConfigFeatures.BEETROOTS),
-                List.of(RarityFilter.onAverageOnceEvery(16),
+                List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));

@@ -6,6 +6,10 @@ import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -121,7 +125,7 @@ public class ForgeEvent {
 
         if (itemStack.is(Items.APPLE)) {
             BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
-            if (level.isEmptyBlock(blockPos)) {
+            if (level.isEmptyBlock(blockPos) && !(state.getBlock() instanceof AppleBlock)) {
                 if (!level.isClientSide) {
                     BlockState blockState = COBlocks.RED_APPLE.get().defaultBlockState().setValue(AppleBlock.APPLES, Integer.valueOf(1))
                             .setValue(AppleBlock.WATERLOGGED, Boolean.valueOf(false));
@@ -137,7 +141,9 @@ public class ForgeEvent {
             if (state.getBlock() instanceof AppleBlock) {
                 Property<Integer> property = getAppleProperty(state, "apples");
                 if (state.getValue(property) < 16) {
-                    level.setBlockAndUpdate(pos, state.setValue(property, +1));
+                    level.setBlockAndUpdate(pos, state.setValue(property, state.getValue(property) + 1));
+                    RandomSource random = RandomSource.create();
+                    level.playLocalSound(pos, SoundEvents.STONE_PLACE, SoundSource.BLOCKS, 1.0F, 0.5F + 0.2F * random.nextFloat(), false);
                     if (!player.isCreative()) {
                         itemStack.shrink(1);
                     }

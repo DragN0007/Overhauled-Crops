@@ -32,6 +32,9 @@ public class COItemGroup {
                         output.accept(COItems.CORN.get());
                         output.accept(COItems.RICE.get());
                         output.accept(COItems.RYE.get());
+                        output.accept(Items.MELON_SLICE);
+                        output.accept(COItems.CANTALOUPE_SLICE.get());
+                        output.accept(COItems.HONEYDEW_SLICE.get());
                         output.accept(COItems.BLACKBERRY.get());
                         output.accept(COItems.BLUEBERRY.get());
                         output.accept(COItems.RASPBERRY.get());
@@ -88,6 +91,18 @@ public class COItemGroup {
                         output.accept(COItems.RASPBERRY_TART.get());
                         output.accept(COItems.STRAWBERRY_TART.get());
                         output.accept(COItems.WATERMELON_TART.get());
+
+                        output.accept(COItems.APPLE_CANDY.get());
+                        output.accept(COItems.BLACKBERRY_CANDY.get());
+                        output.accept(COItems.BLUEBERRY_CANDY.get());
+                        output.accept(COItems.CANTALOUPE_CANDY.get());
+                        output.accept(COItems.CHERRY_CANDY.get());
+                        output.accept(COItems.CRANBERRY_CANDY.get());
+                        output.accept(COItems.MANGO_CANDY.get());
+                        output.accept(COItems.MELON_CANDY.get());
+                        output.accept(COItems.RASPBERRY_CANDY.get());
+                        output.accept(COItems.STRAWBERRY_CANDY.get());
+                        output.accept(COItems.WATERMELON_CANDY.get());
 
                     }).build());
 

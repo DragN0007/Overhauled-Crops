@@ -1,7 +1,9 @@
 {
   "itemGroup.overhauled_crops": "Overhauled Crops",
 
+  "item.dragncrops.flail": "Flail",
 
+  "item.minecraft.melon_slice": "Watermelon Slice",
   "item.minecraft.apple": "Red Apple",
   "item.dragncrops.yellow_apple": "Yellow Apple",
   "item.dragncrops.green_apple": "Green Apple",
@@ -22,6 +24,8 @@
   "item.dragncrops.rice": "Rice",
   "item.dragncrops.rye": "Rye",
   "item.dragncrops.sugar_beet": "Sugar Beet",
+  "item.dragncrops.cantaloupe_slice": "Cantaloupe Slice",
+  "item.dragncrops.honeydew_slice": "Honeydew Slice",
   "item.dragncrops.cherries": "Cherries",
   "item.dragncrops.mango": "Mango",
   "item.dragncrops.coconut": "Coconut",
@@ -34,6 +38,7 @@
   "item.dragncrops.rye_seeds": "Rye Seeds",
   "item.dragncrops.rice_seeds": "Rice Seeds",
 
+  "block.minecraft.melon": "Watermelon",
   "block.dragncrops.red_apple": "Red Apple Basket",
   "block.dragncrops.yellow_apple": "Yellow Apple Basket",
   "block.dragncrops.green_apple": "Green Apple Basket",
@@ -50,6 +55,8 @@
   "block.dragncrops.peanuts": "Peanuts",
   "block.dragncrops.cucumbers": "Cucumbers",
   "block.dragncrops.garlic": "Garlic",
+  "block.dragncrops.cantaloupe": "Cantaloupe",
+  "block.dragncrops.honeydew": "Honeydew",
   "block.dragncrops.corn": "Corn",
   "block.dragncrops.rice": "Rice",
   "block.dragncrops.rye": "Rye",
@@ -158,8 +165,38 @@
   "block.dragncrops.watermelon_tart": "Watermelon Tart",
 
 
+  "item.dragncrops.apple_candy": "Apple Candy",
+  "item.dragncrops.blackberry_candy": "Blackberry Candy",
+  "item.dragncrops.blueberry_candy": "Blueberry Candy",
+  "item.dragncrops.cantaloupe_candy": "Cantaloupe Candy",
+  "item.dragncrops.cherry_candy": "Cherry Candy",
+  "item.dragncrops.cranberry_candy": "Cranberry Candy",
+  "item.dragncrops.mango_candy": "Mango Candy",
+  "item.dragncrops.melon_candy": "Melon Candy",
+  "item.dragncrops.raspberry_candy": "Raspberry Candy",
+  "item.dragncrops.strawberry_candy": "Strawberry Candy",
+  "item.dragncrops.watermelon_candy": "Watermelon Candy",
+
+  "block.dragncrops.apple_candy": "Apple Candy",
+  "block.dragncrops.blackberry_candy": "Blackberry Candy",
+  "block.dragncrops.blueberry_candy": "Blueberry Candy",
+  "block.dragncrops.cantaloupe_candy": "Cantaloupe Candy",
+  "block.dragncrops.cherry_candy": "Cherry Candy",
+  "block.dragncrops.cranberry_candy": "Cranberry Candy",
+  "block.dragncrops.mango_candy": "Mango Candy",
+  "block.dragncrops.melon_candy": "Melon Candy",
+  "block.dragncrops.raspberry_candy": "Raspberry Candy",
+  "block.dragncrops.strawberry_candy": "Strawberry Candy",
+  "block.dragncrops.watermelon_candy": "Watermelon Candy",
+
+
+
+  "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
   "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
   "config.jade.plugin_dragncrops.flail_hint": "Flail Hint",
-  "config.jade.plugin_dragncrops.jars": "Amount of Jars in Stack/ Crate",
-  "config.jade.plugin_dragncrops.apples": "Amount of Apples in Basket"
+  "config.jade.plugin_dragncrops.jars": "Amount of Jars in Stacks/ Crates",
+  "config.jade.plugin_dragncrops.apples": "Amount of Apples in Baskets",
+  "config.jade.plugin_dragncrops.candies": "Amount of Candies in Candy Bags",
+  "tooltip.dragncrops.placeable.tooltip": "Placeable",
+  "tooltip.dragncrops.grain.tooltip": "Can be placed for grain production."
 }

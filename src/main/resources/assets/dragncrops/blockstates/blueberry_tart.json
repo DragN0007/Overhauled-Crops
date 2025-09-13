@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dragncrops:block/blueberry_tart"
+      "model": "dragncrops:block/tart/blueberry_tart"
     }
   }
 }

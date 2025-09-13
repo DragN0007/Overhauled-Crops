@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "dragncrops:block/watermelon_tart"
+      "model": "dragncrops:block/tart/watermelon_tart"
     }
   }
 }
