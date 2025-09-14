@@ -40,6 +40,9 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GARLIC = registerKey("garlic");
     public static final ResourceKey<PlacedFeature> RICE = registerKey("rice");
     public static final ResourceKey<PlacedFeature> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<PlacedFeature> CILANTRO = registerKey("cilantro");
+    public static final ResourceKey<PlacedFeature> OREGANO = registerKey("oregano");
+    public static final ResourceKey<PlacedFeature> ROSEMARY = registerKey("rosemary");
     public static final ResourceKey<PlacedFeature> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<PlacedFeature> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<PlacedFeature> GREEN_APPLE_TREE = registerKey("green_apple_tree");
@@ -61,6 +64,24 @@ public class COPlacedFeatures {
                         COBlocks.GREEN_APPLE_SAPLING.get()));
 
         register(context, SUGAR_BEETS, configuredFeatures.getOrThrow(COConfigFeatures.SUGAR_BEETS),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, CILANTRO, configuredFeatures.getOrThrow(COConfigFeatures.CILANTRO),
+                List.of(RarityFilter.onAverageOnceEvery(64),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, OREGANO, configuredFeatures.getOrThrow(COConfigFeatures.OREGANO),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, ROSEMARY, configuredFeatures.getOrThrow(COConfigFeatures.ROSEMARY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,

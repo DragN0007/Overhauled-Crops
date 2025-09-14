@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-
+    "dragncrops:green_apple_leaves",
+    "dragncrops:rye",
+    "dragncrops:cranberries",
+    "dragncrops:purple_carrots",
+    "dragncrops:purple_potatoes",
+    "dragncrops:sugar_beets"
   ]
 }

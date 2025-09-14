@@ -1,21 +1,13 @@
 {
   "replace": false,
   "values": [
-    "minecraft:melon_slice",
     "minecraft:sweet_berries",
     "minecraft:glow_berries",
-    "#forge:apples",
     "dragncrops:blackberry",
     "dragncrops:blueberry",
     "dragncrops:raspberry",
     "dragncrops:white_raspberry",
     "dragncrops:strawberry",
-    "dragncrops:cranberry",
-    "dragncrops:cantaloupe",
-    "dragncrops:honeydew",
-    "dragncrops:mango",
-    "dragncrops:cherries",
-    "dragncrops:coconut",
-    "dragncrops:lime"
+    "dragncrops:cranberry"
   ]
 }

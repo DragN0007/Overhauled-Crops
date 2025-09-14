@@ -1,5 +1,15 @@
 {
   "replace": false,
   "values": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot",
+    "dragncrops:corn",
+    "dragncrops:cucumber",
+    "dragncrops:garlic",
+    "dragncrops:purple_carrot",
+    "dragncrops:yellow_carrot",
+    "dragncrops:purple_potato",
+    "dragncrops:red_potato"
   ]
 }

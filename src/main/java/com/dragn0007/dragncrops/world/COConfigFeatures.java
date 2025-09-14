@@ -48,6 +48,9 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GARLIC = registerKey("garlic");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RICE = registerKey("rice");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CILANTRO = registerKey("cilantro");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OREGANO = registerKey("oregano");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ROSEMARY = registerKey("rosemary");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_APPLE_TREE = registerKey("green_apple_tree");
@@ -74,6 +77,18 @@ public class COConfigFeatures {
                 BlockStateProvider.simple(COBlocks.GREEN_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, CILANTRO, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CILANTRO.get().defaultBlockState())))));
+
+        register(context, OREGANO, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_OREGANO.get().defaultBlockState())))));
+
+        register(context, ROSEMARY, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_ROSEMARY.get().defaultBlockState())))));
 
         register(context, SUGAR_BEETS, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
