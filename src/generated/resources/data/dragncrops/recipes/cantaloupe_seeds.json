@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:cantaloupe_slice"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:cantaloupe_seeds"
+  }
+}

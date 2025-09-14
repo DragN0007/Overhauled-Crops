@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:yellow_apple"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:yellow_apple_seeds"
+  }
+}

@@ -14,7 +14,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "2"
+                    "candies": "2"
                   }
                 }
               ],
@@ -28,7 +28,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "3"
+                    "candies": "3"
                   }
                 }
               ],
@@ -42,7 +42,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "4"
+                    "candies": "4"
                   }
                 }
               ],
@@ -56,7 +56,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "5"
+                    "candies": "5"
                   }
                 }
               ],
@@ -70,7 +70,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "6"
+                    "candies": "6"
                   }
                 }
               ],
@@ -84,7 +84,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "7"
+                    "candies": "7"
                   }
                 }
               ],
@@ -98,7 +98,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "8"
+                    "candies": "8"
                   }
                 }
               ],
@@ -112,7 +112,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "9"
+                    "candies": "9"
                   }
                 }
               ],
@@ -126,7 +126,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "10"
+                    "candies": "10"
                   }
                 }
               ],
@@ -140,7 +140,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "11"
+                    "candies": "11"
                   }
                 }
               ],
@@ -154,7 +154,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "12"
+                    "candies": "12"
                   }
                 }
               ],
@@ -168,7 +168,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "13"
+                    "candies": "13"
                   }
                 }
               ],
@@ -182,7 +182,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "14"
+                    "candies": "14"
                   }
                 }
               ],
@@ -196,7 +196,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "15"
+                    "candies": "15"
                   }
                 }
               ],
@@ -210,7 +210,7 @@
                   "block": "dragncrops:cranberry_candy",
                   "condition": "minecraft:block_state_property",
                   "properties": {
-                    "jars": "16"
+                    "candies": "16"
                   }
                 }
               ],

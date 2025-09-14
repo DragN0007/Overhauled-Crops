@@ -1,13 +1,9 @@
 package com.dragn0007.dragncrops.client.event;
 
-import com.dragn0007.dragncrops.CropOverhaul;
-import com.dragn0007.dragncrops.blocks.COBlocks;
-import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntityRenderer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

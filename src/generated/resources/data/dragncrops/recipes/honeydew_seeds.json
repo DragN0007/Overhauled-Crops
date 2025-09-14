@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:honeydew_slice"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:honeydew_seeds"
+  }
+}

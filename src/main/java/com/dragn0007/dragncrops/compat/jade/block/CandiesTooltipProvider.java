@@ -1,7 +1,6 @@
 package com.dragn0007.dragncrops.compat.jade.block;
 
 import com.dragn0007.dragncrops.CropOverhaul;
-import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
 import com.dragn0007.dragncrops.blocks.custom.CandyBlock;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;

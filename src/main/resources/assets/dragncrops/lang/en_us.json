@@ -26,6 +26,8 @@
   "item.dragncrops.sugar_beet": "Sugar Beet",
   "item.dragncrops.cantaloupe_slice": "Cantaloupe Slice",
   "item.dragncrops.honeydew_slice": "Honeydew Slice",
+  "item.dragncrops.cantaloupe": "Cantaloupe",
+  "item.dragncrops.honeydew": "Honeydew",
   "item.dragncrops.cherries": "Cherries",
   "item.dragncrops.mango": "Mango",
   "item.dragncrops.coconut": "Coconut",
@@ -34,9 +36,12 @@
   "item.dragncrops.oregano": "Oregano",
   "item.dragncrops.rosemary": "Rosemary",
 
+  "item.minecraft.melon_seeds": "Watermelon Seeds",
   "item.dragncrops.corn_seeds": "Corn Seeds",
   "item.dragncrops.rye_seeds": "Rye Seeds",
   "item.dragncrops.rice_seeds": "Rice Seeds",
+  "item.dragncrops.cantaloupe_seeds": "Cantaloupe Seeds",
+  "item.dragncrops.honeydew_seeds": "Honeydew Seeds",
 
   "block.minecraft.melon": "Watermelon",
   "block.dragncrops.red_apple": "Red Apple Basket",
@@ -90,15 +95,22 @@
   "block.dragncrops.wild_oregano": "Wild Oregano",
   "block.dragncrops.wild_rosemary": "Wild Rosemary",
 
-
-  "item.dragncrops.grain": "Grain",
-  "block.dragncrops.flour": "Flour",
-  "item.dragncrops.flour": "Flour",
+  "block.dragncrops.red_apple_leaves": "Red Apple Leaves",
+  "block.dragncrops.yellow_apple_leaves": "Yellow Apple Leaves",
+  "block.dragncrops.green_apple_leaves": "Green Apple Leaves",
+  "block.dragncrops.red_apple_sapling": "Red Apple Sapling",
+  "block.dragncrops.yellow_apple_sapling": "Yellow Apple Sapling",
+  "block.dragncrops.green_apple_sapling": "Green Apple Sapling",
 
   "block.dragncrops.wheat_grain": "Wheat",
   "block.dragncrops.rye_grain": "Rye",
   "block.dragncrops.rice_grain": "Rice",
   "block.dragncrops.corn_grain": "Corn",
+
+  "item.dragncrops.grain": "Grain",
+  "block.dragncrops.flour": "Flour",
+  "item.dragncrops.flour": "Flour",
+
 
   "item.minecraft.bread": "Wheat Bread",
   "item.dragncrops.blueberry_bread": "Blueberry Bread",

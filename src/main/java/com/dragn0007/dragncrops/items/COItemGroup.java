@@ -35,6 +35,8 @@ public class COItemGroup {
                         output.accept(Items.MELON_SLICE);
                         output.accept(COItems.CANTALOUPE_SLICE.get());
                         output.accept(COItems.HONEYDEW_SLICE.get());
+                        output.accept(COItems.CANTALOUPE.get());
+                        output.accept(COItems.HONEYDEW.get());
                         output.accept(COItems.BLACKBERRY.get());
                         output.accept(COItems.BLUEBERRY.get());
                         output.accept(COItems.RASPBERRY.get());
@@ -56,6 +58,11 @@ public class COItemGroup {
                         output.accept(COItems.CORN_SEEDS.get());
                         output.accept(COItems.RICE_SEEDS.get());
                         output.accept(COItems.RYE_SEEDS.get());
+                        output.accept(COItems.CANTALOUPE_SEEDS.get());
+                        output.accept(COItems.HONEYDEW_SEEDS.get());
+                        output.accept(COItems.RED_APPLE_SEEDS.get());
+                        output.accept(COItems.YELLOW_APPLE_SEEDS.get());
+                        output.accept(COItems.GREEN_APPLE_SEEDS.get());
 
                         output.accept(COItems.FLAIL.get());
                         output.accept(COItems.GRAIN.get());

@@ -23,7 +23,7 @@
           "block": "dragncrops:peanuts",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "age": "8"
+            "age": "7"
           }
         }
       ],

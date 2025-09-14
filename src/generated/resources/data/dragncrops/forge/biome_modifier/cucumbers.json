@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_wet/overworld",
+  "features": "dragncrops:cucumbers",
+  "step": "vegetal_decoration"
+}

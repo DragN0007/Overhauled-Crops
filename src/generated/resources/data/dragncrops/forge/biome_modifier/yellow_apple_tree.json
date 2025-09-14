@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_hot/overworld",
+  "features": "dragncrops:yellow_apple_tree",
+  "step": "vegetal_decoration"
+}

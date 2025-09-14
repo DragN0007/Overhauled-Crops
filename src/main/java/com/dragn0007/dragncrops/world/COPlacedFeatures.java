@@ -1,11 +1,13 @@
 package com.dragn0007.dragncrops.world;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.COBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -34,10 +36,53 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> CRANBERRIES = registerKey("cranberries");
     public static final ResourceKey<PlacedFeature> STRAWBERRIES = registerKey("strawberries");
     public static final ResourceKey<PlacedFeature> PEANUTS = registerKey("peanuts");
+    public static final ResourceKey<PlacedFeature> CUCUMBERS = registerKey("cucumbers");
+    public static final ResourceKey<PlacedFeature> GARLIC = registerKey("garlic");
+    public static final ResourceKey<PlacedFeature> RICE = registerKey("rice");
+    public static final ResourceKey<PlacedFeature> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<PlacedFeature> RED_APPLE_TREE = registerKey("red_apple_tree");
+    public static final ResourceKey<PlacedFeature> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
+    public static final ResourceKey<PlacedFeature> GREEN_APPLE_TREE = registerKey("green_apple_tree");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        register(context, RED_APPLE_TREE, configuredFeatures.getOrThrow(COConfigFeatures.RED_APPLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.RED_APPLE_SAPLING.get()));
+
+        register(context, YELLOW_APPLE_TREE, configuredFeatures.getOrThrow(COConfigFeatures.YELLOW_APPLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.YELLOW_APPLE_SAPLING.get()));
+
+        register(context, GREEN_APPLE_TREE, configuredFeatures.getOrThrow(COConfigFeatures.GREEN_APPLE_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.GREEN_APPLE_SAPLING.get()));
+
+        register(context, SUGAR_BEETS, configuredFeatures.getOrThrow(COConfigFeatures.SUGAR_BEETS),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, RICE, configuredFeatures.getOrThrow(COConfigFeatures.RICE),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, GARLIC, configuredFeatures.getOrThrow(COConfigFeatures.GARLIC),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, CUCUMBERS, configuredFeatures.getOrThrow(COConfigFeatures.CUCUMBERS),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
 
         register(context, PEANUTS, configuredFeatures.getOrThrow(COConfigFeatures.PEANUTS),
                 List.of(RarityFilter.onAverageOnceEvery(32),

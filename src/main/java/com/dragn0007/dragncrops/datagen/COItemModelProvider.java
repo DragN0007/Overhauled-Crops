@@ -40,6 +40,8 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.SUGAR_BEET);
         simpleItem(COItems.CANTALOUPE_SLICE);
         simpleItem(COItems.HONEYDEW_SLICE);
+        simpleItem(COItems.CANTALOUPE);
+        simpleItem(COItems.HONEYDEW);
         simpleItem(COItems.CHERRIES);
         simpleItem(COItems.MANGO);
         simpleItem(COItems.COCONUT);
@@ -51,6 +53,11 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.CORN_SEEDS);
         simpleItem(COItems.RICE_SEEDS);
         simpleItem(COItems.RYE_SEEDS);
+        simpleItem(COItems.CANTALOUPE_SEEDS);
+        simpleItem(COItems.HONEYDEW_SEEDS);
+        simpleItem(COItems.RED_APPLE_SEEDS);
+        simpleItem(COItems.YELLOW_APPLE_SEEDS);
+        simpleItem(COItems.GREEN_APPLE_SEEDS);
 
         simpleItem(COItems.FLAIL);
         simpleItem(COItems.GRAIN);

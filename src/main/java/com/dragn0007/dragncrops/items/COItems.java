@@ -2,7 +2,6 @@ package com.dragn0007.dragncrops.items;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
-import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerItem;
 import com.dragn0007.dragncrops.items.custom.FlailItem;
 import com.dragn0007.dragncrops.items.custom.GrainItem;
 import com.dragn0007.dragncrops.items.custom.PlaceableItem;
@@ -66,9 +65,11 @@ public class COItems {
             () -> new ItemNameBlockItem(COBlocks.PEANUTS.get(),
                     (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.6F).build())));
+            () -> new ItemNameBlockItem(COBlocks.CUCUMBERS.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> GARLIC = ITEMS.register("garlic",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build())));
+            () -> new ItemNameBlockItem(COBlocks.GARLIC.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> CORN = ITEMS.register("corn",
             () -> new GrainItem(COBlocks.CORN_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> RICE = ITEMS.register("rice",
@@ -76,12 +77,16 @@ public class COItems {
     public static final RegistryObject<Item> RYE = ITEMS.register("rye",
             () -> new GrainItem(COBlocks.RYE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> SUGAR_BEET = ITEMS.register("sugar_beet",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
-
+            () -> new ItemNameBlockItem(COBlocks.SUGAR_BEETS.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
     public static final RegistryObject<Item> CANTALOUPE_SLICE = ITEMS.register("cantaloupe_slice",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
     public static final RegistryObject<Item> HONEYDEW_SLICE = ITEMS.register("honeydew_slice",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
+    public static final RegistryObject<Item> CANTALOUPE = ITEMS.register("cantaloupe",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.4F).build())));
+    public static final RegistryObject<Item> HONEYDEW = ITEMS.register("honeydew",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.4F).build())));
     public static final RegistryObject<Item> CHERRIES = ITEMS.register("cherries",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
     public static final RegistryObject<Item> MANGO = ITEMS.register("mango",
@@ -100,11 +105,21 @@ public class COItems {
 
     //Seeds
     public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
-            () -> new ItemNameBlockItem(COBlocks.CORN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
+            () -> new ItemNameBlockItem(COBlocks.CORN.get(), (new Item.Properties())));
     public static final RegistryObject<Item> RICE_SEEDS = ITEMS.register("rice_seeds",
-            () -> new ItemNameBlockItem(COBlocks.RICE_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
+            () -> new ItemNameBlockItem(COBlocks.RICE.get(), (new Item.Properties())));
     public static final RegistryObject<Item> RYE_SEEDS = ITEMS.register("rye_seeds",
-            () -> new ItemNameBlockItem(COBlocks.RYE.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
+            () -> new ItemNameBlockItem(COBlocks.RYE.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> CANTALOUPE_SEEDS = ITEMS.register("cantaloupe_seeds",
+            () -> new ItemNameBlockItem(COBlocks.CANTALOUPE.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> HONEYDEW_SEEDS = ITEMS.register("honeydew_seeds",
+            () -> new ItemNameBlockItem(COBlocks.HONEYDEW.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> RED_APPLE_SEEDS = ITEMS.register("red_apple_seeds",
+            () -> new ItemNameBlockItem(COBlocks.RED_APPLE_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> YELLOW_APPLE_SEEDS = ITEMS.register("yellow_apple_seeds",
+            () -> new ItemNameBlockItem(COBlocks.YELLOW_APPLE_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> GREEN_APPLE_SEEDS = ITEMS.register("green_apple_seeds",
+            () -> new ItemNameBlockItem(COBlocks.GREEN_APPLE_SAPLING.get(), (new Item.Properties())));
 
 
     //Ingredients

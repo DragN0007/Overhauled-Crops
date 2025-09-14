@@ -16,7 +16,7 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "dragncrops:wild_rye",
+                  "block": "dragncrops:wild_strawberries",
                   "condition": "minecraft:block_state_property"
                 }
               ],
@@ -46,7 +46,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "dragncrops:wild_rye",
+          "block": "dragncrops:wild_strawberries",
           "condition": "minecraft:block_state_property"
         }
       ],

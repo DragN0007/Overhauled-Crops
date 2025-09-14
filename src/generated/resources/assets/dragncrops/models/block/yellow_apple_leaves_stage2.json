@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "dragncrops:block/yellow_apple_leaves_stage2"
+  }
+}

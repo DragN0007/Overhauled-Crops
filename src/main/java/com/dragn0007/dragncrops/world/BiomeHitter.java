@@ -8,7 +8,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.levelgen.GenerationStep;
-import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
@@ -36,10 +35,52 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> CRANBERRIES = registerKey("cranberries");
     public static final ResourceKey<BiomeModifier> STRAWBERRIES = registerKey("strawberries");
     public static final ResourceKey<BiomeModifier> PEANUTS = registerKey("peanuts");
+    public static final ResourceKey<BiomeModifier> CUCUMBERS = registerKey("cucumbers");
+    public static final ResourceKey<BiomeModifier> GARLIC = registerKey("garlic");
+    public static final ResourceKey<BiomeModifier> RICE = registerKey("rice");
+    public static final ResourceKey<BiomeModifier> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<BiomeModifier> RED_APPLE_TREE = registerKey("red_apple_tree");
+    public static final ResourceKey<BiomeModifier> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
+    public static final ResourceKey<BiomeModifier> GREEN_APPLE_TREE = registerKey("green_apple_tree");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
+
+        context.register(RED_APPLE_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.RED_APPLE_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(YELLOW_APPLE_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.YELLOW_APPLE_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(GREEN_APPLE_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_COLD_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.GREEN_APPLE_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SUGAR_BEETS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.SUGAR_BEETS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(RICE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.RICE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(GARLIC, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.GARLIC)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(CUCUMBERS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.CUCUMBERS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(PEANUTS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),

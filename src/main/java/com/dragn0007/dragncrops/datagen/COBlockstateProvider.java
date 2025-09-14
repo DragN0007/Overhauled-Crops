@@ -4,6 +4,7 @@ import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
+import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -76,13 +77,58 @@ public class COBlockstateProvider extends BlockStateProvider {
 
         createCrop((OCropBlock) COBlocks.STRAWBERRIES.get(), "strawberries", "strawberries",
                 0, 0, 1, 1, 2, 2, 2, 3);
-        simpleBlock(COBlocks.WILD_STRAWBERRIES.get(), models().cross(COBlocks.WILD_CRANBERRIES.getId().getPath(),
+        simpleBlock(COBlocks.WILD_STRAWBERRIES.get(), models().cross(COBlocks.WILD_STRAWBERRIES.getId().getPath(),
                 wildPlantTexture("strawberries_stage3")).renderType("cutout"));
 
         createCrop((OCropBlock) COBlocks.PEANUTS.get(), "peanuts", "peanuts",
                 0, 0, 1, 1, 2, 2, 2, 3);
         simpleBlock(COBlocks.WILD_PEANUTS.get(), models().cross(COBlocks.WILD_PEANUTS.getId().getPath(),
                 wildPlantTexture("peanuts_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.CUCUMBERS.get(), "cucumbers", "cucumbers",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_CUCUMBERS.get(), models().cross(COBlocks.WILD_CUCUMBERS.getId().getPath(),
+                wildPlantTexture("cucumbers_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.GARLIC.get(), "garlic", "garlic",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_GARLIC.get(), models().cross(COBlocks.WILD_GARLIC.getId().getPath(),
+                wildPlantTexture("garlic_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.RICE.get(), "rice", "rice",
+                0, 0, 1, 1, 2, 2, 3, 4);
+        simpleBlock(COBlocks.WILD_RICE.get(), models().cross(COBlocks.WILD_RICE.getId().getPath(),
+                wildPlantTexture("rice_stage4")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.SUGAR_BEETS.get(), "sugar_beets", "sugar_beets",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_SUGAR_BEETS.get(), models().cross(COBlocks.WILD_SUGAR_BEETS.getId().getPath(),
+                wildPlantTexture("sugar_beets_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.CILANTRO.get(), "cilantro", "cilantro",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_CILANTRO.get(), models().cross(COBlocks.WILD_CILANTRO.getId().getPath(),
+                wildPlantTexture("cilantro_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.OREGANO.get(), "oregano", "oregano",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_OREGANO.get(), models().cross(COBlocks.WILD_OREGANO.getId().getPath(),
+                wildPlantTexture("oregano_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.ROSEMARY.get(), "rosemary", "rosemary",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_ROSEMARY.get(), models().cross(COBlocks.WILD_ROSEMARY.getId().getPath(),
+                wildPlantTexture("rosemary_stage3")).renderType("cutout"));
+
+
+        createLeaves((FruitLeaves) COBlocks.RED_APPLE_LEAVES.get(), "red_apple_leaves", "red_apple_leaves",
+                0, 1, 2, 3);
+
+        createLeaves((FruitLeaves) COBlocks.YELLOW_APPLE_LEAVES.get(), "yellow_apple_leaves", "yellow_apple_leaves",
+                0, 1, 2, 3);
+
+        createLeaves((FruitLeaves) COBlocks.GREEN_APPLE_LEAVES.get(), "green_apple_leaves", "green_apple_leaves",
+                0, 1, 2, 3);
 
 //        createCrop((OCropBlock) COBlocks.CORN.get(), "corn", "corn",
 //                0, 1, 2, 3, 4, 5, 6, 7);
@@ -138,6 +184,32 @@ public class COBlockstateProvider extends BlockStateProvider {
 
             return ConfiguredModel.builder()
                     .modelFile(models().cross(modelName, new ResourceLocation(CropOverhaul.MODID, "block/" + texturePath))
+                            .renderType("cutout"))
+                    .build();
+        });
+    }
+
+    public void createLeaves(FruitLeaves block, String modelNamePrefix, String textureNamePrefix, int... stageMap) {
+        Property<Integer> ageProperty = block.getAgeProperty();
+        int maxAge = Collections.max(ageProperty.getPossibleValues());
+
+        if (stageMap == null || stageMap.length == 0) {
+            stageMap = new int[maxAge + 1];
+            for (int i = 0; i <= maxAge; i++) {
+                stageMap[i] = i;
+            }
+        }
+
+        final int[] finalStageMap = stageMap;
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int age = state.getValue(ageProperty);
+            int stage = finalStageMap[age];
+            String modelName = modelNamePrefix + "_stage" + stage;
+            String texturePath = textureNamePrefix + "_stage" + stage;
+
+            return ConfiguredModel.builder()
+                    .modelFile(models().cubeAll(modelName, new ResourceLocation(CropOverhaul.MODID, "block/" + texturePath))
                             .renderType("cutout"))
                     .build();
         });

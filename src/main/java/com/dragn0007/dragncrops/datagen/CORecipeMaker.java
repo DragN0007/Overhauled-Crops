@@ -31,6 +31,85 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(ItemTags.PLANKS).build()))
                 .save(pFinishedRecipeConsumer);
 
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.HONEYDEW_SLICE.get(), 4)
+                .requires(COItems.HONEYDEW.get())
+                .unlockedBy("has_hnyd", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.HONEYDEW.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANTALOUPE_SLICE.get(), 4)
+                .requires(COItems.CANTALOUPE.get())
+                .unlockedBy("has_clpe", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.CANTALOUPE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.HONEYDEW_SEEDS.get(), 1)
+                .requires(COItems.HONEYDEW_SLICE.get())
+                .unlockedBy("has_hnyd_slice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.HONEYDEW_SLICE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANTALOUPE_SEEDS.get(), 1)
+                .requires(COItems.CANTALOUPE_SLICE.get())
+                .unlockedBy("has_clpe_slice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.CANTALOUPE_SLICE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RYE_SEEDS.get(), 1)
+                .requires(COItems.RYE.get())
+                .unlockedBy("has_rye", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.RYE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CORN_SEEDS.get(), 1)
+                .requires(COItems.CORN.get())
+                .unlockedBy("has_corn", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.CORN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RICE_SEEDS.get(), 1)
+                .requires(COItems.RICE.get())
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.RICE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RED_APPLE_SEEDS.get(), 1)
+                .requires(Items.APPLE)
+                .unlockedBy("has_apple", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.APPLE)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.YELLOW_APPLE_SEEDS.get(), 1)
+                .requires(COItems.YELLOW_APPLE.get())
+                .unlockedBy("has_apple", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.YELLOW_APPLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GREEN_APPLE_SEEDS.get(), 1)
+                .requires(COItems.GREEN_APPLE.get())
+                .unlockedBy("has_apple", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GREEN_APPLE.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WHEAT_SEEDS, 1)
+                .requires(Items.WHEAT)
+                .unlockedBy("has_wheat", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.WHEAT)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.FLOUR.get(), 2)
                 .requires(COItems.GRAIN.get())
                 .unlockedBy("has_grain", inventoryTrigger(ItemPredicate.Builder.item()

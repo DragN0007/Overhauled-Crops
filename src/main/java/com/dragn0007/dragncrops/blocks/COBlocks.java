@@ -9,10 +9,14 @@ import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerContainer
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntity;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerItem;
 import com.dragn0007.dragncrops.items.COItems;
+import com.dragn0007.dragncrops.world.tree.GreenAppleTreeGrower;
+import com.dragn0007.dragncrops.world.tree.RedAppleTreeGrower;
+import com.dragn0007.dragncrops.world.tree.YellowAppleTreeGrower;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -86,6 +90,42 @@ public class COBlocks {
             () -> new PeanutBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_PEANUTS = registerBlockWithoutItem("wild_peanuts",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> CUCUMBERS = registerBlockWithoutItem("cucumber",
+            () -> new CucumbersBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_CUCUMBERS = registerBlockWithoutItem("wild_cucumber",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> GARLIC = registerBlockWithoutItem("garlic",
+            () -> new GarlicBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_GARLIC = registerBlockWithoutItem("wild_garlic",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> RICE = registerBlockWithoutItem("rice",
+            () -> new RiceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_RICE = registerBlockWithoutItem("wild_rice",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> SUGAR_BEETS = registerBlockWithoutItem("sugar_beets",
+            () -> new SugarBeetsBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_SUGAR_BEETS = registerBlockWithoutItem("wild_sugar_beets",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> CANTALOUPE = registerBlockWithoutItem("cantaloupe",
+            () -> new CantaloupeBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_CANTALOUPE = registerBlockWithoutItem("wild_cantaloupe",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> HONEYDEW = registerBlockWithoutItem("honeydew",
+            () -> new HoneydewBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_HONEYDEW = registerBlockWithoutItem("wild_honeydew",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> CILANTRO = registerBlockWithoutItem("cilantro",
+            () -> new CilantroBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_CILANTRO = registerBlockWithoutItem("wild_cilantro",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> OREGANO = registerBlockWithoutItem("oregano",
+            () -> new OreganoBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_OREGANO = registerBlockWithoutItem("wild_oregano",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> ROSEMARY = registerBlockWithoutItem("rosemary",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_ROSEMARY = registerBlockWithoutItem("wild_rosemary",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
@@ -147,6 +187,18 @@ public class COBlocks {
     public static final RegistryObject<Block> STRAWBERRY_CANDY = registerBlockWithoutItem("strawberry_candy", CandyBlock::new);
     public static final RegistryObject<Block> WATERMELON_CANDY = registerBlockWithoutItem("watermelon_candy", CandyBlock::new);
 
+    public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
+            () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> RED_APPLE_LEAVES = registerBlock("red_apple_leaves",
+            () -> new RedAppleLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> YELLOW_APPLE_SAPLING = registerBlockWithoutItem("yellow_apple_sapling",
+            () -> new SaplingBlock(new YellowAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> YELLOW_APPLE_LEAVES = registerBlock("yellow_apple_leaves",
+            () -> new YellowAppleLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> GREEN_APPLE_SAPLING = registerBlockWithoutItem("green_apple_sapling",
+            () -> new SaplingBlock(new GreenAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> GREEN_APPLE_LEAVES = registerBlock("green_apple_leaves",
+            () -> new GreenAppleLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
 
     public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);

@@ -3,19 +3,25 @@ package com.dragn0007.dragncrops.world;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.blocks.crop.RedAppleLeaves;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
 public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CARROTS = registerKey("carrots");
@@ -38,8 +44,52 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CRANBERRIES = registerKey("cranberries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> STRAWBERRIES = registerKey("strawberries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PEANUTS = registerKey("peanuts");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CUCUMBERS = registerKey("cucumbers");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GARLIC = registerKey("garlic");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RICE = registerKey("rice");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> RED_APPLE_TREE = registerKey("red_apple_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_APPLE_TREE = registerKey("green_apple_tree");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
+
+        register(context, RED_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(2, 0, 2),
+                BlockStateProvider.simple(COBlocks.RED_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, YELLOW_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(2, 0, 2),
+                BlockStateProvider.simple(COBlocks.YELLOW_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, GREEN_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(2, 0, 2),
+                BlockStateProvider.simple(COBlocks.GREEN_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, SUGAR_BEETS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_SUGAR_BEETS.get().defaultBlockState())))));
+
+        register(context, RICE, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_RICE.get().defaultBlockState())))));
+
+        register(context, GARLIC, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_GARLIC.get().defaultBlockState())))));
+
+        register(context, CUCUMBERS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_CUCUMBERS.get().defaultBlockState())))));
 
         register(context, PEANUTS, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
