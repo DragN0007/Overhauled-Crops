@@ -185,6 +185,13 @@ public class COBlocks {
     public static final RegistryObject<Block> STRAWBERRY_CANDY = registerBlockWithoutItem("strawberry_candy", CandyBlock::new);
     public static final RegistryObject<Block> WATERMELON_CANDY = registerBlockWithoutItem("watermelon_candy", CandyBlock::new);
 
+    public static final RegistryObject<Block> CANNED_CARROTS = registerBlockWithoutItem("canned_carrots", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_POTATOES = registerBlockWithoutItem("canned_potatoes", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_BEETS = registerBlockWithoutItem("canned_beets", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_VEGETABLES = registerBlockWithoutItem("canned_vegetables", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_FRUIT = registerBlockWithoutItem("canned_fruit", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_BEEF = registerBlockWithoutItem("canned_beef", CanBlock::new);
+
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> RED_APPLE_LEAVES = registerBlock("red_apple_leaves",

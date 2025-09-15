@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:carrot",
+    "dragncrops:purple_carrot",
+    "dragncrops:yellow_carrot"
+  ]
+}

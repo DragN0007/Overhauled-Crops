@@ -1,0 +1,19 @@
+{
+  "name": "Cucumber",
+  "icon": "dragncrops:cucumber",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()Wet Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cucumber"
+      },
+      "text": "Can be canned or jarred to make pickles.",
+      "title": "Cucumber"
+    }
+  ]
+}

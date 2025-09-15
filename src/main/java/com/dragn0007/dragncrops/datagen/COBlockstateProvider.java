@@ -2,9 +2,9 @@ package com.dragn0007.dragncrops.datagen;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
-import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

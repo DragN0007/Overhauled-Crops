@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:empty_can"
+    },
+    {
+      "tag": "forge:beets"
+    },
+    {
+      "tag": "forge:beets"
+    },
+    {
+      "tag": "forge:herbs"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:canned_beets"
+  }
+}

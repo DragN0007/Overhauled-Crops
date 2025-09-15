@@ -31,6 +31,77 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(ItemTags.PLANKS).build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.EMPTY_CAN.get())
+                .define('A', Items.IRON_INGOT)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("B")
+                .pattern("A")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_CARROTS.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.CARROTS)
+                .requires(COTags.Items.CARROTS)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_POTATOES.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.POTATOES)
+                .requires(COTags.Items.POTATOES)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_BEETS.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.BEETS)
+                .requires(COTags.Items.BEETS)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_VEGETABLES.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COItems.GARLIC.get())
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_FRUIT.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.FRUITS)
+                .requires(COTags.Items.FRUITS)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_BEEF.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.RAW_BEEF)
+                .requires(COTags.Items.RAW_BEEF)
+                .requires(COItems.GARLIC.get())
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.HONEYDEW_SLICE.get(), 4)
                 .requires(COItems.HONEYDEW.get())

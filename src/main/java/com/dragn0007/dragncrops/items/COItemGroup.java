@@ -68,6 +68,8 @@ public class COItemGroup {
                         output.accept(COItems.CHERRY_PIT.get());
 
                         output.accept(COItems.FLAIL.get());
+                        output.accept(COItems.EMPTY_CAN.get());
+
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
 
@@ -77,6 +79,13 @@ public class COItemGroup {
                         output.accept(COItems.NUT_BREAD.get());
                         output.accept(COItems.RYE_BREAD.get());
                         output.accept(COItems.WHITE_BREAD.get());
+
+                        output.accept(COItems.CANNED_CARROTS.get());
+                        output.accept(COItems.CANNED_POTATOES.get());
+                        output.accept(COItems.CANNED_BEETS.get());
+                        output.accept(COItems.CANNED_VEGETABLES.get());
+                        output.accept(COItems.CANNED_FRUIT.get());
+                        output.accept(COItems.CANNED_BEEF.get());
 
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());

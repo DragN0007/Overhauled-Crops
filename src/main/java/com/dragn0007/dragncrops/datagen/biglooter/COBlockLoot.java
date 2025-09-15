@@ -1,11 +1,12 @@
 package com.dragn0007.dragncrops.datagen.biglooter;
 
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
 import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
+import com.dragn0007.dragncrops.blocks.custom.CanBlock;
 import com.dragn0007.dragncrops.blocks.custom.CandyBlock;
-import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -103,6 +104,13 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.RASPBERRY_CANDY.get(), createCandyDrops(COBlocks.RASPBERRY_CANDY.get(), COItems.RASPBERRY_CANDY.get()));
         this.add(COBlocks.STRAWBERRY_CANDY.get(), createCandyDrops(COBlocks.STRAWBERRY_CANDY.get(), COItems.STRAWBERRY_CANDY.get()));
         this.add(COBlocks.WATERMELON_CANDY.get(), createCandyDrops(COBlocks.WATERMELON_CANDY.get(), COItems.WATERMELON_CANDY.get()));
+
+        this.add(COBlocks.CANNED_CARROTS.get(), createCanDrops(COBlocks.CANNED_CARROTS.get(), COItems.CANNED_CARROTS.get()));
+        this.add(COBlocks.CANNED_POTATOES.get(), createCanDrops(COBlocks.CANNED_POTATOES.get(), COItems.CANNED_POTATOES.get()));
+        this.add(COBlocks.CANNED_BEETS.get(), createCanDrops(COBlocks.CANNED_BEETS.get(), COItems.CANNED_BEETS.get()));
+        this.add(COBlocks.CANNED_VEGETABLES.get(), createCanDrops(COBlocks.CANNED_VEGETABLES.get(), COItems.CANNED_VEGETABLES.get()));
+        this.add(COBlocks.CANNED_FRUIT.get(), createCanDrops(COBlocks.CANNED_FRUIT.get(), COItems.CANNED_FRUIT.get()));
+        this.add(COBlocks.CANNED_BEEF.get(), createCanDrops(COBlocks.CANNED_BEEF.get(), COItems.CANNED_BEEF.get()));
 
 
         LootItemCondition.Builder wildVanillaBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_CARROTS.get());
@@ -452,6 +460,18 @@ public class COBlockLoot extends BlockLootSubProvider {
                                                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                                         .setProperties(StatePropertiesPredicate.Builder.properties()
                                                                 .hasProperty(CandyBlock.CANDIES, integer))))
+                )));
+    }
+
+    protected LootTable.Builder createCanDrops(Block block, Item item) {
+        return LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                .add(this.applyExplosionDecay(block,
+                        LootItem.lootTableItem(item)
+                                .apply(List.of(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16),
+                                        (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float)integer.intValue()))
+                                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                                .hasProperty(CanBlock.CANS, integer))))
                 )));
     }
 

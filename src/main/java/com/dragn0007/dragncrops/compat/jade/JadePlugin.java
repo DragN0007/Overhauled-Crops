@@ -1,13 +1,7 @@
 package com.dragn0007.dragncrops.compat.jade;
 
-import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
-import com.dragn0007.dragncrops.blocks.custom.CandyBlock;
-import com.dragn0007.dragncrops.blocks.custom.GrainBlock;
-import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
-import com.dragn0007.dragncrops.compat.jade.block.ApplesTooltipProvider;
-import com.dragn0007.dragncrops.compat.jade.block.CandiesTooltipProvider;
-import com.dragn0007.dragncrops.compat.jade.block.FlailTooltipProvider;
-import com.dragn0007.dragncrops.compat.jade.block.JamsTooltipProvider;
+import com.dragn0007.dragncrops.blocks.custom.*;
+import com.dragn0007.dragncrops.compat.jade.block.*;
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaPlugin;
 import snownee.jade.api.WailaPlugin;
@@ -23,5 +17,6 @@ public class JadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new JamsTooltipProvider(), JamJarBlock.class);
         registration.registerBlockComponent(new ApplesTooltipProvider(), AppleBlock.class);
         registration.registerBlockComponent(new CandiesTooltipProvider(), CandyBlock.class);
+        registration.registerBlockComponent(new CansTooltipProvider(), CanBlock.class);
     }
 }

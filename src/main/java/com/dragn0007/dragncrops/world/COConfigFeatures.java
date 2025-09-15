@@ -22,7 +22,6 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
-import net.minecraftforge.common.world.BiomeModifier;
 
 public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> CARROTS = registerKey("carrots");

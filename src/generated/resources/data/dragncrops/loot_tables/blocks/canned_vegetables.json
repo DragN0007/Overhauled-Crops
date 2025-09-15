@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "6"
+                  }
+                }
+              ],
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "7"
+                  }
+                }
+              ],
+              "count": 7.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "8"
+                  }
+                }
+              ],
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "9"
+                  }
+                }
+              ],
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "10"
+                  }
+                }
+              ],
+              "count": 10.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "11"
+                  }
+                }
+              ],
+              "count": 11.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "12"
+                  }
+                }
+              ],
+              "count": 12.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "13"
+                  }
+                }
+              ],
+              "count": 13.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "14"
+                  }
+                }
+              ],
+              "count": 14.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "15"
+                  }
+                }
+              ],
+              "count": 15.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:canned_vegetables",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "cans": "16"
+                  }
+                }
+              ],
+              "count": 16.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "dragncrops:canned_vegetables"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "dragncrops:blocks/canned_vegetables"
+}

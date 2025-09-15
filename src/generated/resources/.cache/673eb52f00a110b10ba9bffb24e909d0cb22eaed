@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T18:36:51.9641573	Item Models: dragncrops
+// 1.20.1	2025-09-15T01:22:35.5400743	Item Models: dragncrops
 378105d33588b24f1d22239e5d62ba5ffa050b15 assets/dragncrops/models/item/apple_candy.json
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 fc4e1184c09483a38f8b038717f3ea069147f9cd assets/dragncrops/models/item/apple_tart.json
@@ -11,6 +11,12 @@ cfd5a32ff38526ebed2107b7fd7f042698a3c21e assets/dragncrops/models/item/blackberr
 d6f34b070b7ae36e1b0892fc2cd092567afc2877 assets/dragncrops/models/item/blueberry_candy.json
 c8717dcd61f9033b11130dc783f30091acddf5fc assets/dragncrops/models/item/blueberry_jam.json
 f282e7d96f74766637432a32894d77b0d5a84f49 assets/dragncrops/models/item/blueberry_tart.json
+c8057e55eb74933faea9e438a0f053c0d40ab3ff assets/dragncrops/models/item/canned_beef.json
+88111f59b18d2dcbb8fa23d7fe798900f534cb5c assets/dragncrops/models/item/canned_beets.json
+668b096396da1790feee30d84408560e4416ca43 assets/dragncrops/models/item/canned_carrots.json
+4d80c148a95290f76ce4f2864cf2428892081691 assets/dragncrops/models/item/canned_fruit.json
+34e287ef647f52376eef1842ac22518e79da0073 assets/dragncrops/models/item/canned_potatoes.json
+deddc37a842e2b331d6af1b134048cae4d2e9a54 assets/dragncrops/models/item/canned_vegetables.json
 4c34a8e2bfc477dfd96432d659c86d427fc240c5 assets/dragncrops/models/item/cantaloupe.json
 f0da90fa65c6cd832c3cda220499537d3e72da28 assets/dragncrops/models/item/cantaloupe_candy.json
 27d9c1ec323701f3a5e4db27039fa65832eef29b assets/dragncrops/models/item/cantaloupe_jam.json
@@ -33,6 +39,7 @@ e1fffc483a818c3ca1ebceb5d88c5886d81bc7b8 assets/dragncrops/models/item/cilantro.
 58572229908889728d4b96e60d590020e1a51caf assets/dragncrops/models/item/cranberry_tart.json
 5d832253be4c3110168f6b0b25a20c43239217e5 assets/dragncrops/models/item/crop_overhaul.json
 0ff4320306cbabf3e1e89ad76eded78f35678d09 assets/dragncrops/models/item/cucumber.json
+c92f3ed1374de73f93f8bc8b0d2d1f9142157e2d assets/dragncrops/models/item/empty_can.json
 de2167e338bd08525ca28576e0c44b8c09704b29 assets/dragncrops/models/item/flail.json
 276e383dfcfe22092acd9caac31cf61802e3d714 assets/dragncrops/models/item/flour.json
 ca1ae55a1b48f1dd4496f44d0dc75d5af75a3070 assets/dragncrops/models/item/garlic.json

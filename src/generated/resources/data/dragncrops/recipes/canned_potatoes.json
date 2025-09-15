@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:empty_can"
+    },
+    {
+      "tag": "forge:potatoes"
+    },
+    {
+      "tag": "forge:potatoes"
+    },
+    {
+      "tag": "forge:herbs"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:canned_potatoes"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T18:36:51.9621633	Recipes
+// 1.20.1	2025-09-15T01:15:54.4071727	Recipes
 a1c98b92ee60e6430cf14d037d7bd44f0ff1c266 data/dragncrops/advancements/recipes/misc/apple_candy.json
 5c2b8d8ed3260d2ee7841629b83115f4b5350cc5 data/dragncrops/advancements/recipes/misc/apple_jam.json
 8ca8caa7f694e09c3787c4cc9584a3e384413efa data/dragncrops/advancements/recipes/misc/apple_tart.json
@@ -9,6 +9,12 @@ ef08d89262d2bc8195465bf5066b281192988556 data/dragncrops/advancements/recipes/mi
 3f1e685ab1155f478e159731a6d58b79d9e5682a data/dragncrops/advancements/recipes/misc/blueberry_candy.json
 3b6df77456541eb83d33b5066a13fbcab3a5526a data/dragncrops/advancements/recipes/misc/blueberry_jam.json
 143d44b0dffd4a9e8503a2c8b40599bdce001191 data/dragncrops/advancements/recipes/misc/blueberry_tart.json
+6a110d5d270f88723af51785b6c7bec6a4ff5b18 data/dragncrops/advancements/recipes/misc/canned_beef.json
+d4a55aa8a972840768c6fb4972e6da2c36ce613b data/dragncrops/advancements/recipes/misc/canned_beets.json
+f4675a837b146f86c2d5124e1f6ad7ecc67dd31a data/dragncrops/advancements/recipes/misc/canned_carrots.json
+b1ec504b6b9ad2352290aebbb37b0740734a1e32 data/dragncrops/advancements/recipes/misc/canned_fruit.json
+b8eddeb20eaf47364c7621d17e0e81d108c7ba37 data/dragncrops/advancements/recipes/misc/canned_potatoes.json
+d85db7a4943f88955bc350ecd0566debf42fee9f data/dragncrops/advancements/recipes/misc/canned_vegetables.json
 c4722d5b6cee6d5bd8bcd6d395e12f426861763d data/dragncrops/advancements/recipes/misc/cantaloupe_candy.json
 aab354b0530f3770440ae8682484c3282fe456cd data/dragncrops/advancements/recipes/misc/cantaloupe_jam.json
 8d7747ea093801fddafd1d0f2c1dd81de6791429 data/dragncrops/advancements/recipes/misc/cantaloupe_seeds.json
@@ -23,6 +29,7 @@ e79d76a542408d56ebdd0ad0550e987e075525fa data/dragncrops/advancements/recipes/mi
 04631cf4f595b68d4723b2fef0503c43c07e88a8 data/dragncrops/advancements/recipes/misc/cranberry_candy.json
 cbd8d3faa2f42b2c0e4aa521009ba9a462add235 data/dragncrops/advancements/recipes/misc/cranberry_jam.json
 36417e60ac6e9cce3b5acd76864698498c08d0d9 data/dragncrops/advancements/recipes/misc/cranberry_tart.json
+618f717722cfc425d2f1b5b9f088d475573e643c data/dragncrops/advancements/recipes/misc/empty_can.json
 3c9ed7a2b991de9882c3da50cb75bf1ac5d43ce7 data/dragncrops/advancements/recipes/misc/flail.json
 518cb6f38aa5d6dd8be8033967a98588de4fe1d9 data/dragncrops/advancements/recipes/misc/flour.json
 5fb4b281f0dbbee37cdd52a13d25ef90d5d85894 data/dragncrops/advancements/recipes/misc/green_apple_seeds.json
@@ -64,6 +71,12 @@ b8c5a191e3887037a690ccc29f3c62ddf7b35c0a data/dragncrops/recipes/blueberry_bread
 4a2f31a3505b5966e7647b9047c6e822ed3df674 data/dragncrops/recipes/blueberry_candy.json
 7315de402fd6cabf908c8024ffdf2142482a2863 data/dragncrops/recipes/blueberry_jam.json
 6b3543e87c10ea260a7aaa69c859c392a21e3673 data/dragncrops/recipes/blueberry_tart.json
+63b2e43dbfe271412730acd5621a99c912a7c98f data/dragncrops/recipes/canned_beef.json
+4c93d613060fb50308940a154b7d9e0f64f057f2 data/dragncrops/recipes/canned_beets.json
+b870065762b2a1aa4b4fd84174acca6c62d49a11 data/dragncrops/recipes/canned_carrots.json
+fe3ba0d43d9c47b16161df7c7370bd5f80c49e53 data/dragncrops/recipes/canned_fruit.json
+47c5fbf44181f7925393f07f94c23a28fc04281b data/dragncrops/recipes/canned_potatoes.json
+69414ebc73384c85be424abdf8456fea32553eb9 data/dragncrops/recipes/canned_vegetables.json
 866b167b1cb267cf97983413d2b2e8cf33c5ab98 data/dragncrops/recipes/cantaloupe_candy.json
 ddf646cd5930a88a2f003c3ba41699ad45eac2da data/dragncrops/recipes/cantaloupe_jam.json
 62f0f113f3d743b5e122b59c892a829ef6762de6 data/dragncrops/recipes/cantaloupe_seeds.json
@@ -78,6 +91,7 @@ bd9806a28751506d47024a00997fccc4f97bd1f4 data/dragncrops/recipes/cranberry_bread
 3c1b79dbe3d5397349b9b4d6290afe2d688f09da data/dragncrops/recipes/cranberry_candy.json
 93e94c6005e24f8fc24765918dddbb1ade9dd3f0 data/dragncrops/recipes/cranberry_jam.json
 e2db51f839eddfd895d929990d48647858f42757 data/dragncrops/recipes/cranberry_tart.json
+48993498026412d40235e563dc6c2bb427afdde2 data/dragncrops/recipes/empty_can.json
 16296086bf3b8c00c38558f3c9d028030d5e064d data/dragncrops/recipes/flail.json
 13746562877f1726863410ada5822db0b530116b data/dragncrops/recipes/flour.json
 bc5aec9a8ace5aa4e25132369a5a25707e1f8254 data/dragncrops/recipes/green_apple_seeds.json

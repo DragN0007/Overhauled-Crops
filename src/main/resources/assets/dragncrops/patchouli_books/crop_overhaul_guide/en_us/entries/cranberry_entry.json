@@ -1,0 +1,19 @@
+{
+  "name": "Cranberry",
+  "icon": "dragncrops:cranberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Fruit $(br)$(l)Spawns In: $()Cold Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cranberry"
+      },
+      "text": "Can be turned into jam, pie, and candy.",
+      "title": "Cranberry"
+    }
+  ]
+}

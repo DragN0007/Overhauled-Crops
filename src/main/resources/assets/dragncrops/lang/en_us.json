@@ -2,6 +2,7 @@
   "itemGroup.overhauled_crops": "Overhauled Crops",
 
   "item.dragncrops.flail": "Flail",
+  "item.dragncrops.empty_can": "Empty Can",
 
   "item.minecraft.melon_slice": "Watermelon Slice",
   "item.minecraft.apple": "Red Apple",
@@ -216,13 +217,30 @@
   "block.dragncrops.watermelon_candy": "Watermelon Candy",
 
 
+  "item.dragncrops.canned_carrots": "Canned Carrots",
+  "item.dragncrops.canned_potatoes": "Canned Potatoes",
+  "item.dragncrops.canned_beets": "Canned Beets",
+  "item.dragncrops.canned_vegetables": "Canned Vegetables",
+  "item.dragncrops.canned_fruit": "Canned Fruit",
+  "item.dragncrops.canned_beef": "Canned Beef",
+
+  "block.dragncrops.canned_carrots": "Canned Carrots",
+  "block.dragncrops.canned_potatoes": "Canned Potatoes",
+  "block.dragncrops.canned_beets": "Canned Beets",
+  "block.dragncrops.canned_vegetables": "Canned Vegetables",
+  "block.dragncrops.canned_fruit": "Canned Fruit",
+  "block.dragncrops.canned_beef": "Canned Beef",
+
 
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
-  "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
-  "config.jade.plugin_dragncrops.flail_hint": "Flail Hint",
+
+  "config.jade.plugin_dragncrops.flail_hint": "Flail Grain Hint",
   "config.jade.plugin_dragncrops.jars": "Amount of Jars in Stacks/ Crates",
   "config.jade.plugin_dragncrops.apples": "Amount of Apples in Baskets",
   "config.jade.plugin_dragncrops.candies": "Amount of Candies in Candy Bags",
+  "config.jade.plugin_dragncrops.cans": "Amount of Cans in Stacks/ Crates",
+
+  "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.placeable.tooltip": "Placeable",
   "tooltip.dragncrops.grain.tooltip": "Can be placed for grain production."
 }

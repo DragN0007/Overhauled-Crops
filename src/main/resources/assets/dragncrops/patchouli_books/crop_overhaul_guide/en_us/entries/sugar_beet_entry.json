@@ -1,0 +1,19 @@
+{
+  "name": "Sugar Beet",
+  "icon": "dragncrops:sugar_beet",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()Wet Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:sugar_beet"
+      },
+      "text": "Can be turned into/ used in place of sugar, or canned.",
+      "title": "Sugar Beet"
+    }
+  ]
+}

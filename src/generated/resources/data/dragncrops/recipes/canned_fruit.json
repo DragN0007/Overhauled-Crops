@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:empty_can"
+    },
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "tag": "forge:sugar"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:canned_fruit"
+  }
+}

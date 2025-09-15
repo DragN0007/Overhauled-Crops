@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:empty_can"
+    },
+    {
+      "tag": "forge:raw_beef"
+    },
+    {
+      "tag": "forge:raw_beef"
+    },
+    {
+      "item": "dragncrops:garlic"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:canned_beef"
+  }
+}

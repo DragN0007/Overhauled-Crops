@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T18:36:51.9601688	Loot Tables
+// 1.20.1	2025-09-15T01:21:32.6104018	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
 176296d04fd2749e06f85c922bbefec6777e96ca data/dragncrops/loot_tables/blocks/apple_tart.json
@@ -12,6 +12,12 @@ a87b28a6c79d84555c4abfde697b873f1e21d875 data/dragncrops/loot_tables/blocks/blue
 adf36c23f4002a7557f1d268e3408ed682f5ef33 data/dragncrops/loot_tables/blocks/blueberry_jam.json
 f590e47bd8c712116b2abdcce3ce931f723052fe data/dragncrops/loot_tables/blocks/blueberry_tart.json
 99068b0b87d6633c6f2737fbd4bf1821c50e1036 data/dragncrops/loot_tables/blocks/bread.json
+da5787eecfc3985254bb67dd6105a2dbebc1804a data/dragncrops/loot_tables/blocks/canned_beef.json
+af5d95c5d4044ce666c71fe1e96d5d9da0704792 data/dragncrops/loot_tables/blocks/canned_beets.json
+50a63a790a7c67c926c8b2ff3da8aa666605f2a0 data/dragncrops/loot_tables/blocks/canned_carrots.json
+f26933fb57cf32561fb48d769d1b8e7eb5aef164 data/dragncrops/loot_tables/blocks/canned_fruit.json
+7c84e39b094b91d8502e3156ccfe866cc8047302 data/dragncrops/loot_tables/blocks/canned_potatoes.json
+3fe6bb199da8f380a87834d147be1bab1cd1e501 data/dragncrops/loot_tables/blocks/canned_vegetables.json
 1cbd98e3504045c5d9ac658c6218e19e16f16dd6 data/dragncrops/loot_tables/blocks/cantaloupe.json
 6fec9195a05e8cc501914560eaedb1b8751e2742 data/dragncrops/loot_tables/blocks/cantaloupe_candy.json
 a7574444401934988ace70b230216652b6065173 data/dragncrops/loot_tables/blocks/cantaloupe_jam.json

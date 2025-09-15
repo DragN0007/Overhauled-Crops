@@ -41,6 +41,7 @@ public class COTags {
         public static final TagKey<Item> APPLES = forgeTag("apples");
         public static final TagKey<Item> CARROTS = forgeTag("carrots");
         public static final TagKey<Item> POTATOES = forgeTag("potatoes");
+        public static final TagKey<Item> BEETS = forgeTag("beets");
         public static final TagKey<Item> WHEAT = forgeTag("wheat");
         public static final TagKey<Item> BERRIES = forgeTag("berries");
         public static final TagKey<Item> FRUITS = forgeTag("fruits");

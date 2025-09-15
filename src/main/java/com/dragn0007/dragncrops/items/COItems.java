@@ -2,10 +2,7 @@ package com.dragn0007.dragncrops.items;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
-import com.dragn0007.dragncrops.items.custom.FlailItem;
-import com.dragn0007.dragncrops.items.custom.GrainItem;
-import com.dragn0007.dragncrops.items.custom.PlaceableItem;
-import com.dragn0007.dragncrops.items.custom.PlaceablePixelPlacerItem;
+import com.dragn0007.dragncrops.items.custom.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -322,9 +319,42 @@ public class COItems {
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F)
                             .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1), 0.8F).build()))));
 
-    //Tools
+    //Canned
+    public static final RegistryObject<Item> CANNED_CARROTS = ITEMS.register("canned_carrots",
+            () -> new CanItem(COBlocks.CANNED_CARROTS.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANNED_POTATOES = ITEMS.register("canned_potatoes",
+            () -> new CanItem(COBlocks.CANNED_POTATOES.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANNED_BEETS = ITEMS.register("canned_beets",
+            () -> new CanItem(COBlocks.CANNED_BEETS.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANNED_VEGETABLES = ITEMS.register("canned_vegetables",
+            () -> new CanItem(COBlocks.CANNED_VEGETABLES.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANNED_FRUIT = ITEMS.register("canned_fruit",
+            () -> new CanItem(COBlocks.CANNED_FRUIT.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CANNED_BEEF = ITEMS.register("canned_beef",
+            () -> new CanItem(COBlocks.CANNED_BEEF.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    //Tools/ Supplies
     public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",
             () -> new FlailItem(Tiers.DIAMOND, 1, -1.4F, new Item.Properties()));
+    public static final RegistryObject<Item> EMPTY_CAN = ITEMS.register("empty_can",
+            () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CROP_OVERHAUL = ITEMS.register("crop_overhaul",
             () -> new Item(new Item.Properties()));

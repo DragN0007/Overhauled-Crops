@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:empty_can"
+    },
+    {
+      "tag": "forge:vegetables"
+    },
+    {
+      "tag": "forge:vegetables"
+    },
+    {
+      "item": "dragncrops:garlic"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:canned_vegetables"
+  }
+}

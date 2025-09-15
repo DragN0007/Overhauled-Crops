@@ -1,0 +1,19 @@
+{
+  "name": "Rice",
+  "icon": "dragncrops:rice",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Grain $(br)$(l)Spawns In: $()Wet Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:rice"
+      },
+      "text": "Can be turned into Grain to be used in breads or pastries.",
+      "title": "Rice"
+    }
+  ]
+}
