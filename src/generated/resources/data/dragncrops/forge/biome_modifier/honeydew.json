@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "dragncrops:honeydew",
+  "step": "vegetal_decoration"
+}

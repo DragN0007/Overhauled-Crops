@@ -42,6 +42,8 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> GARLIC = registerKey("garlic");
     public static final ResourceKey<BiomeModifier> RICE = registerKey("rice");
     public static final ResourceKey<BiomeModifier> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<BiomeModifier> HONEYDEW = registerKey("honeydew");
+    public static final ResourceKey<BiomeModifier> CANTALOUPE = registerKey("cantaloupe");
     public static final ResourceKey<BiomeModifier> CILANTRO = registerKey("cilantro");
     public static final ResourceKey<BiomeModifier> OREGANO = registerKey("oregano");
     public static final ResourceKey<BiomeModifier> ROSEMARY = registerKey("rosemary");
@@ -90,6 +92,16 @@ public class BiomeHitter {
         context.register(LIME_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.LIME_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(CANTALOUPE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.CANTALOUPE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(HONEYDEW, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.HONEYDEW)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(CILANTRO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

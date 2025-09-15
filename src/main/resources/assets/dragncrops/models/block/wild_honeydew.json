@@ -1,0 +1,7 @@
+{
+  "parent": "dragncrops:block/parent/melons_stage3",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "texture": "dragncrops:block/honeydew_stage3"
+  }
+}

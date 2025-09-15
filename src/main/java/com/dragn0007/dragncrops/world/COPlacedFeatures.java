@@ -41,6 +41,8 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GARLIC = registerKey("garlic");
     public static final ResourceKey<PlacedFeature> RICE = registerKey("rice");
     public static final ResourceKey<PlacedFeature> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<PlacedFeature> HONEYDEW = registerKey("honeydew");
+    public static final ResourceKey<PlacedFeature> CANTALOUPE = registerKey("cantaloupe");
     public static final ResourceKey<PlacedFeature> CILANTRO = registerKey("cilantro");
     public static final ResourceKey<PlacedFeature> OREGANO = registerKey("oregano");
     public static final ResourceKey<PlacedFeature> ROSEMARY = registerKey("rosemary");
@@ -83,6 +85,18 @@ public class COPlacedFeatures {
         register(context, CHERRY_TREE, configuredFeatures.getOrThrow(COConfigFeatures.CHERRY_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
                         COBlocks.CHERRY_SAPLING.get()));
+
+        register(context, HONEYDEW, configuredFeatures.getOrThrow(COConfigFeatures.HONEYDEW),
+                List.of(RarityFilter.onAverageOnceEvery(72),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, CANTALOUPE, configuredFeatures.getOrThrow(COConfigFeatures.CANTALOUPE),
+                List.of(RarityFilter.onAverageOnceEvery(72),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
 
         register(context, SUGAR_BEETS, configuredFeatures.getOrThrow(COConfigFeatures.SUGAR_BEETS),
                 List.of(RarityFilter.onAverageOnceEvery(32),

@@ -19,7 +19,10 @@
       "state": {
         "Name": "dragncrops:coconut_leaves",
         "Properties": {
-          "age": "2"
+          "age": "2",
+          "distance": "7",
+          "persistent": "false",
+          "waterlogged": "false"
         }
       }
     },

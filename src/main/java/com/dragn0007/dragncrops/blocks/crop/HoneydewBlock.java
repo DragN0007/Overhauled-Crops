@@ -24,7 +24,7 @@ public class HoneydewBlock extends OCropBlock {
    }
 
    public ItemLike getBaseSeedId() {
-      return COItems.HONEYDEW_SLICE.get();
+      return COItems.HONEYDEW.get();
    }
 
    public VoxelShape getShape(BlockState p_51330_, BlockGetter p_51331_, BlockPos p_51332_, CollisionContext p_51333_) {
