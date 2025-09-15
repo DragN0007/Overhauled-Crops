@@ -2,6 +2,6 @@
   "parent": "minecraft:block/cross",
   "render_type": "minecraft:cutout",
   "textures": {
-    "cross": "dragncrops:block/strawberries_stage3"
+    "cross": "dragncrops:block/cranberries_stage3"
   }
 }

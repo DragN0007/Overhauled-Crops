@@ -44,6 +44,10 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.RED_APPLE_SAPLING.get(), COItems.RED_APPLE_SEEDS.get());
         this.dropOther(COBlocks.YELLOW_APPLE_SAPLING.get(), COItems.YELLOW_APPLE_SEEDS.get());
         this.dropOther(COBlocks.GREEN_APPLE_SAPLING.get(), COItems.GREEN_APPLE_SEEDS.get());
+        this.dropOther(COBlocks.LIME_SAPLING.get(), COItems.LIME_SEEDS.get());
+        this.dropOther(COBlocks.COCONUT_SAPLING.get(), COItems.COCONUT.get());
+        this.dropOther(COBlocks.MANGO_SAPLING.get(), COItems.MANGO_PIT.get());
+        this.dropOther(COBlocks.CHERRY_SAPLING.get(), COItems.CHERRY_PIT.get());
 
         this.dropOther(COBlocks.BREAD.get(), Items.BREAD);
         this.dropOther(COBlocks.BLUEBERRY_BREAD.get(),  COItems.BLUEBERRY_BREAD.get());
@@ -379,6 +383,38 @@ public class COBlockLoot extends BlockLootSubProvider {
                 this.applyExplosionDecay(COBlocks.GREEN_APPLE_LEAVES.get(),
                         LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.GREEN_APPLE.get())))
                                 .withPool(LootPool.lootPool().when(leafBuilder2).add(LootItem.lootTableItem(COItems.GREEN_APPLE.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+
+        LootItemCondition.Builder leafBuilder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.LIME_LEAVES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FruitLeaves.AGE, 3));
+        this.add(COBlocks.LIME_LEAVES.get(),
+                this.applyExplosionDecay(COBlocks.LIME_LEAVES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.LIME.get())))
+                                .withPool(LootPool.lootPool().when(leafBuilder3).add(LootItem.lootTableItem(COItems.LIME.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+
+        LootItemCondition.Builder leafBuilder4 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.COCONUT_LEAVES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FruitLeaves.AGE, 3));
+        this.add(COBlocks.COCONUT_LEAVES.get(),
+                this.applyExplosionDecay(COBlocks.COCONUT_LEAVES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.COCONUT.get())))
+                                .withPool(LootPool.lootPool().when(leafBuilder4).add(LootItem.lootTableItem(COItems.COCONUT.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+
+        LootItemCondition.Builder leafBuilder5 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.MANGO_LEAVES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FruitLeaves.AGE, 3));
+        this.add(COBlocks.MANGO_LEAVES.get(),
+                this.applyExplosionDecay(COBlocks.MANGO_LEAVES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.MANGO.get())))
+                                .withPool(LootPool.lootPool().when(leafBuilder5).add(LootItem.lootTableItem(COItems.MANGO.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+
+        LootItemCondition.Builder leafBuilder6 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CHERRY_LEAVES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FruitLeaves.AGE, 3));
+        this.add(COBlocks.CHERRY_LEAVES.get(),
+                this.applyExplosionDecay(COBlocks.CHERRY_LEAVES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.CHERRIES.get())))
+                                .withPool(LootPool.lootPool().when(leafBuilder6).add(LootItem.lootTableItem(COItems.CHERRIES.get())
                                         .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
 
     }

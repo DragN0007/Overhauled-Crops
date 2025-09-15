@@ -9,9 +9,7 @@ import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerContainer
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntity;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerItem;
 import com.dragn0007.dragncrops.items.COItems;
-import com.dragn0007.dragncrops.world.tree.GreenAppleTreeGrower;
-import com.dragn0007.dragncrops.world.tree.RedAppleTreeGrower;
-import com.dragn0007.dragncrops.world.tree.YellowAppleTreeGrower;
+import com.dragn0007.dragncrops.world.tree.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -199,6 +197,22 @@ public class COBlocks {
             () -> new SaplingBlock(new GreenAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> GREEN_APPLE_LEAVES = registerBlock("green_apple_leaves",
             () -> new GreenAppleLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> COCONUT_SAPLING = registerBlockWithoutItem("coconut_sapling",
+            () -> new SaplingBlock(new CoconutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> COCONUT_LEAVES = registerBlock("coconut_leaves",
+            () -> new CoconutLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> MANGO_SAPLING = registerBlockWithoutItem("mango_sapling",
+            () -> new SaplingBlock(new MangoTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> MANGO_LEAVES = registerBlock("mango_leaves",
+            () -> new MangoLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> LIME_SAPLING = registerBlockWithoutItem("lime_sapling",
+            () -> new SaplingBlock(new LimeTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> LIME_LEAVES = registerBlock("lime_leaves",
+            () -> new LimeLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> CHERRY_SAPLING = registerBlockWithoutItem("cherry_sapling",
+            () -> new SaplingBlock(new CherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> CHERRY_LEAVES = registerBlock("cherry_leaves",
+            () -> new CherryLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
 
     public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);

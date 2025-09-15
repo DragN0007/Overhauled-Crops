@@ -99,7 +99,6 @@ dependencies {
     //compat stuff
 //    implementation fg.deobf("curse.maven:dragns-livestock-overhaul-1131669:6960887")
     implementation fg.deobf("curse.maven:spoiled-364918:6828889")
-    implementation fg.deobf("curse.maven:serene-seasons-291874:6398227")
 
     //nbtenks made by gotenks
 //    implementation fg.deobf("curse.maven:nbtenks-1255827:6514118")

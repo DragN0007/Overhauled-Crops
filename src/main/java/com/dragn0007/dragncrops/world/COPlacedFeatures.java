@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraftforge.common.world.BiomeModifier;
 
 import java.util.List;
 
@@ -46,6 +47,10 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<PlacedFeature> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<PlacedFeature> GREEN_APPLE_TREE = registerKey("green_apple_tree");
+    public static final ResourceKey<PlacedFeature> CHERRY_TREE = registerKey("cherry_tree");
+    public static final ResourceKey<PlacedFeature> COCONUT_TREE = registerKey("coconut_tree");
+    public static final ResourceKey<PlacedFeature> LIME_TREE = registerKey("lime_tree");
+    public static final ResourceKey<PlacedFeature> MANGO_TREE = registerKey("mango_tree");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -62,6 +67,22 @@ public class COPlacedFeatures {
         register(context, GREEN_APPLE_TREE, configuredFeatures.getOrThrow(COConfigFeatures.GREEN_APPLE_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
                         COBlocks.GREEN_APPLE_SAPLING.get()));
+
+        register(context, MANGO_TREE, configuredFeatures.getOrThrow(COConfigFeatures.MANGO_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.MANGO_SAPLING.get()));
+
+        register(context, LIME_TREE, configuredFeatures.getOrThrow(COConfigFeatures.LIME_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.LIME_SAPLING.get()));
+
+        register(context, COCONUT_TREE, configuredFeatures.getOrThrow(COConfigFeatures.COCONUT_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.COCONUT_SAPLING.get()));
+
+        register(context, CHERRY_TREE, configuredFeatures.getOrThrow(COConfigFeatures.CHERRY_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.CHERRY_SAPLING.get()));
 
         register(context, SUGAR_BEETS, configuredFeatures.getOrThrow(COConfigFeatures.SUGAR_BEETS),
                 List.of(RarityFilter.onAverageOnceEvery(32),

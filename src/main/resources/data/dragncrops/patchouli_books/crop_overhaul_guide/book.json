@@ -1,0 +1,8 @@
+{
+  "name": "Crop Guide",
+  "landing_text": "Welcome to DragN's Crop Overhaul!",
+  "version": 1,
+  "creative_tab": "dragncrops:overhauled_crops",
+  "model":"dragncrops:crop_overhaul_guide",
+  "use_resource_pack": true
+}

@@ -24,7 +24,10 @@ public class GreenAppleLeaves extends FruitLeaves implements BonemealableBlock {
 
     public GreenAppleLeaves(Properties p_57249_) {
         super(p_57249_);
-        this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(0)));
+        this.registerDefaultState(this.stateDefinition.any()
+                .setValue(AGE, Integer.valueOf(0))
+                .setValue(DISTANCE, Integer.valueOf(7)).setValue(PERSISTENT, Boolean.valueOf(false))
+                .setValue(WATERLOGGED, Boolean.valueOf(false)));
     }
 
     public ItemStack getCloneItemStack(BlockGetter p_57256_, BlockPos p_57257_, BlockState p_57258_) {
@@ -43,7 +46,7 @@ public class GreenAppleLeaves extends FruitLeaves implements BonemealableBlock {
 
             p_57276_.playSound((Player)null, p_57277_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_57276_.random.nextFloat() * 0.4F);
             BlockState blockstate = p_57275_.setValue(AGE, Integer.valueOf(1));
-            p_57276_.setBlock(p_57277_, blockstate, 2);
+            p_57276_.setBlock(p_57277_, blockstate, 0);
             p_57276_.gameEvent(GameEvent.BLOCK_CHANGE, p_57277_, GameEvent.Context.of(p_57278_, blockstate));
             return InteractionResult.sidedSuccess(p_57276_.isClientSide);
         } else {

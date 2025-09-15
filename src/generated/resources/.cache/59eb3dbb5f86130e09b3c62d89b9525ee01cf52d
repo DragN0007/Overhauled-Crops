@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T02:07:22.7068891	Loot Tables
+// 1.20.1	2025-09-14T18:36:51.9601688	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
 176296d04fd2749e06f85c922bbefec6777e96ca data/dragncrops/loot_tables/blocks/apple_tart.json
@@ -18,8 +18,12 @@ a7574444401934988ace70b230216652b6065173 data/dragncrops/loot_tables/blocks/cant
 0da9c56de2fa998177c0400ab9752d609d0be578 data/dragncrops/loot_tables/blocks/cantaloupe_tart.json
 73027259ad999caf7e5bc93aa44f8b34b48d1bb7 data/dragncrops/loot_tables/blocks/cherry_candy.json
 3281196757aa8c696b44581f612460424770b7fe data/dragncrops/loot_tables/blocks/cherry_jam.json
+0e00423a686a185f7abc87cbe1eee825f7a8be06 data/dragncrops/loot_tables/blocks/cherry_leaves.json
+150a977b15e17a461d8c33dd87b99f68a77dce57 data/dragncrops/loot_tables/blocks/cherry_sapling.json
 eea0f84af46e2f8a5ccec0ecec0e8f9906beedf5 data/dragncrops/loot_tables/blocks/cherry_tart.json
 f4745dc05303f54a8a9834759f82bd961522f302 data/dragncrops/loot_tables/blocks/cilantro.json
+608c2be37a8d61942e983bee884ef90979ae4a69 data/dragncrops/loot_tables/blocks/coconut_leaves.json
+e26545d9a5f93895159e38d9aaeb4068200fdba6 data/dragncrops/loot_tables/blocks/coconut_sapling.json
 adaa714fe610196e77a16f2ae0c1bec1506be562 data/dragncrops/loot_tables/blocks/corn.json
 685557a3066d41377011f169022ec84ead63186d data/dragncrops/loot_tables/blocks/corn_grain.json
 c420c7d6c5a0767cda479b5c58fe8aad6917f473 data/dragncrops/loot_tables/blocks/cranberries.json
@@ -33,8 +37,12 @@ bbf0d2cfc952d55e585fdb897cc61ed37a7c7202 data/dragncrops/loot_tables/blocks/gree
 b3d6562ad025d752cba2e25a132dc2a84c3647f1 data/dragncrops/loot_tables/blocks/green_apple_leaves.json
 bb1ecaefd02f209a8b0648dea7310273354e16e4 data/dragncrops/loot_tables/blocks/green_apple_sapling.json
 b52a0cdee44c0be99ce9577e8c13f497380edf1e data/dragncrops/loot_tables/blocks/honeydew.json
+90d90232a3bd2f2f366564e9d83ff3e4f77fd7c9 data/dragncrops/loot_tables/blocks/lime_leaves.json
+4667c16596fb7455aafce3216bc7e73060b9c5a4 data/dragncrops/loot_tables/blocks/lime_sapling.json
 8368edcbe177231fb0503e33fe6a7bf8b2f344a3 data/dragncrops/loot_tables/blocks/mango_candy.json
 ff2b11af2ab823f843e14894e101ede66918766b data/dragncrops/loot_tables/blocks/mango_jam.json
+21e0310cce80f80c1f3683835c2be6ce7e24dbbb data/dragncrops/loot_tables/blocks/mango_leaves.json
+5e401e1e3843cc9ad3aee69c7b827b3831c8db0d data/dragncrops/loot_tables/blocks/mango_sapling.json
 1da573ca3c6fc2650486c7cc06d087ff12517cb1 data/dragncrops/loot_tables/blocks/mango_tart.json
 267e2f099426bad33bb80f47a15c9dd78ed6c841 data/dragncrops/loot_tables/blocks/melon_candy.json
 b4b9a7a62994c6b9243f0cc01896b798c510743f data/dragncrops/loot_tables/blocks/melon_jam.json

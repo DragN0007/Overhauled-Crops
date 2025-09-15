@@ -102,6 +102,27 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MANGO_PIT.get(), 1)
+                .requires(COItems.MANGO.get())
+                .unlockedBy("has_mango", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MANGO.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.LIME_SEEDS.get(), 1)
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_lime", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.LIME.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CHERRY_PIT.get(), 1)
+                .requires(COItems.CHERRIES.get())
+                .unlockedBy("has_cherries", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.CHERRIES.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WHEAT_SEEDS, 1)
                 .requires(Items.WHEAT)
                 .unlockedBy("has_wheat", inventoryTrigger(ItemPredicate.Builder.item()

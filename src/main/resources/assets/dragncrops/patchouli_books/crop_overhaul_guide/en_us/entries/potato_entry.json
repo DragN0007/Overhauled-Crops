@@ -1,0 +1,19 @@
+{
+  "name": "Potatoes",
+  "icon": "minecraft:potato",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()$(br)-Plains (Classic) $(br)-Hot Biomes (Red) $(br)-Cold Biomes (Purple)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:red_potato"
+      },
+      "text": "Can be turned into vegetable-based meals and soups.",
+      "title": "Potatoes"
+    }
+  ]
+}

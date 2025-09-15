@@ -63,6 +63,9 @@ public class COItemGroup {
                         output.accept(COItems.RED_APPLE_SEEDS.get());
                         output.accept(COItems.YELLOW_APPLE_SEEDS.get());
                         output.accept(COItems.GREEN_APPLE_SEEDS.get());
+                        output.accept(COItems.LIME_SEEDS.get());
+                        output.accept(COItems.MANGO_PIT.get());
+                        output.accept(COItems.CHERRY_PIT.get());
 
                         output.accept(COItems.FLAIL.get());
                         output.accept(COItems.GRAIN.get());

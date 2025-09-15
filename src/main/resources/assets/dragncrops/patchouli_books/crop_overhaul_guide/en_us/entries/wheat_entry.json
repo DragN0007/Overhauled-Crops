@@ -1,0 +1,19 @@
+{
+  "name": "Wheat",
+  "icon": "minecraft:wheat",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Grain $(br)$(l)Spawns In: $()Plains"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:wheat"
+      },
+      "text": "Can be turned into Grain to be used in breads or pastries.",
+      "title": "Wheat"
+    }
+  ]
+}

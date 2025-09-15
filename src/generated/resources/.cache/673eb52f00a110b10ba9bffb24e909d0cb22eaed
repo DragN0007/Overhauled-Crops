@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T02:09:34.8864827	Item Models: dragncrops
+// 1.20.1	2025-09-14T18:36:51.9641573	Item Models: dragncrops
 378105d33588b24f1d22239e5d62ba5ffa050b15 assets/dragncrops/models/item/apple_candy.json
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 fc4e1184c09483a38f8b038717f3ea069147f9cd assets/dragncrops/models/item/apple_tart.json
@@ -20,6 +20,7 @@ edf8d6c4eafc2992542d2be40aab25a1a043e1eb assets/dragncrops/models/item/cantaloup
 1a0f2593657ff790be2a12453d97fe71d77bd6e6 assets/dragncrops/models/item/cherries.json
 a16058a26bb8a4273969f272e442af3059658b82 assets/dragncrops/models/item/cherry_candy.json
 c398b0bdbc730ec18a6056d96ad304f31f556fd8 assets/dragncrops/models/item/cherry_jam.json
+8bd2a56cc7a0669567d56be9923e86914de7da68 assets/dragncrops/models/item/cherry_pit.json
 ee894e3339b5218dc3908048ca354137441980e1 assets/dragncrops/models/item/cherry_tart.json
 e1fffc483a818c3ca1ebceb5d88c5886d81bc7b8 assets/dragncrops/models/item/cilantro.json
 6abae7890214b902682c0769f83d8d4c088da49b assets/dragncrops/models/item/coconut.json
@@ -42,9 +43,11 @@ bd2d6cec9abfb1b4a86d1ba132873df0dd560576 assets/dragncrops/models/item/honeydew.
 3e41542c7cba3420077c9f025add612b1c957c20 assets/dragncrops/models/item/honeydew_seeds.json
 d8230fef6b2e0bcade6256bb1098dea5e6c4629e assets/dragncrops/models/item/honeydew_slice.json
 d65fdc802beccb953bf2f7b466d3ca6246896f5c assets/dragncrops/models/item/lime.json
+2a877dd150070cef165f864b298c75eb9656dfbd assets/dragncrops/models/item/lime_seeds.json
 fb6d3c403fc0a42ab00a0192d2b890d11b1501f3 assets/dragncrops/models/item/mango.json
 7b781d31b4d24a086e63a23e2efa1527a4466cf8 assets/dragncrops/models/item/mango_candy.json
 b7480c9a360c2f19aa980c0e5f3dd0f3d6f52574 assets/dragncrops/models/item/mango_jam.json
+a2b58df14acab02391558a6ae3769ca0c602e309 assets/dragncrops/models/item/mango_pit.json
 e4a907e706b75a7a7f5fe25aab911ba29ab9d45e assets/dragncrops/models/item/mango_tart.json
 3efc0e0c821502867b64cf6a49a370417f661cb0 assets/dragncrops/models/item/melon_candy.json
 16f70c3ccc659f26103f080ef7b75365dd0734a1 assets/dragncrops/models/item/melon_jam.json

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_cold/overworld",
+  "features": "dragncrops:rosemary",
+  "step": "vegetal_decoration"
+}

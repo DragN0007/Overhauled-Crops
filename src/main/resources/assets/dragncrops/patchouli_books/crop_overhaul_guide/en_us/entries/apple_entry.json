@@ -1,0 +1,19 @@
+{
+  "name": "Apples",
+  "icon": "minecraft:apple",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Tree Fruit $(br)$(l)Spawns In: $()$(br)-Plains (Red) $(br)-Hot Biomes (Yellow) $(br)-Cold Biomes (Green)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:green_apple"
+      },
+      "text": "Can be turned into jam, pie, and candy.",
+      "title": "Apples"
+    }
+  ]
+}

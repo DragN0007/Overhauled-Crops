@@ -6,6 +6,24 @@
     "minecraft:potatoes",
     "minecraft:wheat",
     "minecraft:melon_stem",
-    "minecraft:pumpkin_stem"
+    "minecraft:pumpkin_stem",
+    "dragncrops:blackberries",
+    "dragncrops:blueberries",
+    "dragncrops:raspberries",
+    "dragncrops:white_raspberries",
+    "dragncrops:strawberries",
+    "dragncrops:cranberries",
+    "dragncrops:honeydew",
+    "dragncrops:cantaloupe",
+    "dragncrops:corn",
+    "dragncrops:rye",
+    "dragncrops:rice",
+    "dragncrops:cucumbers",
+    "dragncrops:garlic",
+    "dragncrops:peanuts",
+    "dragncrops:purple_carrot",
+    "dragncrops:yellow_carrot",
+    "dragncrops:purple_potato",
+    "dragncrops:red_potato"
   ]
 }

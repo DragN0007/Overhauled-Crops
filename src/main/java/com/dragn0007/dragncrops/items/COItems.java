@@ -92,7 +92,8 @@ public class COItems {
     public static final RegistryObject<Item> MANGO = ITEMS.register("mango",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5F).build())));
     public static final RegistryObject<Item> COCONUT = ITEMS.register("coconut",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5F).build())));
+            () -> new ItemNameBlockItem(COBlocks.COCONUT_SAPLING.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5F).build()))));
     public static final RegistryObject<Item> LIME = ITEMS.register("lime",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F).build())));
 
@@ -120,6 +121,12 @@ public class COItems {
             () -> new ItemNameBlockItem(COBlocks.YELLOW_APPLE_SAPLING.get(), (new Item.Properties())));
     public static final RegistryObject<Item> GREEN_APPLE_SEEDS = ITEMS.register("green_apple_seeds",
             () -> new ItemNameBlockItem(COBlocks.GREEN_APPLE_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> LIME_SEEDS = ITEMS.register("lime_seeds",
+            () -> new ItemNameBlockItem(COBlocks.LIME_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> MANGO_PIT = ITEMS.register("mango_pit",
+            () -> new ItemNameBlockItem(COBlocks.MANGO_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> CHERRY_PIT = ITEMS.register("cherry_pit",
+            () -> new ItemNameBlockItem(COBlocks.CHERRY_SAPLING.get(), (new Item.Properties())));
 
 
     //Ingredients

@@ -1,0 +1,19 @@
+{
+  "name": "Carrots",
+  "icon": "minecraft:carrot",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()$(br)-Plains (Classic) $(br)-Hot Biomes (Yellow) $(br)-Cold Biomes (Purple)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:yellow_carrot"
+      },
+      "text": "Can be turned into vegetable-based meals and soups.",
+      "title": "Carrots"
+    }
+  ]
+}

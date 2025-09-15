@@ -24,6 +24,28 @@ public class COBlockstateProvider extends BlockStateProvider {
     }
     @Override
     protected void registerStatesAndModels() {
+        simpleBlock(COBlocks.RED_APPLE_SAPLING.get(), models().cross(COBlocks.RED_APPLE_SAPLING.getId().getPath(),
+                wildPlantTexture("red_apple_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.YELLOW_APPLE_SAPLING.get(), models().cross(COBlocks.YELLOW_APPLE_SAPLING.getId().getPath(),
+               wildPlantTexture("yellow_apple_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.GREEN_APPLE_SAPLING.get(), models().cross(COBlocks.GREEN_APPLE_SAPLING.getId().getPath(),
+               wildPlantTexture("green_apple_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.COCONUT_SAPLING.get(), models().cross(COBlocks.COCONUT_SAPLING.getId().getPath(),
+               wildPlantTexture("coconut_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.MANGO_SAPLING.get(), models().cross(COBlocks.MANGO_SAPLING.getId().getPath(),
+               wildPlantTexture("mango_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.LIME_SAPLING.get(), models().cross(COBlocks.LIME_SAPLING.getId().getPath(),
+               wildPlantTexture("lime_sapling")).renderType("cutout"));
+
+        simpleBlock(COBlocks.CHERRY_SAPLING.get(), models().cross(COBlocks.CHERRY_SAPLING.getId().getPath(),
+               wildPlantTexture("cherry_sapling")).renderType("cutout"));
+
+
         simpleBlock(COBlocks.WILD_CARROTS.get(), models().cross(COBlocks.WILD_CARROTS.getId().getPath(),
                 wildVanillaPlantTexture("carrots_stage3")).renderType("cutout"));
 
@@ -130,11 +152,17 @@ public class COBlockstateProvider extends BlockStateProvider {
         createLeaves((FruitLeaves) COBlocks.GREEN_APPLE_LEAVES.get(), "green_apple_leaves", "green_apple_leaves",
                 0, 1, 2, 3);
 
-//        createCrop((OCropBlock) COBlocks.CORN.get(), "corn", "corn",
-//                0, 1, 2, 3, 4, 5, 6, 7);
-//        simpleBlock(COBlocks.WILD_CORN.get(), models().cross(COBlocks.WILD_CORN.getId().getPath(),
-//                wildPlantTexture("corn_stage7")).renderType("cutout"));
+        createLeaves((FruitLeaves) COBlocks.MANGO_LEAVES.get(), "mango_leaves", "mango_leaves",
+                0, 1, 2, 3);
 
+        createLeaves((FruitLeaves) COBlocks.COCONUT_LEAVES.get(), "coconut_leaves", "coconut_leaves",
+                0, 1, 2, 3);
+
+        createLeaves((FruitLeaves) COBlocks.LIME_LEAVES.get(), "lime_leaves", "lime_leaves",
+                0, 1, 2, 3);
+
+        createLeaves((FruitLeaves) COBlocks.CHERRY_LEAVES.get(), "cherry_leaves", "cherry_leaves",
+                0, 1, 2, 3);
     }
 
     public void createCrop(OCropBlock block, String modelNamePrefix, String textureNamePrefix, int... stageMap) {
