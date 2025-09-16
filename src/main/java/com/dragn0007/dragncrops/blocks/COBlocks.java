@@ -88,7 +88,7 @@ public class COBlocks {
             () -> new PeanutBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_PEANUTS = registerBlockWithoutItem("wild_peanuts",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
-    public static final RegistryObject<Block> CUCUMBERS = registerBlockWithoutItem("cucumber",
+    public static final RegistryObject<Block> CUCUMBERS = registerBlockWithoutItem("cucumbers",
             () -> new CucumbersBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_CUCUMBERS = registerBlockWithoutItem("wild_cucumber",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
@@ -191,6 +191,12 @@ public class COBlocks {
     public static final RegistryObject<Block> CANNED_VEGETABLES = registerBlockWithoutItem("canned_vegetables", CanBlock::new);
     public static final RegistryObject<Block> CANNED_FRUIT = registerBlockWithoutItem("canned_fruit", CanBlock::new);
     public static final RegistryObject<Block> CANNED_BEEF = registerBlockWithoutItem("canned_beef", CanBlock::new);
+
+    public static final RegistryObject<Block> UNFERMENTED_PICKLES = registerBlockWithoutItem("unfermented_pickles", UnfermentedPickles::new);
+    public static final RegistryObject<Block> FERMENTED_PICKLES = registerBlockWithoutItem("fermented_pickles", JarBlock::new);
+    public static final RegistryObject<Block> STOCK = registerBlockWithoutItem("stock", JarBlock::new);
+    public static final RegistryObject<Block> VEGETABLE_SOUP = registerBlockWithoutItem("vegetable_soup", JarBlock::new);
+    public static final RegistryObject<Block> MEAT_AND_VEGETABLE_STEW = registerBlockWithoutItem("meat_and_vegetable_stew", JarBlock::new);
 
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

@@ -57,6 +57,12 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.RYE_BREAD.get(),  COItems.RYE_BREAD.get());
         this.dropOther(COBlocks.WHITE_BREAD.get(),  COItems.WHITE_BREAD.get());
 
+        this.dropOther(COBlocks.FERMENTED_PICKLES.get(),  COItems.FERMENTED_PICKLES.get());
+        this.dropOther(COBlocks.UNFERMENTED_PICKLES.get(),  COItems.UNFERMENTED_PICKLES.get());
+        this.dropOther(COBlocks.STOCK.get(),  COItems.STOCK.get());
+        this.dropOther(COBlocks.VEGETABLE_SOUP.get(),  COItems.VEGETABLE_SOUP.get());
+        this.dropOther(COBlocks.MEAT_AND_VEGETABLE_STEW.get(),  COItems.MEAT_AND_VEGETABLE_STEW.get());
+
         LootItemCondition.Builder builder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WHEAT_GRAIN.get());
         this.add(COBlocks.WHEAT_GRAIN.get(), this.createMultiDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));
 

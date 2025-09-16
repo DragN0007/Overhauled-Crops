@@ -21,9 +21,9 @@
     "dragncrops:cucumbers",
     "dragncrops:garlic",
     "dragncrops:peanuts",
-    "dragncrops:purple_carrot",
-    "dragncrops:yellow_carrot",
-    "dragncrops:purple_potato",
-    "dragncrops:red_potato"
+    "dragncrops:purple_carrots",
+    "dragncrops:yellow_carrots",
+    "dragncrops:purple_potatoes",
+    "dragncrops:red_potatoes"
   ]
 }

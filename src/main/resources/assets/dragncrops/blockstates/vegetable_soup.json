@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/jar/vegetable_soup",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/jar/vegetable_soup"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/jar/vegetable_soup",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/jar/vegetable_soup",
+      "y": 270
+    }
+  }
+}

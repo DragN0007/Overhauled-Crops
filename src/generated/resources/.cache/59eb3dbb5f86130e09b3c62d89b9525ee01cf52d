@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-15T01:21:32.6104018	Loot Tables
+// 1.20.1	2025-09-15T21:03:13.7790982	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
 176296d04fd2749e06f85c922bbefec6777e96ca data/dragncrops/loot_tables/blocks/apple_tart.json
@@ -38,6 +38,7 @@ f4e403bec8272d6a213ec14253ab2e250080953b data/dragncrops/loot_tables/blocks/cran
 a2df8ce0bc42f5af03ff7469bcad00c4d423320c data/dragncrops/loot_tables/blocks/cranberry_jam.json
 14501d71e5ebd05e8606e98ae73c3cb76112dd3a data/dragncrops/loot_tables/blocks/cranberry_tart.json
 dad80ae41ec17ece557e0af617c171b520bbb3df data/dragncrops/loot_tables/blocks/cucumber.json
+18becc5ecbb75ad794d451f2de87826170293c50 data/dragncrops/loot_tables/blocks/fermented_pickles.json
 9689980eaf45fc5d5e629b8545107f9b5d8c8f20 data/dragncrops/loot_tables/blocks/garlic.json
 bbf0d2cfc952d55e585fdb897cc61ed37a7c7202 data/dragncrops/loot_tables/blocks/green_apple.json
 b3d6562ad025d752cba2e25a132dc2a84c3647f1 data/dragncrops/loot_tables/blocks/green_apple_leaves.json
@@ -50,6 +51,7 @@ ff2b11af2ab823f843e14894e101ede66918766b data/dragncrops/loot_tables/blocks/mang
 21e0310cce80f80c1f3683835c2be6ce7e24dbbb data/dragncrops/loot_tables/blocks/mango_leaves.json
 5e401e1e3843cc9ad3aee69c7b827b3831c8db0d data/dragncrops/loot_tables/blocks/mango_sapling.json
 1da573ca3c6fc2650486c7cc06d087ff12517cb1 data/dragncrops/loot_tables/blocks/mango_tart.json
+10d75e4ff0dea0d2f917cc4d6a4645ffa96e51bc data/dragncrops/loot_tables/blocks/meat_and_vegetable_stew.json
 267e2f099426bad33bb80f47a15c9dd78ed6c841 data/dragncrops/loot_tables/blocks/melon_candy.json
 b4b9a7a62994c6b9243f0cc01896b798c510743f data/dragncrops/loot_tables/blocks/melon_jam.json
 9abcfcfae3433a82292a1f4591eca783a4651db4 data/dragncrops/loot_tables/blocks/melon_tart.json
@@ -72,11 +74,14 @@ feb0aee781ba4a8d76299ba6886498a97cd808f3 data/dragncrops/loot_tables/blocks/rice
 74235e586993b246651ac68579e7f5709b793242 data/dragncrops/loot_tables/blocks/rye.json
 96076bbbb8ea18867326658b1289b8abb8888780 data/dragncrops/loot_tables/blocks/rye_bread.json
 6f309f7dd5c20b659d597905437e96f3e9d91d02 data/dragncrops/loot_tables/blocks/rye_grain.json
+78bc3a067bb43339cb537f4d3a074301e28a77f8 data/dragncrops/loot_tables/blocks/stock.json
 cdd9d91aad75de88238a9221e264af93d2bc1d45 data/dragncrops/loot_tables/blocks/strawberries.json
 fb53c78edc23a71da3909986d369610a36c8969a data/dragncrops/loot_tables/blocks/strawberry_candy.json
 99aae8ae13eee9a729a20efd7a3f38b2f89a65bb data/dragncrops/loot_tables/blocks/strawberry_jam.json
 6b4cd533c5b9878c1f8f4a5ef67ca36c925c63ab data/dragncrops/loot_tables/blocks/strawberry_tart.json
 c6f2d22a81cc4d99517d9ca494e7c67afbd60721 data/dragncrops/loot_tables/blocks/sugar_beets.json
+12fa30992333d3be9f4e532c0f5a216fd8fbfb48 data/dragncrops/loot_tables/blocks/unfermented_pickles.json
+646a5c0de785cf487ea9f492f3e8a571fabfcc1f data/dragncrops/loot_tables/blocks/vegetable_soup.json
 baa695ad9d4cf9c7c08d3eeee156747a63bbd1d9 data/dragncrops/loot_tables/blocks/watermelon_candy.json
 065f4c37bfa37a80e3ea82a761607d7c6765de87 data/dragncrops/loot_tables/blocks/watermelon_jam.json
 76ebc917ac6855f86bb6448dd6af523d1bb1a677 data/dragncrops/loot_tables/blocks/watermelon_tart.json

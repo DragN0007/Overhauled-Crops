@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/large_jar",
+	"textures": {
+		"texture": "dragncrops:block/pickles"
+	}
+}

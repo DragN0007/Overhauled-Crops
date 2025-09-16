@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import org.checkerframework.checker.units.qual.A;
 
 import java.util.function.Consumer;
 
@@ -38,6 +39,69 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .pattern("A")
                 .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(Items.IRON_NUGGET)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.GLASS_JAR.get())
+                .define('A', Items.GLASS)
+                .pattern("A A")
+                .pattern("AAA")
+                .unlockedBy("has_glass", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.GLASS)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_PICKLES.get())
+                .requires(COItems.GLASS_JAR.get())
+                .requires(COItems.CUCUMBER.get())
+                .requires(COItems.CUCUMBER.get())
+                .requires(COItems.GARLIC.get())
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GLASS_JAR.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.STOCK.get())
+                .requires(COItems.GLASS_JAR.get())
+                .requires(Items.BONE)
+                .requires(Items.BONE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GLASS_JAR.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(CropOverhaul.MODID, "stock_from_bones"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.STOCK.get())
+                .requires(COItems.GLASS_JAR.get())
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GLASS_JAR.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer, new ResourceLocation(CropOverhaul.MODID, "stock_from_vegetables"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.VEGETABLE_SOUP.get())
+                .requires(COItems.STOCK.get())
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COItems.GARLIC.get())
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GLASS_JAR.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MEAT_AND_VEGETABLE_STEW.get())
+                .requires(COItems.STOCK.get())
+                .requires(COTags.Items.COOKED_MEATS)
+                .requires(COTags.Items.VEGETABLES)
+                .requires(COItems.GARLIC.get())
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GLASS_JAR.get())
                         .build()))
                 .save(pFinishedRecipeConsumer);
 

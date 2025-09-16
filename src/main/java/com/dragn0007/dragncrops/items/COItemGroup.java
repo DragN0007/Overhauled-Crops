@@ -17,7 +17,7 @@ public class COItemGroup {
 
     public static final RegistryObject<CreativeModeTab> CROP_OVERHAUL_GROUP = CREATIVE_MODE_TABS.register("overhauled_crops",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(COItems.CROP_OVERHAUL.get())).title(Component.translatable("itemGroup.overhauled_crops"))
-                    .displayItems((displayParameters, output) -> {
+                    .withSearchBar().displayItems((displayParameters, output) -> {
 
                         output.accept(Items.APPLE);
                         output.accept(COItems.YELLOW_APPLE.get());
@@ -69,6 +69,7 @@ public class COItemGroup {
 
                         output.accept(COItems.FLAIL.get());
                         output.accept(COItems.EMPTY_CAN.get());
+                        output.accept(COItems.GLASS_JAR.get());
 
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
@@ -86,6 +87,12 @@ public class COItemGroup {
                         output.accept(COItems.CANNED_VEGETABLES.get());
                         output.accept(COItems.CANNED_FRUIT.get());
                         output.accept(COItems.CANNED_BEEF.get());
+
+                        output.accept(COItems.UNFERMENTED_PICKLES.get());
+                        output.accept(COItems.FERMENTED_PICKLES.get());
+                        output.accept(COItems.STOCK.get());
+                        output.accept(COItems.VEGETABLE_SOUP.get());
+                        output.accept(COItems.MEAT_AND_VEGETABLE_STEW.get());
 
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());

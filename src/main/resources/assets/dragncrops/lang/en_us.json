@@ -1,8 +1,9 @@
 {
-  "itemGroup.overhauled_crops": "Overhauled Crops",
+  "itemGroup.overhauled_crops": "O-Crops",
 
   "item.dragncrops.flail": "Flail",
   "item.dragncrops.empty_can": "Empty Can",
+  "item.dragncrops.glass_jar": "Glass Jar",
 
   "item.minecraft.melon_slice": "Watermelon Slice",
   "item.minecraft.apple": "Red Apple",
@@ -232,6 +233,19 @@
   "block.dragncrops.canned_beef": "Canned Beef",
 
 
+  "item.dragncrops.fermented_pickles": "Pickles",
+  "item.dragncrops.unfermented_pickles": "Unfermented Pickles",
+  "item.dragncrops.stock": "Stock",
+  "item.dragncrops.vegetable_soup": "Vegetable Soup",
+  "item.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
+
+  "block.dragncrops.fermented_pickles": "Fermented Pickles",
+  "block.dragncrops.unfermented_pickles": "Unfermented Pickles",
+  "block.dragncrops.stock": "Stock",
+  "block.dragncrops.vegetable_soup": "Vegetable Soup",
+  "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
+
+
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
 
   "config.jade.plugin_dragncrops.flail_hint": "Flail Grain Hint",
@@ -239,6 +253,7 @@
   "config.jade.plugin_dragncrops.apples": "Amount of Apples in Baskets",
   "config.jade.plugin_dragncrops.candies": "Amount of Candies in Candy Bags",
   "config.jade.plugin_dragncrops.cans": "Amount of Cans in Stacks/ Crates",
+  "config.jade.plugin_dragncrops.ferment_time": "Display Ferment Percent",
 
   "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.placeable.tooltip": "Placeable",

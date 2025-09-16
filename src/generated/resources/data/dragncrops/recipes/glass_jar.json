@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "A A",
+    "AAA"
+  ],
+  "result": {
+    "item": "dragncrops:glass_jar"
+  },
+  "show_notification": true
+}

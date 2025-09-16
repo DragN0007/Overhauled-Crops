@@ -32,7 +32,7 @@ public class CanBlock extends Block implements SimpleWaterloggedBlock {
    public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
    protected static final VoxelShape ONE_AABB = Block.box(6, 0, 6, 10, 6, 10);
    protected static final VoxelShape TWO_AABB = Block.box(3, 0, 3, 13, 6, 13);
-   protected static final VoxelShape FIVE_AABB = Block.box(3, 0, 3, 13, 11, 13);
+   protected static final VoxelShape FIVE_AABB = Block.box(3, 0, 3, 13, 12, 13);
    protected static final VoxelShape SIX_AABB = Block.box(0, 0, 0, 16, 13, 16);
 
    public CanBlock() {

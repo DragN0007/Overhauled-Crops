@@ -9,8 +9,6 @@ import snownee.jade.api.WailaPlugin;
 @WailaPlugin
 public class JadePlugin implements IWailaPlugin {
 
-
-
     @Override
     public void registerClient(IWailaClientRegistration registration) {
         registration.registerBlockComponent(new FlailTooltipProvider(), GrainBlock.class);
@@ -18,5 +16,6 @@ public class JadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new ApplesTooltipProvider(), AppleBlock.class);
         registration.registerBlockComponent(new CandiesTooltipProvider(), CandyBlock.class);
         registration.registerBlockComponent(new CansTooltipProvider(), CanBlock.class);
+        registration.registerBlockComponent(new FermentTooltipProvider(), FermentedBase.class);
     }
 }

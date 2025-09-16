@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/jar/fermented_pickles",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/jar/fermented_pickles"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/jar/fermented_pickles",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/jar/fermented_pickles",
+      "y": 270
+    }
+  }
+}

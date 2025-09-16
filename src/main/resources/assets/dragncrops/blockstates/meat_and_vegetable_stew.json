@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/jar/meat_and_vegetable_stew",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/jar/meat_and_vegetable_stew"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/jar/meat_and_vegetable_stew",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/jar/meat_and_vegetable_stew",
+      "y": 270
+    }
+  }
+}

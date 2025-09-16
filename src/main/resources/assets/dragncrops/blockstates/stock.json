@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/jar/stock",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/jar/stock"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/jar/stock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/jar/stock",
+      "y": 270
+    }
+  }
+}
