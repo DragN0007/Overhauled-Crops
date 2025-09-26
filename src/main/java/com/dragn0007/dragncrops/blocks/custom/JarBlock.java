@@ -4,6 +4,7 @@ import com.dragn0007.dragncrops.blocks.DecorRotator;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -31,7 +32,7 @@ public class JarBlock extends DecorRotator {
 
     public JarBlock() {
         super(NORTH, EAST, SOUTH, WEST,
-                Properties.copy(Blocks.OAK_PLANKS).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
+                Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.STONE).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 

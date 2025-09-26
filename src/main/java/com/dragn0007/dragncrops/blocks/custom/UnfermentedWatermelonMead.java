@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.stream.Stream;
 
-public class UnfermentedMeadJar extends FermentedBase {
+public class UnfermentedWatermelonMead extends FermentedBase {
 
     public static final VoxelShape NORTH = Stream.of(
             Block.box(4, 0, 4, 12, 9, 12),
@@ -42,9 +42,9 @@ public class UnfermentedMeadJar extends FermentedBase {
             Block.box(6.499999999999999, 9, 6.499999999999999, 9.5, 11, 9.5)
     ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
 
-    public UnfermentedMeadJar() {
+    public UnfermentedWatermelonMead() {
         super(NORTH, EAST, SOUTH, WEST,
-                Properties.of().sound(SoundType.FUNGUS).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
+                Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(this.getFermentTimeProperty(), 0));
@@ -68,7 +68,7 @@ public class UnfermentedMeadJar extends FermentedBase {
         if (i >= this.getMaxFermentTime()) {
             BlockState blockState = level.getBlockState(pos);
             Direction facingDirection = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING);
-            BlockState state1 = COBlocks.FERMENTED_PICKLES.get().defaultBlockState()
+            BlockState state1 = COBlocks.FERMENTED_WATERMELON_MEAD.get().defaultBlockState()
                     .setValue(BlockStateProperties.HORIZONTAL_FACING, facingDirection);
             level.setBlockAndUpdate(pos, state1);
         }

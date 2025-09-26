@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/three_meads",
+	"textures": {
+		"texture": "dragncrops:block/cantaloupe_mead"
+	}
+}

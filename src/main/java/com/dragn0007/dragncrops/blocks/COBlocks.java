@@ -212,6 +212,50 @@ public class COBlocks {
     public static final RegistryObject<Block> GAME_SAUSAGE = registerBlockWithoutItem("game_sausage", UndriedGameSausage::new);
     public static final RegistryObject<Block> DRIED_GAME_SAUSAGE = registerBlockWithoutItem("dried_game_sausage", SausageBlock::new);
 
+    public static final RegistryObject<Block> UNFERMENTED_HONEY_MEAD = registerBlockWithoutItem("unfermented_honey_mead", UnfermentedHoneyMead::new);
+    public static final RegistryObject<Block> FERMENTED_HONEY_MEAD = registerBlockWithoutItem("fermented_honey_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_APPLE_MEAD = registerBlockWithoutItem("unfermented_apple_mead", UnfermentedAppleMead::new);
+    public static final RegistryObject<Block> FERMENTED_APPLE_MEAD = registerBlockWithoutItem("fermented_apple_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_BLACKBERRY_MEAD = registerBlockWithoutItem("unfermented_blackberry_mead", UnfermentedBlackberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_BLACKBERRY_MEAD = registerBlockWithoutItem("fermented_blackberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_BLUEBERRY_MEAD = registerBlockWithoutItem("unfermented_blueberry_mead", UnfermentedBlueberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_BLUEBERRY_MEAD = registerBlockWithoutItem("fermented_blueberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_CANTALOUPE_MEAD = registerBlockWithoutItem("unfermented_cantaloupe_mead", UnfermentedCantaloupeMead::new);
+    public static final RegistryObject<Block> FERMENTED_CANTALOUPE_MEAD = registerBlockWithoutItem("fermented_cantaloupe_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_CHERRY_MEAD = registerBlockWithoutItem("unfermented_cherry_mead", UnfermentedCherryMead::new);
+    public static final RegistryObject<Block> FERMENTED_CHERRY_MEAD = registerBlockWithoutItem("fermented_cherry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_CRANBERRY_MEAD = registerBlockWithoutItem("unfermented_cranberry_mead", UnfermentedCranberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_CRANBERRY_MEAD = registerBlockWithoutItem("fermented_cranberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_MANGO_MEAD = registerBlockWithoutItem("unfermented_mango_mead", UnfermentedMangoMead::new);
+    public static final RegistryObject<Block> FERMENTED_MANGO_MEAD = registerBlockWithoutItem("fermented_mango_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_MELON_MEAD = registerBlockWithoutItem("unfermented_melon_mead", UnfermentedMelonMead::new);
+    public static final RegistryObject<Block> FERMENTED_MELON_MEAD = registerBlockWithoutItem("fermented_melon_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_RASPBERRY_MEAD = registerBlockWithoutItem("unfermented_raspberry_mead", UnfermentedRaspberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_RASPBERRY_MEAD = registerBlockWithoutItem("fermented_raspberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_STRAWBERRY_MEAD = registerBlockWithoutItem("unfermented_strawberry_mead", UnfermentedStrawberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_STRAWBERRY_MEAD = registerBlockWithoutItem("fermented_strawberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_WATERMELON_MEAD = registerBlockWithoutItem("unfermented_watermelon_mead", UnfermentedWatermelonMead::new);
+    public static final RegistryObject<Block> FERMENTED_WATERMELON_MEAD = registerBlockWithoutItem("fermented_watermelon_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_MAGMA_CREAM_MEAD = registerBlockWithoutItem("unfermented_magma_cream_mead", UnfermentedMagmaCreamMead::new);
+    public static final RegistryObject<Block> FERMENTED_MAGMA_CREAM_MEAD = registerBlockWithoutItem("fermented_magma_cream_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_BEETROOT_MEAD = registerBlockWithoutItem("unfermented_beetroot_mead", UnfermentedBeetrootMead::new);
+    public static final RegistryObject<Block> FERMENTED_BEETROOT_MEAD = registerBlockWithoutItem("fermented_beetroot_mead", MeadJarBlock::new);
+
+    public static final RegistryObject<Block> HONEY_MEAD = registerBlockWithoutItem("honey_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> APPLE_MEAD = registerBlockWithoutItem("apple_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> BLACKBERRY_MEAD = registerBlockWithoutItem("blackberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> BLUEBERRY_MEAD = registerBlockWithoutItem("blueberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> CANTALOUPE_MEAD = registerBlockWithoutItem("cantaloupe_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> CHERRY_MEAD = registerBlockWithoutItem("cherry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> CRANBERRY_MEAD = registerBlockWithoutItem("cranberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> MANGO_MEAD = registerBlockWithoutItem("mango_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> MELON_MEAD = registerBlockWithoutItem("melon_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> RASPBERRY_MEAD = registerBlockWithoutItem("raspberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> STRAWBERRY_MEAD = registerBlockWithoutItem("strawberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> WATERMELON_MEAD = registerBlockWithoutItem("watermelon_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> MAGMA_CREAM_MEAD = registerBlockWithoutItem("magma_cream_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> BEETROOT_MEAD = registerBlockWithoutItem("beetroot_mead", MeadBottleBlock::new);
+
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> RED_APPLE_LEAVES = registerBlock("red_apple_leaves",

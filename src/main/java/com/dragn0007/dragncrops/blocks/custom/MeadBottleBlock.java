@@ -35,7 +35,7 @@ public class MeadBottleBlock extends Block implements SimpleWaterloggedBlock {
    protected static final VoxelShape FOUR_AABB = Block.box(3, 0, 3, 13, 11, 13);
 
    public MeadBottleBlock() {
-      super(Properties.of().sound(SoundType.METAL).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion());
+      super(Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion());
       this.registerDefaultState(this.stateDefinition.any().setValue(BOTTLES1, Integer.valueOf(1)).setValue(WATERLOGGED, Boolean.valueOf(true))) ;
    }
 

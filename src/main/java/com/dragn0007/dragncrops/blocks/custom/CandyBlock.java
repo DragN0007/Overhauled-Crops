@@ -30,7 +30,7 @@ public class CandyBlock extends DecorRotator implements SimpleWaterloggedBlock {
    public static final IntegerProperty CANDIES1 = CANDIES;
 
    public CandyBlock() {
-      super(NORTH, EAST, SOUTH, WEST, Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion());
+      super(NORTH, EAST, SOUTH, WEST, Properties.of().sound(SoundType.GRASS).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion());
       this.registerDefaultState(this.stateDefinition.any().setValue(CANDIES1, Integer.valueOf(1))) ;
    }
 

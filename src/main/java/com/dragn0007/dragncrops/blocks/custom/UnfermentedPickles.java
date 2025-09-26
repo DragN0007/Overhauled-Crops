@@ -36,7 +36,7 @@ public class UnfermentedPickles extends FermentedBase {
 
     public UnfermentedPickles() {
         super(NORTH, EAST, SOUTH, WEST,
-                BlockBehaviour.Properties.of().sound(SoundType.FUNGUS).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
+                BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(this.getFermentTimeProperty(), 0));

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/mead_jar/watermelon_mead_jar",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/mead_jar/watermelon_mead_jar"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/mead_jar/watermelon_mead_jar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/mead_jar/watermelon_mead_jar",
+      "y": 270
+    }
+  }
+}

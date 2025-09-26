@@ -16,14 +16,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class FermentedBase extends HorizontalDirectionalBlock {
 
-    public static final IntegerProperty FERMENT_TIME = IntegerProperty.create("ferment_time", 0, 101);
+    public static final IntegerProperty FERMENT_TIME = IntegerProperty.create("ferment_time", 0, 201);
 
     public IntegerProperty getFermentTimeProperty() {
         return FERMENT_TIME;
     }
 
     public int getMaxFermentTime() {
-        return 100;
+        return 200;
     }
 
     public int getFermentTime(BlockState state) {
