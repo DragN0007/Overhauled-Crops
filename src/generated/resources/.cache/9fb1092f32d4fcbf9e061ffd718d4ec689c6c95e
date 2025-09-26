@@ -1,7 +1,8 @@
-// 1.20.1	2025-09-15T20:52:59.4313804	Recipes
+// 1.20.1	2025-09-26T14:40:39.4081355	Recipes
 a1c98b92ee60e6430cf14d037d7bd44f0ff1c266 data/dragncrops/advancements/recipes/misc/apple_candy.json
 5c2b8d8ed3260d2ee7841629b83115f4b5350cc5 data/dragncrops/advancements/recipes/misc/apple_jam.json
 8ca8caa7f694e09c3787c4cc9584a3e384413efa data/dragncrops/advancements/recipes/misc/apple_tart.json
+8611621d07217fb3db5e34219b8388e6e8ee5b9f data/dragncrops/advancements/recipes/misc/beef_sausage.json
 bb665a05ba1827f0e8a48481be82625764a24270 data/dragncrops/advancements/recipes/misc/blackberry_candy.json
 7f1b33550ba1025f59d554c1c099814b6cdc27f8 data/dragncrops/advancements/recipes/misc/blackberry_jam.json
 fba08db1a3340a178865b7fb9a485454601dd735 data/dragncrops/advancements/recipes/misc/blackberry_tart.json
@@ -24,6 +25,9 @@ aab354b0530f3770440ae8682484c3282fe456cd data/dragncrops/advancements/recipes/mi
 4624993980b8e60ce4c98070fc87dcc6dbb9dec1 data/dragncrops/advancements/recipes/misc/cherry_jam.json
 04c748eb597114b00d99f011d5c61fee99aadb6e data/dragncrops/advancements/recipes/misc/cherry_pit.json
 1d48fbc6d7a1746a9bec0c991e42c4dc6a6efe0e data/dragncrops/advancements/recipes/misc/cherry_tart.json
+2c9689caf0fc8ebade3aa5207d6002b217809ee6 data/dragncrops/advancements/recipes/misc/cooked_beef_campfire_cooking.json
+7afa0a35e8efb41e7676a99dbbc01afc4337e470 data/dragncrops/advancements/recipes/misc/cooked_beef_smelting.json
+0c16eb0a8d0f13e93531f65e21add4e1f7554a0d data/dragncrops/advancements/recipes/misc/cooked_beef_smoking.json
 e79d76a542408d56ebdd0ad0550e987e075525fa data/dragncrops/advancements/recipes/misc/corn_seeds.json
 5deb58b877f418b68e7ec940b40ec61ad75b0347 data/dragncrops/advancements/recipes/misc/cranberry_bread.json
 04631cf4f595b68d4723b2fef0503c43c07e88a8 data/dragncrops/advancements/recipes/misc/cranberry_candy.json
@@ -42,6 +46,7 @@ b4b637a96b60344f5d691b89189226207ac86c58 data/dragncrops/advancements/recipes/mi
 a827c605b43786db83ba3181f2f6579d00e86ce0 data/dragncrops/advancements/recipes/misc/mango_pit.json
 fe0b4def068a6207376b67f4a272f19414aedb80 data/dragncrops/advancements/recipes/misc/mango_tart.json
 4516908a0a2f2fd096fe7f2485129271a8d2dbb2 data/dragncrops/advancements/recipes/misc/meat_and_vegetable_stew.json
+b9a414d2abdc2ae8d75914e29776de97d1607f99 data/dragncrops/advancements/recipes/misc/meat_mallet.json
 ede63f0ca3c6e68b8eabdf4c3f05aeca28eda9da data/dragncrops/advancements/recipes/misc/melon_candy.json
 2d56e072e50b41b9ac60cde152960b1369424548 data/dragncrops/advancements/recipes/misc/melon_jam.json
 667e1caa115984cc59ce663c8a275c88bb31907c data/dragncrops/advancements/recipes/misc/melon_tart.json
@@ -70,6 +75,7 @@ a78cae4886fb7f37f30f56a508ac5d90de54c4ab data/dragncrops/advancements/recipes/mi
 d9fb4a40da3bf9ae48d53d7480fcfce9ccb75df9 data/dragncrops/recipes/apple_candy.json
 e9d5b14d8f509246c9a9264303f43f3d4f1e3e0c data/dragncrops/recipes/apple_jam.json
 84b0e6f7e1edde90070e0ea9f7fa9ec6bc14c1ae data/dragncrops/recipes/apple_tart.json
+8eef9ac89a9db85f6313068d940aedf3b292c0bc data/dragncrops/recipes/beef_sausage.json
 7f005ba05ce6d8ee59219c3428c5666c8090e4ec data/dragncrops/recipes/blackberry_candy.json
 5d3c47c0253255bd779b5900170077905f784f73 data/dragncrops/recipes/blackberry_jam.json
 530ef2213ee1bb57904c2550eda44904f905a6d5 data/dragncrops/recipes/blackberry_tart.json
@@ -92,6 +98,9 @@ ddf646cd5930a88a2f003c3ba41699ad45eac2da data/dragncrops/recipes/cantaloupe_jam.
 26d9deb1fe885386ea5593cd8da7db9c951f01dc data/dragncrops/recipes/cherry_jam.json
 a0e19af7125b9b1f16aa31a8fec6c59f3ac80cbc data/dragncrops/recipes/cherry_pit.json
 3035ea048a8f1f60491d18be76444ec62597bc5f data/dragncrops/recipes/cherry_tart.json
+d6f5c0d8903ff4c5127522fe7c8dd8f47ae7e5e3 data/dragncrops/recipes/cooked_beef_campfire_cooking.json
+9b672d52ee052b75b787271a3509f4bdf2484470 data/dragncrops/recipes/cooked_beef_smelting.json
+d80d5b36899d89a07a71be0c34223e1340dbd8ec data/dragncrops/recipes/cooked_beef_smoking.json
 52006338978bee7fa48cbadefa3a824d694ca0ff data/dragncrops/recipes/corn_seeds.json
 bd9806a28751506d47024a00997fccc4f97bd1f4 data/dragncrops/recipes/cranberry_bread.json
 3c1b79dbe3d5397349b9b4d6290afe2d688f09da data/dragncrops/recipes/cranberry_candy.json
@@ -110,6 +119,7 @@ e58a9a151a1d3fddd760436e475ebe76ee621933 data/dragncrops/recipes/honeydew_slice.
 b00c67e0cc6e0575c489b0676bc1aa81e81c4406 data/dragncrops/recipes/mango_pit.json
 97d872e7aa8a3622b2dd009e1093561a5f1c2b78 data/dragncrops/recipes/mango_tart.json
 cd0eb47c2987403b6745458001e403f0315b7238 data/dragncrops/recipes/meat_and_vegetable_stew.json
+e9cc1d41f36d6736b1e750abfe37531ea8bc84f0 data/dragncrops/recipes/meat_mallet.json
 76e75b7714540c75cfe0d6d71e96f3e0cd706a98 data/dragncrops/recipes/melon_candy.json
 702954f77c44db9350d7806cd63fdb1ae73f03c0 data/dragncrops/recipes/melon_jam.json
 067a3a1e7994b17fae52d69ee129f8b17cca52e0 data/dragncrops/recipes/melon_tart.json

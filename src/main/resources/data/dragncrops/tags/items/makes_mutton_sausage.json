@@ -1,0 +1,66 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:mutton",
+
+    {
+      "id": "dragnlivestock:mutton_loin",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:mutton_rib",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:llama",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:llama_loin",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:llama_rib",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:chevon",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:chevon_loin",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:chevon_rib",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/mutton",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/chevon",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/llama",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/alpaca",
+      "required": false
+    }
+  ]
+}

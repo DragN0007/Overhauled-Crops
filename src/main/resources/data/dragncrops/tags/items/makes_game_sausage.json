@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "dragnlivestock:caribou",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:caribou_sirloin_steak",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:caribou_rib_steak",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/caribou",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/venison",
+      "required": false
+    }
+  ]
+}

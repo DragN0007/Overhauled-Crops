@@ -1,0 +1,111 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:rabbit",
+
+    {
+      "id": "dragnlivestock:horse",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:horse_sirloin_steak",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:horse_rib_steak",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:rabbit_thigh",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:unicorn",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:unicorn_sirloin_steak",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:unicorn_rib_steak",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:camel",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:camel_loin",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:camel_rib",
+      "required": false
+    },
+
+    {
+      "id": "dragnlivestock:frog",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/horse_meat",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/rabbit",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/camelidae",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/frog_legs",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/hyena",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/fox",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/gran_feline",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/wolf",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/turtle",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/bear",
+      "required": false
+    }
+  ]
+}

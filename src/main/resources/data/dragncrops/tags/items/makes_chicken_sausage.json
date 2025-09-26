@@ -1,0 +1,42 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:chicken",
+
+
+    {
+      "id": "dragnlivestock:chicken_thigh",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/chicken",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/turkey",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/quail",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/peafowl",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/grouse",
+      "required": false
+    },
+
+    {
+      "id": "tfc:food/pheasant",
+      "required": false
+    }
+  ]
+}

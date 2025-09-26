@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " AB",
+    " BA",
+    "B  "
+  ],
+  "result": {
+    "item": "dragncrops:meat_mallet"
+  },
+  "show_notification": true
+}

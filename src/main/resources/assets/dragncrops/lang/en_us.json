@@ -246,6 +246,14 @@
   "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
 
 
+  "item.dragncrops.beef_sausage": "Beef Sausage",
+  "item.dragncrops.cooked_beef_sausage": "Cooked Beef Sausage",
+  "item.dragncrops.dried_beef_sausage": "Dried Beef Sausage",
+
+  "block.dragncrops.beef_sausage": "Beef Sausage",
+  "block.dragncrops.dried_beef_sausage": "Dried Beef Sausage",
+
+
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
 
   "config.jade.plugin_dragncrops.flail_hint": "Flail Grain Hint",
@@ -254,8 +262,10 @@
   "config.jade.plugin_dragncrops.candies": "Amount of Candies in Candy Bags",
   "config.jade.plugin_dragncrops.cans": "Amount of Cans in Stacks/ Crates",
   "config.jade.plugin_dragncrops.ferment_time": "Display Ferment Percent",
+  "config.jade.plugin_dragncrops.dry_time": "Display Dried Percent",
 
   "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
+  "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
   "tooltip.dragncrops.placeable.tooltip": "Placeable",
   "tooltip.dragncrops.grain.tooltip": "Can be placed for grain production."
 }

@@ -70,6 +70,7 @@ public class COItemGroup {
                         output.accept(COItems.FLAIL.get());
                         output.accept(COItems.EMPTY_CAN.get());
                         output.accept(COItems.GLASS_JAR.get());
+                        output.accept(COItems.MEAT_MALLET.get());
 
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
@@ -93,6 +94,10 @@ public class COItemGroup {
                         output.accept(COItems.STOCK.get());
                         output.accept(COItems.VEGETABLE_SOUP.get());
                         output.accept(COItems.MEAT_AND_VEGETABLE_STEW.get());
+
+                        output.accept(COItems.BEEF_SAUSAGE.get());
+                        output.accept(COItems.DRIED_BEEF_SAUSAGE.get());
+                        output.accept(COItems.COOKED_BEEF_SAUSAGE.get());
 
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());

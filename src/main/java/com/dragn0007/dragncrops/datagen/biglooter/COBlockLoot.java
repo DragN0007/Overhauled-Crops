@@ -51,17 +51,20 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.CHERRY_SAPLING.get(), COItems.CHERRY_PIT.get());
 
         this.dropOther(COBlocks.BREAD.get(), Items.BREAD);
-        this.dropOther(COBlocks.BLUEBERRY_BREAD.get(),  COItems.BLUEBERRY_BREAD.get());
-        this.dropOther(COBlocks.CRANBERRY_BREAD.get(),  COItems.CRANBERRY_BREAD.get());
-        this.dropOther(COBlocks.NUT_BREAD.get(),  COItems.NUT_BREAD.get());
-        this.dropOther(COBlocks.RYE_BREAD.get(),  COItems.RYE_BREAD.get());
-        this.dropOther(COBlocks.WHITE_BREAD.get(),  COItems.WHITE_BREAD.get());
+        this.dropOther(COBlocks.BLUEBERRY_BREAD.get(), COItems.BLUEBERRY_BREAD.get());
+        this.dropOther(COBlocks.CRANBERRY_BREAD.get(), COItems.CRANBERRY_BREAD.get());
+        this.dropOther(COBlocks.NUT_BREAD.get(), COItems.NUT_BREAD.get());
+        this.dropOther(COBlocks.RYE_BREAD.get(), COItems.RYE_BREAD.get());
+        this.dropOther(COBlocks.WHITE_BREAD.get(), COItems.WHITE_BREAD.get());
 
-        this.dropOther(COBlocks.FERMENTED_PICKLES.get(),  COItems.FERMENTED_PICKLES.get());
-        this.dropOther(COBlocks.UNFERMENTED_PICKLES.get(),  COItems.UNFERMENTED_PICKLES.get());
-        this.dropOther(COBlocks.STOCK.get(),  COItems.STOCK.get());
-        this.dropOther(COBlocks.VEGETABLE_SOUP.get(),  COItems.VEGETABLE_SOUP.get());
-        this.dropOther(COBlocks.MEAT_AND_VEGETABLE_STEW.get(),  COItems.MEAT_AND_VEGETABLE_STEW.get());
+        this.dropOther(COBlocks.FERMENTED_PICKLES.get(), COItems.FERMENTED_PICKLES.get());
+        this.dropOther(COBlocks.UNFERMENTED_PICKLES.get(), COItems.UNFERMENTED_PICKLES.get());
+        this.dropOther(COBlocks.STOCK.get(), COItems.STOCK.get());
+        this.dropOther(COBlocks.VEGETABLE_SOUP.get(), COItems.VEGETABLE_SOUP.get());
+        this.dropOther(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), COItems.MEAT_AND_VEGETABLE_STEW.get());
+
+        this.dropOther(COBlocks.BEEF_SAUSAGE.get(), COItems.BEEF_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_BEEF_SAUSAGE.get(), COItems.DRIED_BEEF_SAUSAGE.get());
 
         LootItemCondition.Builder builder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WHEAT_GRAIN.get());
         this.add(COBlocks.WHEAT_GRAIN.get(), this.createMultiDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));

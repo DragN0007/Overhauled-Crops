@@ -384,6 +384,22 @@ public class COItems {
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
 
 
+    //Sausage
+    public static final RegistryObject<Item> BEEF_SAUSAGE = ITEMS.register("beef_sausage",
+            () -> new PlaceableItem(COBlocks.BEEF_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+
+    public static final RegistryObject<Item> DRIED_BEEF_SAUSAGE = ITEMS.register("dried_beef_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> COOKED_BEEF_SAUSAGE = ITEMS.register("cooked_beef_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+
     //Tools/ Supplies
     public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",
             () -> new FlailItem(Tiers.DIAMOND, 1, -1.4F, new Item.Properties()));
@@ -393,6 +409,8 @@ public class COItems {
 
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MEAT_MALLET = ITEMS.register("meat_mallet", MeatMalletItem::new);
 
 
     public static final RegistryObject<Item> CROP_OVERHAUL = ITEMS.register("crop_overhaul",

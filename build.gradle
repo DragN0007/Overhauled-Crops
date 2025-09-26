@@ -78,11 +78,20 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
 
-maven {
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+    }
+
+    maven {
         url 'https://www.cursemaven.com'
     }
 
-maven {
+    maven {
         url 'https://maven.blamejared.com'
     }
 
@@ -97,7 +106,8 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     //compat stuff
-//    implementation fg.deobf("curse.maven:dragns-livestock-overhaul-1131669:6960887")
+    implementation fg.deobf("curse.maven:dragns-livestock-overhaul-1131669:7033844")
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.4.4')
     implementation fg.deobf("curse.maven:spoiled-364918:6828889")
 
     //nbtenks made by gotenks

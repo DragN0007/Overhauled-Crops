@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:meat_mallet"
+    },
+    {
+      "tag": "dragncrops:makes_beef_sausage"
+    },
+    {
+      "tag": "forge:herbs"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:beef_sausage"
+  }
+}

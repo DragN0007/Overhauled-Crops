@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,14 +16,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class FermentedBase extends HorizontalDirectionalBlock {
 
-    public static final IntegerProperty FERMENT_TIME = IntegerProperty.create("ferment_time", 0, 33);
+    public static final IntegerProperty FERMENT_TIME = IntegerProperty.create("ferment_time", 0, 101);
 
     public IntegerProperty getFermentTimeProperty() {
         return FERMENT_TIME;
     }
 
     public int getMaxFermentTime() {
-        return 32;
+        return 100;
     }
 
     public int getFermentTime(BlockState state) {
@@ -61,6 +62,10 @@ public class FermentedBase extends HorizontalDirectionalBlock {
 
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+    }
+
+    public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
+        return Block.canSupportCenter(pLevel, pPos.below(), Direction.UP);
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter blockReader, BlockPos pos, CollisionContext context) {

@@ -17,5 +17,6 @@ public class JadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new CandiesTooltipProvider(), CandyBlock.class);
         registration.registerBlockComponent(new CansTooltipProvider(), CanBlock.class);
         registration.registerBlockComponent(new FermentTooltipProvider(), FermentedBase.class);
+        registration.registerBlockComponent(new DryTooltipProvider(), DriedBase.class);
     }
 }

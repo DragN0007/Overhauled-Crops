@@ -122,6 +122,11 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.STOCK);
         simpleItem(COItems.VEGETABLE_SOUP);
         simpleItem(COItems.MEAT_AND_VEGETABLE_STEW);
+
+        simpleItem(COItems.MEAT_MALLET);
+        simpleItem(COItems.BEEF_SAUSAGE);
+        simpleItem(COItems.DRIED_BEEF_SAUSAGE);
+        simpleItem(COItems.COOKED_BEEF_SAUSAGE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

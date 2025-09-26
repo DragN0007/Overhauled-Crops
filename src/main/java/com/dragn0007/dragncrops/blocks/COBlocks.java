@@ -66,7 +66,6 @@ public class COBlocks {
     public static final RegistryObject<Block> WILD_PURPLE_POTATOES = registerBlockWithoutItem("wild_purple_potatoes",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
-
     public static final RegistryObject<Block> CORN = registerBlockWithoutItem("corn",
             () -> new CornBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_CORN = registerBlockWithoutItem("wild_corn",
@@ -197,6 +196,9 @@ public class COBlocks {
     public static final RegistryObject<Block> STOCK = registerBlockWithoutItem("stock", JarBlock::new);
     public static final RegistryObject<Block> VEGETABLE_SOUP = registerBlockWithoutItem("vegetable_soup", JarBlock::new);
     public static final RegistryObject<Block> MEAT_AND_VEGETABLE_STEW = registerBlockWithoutItem("meat_and_vegetable_stew", JarBlock::new);
+
+    public static final RegistryObject<Block> BEEF_SAUSAGE = registerBlockWithoutItem("beef_sausage", UndriedBeefSausage::new);
+    public static final RegistryObject<Block> DRIED_BEEF_SAUSAGE = registerBlockWithoutItem("dried_beef_sausage", SausageBlock::new);
 
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

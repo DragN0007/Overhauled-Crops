@@ -9,6 +9,7 @@ import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.checkerframework.checker.units.qual.A;
 
@@ -32,6 +33,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(ItemTags.PLANKS).build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.MEAT_MALLET.get())
+                .define('A', Items.IRON_INGOT)
+                .define('B', Items.STICK)
+                .pattern(" AB")
+                .pattern(" BA")
+                .pattern("B  ")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.EMPTY_CAN.get())
                 .define('A', Items.IRON_INGOT)
                 .define('B', Items.IRON_NUGGET)
@@ -50,6 +61,25 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(Items.GLASS)
                         .build()))
                 .save(pFinishedRecipeConsumer);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BEEF_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_BEEF_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_campfire_cooking"));
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_PICKLES.get())

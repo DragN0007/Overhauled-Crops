@@ -1,0 +1,182 @@
+{
+	"format_version": "1.21.6",
+	"credit": "DragN0007",
+	"textures": {
+		"0": "#texture",
+		"1": "dragncrops:block/hook",
+		"particle": "#texture"
+	},
+	"elements": [
+		{
+			"name": "dried_beef_sausage_0",
+			"from": [9, 2, 14],
+			"to": [11, 16, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [7, 1, 5, 15], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [5, 1, 6, 15], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [5, 1, 7, 15], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [6, 1, 7, 15], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [5, 14, 7, 15], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [5, 1, 7, 2], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_1",
+			"from": [5, 2, 14],
+			"to": [7, 16, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [11, 1, 9, 15], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [9, 1, 10, 15], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [9, 1, 11, 15], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [10, 1, 11, 15], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [9, 14, 11, 15], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [9, 1, 11, 2], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_2",
+			"from": [11, 3, 14],
+			"to": [12, 15, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [5, 2, 4, 14], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [4, 2, 5, 14], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [4, 2, 5, 14], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [4, 2, 5, 14], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [4, 13, 5, 14], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [4, 2, 5, 3], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_3",
+			"from": [7, 3, 14],
+			"to": [9, 7, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [9, 2, 7, 6], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [7, 2, 8, 6], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [7, 2, 9, 6], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [8, 2, 9, 6], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [7, 5, 9, 6], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [7, 2, 9, 3], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_4",
+			"from": [4, 3, 14],
+			"to": [5, 15, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [12, 2, 11, 14], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [11, 2, 12, 14], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [11, 2, 12, 14], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [11, 2, 12, 14], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [11, 13, 12, 14], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [11, 2, 12, 3], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_5",
+			"from": [12, 6, 14],
+			"to": [13, 14, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [4, 5, 3, 13], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [3, 5, 4, 13], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [3, 5, 4, 13], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [3, 5, 4, 13], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [3, 12, 4, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [3, 5, 4, 6], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_6",
+			"from": [3, 6, 14],
+			"to": [4, 14, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [13, 5, 12, 13], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [12, 5, 13, 13], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [12, 5, 13, 13], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [12, 5, 13, 13], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [12, 12, 13, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [12, 5, 13, 6], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "dried_beef_sausage_7",
+			"from": [7, 11, 14],
+			"to": [9, 16, 15],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 9.25, 14.5]},
+			"faces": {
+				"north": {"uv": [9, 10, 7, 15], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [7, 10, 8, 15], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [7, 10, 9, 15], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [8, 10, 9, 15], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [7, 14, 9, 15], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [7, 10, 9, 11], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "hook",
+			"from": [7.2, 10.6, 12.8],
+			"to": [8.8, 13.8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.2, 10.6, 14.4]},
+			"faces": {
+				"north": {"uv": [4, 0, 6, 4], "texture": "#1"},
+				"east": {"uv": [0, 0, 4, 4], "texture": "#1"},
+				"south": {"uv": [4, 4, 6, 8], "texture": "#1"},
+				"west": {"uv": [0, 4, 4, 8], "texture": "#1"},
+				"up": {"uv": [8, 4, 6, 0], "texture": "#1"},
+				"down": {"uv": [8, 4, 6, 8], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "dried_beef_sausage",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7]
+		},
+		{
+			"name": "hook",
+			"origin": [7.2, 10.6, 14.4],
+			"color": 0,
+			"children": [8]
+		}
+	]
+}
