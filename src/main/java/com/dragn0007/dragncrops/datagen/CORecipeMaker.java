@@ -63,25 +63,6 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .save(pFinishedRecipeConsumer);
 
 
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BEEF_SAUSAGE.get())
-                .requires(COItems.MEAT_MALLET.get())
-                .requires(COTags.Items.MAKES_BEEF_SAUSAGE)
-                .requires(COTags.Items.HERBS)
-                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(COItems.MEAT_MALLET.get())
-                        .build()))
-                .save(pFinishedRecipeConsumer);
-
-        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 100)
-                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smoking"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 200)
-                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smelting"));
-        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 600)
-                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_campfire_cooking"));
-
-
-
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_PICKLES.get())
                 .requires(COItems.GLASS_JAR.get())
                 .requires(COItems.CUCUMBER.get())
@@ -532,7 +513,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MANGO.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MANGO_CANDY.get())
                 .requires(COItems.MANGO.get())
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -672,6 +653,112 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .of(COTags.Items.SUGAR)
                         .build()))
                 .save(pFinishedRecipeConsumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BEEF_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_BEEF_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.BEEF_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_BEEF_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_beef_sausage", has(COItems.BEEF_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_beef_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CHICKEN_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_CHICKEN_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.CHICKEN_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_CHICKEN_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_chicken_sausage", has(COItems.CHICKEN_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_chicken_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.CHICKEN_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_CHICKEN_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_chicken_sausage", has(COItems.CHICKEN_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_chicken_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.CHICKEN_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_CHICKEN_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_chicken_sausage", has(COItems.CHICKEN_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_chicken_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.PORK_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_PORK_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.PORK_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_PORK_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_pork_sausage", has(COItems.PORK_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_pork_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.PORK_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_PORK_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_pork_sausage", has(COItems.PORK_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_pork_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.PORK_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_PORK_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_pork_sausage", has(COItems.PORK_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_pork_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MUTTON_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_MUTTON_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.MUTTON_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_MUTTON_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_mutton_sausage", has(COItems.MUTTON_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_mutton_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.MUTTON_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_MUTTON_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_mutton_sausage", has(COItems.MUTTON_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_mutton_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.MUTTON_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_MUTTON_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_mutton_sausage", has(COItems.MUTTON_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_mutton_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.FISH_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_FISH_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.FISH_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_FISH_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_fish_sausage", has(COItems.FISH_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_fish_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.FISH_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_FISH_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_fish_sausage", has(COItems.FISH_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_fish_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.FISH_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_FISH_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_fish_sausage", has(COItems.FISH_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_fish_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GENERIC_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_GENERIC_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.GENERIC_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GENERIC_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_generic_sausage", has(COItems.GENERIC_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_generic_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.GENERIC_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GENERIC_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_generic_sausage", has(COItems.GENERIC_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_generic_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.GENERIC_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GENERIC_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_generic_sausage", has(COItems.GENERIC_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_generic_campfire_cooking"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GAME_SAUSAGE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MAKES_GAME_SAUSAGE)
+                .requires(COTags.Items.HERBS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.GAME_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GAME_SAUSAGE.get(), 0.35F, 100)
+                .unlockedBy("has_game_sausage", has(COItems.GAME_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_game_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.GAME_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GAME_SAUSAGE.get(), 0.35F, 200)
+                .unlockedBy("has_game_sausage", has(COItems.GAME_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_game_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.GAME_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GAME_SAUSAGE.get(), 0.35F, 600)
+                .unlockedBy("has_game_sausage", has(COItems.GAME_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_game_campfire_cooking"));
 
     }
 }

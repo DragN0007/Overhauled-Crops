@@ -388,13 +388,83 @@ public class COItems {
     public static final RegistryObject<Item> BEEF_SAUSAGE = ITEMS.register("beef_sausage",
             () -> new PlaceableItem(COBlocks.BEEF_SAUSAGE.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
-
     public static final RegistryObject<Item> DRIED_BEEF_SAUSAGE = ITEMS.register("dried_beef_sausage",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
-
     public static final RegistryObject<Item> COOKED_BEEF_SAUSAGE = ITEMS.register("cooked_beef_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> CHICKEN_SAUSAGE = ITEMS.register("chicken_sausage",
+            () -> new PlaceableItem(COBlocks.CHICKEN_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_CHICKEN_SAUSAGE = ITEMS.register("dried_chicken_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_CHICKEN_SAUSAGE = ITEMS.register("cooked_chicken_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> PORK_SAUSAGE = ITEMS.register("pork_sausage",
+            () -> new PlaceableItem(COBlocks.PORK_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_PORK_SAUSAGE = ITEMS.register("dried_pork_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_PORK_SAUSAGE = ITEMS.register("cooked_pork_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> MUTTON_SAUSAGE = ITEMS.register("mutton_sausage",
+            () -> new PlaceableItem(COBlocks.MUTTON_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_MUTTON_SAUSAGE = ITEMS.register("dried_mutton_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_MUTTON_SAUSAGE = ITEMS.register("cooked_mutton_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> FISH_SAUSAGE = ITEMS.register("fish_sausage",
+            () -> new PlaceableItem(COBlocks.FISH_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_FISH_SAUSAGE = ITEMS.register("dried_fish_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_FISH_SAUSAGE = ITEMS.register("cooked_fish_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> GENERIC_SAUSAGE = ITEMS.register("generic_sausage",
+            () -> new PlaceableItem(COBlocks.GENERIC_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_GENERIC_SAUSAGE = ITEMS.register("dried_generic_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_GENERIC_SAUSAGE = ITEMS.register("cooked_generic_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> GAME_SAUSAGE = ITEMS.register("game_sausage",
+            () -> new PlaceableItem(COBlocks.GAME_SAUSAGE.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> DRIED_GAME_SAUSAGE = ITEMS.register("dried_game_sausage",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> COOKED_GAME_SAUSAGE = ITEMS.register("cooked_game_sausage",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));

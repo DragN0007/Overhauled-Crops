@@ -31,7 +31,7 @@ public class JarBlock extends DecorRotator {
 
     public JarBlock() {
         super(NORTH, EAST, SOUTH, WEST,
-                Properties.copy(Blocks.STONE).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
+                Properties.copy(Blocks.OAK_PLANKS).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 

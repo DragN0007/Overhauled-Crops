@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chicken_sausage": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dragncrops:chicken_sausage"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dragncrops:cooked_chicken_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_chicken_sausage",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dragncrops:cooked_chicken_smoking"
+    ]
+  },
+  "sends_telemetry_event": false
+}

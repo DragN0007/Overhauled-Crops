@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/sausage_hanging",
+	"textures": {
+		"texture": "dragncrops:item/generic_sausage"
+	}
+}

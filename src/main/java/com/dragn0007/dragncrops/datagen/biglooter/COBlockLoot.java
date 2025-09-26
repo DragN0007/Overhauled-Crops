@@ -65,6 +65,18 @@ public class COBlockLoot extends BlockLootSubProvider {
 
         this.dropOther(COBlocks.BEEF_SAUSAGE.get(), COItems.BEEF_SAUSAGE.get());
         this.dropOther(COBlocks.DRIED_BEEF_SAUSAGE.get(), COItems.DRIED_BEEF_SAUSAGE.get());
+        this.dropOther(COBlocks.CHICKEN_SAUSAGE.get(), COItems.CHICKEN_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_CHICKEN_SAUSAGE.get(), COItems.DRIED_CHICKEN_SAUSAGE.get());
+        this.dropOther(COBlocks.PORK_SAUSAGE.get(), COItems.PORK_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_PORK_SAUSAGE.get(), COItems.DRIED_PORK_SAUSAGE.get());
+        this.dropOther(COBlocks.MUTTON_SAUSAGE.get(), COItems.MUTTON_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_MUTTON_SAUSAGE.get(), COItems.DRIED_MUTTON_SAUSAGE.get());
+        this.dropOther(COBlocks.FISH_SAUSAGE.get(), COItems.FISH_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_FISH_SAUSAGE.get(), COItems.DRIED_FISH_SAUSAGE.get());
+        this.dropOther(COBlocks.GENERIC_SAUSAGE.get(), COItems.GENERIC_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_GENERIC_SAUSAGE.get(), COItems.DRIED_GENERIC_SAUSAGE.get());
+        this.dropOther(COBlocks.GAME_SAUSAGE.get(), COItems.GAME_SAUSAGE.get());
+        this.dropOther(COBlocks.DRIED_GAME_SAUSAGE.get(), COItems.DRIED_GAME_SAUSAGE.get());
 
         LootItemCondition.Builder builder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WHEAT_GRAIN.get());
         this.add(COBlocks.WHEAT_GRAIN.get(), this.createMultiDrops(COBlocks.WHEAT_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder));

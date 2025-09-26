@@ -199,6 +199,18 @@ public class COBlocks {
 
     public static final RegistryObject<Block> BEEF_SAUSAGE = registerBlockWithoutItem("beef_sausage", UndriedBeefSausage::new);
     public static final RegistryObject<Block> DRIED_BEEF_SAUSAGE = registerBlockWithoutItem("dried_beef_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> CHICKEN_SAUSAGE = registerBlockWithoutItem("chicken_sausage", UndriedChickenSausage::new);
+    public static final RegistryObject<Block> DRIED_CHICKEN_SAUSAGE = registerBlockWithoutItem("dried_chicken_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> PORK_SAUSAGE = registerBlockWithoutItem("pork_sausage", UndriedPorkSausage::new);
+    public static final RegistryObject<Block> DRIED_PORK_SAUSAGE = registerBlockWithoutItem("dried_pork_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> MUTTON_SAUSAGE = registerBlockWithoutItem("mutton_sausage", UndriedMuttonSausage::new);
+    public static final RegistryObject<Block> DRIED_MUTTON_SAUSAGE = registerBlockWithoutItem("dried_mutton_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> FISH_SAUSAGE = registerBlockWithoutItem("fish_sausage", UndriedFishSausage::new);
+    public static final RegistryObject<Block> DRIED_FISH_SAUSAGE = registerBlockWithoutItem("dried_fish_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> GENERIC_SAUSAGE = registerBlockWithoutItem("generic_sausage", UndriedGenericSausage::new);
+    public static final RegistryObject<Block> DRIED_GENERIC_SAUSAGE = registerBlockWithoutItem("dried_generic_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> GAME_SAUSAGE = registerBlockWithoutItem("game_sausage", UndriedGameSausage::new);
+    public static final RegistryObject<Block> DRIED_GAME_SAUSAGE = registerBlockWithoutItem("dried_game_sausage", SausageBlock::new);
 
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));

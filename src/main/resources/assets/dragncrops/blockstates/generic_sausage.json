@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/sausage/generic_sausage",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/sausage/generic_sausage"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/sausage/generic_sausage",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/sausage/generic_sausage",
+      "y": 270
+    }
+  }
+}

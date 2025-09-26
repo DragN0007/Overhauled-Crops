@@ -7,6 +7,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -98,6 +99,26 @@ public class COItemGroup {
                         output.accept(COItems.BEEF_SAUSAGE.get());
                         output.accept(COItems.DRIED_BEEF_SAUSAGE.get());
                         output.accept(COItems.COOKED_BEEF_SAUSAGE.get());
+                        output.accept(COItems.CHICKEN_SAUSAGE.get());
+                        output.accept(COItems.DRIED_CHICKEN_SAUSAGE.get());
+                        output.accept(COItems.COOKED_CHICKEN_SAUSAGE.get());
+                        output.accept(COItems.PORK_SAUSAGE.get());
+                        output.accept(COItems.DRIED_PORK_SAUSAGE.get());
+                        output.accept(COItems.COOKED_PORK_SAUSAGE.get());
+                        output.accept(COItems.MUTTON_SAUSAGE.get());
+                        output.accept(COItems.DRIED_MUTTON_SAUSAGE.get());
+                        output.accept(COItems.COOKED_MUTTON_SAUSAGE.get());
+                        output.accept(COItems.FISH_SAUSAGE.get());
+                        output.accept(COItems.DRIED_FISH_SAUSAGE.get());
+                        output.accept(COItems.COOKED_FISH_SAUSAGE.get());
+                        output.accept(COItems.GENERIC_SAUSAGE.get());
+                        output.accept(COItems.DRIED_GENERIC_SAUSAGE.get());
+                        output.accept(COItems.COOKED_GENERIC_SAUSAGE.get());
+                        if (ModList.get().isLoaded("dragnlivestock") || ModList.get().isLoaded("dragnexpansion")) {
+                            output.accept(COItems.GAME_SAUSAGE.get());
+                            output.accept(COItems.DRIED_GAME_SAUSAGE.get());
+                            output.accept(COItems.COOKED_GAME_SAUSAGE.get());
+                        }
 
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());

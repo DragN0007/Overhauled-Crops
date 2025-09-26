@@ -127,6 +127,24 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.BEEF_SAUSAGE);
         simpleItem(COItems.DRIED_BEEF_SAUSAGE);
         simpleItem(COItems.COOKED_BEEF_SAUSAGE);
+        simpleItem(COItems.CHICKEN_SAUSAGE);
+        simpleItem(COItems.DRIED_CHICKEN_SAUSAGE);
+        simpleItem(COItems.COOKED_CHICKEN_SAUSAGE);
+        simpleItem(COItems.PORK_SAUSAGE);
+        simpleItem(COItems.DRIED_PORK_SAUSAGE);
+        simpleItem(COItems.COOKED_PORK_SAUSAGE);
+        simpleItem(COItems.MUTTON_SAUSAGE);
+        simpleItem(COItems.DRIED_MUTTON_SAUSAGE);
+        simpleItem(COItems.COOKED_MUTTON_SAUSAGE);
+        simpleItem(COItems.FISH_SAUSAGE);
+        simpleItem(COItems.DRIED_FISH_SAUSAGE);
+        simpleItem(COItems.COOKED_FISH_SAUSAGE);
+        simpleItem(COItems.GENERIC_SAUSAGE);
+        simpleItem(COItems.DRIED_GENERIC_SAUSAGE);
+        simpleItem(COItems.COOKED_GENERIC_SAUSAGE);
+        simpleItem(COItems.GAME_SAUSAGE);
+        simpleItem(COItems.DRIED_GAME_SAUSAGE);
+        simpleItem(COItems.COOKED_GAME_SAUSAGE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

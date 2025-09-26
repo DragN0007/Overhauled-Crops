@@ -61,8 +61,7 @@ public class UnfermentedPickles extends FermentedBase {
             BlockState blockState = level.getBlockState(pos);
             Direction facingDirection = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING);
             BlockState state1 = COBlocks.FERMENTED_PICKLES.get().defaultBlockState()
-                    .setValue(BlockStateProperties.HORIZONTAL_FACING, facingDirection)
-                    .setValue(this.getFermentTimeProperty(), 0);
+                    .setValue(BlockStateProperties.HORIZONTAL_FACING, facingDirection);
             level.setBlockAndUpdate(pos, state1);
         }
 
