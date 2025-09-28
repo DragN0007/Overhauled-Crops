@@ -1,6 +1,7 @@
 {
 	"format_version": "1.21.6",
 	"credit": "DragN0007",
+	"render_type": "cutout",
 	"textures": {
 		"7": "#texture",
 		"particle": "#texture"

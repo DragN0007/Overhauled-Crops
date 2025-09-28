@@ -145,6 +145,36 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.GAME_SAUSAGE);
         simpleItem(COItems.DRIED_GAME_SAUSAGE);
         simpleItem(COItems.COOKED_GAME_SAUSAGE);
+
+        simpleItem(COItems.APPLE_MEAD);
+        simpleItem(COItems.BLACKBERRY_MEAD);
+        simpleItem(COItems.BLUEBERRY_MEAD);
+        simpleItem(COItems.CANTALOUPE_MEAD);
+        simpleItem(COItems.CHERRY_MEAD);
+        simpleItem(COItems.CRANBERRY_MEAD);
+        simpleItem(COItems.MANGO_MEAD);
+        simpleItem(COItems.MELON_MEAD);
+        simpleItem(COItems.RASPBERRY_MEAD);
+        simpleItem(COItems.STRAWBERRY_MEAD);
+        simpleItem(COItems.WATERMELON_MEAD);
+        simpleItem(COItems.HONEY_MEAD);
+        simpleItem(COItems.MAGMA_CREAM_MEAD);
+        simpleItem(COItems.BEETROOT_MEAD);
+
+        advancedItem(COItems.UNFERMENTED_APPLE_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_BLACKBERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_BLUEBERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_CANTALOUPE_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_CHERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_CRANBERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_MANGO_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_MELON_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_RASPBERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_STRAWBERRY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_WATERMELON_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_HONEY_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_MAGMA_CREAM_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_BEETROOT_MEAD, "unfermented_mead");
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

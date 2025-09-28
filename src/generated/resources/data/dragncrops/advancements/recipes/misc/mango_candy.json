@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dragncrops:mango"
+        "recipe": "dragncrops:mango_candy"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "dragncrops:mango"
+      "dragncrops:mango_candy"
     ]
   },
   "sends_telemetry_event": false

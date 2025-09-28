@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "6"
+                  }
+                }
+              ],
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "7"
+                  }
+                }
+              ],
+              "count": 7.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "8"
+                  }
+                }
+              ],
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "9"
+                  }
+                }
+              ],
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "10"
+                  }
+                }
+              ],
+              "count": 10.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "11"
+                  }
+                }
+              ],
+              "count": 11.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "12"
+                  }
+                }
+              ],
+              "count": 12.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "13"
+                  }
+                }
+              ],
+              "count": 13.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "14"
+                  }
+                }
+              ],
+              "count": 14.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "15"
+                  }
+                }
+              ],
+              "count": 15.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dragncrops:unfermented_raspberry_mead",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "jars": "16"
+                  }
+                }
+              ],
+              "count": 16.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "dragncrops:unfermented_raspberry_mead"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "dragncrops:blocks/unfermented_raspberry_mead"
+}

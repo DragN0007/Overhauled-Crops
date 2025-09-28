@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-26T15:26:13.9731228	Recipes
+// 1.20.1	2025-09-27T23:36:30.1544487	Recipes
 a1c98b92ee60e6430cf14d037d7bd44f0ff1c266 data/dragncrops/advancements/recipes/misc/apple_candy.json
 5c2b8d8ed3260d2ee7841629b83115f4b5350cc5 data/dragncrops/advancements/recipes/misc/apple_jam.json
 8ca8caa7f694e09c3787c4cc9584a3e384413efa data/dragncrops/advancements/recipes/misc/apple_tart.json
@@ -63,7 +63,7 @@ b4b637a96b60344f5d691b89189226207ac86c58 data/dragncrops/advancements/recipes/mi
 3e63a9ae118a811a389b5c1fb9482e99c02353c1 data/dragncrops/advancements/recipes/misc/honeydew_seeds.json
 97b89c0cbec479a1433c37ed261c1270b080a752 data/dragncrops/advancements/recipes/misc/honeydew_slice.json
 8eb98985154cd309ea37da0bd694813b06fb3a9e data/dragncrops/advancements/recipes/misc/lime_seeds.json
-8d98c87ad573bfc7660adfa5c3d788c465de9e73 data/dragncrops/advancements/recipes/misc/mango.json
+db43ac3e42373bf435937bf2a169e4510a3d0983 data/dragncrops/advancements/recipes/misc/mango_candy.json
 0046747124361cd2024058d8a46134246d531bf8 data/dragncrops/advancements/recipes/misc/mango_jam.json
 a827c605b43786db83ba3181f2f6579d00e86ce0 data/dragncrops/advancements/recipes/misc/mango_pit.json
 fe0b4def068a6207376b67f4a272f19414aedb80 data/dragncrops/advancements/recipes/misc/mango_tart.json
@@ -160,7 +160,7 @@ bc5aec9a8ace5aa4e25132369a5a25707e1f8254 data/dragncrops/recipes/green_apple_see
 0d414511a3a8cb04c3d68fa3151f174ff5aa8e98 data/dragncrops/recipes/honeydew_seeds.json
 e58a9a151a1d3fddd760436e475ebe76ee621933 data/dragncrops/recipes/honeydew_slice.json
 9d4adb3ab47c7ad3f0a83d12e45c60acac3a2403 data/dragncrops/recipes/lime_seeds.json
-6e0560209475230eb44c25dd4f1d643044b636f0 data/dragncrops/recipes/mango.json
+0c93a5f1c64427ded102d158c3cde01eb9565cb7 data/dragncrops/recipes/mango_candy.json
 4c193b9a2b8afd850095c6c021153f7c19351de0 data/dragncrops/recipes/mango_jam.json
 b00c67e0cc6e0575c489b0676bc1aa81e81c4406 data/dragncrops/recipes/mango_pit.json
 97d872e7aa8a3622b2dd009e1093561a5f1c2b78 data/dragncrops/recipes/mango_tart.json

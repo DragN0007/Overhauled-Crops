@@ -4,10 +4,7 @@ import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
-import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
-import com.dragn0007.dragncrops.blocks.custom.CanBlock;
-import com.dragn0007.dragncrops.blocks.custom.CandyBlock;
-import com.dragn0007.dragncrops.blocks.custom.JamJarBlock;
+import com.dragn0007.dragncrops.blocks.custom.*;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -125,6 +122,49 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.RASPBERRY_CANDY.get(), createCandyDrops(COBlocks.RASPBERRY_CANDY.get(), COItems.RASPBERRY_CANDY.get()));
         this.add(COBlocks.STRAWBERRY_CANDY.get(), createCandyDrops(COBlocks.STRAWBERRY_CANDY.get(), COItems.STRAWBERRY_CANDY.get()));
         this.add(COBlocks.WATERMELON_CANDY.get(), createCandyDrops(COBlocks.WATERMELON_CANDY.get(), COItems.WATERMELON_CANDY.get()));
+
+        this.add(COBlocks.APPLE_MEAD.get(), createMeadDrops(COBlocks.APPLE_MEAD.get(), COItems.APPLE_MEAD.get()));
+        this.add(COBlocks.BLACKBERRY_MEAD.get(), createMeadDrops(COBlocks.BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get()));
+        this.add(COBlocks.BLUEBERRY_MEAD.get(), createMeadDrops(COBlocks.BLUEBERRY_MEAD.get(), COItems.BLUEBERRY_MEAD.get()));
+        this.add(COBlocks.CANTALOUPE_MEAD.get(), createMeadDrops(COBlocks.CANTALOUPE_MEAD.get(), COItems.CANTALOUPE_MEAD.get()));
+        this.add(COBlocks.CHERRY_MEAD.get(), createMeadDrops(COBlocks.CHERRY_MEAD.get(), COItems.CHERRY_MEAD.get()));
+        this.add(COBlocks.CRANBERRY_MEAD.get(), createMeadDrops(COBlocks.CRANBERRY_MEAD.get(), COItems.CRANBERRY_MEAD.get()));
+        this.add(COBlocks.MANGO_MEAD.get(), createMeadDrops(COBlocks.MANGO_MEAD.get(), COItems.MANGO_MEAD.get()));
+        this.add(COBlocks.MELON_MEAD.get(), createMeadDrops(COBlocks.MELON_MEAD.get(), COItems.MELON_MEAD.get()));
+        this.add(COBlocks.RASPBERRY_MEAD.get(), createMeadDrops(COBlocks.RASPBERRY_MEAD.get(), COItems.RASPBERRY_MEAD.get()));
+        this.add(COBlocks.STRAWBERRY_MEAD.get(), createMeadDrops(COBlocks.STRAWBERRY_MEAD.get(), COItems.STRAWBERRY_MEAD.get()));
+        this.add(COBlocks.WATERMELON_MEAD.get(), createMeadDrops(COBlocks.WATERMELON_MEAD.get(), COItems.WATERMELON_MEAD.get()));
+        this.add(COBlocks.HONEY_MEAD.get(), createMeadDrops(COBlocks.HONEY_MEAD.get(), COItems.HONEY_MEAD.get()));
+        this.add(COBlocks.MAGMA_CREAM_MEAD.get(), createMeadDrops(COBlocks.MAGMA_CREAM_MEAD.get(), COItems.MAGMA_CREAM_MEAD.get()));
+        this.add(COBlocks.BEETROOT_MEAD.get(), createMeadDrops(COBlocks.BEETROOT_MEAD.get(), COItems.BEETROOT_MEAD.get()));
+        this.add(COBlocks.FERMENTED_APPLE_MEAD.get(), createJamDrops(COBlocks.FERMENTED_APPLE_MEAD.get(), COItems.APPLE_MEAD.get()));
+        this.add(COBlocks.FERMENTED_BLACKBERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_BLUEBERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_BLUEBERRY_MEAD.get(), COItems.BLUEBERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_CANTALOUPE_MEAD.get(), createJamDrops(COBlocks.FERMENTED_CANTALOUPE_MEAD.get(), COItems.CANTALOUPE_MEAD.get()));
+        this.add(COBlocks.FERMENTED_CHERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_CHERRY_MEAD.get(), COItems.CHERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_CRANBERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_CRANBERRY_MEAD.get(), COItems.CRANBERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_MANGO_MEAD.get(), createJamDrops(COBlocks.FERMENTED_MANGO_MEAD.get(), COItems.MANGO_MEAD.get()));
+        this.add(COBlocks.FERMENTED_MELON_MEAD.get(), createJamDrops(COBlocks.FERMENTED_MELON_MEAD.get(), COItems.MELON_MEAD.get()));
+        this.add(COBlocks.FERMENTED_RASPBERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_RASPBERRY_MEAD.get(), COItems.RASPBERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_STRAWBERRY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_STRAWBERRY_MEAD.get(), COItems.STRAWBERRY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_WATERMELON_MEAD.get(), createJamDrops(COBlocks.FERMENTED_WATERMELON_MEAD.get(), COItems.WATERMELON_MEAD.get()));
+        this.add(COBlocks.FERMENTED_HONEY_MEAD.get(), createJamDrops(COBlocks.FERMENTED_HONEY_MEAD.get(), COItems.HONEY_MEAD.get()));
+        this.add(COBlocks.FERMENTED_MAGMA_CREAM_MEAD.get(), createJamDrops(COBlocks.FERMENTED_MAGMA_CREAM_MEAD.get(), COItems.MAGMA_CREAM_MEAD.get()));
+        this.add(COBlocks.FERMENTED_BEETROOT_MEAD.get(), createJamDrops(COBlocks.FERMENTED_BEETROOT_MEAD.get(), COItems.BEETROOT_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_APPLE_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_APPLE_MEAD.get(), COItems.UNFERMENTED_APPLE_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), COItems.UNFERMENTED_BLACKBERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), COItems.UNFERMENTED_BLUEBERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_CANTALOUPE_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_CANTALOUPE_MEAD.get(), COItems.UNFERMENTED_CANTALOUPE_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_CHERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_CHERRY_MEAD.get(), COItems.UNFERMENTED_CHERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_CRANBERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_CRANBERRY_MEAD.get(), COItems.UNFERMENTED_CRANBERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_MANGO_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_MANGO_MEAD.get(), COItems.UNFERMENTED_MANGO_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_MELON_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_MELON_MEAD.get(), COItems.UNFERMENTED_MELON_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_RASPBERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_RASPBERRY_MEAD.get(), COItems.UNFERMENTED_RASPBERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_STRAWBERRY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_STRAWBERRY_MEAD.get(), COItems.UNFERMENTED_STRAWBERRY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_WATERMELON_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_WATERMELON_MEAD.get(), COItems.UNFERMENTED_WATERMELON_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_HONEY_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_HONEY_MEAD.get(), COItems.UNFERMENTED_HONEY_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_MAGMA_CREAM_MEAD.get(), createJamDrops(COBlocks.UNFERMENTED_MAGMA_CREAM_MEAD.get(), COItems.UNFERMENTED_MAGMA_CREAM_MEAD.get()));
+        this.add(COBlocks.UNFERMENTED_BEETROOT_MEAD.get(), createJamDrops(COBlocks.BEETROOT_MEAD.get(), COItems.UNFERMENTED_BEETROOT_MEAD.get()));
 
         this.add(COBlocks.CANNED_CARROTS.get(), createCanDrops(COBlocks.CANNED_CARROTS.get(), COItems.CANNED_CARROTS.get()));
         this.add(COBlocks.CANNED_POTATOES.get(), createCanDrops(COBlocks.CANNED_POTATOES.get(), COItems.CANNED_POTATOES.get()));
@@ -493,6 +533,18 @@ public class COBlockLoot extends BlockLootSubProvider {
                                                 .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
                                                         .setProperties(StatePropertiesPredicate.Builder.properties()
                                                                 .hasProperty(CanBlock.CANS, integer))))
+                )));
+    }
+
+    protected LootTable.Builder createMeadDrops(Block block, Item item) {
+        return LootTable.lootTable().withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                .add(this.applyExplosionDecay(block,
+                        LootItem.lootTableItem(item)
+                                .apply(List.of(2, 3, 4, 5, 6, 7, 8),
+                                        (integer) -> SetItemCountFunction.setCount(ConstantValue.exactly((float)integer.intValue()))
+                                                .when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(block)
+                                                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                                .hasProperty(MeadBottleBlock.BOTTLES, integer))))
                 )));
     }
 

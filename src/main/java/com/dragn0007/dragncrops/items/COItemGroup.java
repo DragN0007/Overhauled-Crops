@@ -156,6 +156,35 @@ public class COItemGroup {
                         output.accept(COItems.STRAWBERRY_CANDY.get());
                         output.accept(COItems.WATERMELON_CANDY.get());
 
+                        output.accept(COItems.APPLE_MEAD.get());
+                        output.accept(COItems.BLACKBERRY_MEAD.get());
+                        output.accept(COItems.BLUEBERRY_MEAD.get());
+                        output.accept(COItems.CANTALOUPE_MEAD.get());
+                        output.accept(COItems.CHERRY_MEAD.get());
+                        output.accept(COItems.CRANBERRY_MEAD.get());
+                        output.accept(COItems.MANGO_MEAD.get());
+                        output.accept(COItems.MELON_MEAD.get());
+                        output.accept(COItems.RASPBERRY_MEAD.get());
+                        output.accept(COItems.STRAWBERRY_MEAD.get());
+                        output.accept(COItems.WATERMELON_MEAD.get());
+                        output.accept(COItems.HONEY_MEAD.get());
+                        output.accept(COItems.MAGMA_CREAM_MEAD.get());
+                        output.accept(COItems.BEETROOT_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_APPLE_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_BLACKBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_BLUEBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_CANTALOUPE_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_CHERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_CRANBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_MANGO_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_MELON_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_RASPBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_STRAWBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_WATERMELON_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_HONEY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_MAGMA_CREAM_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_BEETROOT_MEAD.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

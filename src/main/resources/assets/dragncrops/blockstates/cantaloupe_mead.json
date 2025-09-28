@@ -1,41 +1,41 @@
 {
   "variants": {
-    "jars=1": [
+    "bottles=1": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead"
       }
     ],
-    "jars=2": [
+    "bottles=2": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_2"
       }
     ],
-    "jars=3": [
+    "bottles=3": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_3"
       }
     ],
-    "jars=4": [
+    "bottles=4": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_4"
       }
     ],
-    "jars=5": [
+    "bottles=5": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_4"
       }
     ],
-    "jars=6": [
+    "bottles=6": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_4"
       }
     ],
-    "jars=7": [
+    "bottles=7": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_4"
       }
     ],
-    "jars=8": [
+    "bottles=8": [
       {
         "model": "dragncrops:block/mead/cantaloupe/cantaloupe_mead_4"
       }

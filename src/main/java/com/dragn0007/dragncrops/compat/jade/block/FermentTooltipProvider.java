@@ -21,7 +21,7 @@ public class FermentTooltipProvider implements IBlockComponentProvider {
             if (accessor.getBlock() instanceof FermentedBase block) {
                 int max = block.getMaxFermentTime();
                 int timeFromMax = (max - time);
-                int total = (max - timeFromMax);
+                int total = ((max - timeFromMax) / 2);
                 tooltip.add(Component.literal(total + "% Fermented"));
             }
         }
