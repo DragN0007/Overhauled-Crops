@@ -134,6 +134,8 @@
   "item.dragncrops.nut_bread": "Nut Bread",
   "item.dragncrops.rye_bread": "Rye Bread",
   "item.dragncrops.white_bread": "White Bread",
+  "item.dragncrops.potato_bread": "Potato Bread",
+  "item.dragncrops.corn_bread": "Corn Bread",
 
   "block.dragncrops.bread": "Wheat Bread",
   "block.dragncrops.blueberry_bread": "Blueberry Bread",
@@ -141,6 +143,8 @@
   "block.dragncrops.nut_bread": "Nut Bread",
   "block.dragncrops.rye_bread": "Rye Bread",
   "block.dragncrops.white_bread": "White Bread",
+  "block.dragncrops.potato_bread": "Potato Bread",
+  "block.dragncrops.corn_bread": "Corn Bread",
 
 
   "item.dragncrops.apple_jam": "Apple Jam",
@@ -218,6 +222,31 @@
   "block.dragncrops.watermelon_candy": "Watermelon Candy",
 
 
+  "item.dragncrops.apple_gelatin": "Apple Gelatin",
+  "item.dragncrops.blackberry_gelatin": "Blackberry Gelatin",
+  "item.dragncrops.blueberry_gelatin": "Blueberry Gelatin",
+  "item.dragncrops.cantaloupe_gelatin": "Cantaloupe Gelatin",
+  "item.dragncrops.cherry_gelatin": "Cherry Gelatin",
+  "item.dragncrops.cranberry_gelatin": "Cranberry Gelatin",
+  "item.dragncrops.mango_gelatin": "Mango Gelatin",
+  "item.dragncrops.melon_gelatin": "Melon Gelatin",
+  "item.dragncrops.raspberry_gelatin": "Raspberry Gelatin",
+  "item.dragncrops.strawberry_gelatin": "Strawberry Gelatin",
+  "item.dragncrops.watermelon_gelatin": "Watermelon Gelatin",
+
+  "block.dragncrops.apple_gelatin": "Apple Gelatin",
+  "block.dragncrops.blackberry_gelatin": "Blackberry Gelatin",
+  "block.dragncrops.blueberry_gelatin": "Blueberry Gelatin",
+  "block.dragncrops.cantaloupe_gelatin": "Cantaloupe Gelatin",
+  "block.dragncrops.cherry_gelatin": "Cherry Gelatin",
+  "block.dragncrops.cranberry_gelatin": "Cranberry Gelatin",
+  "block.dragncrops.mango_gelatin": "Mango Gelatin",
+  "block.dragncrops.melon_gelatin": "Melon Gelatin",
+  "block.dragncrops.raspberry_gelatin": "Raspberry Gelatin",
+  "block.dragncrops.strawberry_gelatin": "Strawberry Gelatin",
+  "block.dragncrops.watermelon_gelatin": "Watermelon Gelatin",
+
+
   "item.dragncrops.apple_mead": "Apple Mead",
   "item.dragncrops.blackberry_mead": "Blackberry Mead",
   "item.dragncrops.blueberry_mead": "Blueberry Mead",
@@ -229,6 +258,9 @@
   "item.dragncrops.raspberry_mead": "Raspberry Mead",
   "item.dragncrops.strawberry_mead": "Strawberry Mead",
   "item.dragncrops.watermelon_mead": "Watermelon Mead",
+  "item.dragncrops.honey_mead": "Honey Mead",
+  "item.dragncrops.beetroot_mead": "Beetroot Mead",
+  "item.dragncrops.magma_cream_mead": "Magma Cream Mead",
 
   "block.dragncrops.apple_mead": "Apple Mead",
   "block.dragncrops.blackberry_mead": "Blackberry Mead",
@@ -241,6 +273,9 @@
   "block.dragncrops.raspberry_mead": "Raspberry Mead",
   "block.dragncrops.strawberry_mead": "Strawberry Mead",
   "block.dragncrops.watermelon_mead": "Watermelon Mead",
+  "block.dragncrops.honey_mead": "Honey Mead",
+  "block.dragncrops.beetroot_mead": "Beetroot Mead",
+  "block.dragncrops.magma_cream_mead": "Magma Cream Mead",
 
 
   "item.dragncrops.fermented_apple_mead": "Fermented Apple Mead",
@@ -254,6 +289,9 @@
   "item.dragncrops.fermented_raspberry_mead": "Fermented Raspberry Mead",
   "item.dragncrops.fermented_strawberry_mead": "Fermented Strawberry Mead",
   "item.dragncrops.fermented_watermelon_mead": "Fermented Watermelon Mead",
+  "item.dragncrops.fermented_honey_mead": "Fermented Honey Mead",
+  "item.dragncrops.fermented_beetroot_mead": "Fermented Beetroot Mead",
+  "item.dragncrops.fermented_magma_cream_mead": "Fermented Magma Cream Mead",
 
   "block.dragncrops.fermented_apple_mead": "Fermented Apple Mead",
   "block.dragncrops.fermented_blackberry_mead": "Fermented Blackberry Mead",
@@ -266,6 +304,9 @@
   "block.dragncrops.fermented_raspberry_mead": "Fermented Raspberry Mead",
   "block.dragncrops.fermented_strawberry_mead": "Fermented Strawberry Mead",
   "block.dragncrops.fermented_watermelon_mead": "Fermented Watermelon Mead",
+  "block.dragncrops.fermented_honey_mead": "Fermented Honey Mead",
+  "block.dragncrops.fermented_beetroot_mead": "Fermented Beetroot Mead",
+  "block.dragncrops.fermented_magma_cream_mead": "Fermented Magma Cream Mead",
 
 
   "item.dragncrops.unfermented_apple_mead": "Unfermented Apple Mead",
@@ -279,6 +320,9 @@
   "item.dragncrops.unfermented_raspberry_mead": "Unfermented Raspberry Mead",
   "item.dragncrops.unfermented_strawberry_mead": "Unfermented Strawberry Mead",
   "item.dragncrops.unfermented_watermelon_mead": "Unfermented Watermelon Mead",
+  "item.dragncrops.unfermented_honey_mead": "Unfermented Honey Mead",
+  "item.dragncrops.unfermented_beetroot_mead": "Unfermented Beetroot Mead",
+  "item.dragncrops.unfermented_magma_cream_mead": "Unfermented Magma Cream Mead",
 
   "block.dragncrops.unfermented_apple_mead": "Unfermented Apple Mead",
   "block.dragncrops.unfermented_blackberry_mead": "Unfermented Blackberry Mead",
@@ -291,6 +335,9 @@
   "block.dragncrops.unfermented_raspberry_mead": "Unfermented Raspberry Mead",
   "block.dragncrops.unfermented_strawberry_mead": "Unfermented Strawberry Mead",
   "block.dragncrops.unfermented_watermelon_mead": "Unfermented Watermelon Mead",
+  "block.dragncrops.unfermented_honey_mead": "Unfermented Honey Mead",
+  "block.dragncrops.unfermented_beetroot_mead": "Unfermented Beetroot Mead",
+  "block.dragncrops.unfermented_magma_cream_mead": "Unfermented Magma Cream Mead",
 
 
   "item.dragncrops.canned_carrots": "Canned Carrots",

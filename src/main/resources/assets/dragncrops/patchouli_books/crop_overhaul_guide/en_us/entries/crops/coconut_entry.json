@@ -1,0 +1,19 @@
+{
+  "name": "Coconut",
+  "icon": "dragncrops:coconut",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Tree Fruit $(br)$(l)Spawns In: $()Hot Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:coconut"
+      },
+      "text": "Can be turned into pie and drinks.",
+      "title": "Coconut"
+    }
+  ]
+}

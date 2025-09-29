@@ -1,0 +1,19 @@
+{
+  "name": "Garlic",
+  "icon": "dragncrops:garlic",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()Forests"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:garlic"
+      },
+      "text": "Used as a flavoring or preservative across many different savory recipes.",
+      "title": "Garlic"
+    }
+  ]
+}

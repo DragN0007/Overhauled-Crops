@@ -1,6 +1,6 @@
 {
   "name": "Crop Guide",
-  "landing_text": "Welcome to DragN's Crop Overhaul!",
+  "landing_text": "Welcome to DragN's Crop Overhaul! This book does not include all recipes. JEI and Jade suggested for recipes and in-game tooltips.",
   "version": 1,
   "creative_tab": "dragncrops:overhauled_crops",
   "model":"dragncrops:crop_overhaul_guide",

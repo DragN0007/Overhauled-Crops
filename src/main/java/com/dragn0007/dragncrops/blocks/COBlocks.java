@@ -256,6 +256,18 @@ public class COBlocks {
     public static final RegistryObject<Block> MAGMA_CREAM_MEAD = registerBlockWithoutItem("magma_cream_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> BEETROOT_MEAD = registerBlockWithoutItem("beetroot_mead", MeadBottleBlock::new);
 
+    public static final RegistryObject<Block> APPLE_GELATIN = registerBlockWithoutItem("apple_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> BLACKBERRY_GELATIN = registerBlockWithoutItem("blackberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> BLUEBERRY_GELATIN = registerBlockWithoutItem("blueberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> CANTALOUPE_GELATIN = registerBlockWithoutItem("cantaloupe_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> CHERRY_GELATIN = registerBlockWithoutItem("cherry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> CRANBERRY_GELATIN = registerBlockWithoutItem("cranberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> MANGO_GELATIN = registerBlockWithoutItem("mango_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> MELON_GELATIN = registerBlockWithoutItem("melon_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> RASPBERRY_GELATIN = registerBlockWithoutItem("raspberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> STRAWBERRY_GELATIN = registerBlockWithoutItem("strawberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> WATERMELON_GELATIN = registerBlockWithoutItem("watermelon_gelatin", GelatinBlock::new);
+
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> RED_APPLE_LEAVES = registerBlock("red_apple_leaves",

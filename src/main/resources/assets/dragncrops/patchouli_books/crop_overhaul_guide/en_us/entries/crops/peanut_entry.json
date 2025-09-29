@@ -1,0 +1,19 @@
+{
+  "name": "Peanut",
+  "icon": "dragncrops:peanut",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Legume $(br)$(l)Spawns In: $()Hot Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:peanut"
+      },
+      "text": "Used to make nut butter or bread.",
+      "title": "Peanut"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 package com.dragn0007.dragncrops.blocks.custom;
 
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -7,6 +8,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -48,7 +51,7 @@ public class FermentedBase extends HorizontalDirectionalBlock {
     public VoxelShape WEST;
 
     public FermentedBase(VoxelShape north, VoxelShape east, VoxelShape south, VoxelShape west, Properties properties) {
-        super (properties);
+        super (BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(0.3F).noOcclusion());
 
         NORTH = north;
         EAST = east;

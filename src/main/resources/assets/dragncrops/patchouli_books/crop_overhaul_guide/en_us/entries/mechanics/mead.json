@@ -1,0 +1,19 @@
+{
+  "name": "Mead Fermenting",
+  "icon": "dragncrops:honey_mead",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Mead can be made by crafting any kind of Unfermented Mead, which can be plain Honey, or include fruit additives. Once you've crafted your mead, place it on the ground for up to a few days to allow it to ferment. Once it's fermented, you can pick it up and drink as much as you like."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:honey_mead"
+      },
+      "text": "Created by placing down Unfermented Mead and allowing it to ferment for a few days.",
+      "title": "Honey Mead"
+    }
+  ]
+}

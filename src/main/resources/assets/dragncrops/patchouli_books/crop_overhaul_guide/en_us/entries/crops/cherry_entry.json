@@ -1,0 +1,19 @@
+{
+  "name": "Cherries",
+  "icon": "dragncrops:cherries",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Tree Fruit $(br)$(l)Spawns In: $()Forests"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cherries"
+      },
+      "text": "Can be turned into jam, pie, and candy.",
+      "title": "Cherries"
+    }
+  ]
+}

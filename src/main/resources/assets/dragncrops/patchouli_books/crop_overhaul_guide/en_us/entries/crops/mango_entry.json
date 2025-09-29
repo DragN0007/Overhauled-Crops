@@ -1,0 +1,19 @@
+{
+  "name": "Mango",
+  "icon": "dragncrops:mango",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Tree Fruit $(br)$(l)Spawns In: $()Hot Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mango"
+      },
+      "text": "Can be turned into jam, pie, and candy.",
+      "title": "Mango"
+    }
+  ]
+}

@@ -1,19 +1,5 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "dragncrops:block/mead_jar/unfermented_mead_jar",
-      "y": 90
-    },
-    "facing=north": {
-      "model": "dragncrops:block/mead_jar/unfermented_mead_jar"
-    },
-    "facing=south": {
-      "model": "dragncrops:block/mead_jar/unfermented_mead_jar",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "dragncrops:block/mead_jar/unfermented_mead_jar",
-      "y": 270
-    }
+    "": { "model": "dragncrops:block/mead_jar/unfermented_mead_jar" }
   }
 }

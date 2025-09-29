@@ -44,7 +44,7 @@ public class UnfermentedRaspberryMead extends FermentedBase {
 
     public UnfermentedRaspberryMead() {
         super(NORTH, EAST, SOUTH, WEST,
-                Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().noCollission().randomTicks());
+                Properties.of().sound(SoundType.STONE).strength(0.2F).pushReaction(PushReaction.DESTROY).noOcclusion().randomTicks());
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(this.getFermentTimeProperty(), 0));

@@ -1,0 +1,19 @@
+{
+  "name": "Herbs",
+  "icon": "dragncrops:rosemary",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()$(br)-Plains (Cilantro) $(br)-Forests (Oregano) $(br)-Cold Biomes (Rosemary)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:rosemary"
+      },
+      "text": "Used in recipes as a flavoring or preservative.",
+      "title": "Herbs"
+    }
+  ]
+}

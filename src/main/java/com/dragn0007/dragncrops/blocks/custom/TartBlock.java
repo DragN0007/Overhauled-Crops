@@ -2,6 +2,8 @@ package com.dragn0007.dragncrops.blocks.custom;
 
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;

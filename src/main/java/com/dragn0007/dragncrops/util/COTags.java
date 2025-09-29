@@ -15,6 +15,7 @@ public class COTags {
         public static final TagKey<Item> MILK = forgeTag("milk");
         public static final TagKey<Item> WATER = forgeTag("water");
         public static final TagKey<Item> FLOUR = forgeTag("flour");
+        public static final TagKey<Item> GRAINS = forgeTag("grains");
         public static final TagKey<Item> LEAVES = forgeTag("leaves");
         public static final TagKey<Item> CROPS = forgeTag("crops");
         public static final TagKey<Item> JAMS = forgeTag("jams");

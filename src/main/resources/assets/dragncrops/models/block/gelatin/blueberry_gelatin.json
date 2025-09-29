@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/gelatin",
+	"textures": {
+		"texture": "dragncrops:block/blueberry_gelatin"
+	}
+}

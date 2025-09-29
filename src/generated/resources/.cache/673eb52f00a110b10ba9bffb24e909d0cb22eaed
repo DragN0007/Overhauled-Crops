@@ -1,5 +1,6 @@
-// 1.20.1	2025-09-27T23:59:40.0849041	Item Models: dragncrops
+// 1.20.1	2025-09-29T02:22:36.3139904	Item Models: dragncrops
 378105d33588b24f1d22239e5d62ba5ffa050b15 assets/dragncrops/models/item/apple_candy.json
+f3c1620b36b9b11c42da32f69f5398a672e222eb assets/dragncrops/models/item/apple_gelatin.json
 8d7dd25d410c89bdcc0c5206474a1a71a39f534f assets/dragncrops/models/item/apple_jam.json
 0ceb42b9e02a1754f5c91ad96bd2b9422471b0bc assets/dragncrops/models/item/apple_mead.json
 fc4e1184c09483a38f8b038717f3ea069147f9cd assets/dragncrops/models/item/apple_tart.json
@@ -7,12 +8,14 @@ f6ed2b9a2a3afe3bba5a70304b074d750184bb27 assets/dragncrops/models/item/beef_saus
 91d7c92d977d516e2069e51fb6dd769d4483c73c assets/dragncrops/models/item/beetroot_mead.json
 a8c284182a057bf71212b1fdf654c4c6b1060897 assets/dragncrops/models/item/blackberry.json
 81d3694ecceef73d6f54420deca11e21bd3c783a assets/dragncrops/models/item/blackberry_candy.json
+2b6b567cae76666bdde76beb8db8b179e8c5b2ba assets/dragncrops/models/item/blackberry_gelatin.json
 cfd5a32ff38526ebed2107b7fd7f042698a3c21e assets/dragncrops/models/item/blackberry_jam.json
 f5854a7318ae1f324d80d105272aa0d40c64703a assets/dragncrops/models/item/blackberry_mead.json
 609ec2bf65e2e437f25b164702744b4dab185d42 assets/dragncrops/models/item/blackberry_tart.json
 9dce0e172c2f6d6c918a17a682212e9d580081aa assets/dragncrops/models/item/blueberry.json
 63cf1b8873adafee7eab30c87b484f52f731874b assets/dragncrops/models/item/blueberry_bread.json
 d6f34b070b7ae36e1b0892fc2cd092567afc2877 assets/dragncrops/models/item/blueberry_candy.json
+045e41d40bf4e4266ff092a9e9113709c879696a assets/dragncrops/models/item/blueberry_gelatin.json
 c8717dcd61f9033b11130dc783f30091acddf5fc assets/dragncrops/models/item/blueberry_jam.json
 59087be7aebc133bcf62c1085e690c4addd0f71b assets/dragncrops/models/item/blueberry_mead.json
 f282e7d96f74766637432a32894d77b0d5a84f49 assets/dragncrops/models/item/blueberry_tart.json
@@ -24,6 +27,7 @@ c8057e55eb74933faea9e438a0f053c0d40ab3ff assets/dragncrops/models/item/canned_be
 deddc37a842e2b331d6af1b134048cae4d2e9a54 assets/dragncrops/models/item/canned_vegetables.json
 4c34a8e2bfc477dfd96432d659c86d427fc240c5 assets/dragncrops/models/item/cantaloupe.json
 f0da90fa65c6cd832c3cda220499537d3e72da28 assets/dragncrops/models/item/cantaloupe_candy.json
+0a3b841c928eb0b047669827c88c868e48dbc1a0 assets/dragncrops/models/item/cantaloupe_gelatin.json
 27d9c1ec323701f3a5e4db27039fa65832eef29b assets/dragncrops/models/item/cantaloupe_jam.json
 eff91a6861b80c43a524fa15d385b6fcd14f8609 assets/dragncrops/models/item/cantaloupe_mead.json
 341c4777e0ee08d9ca73adc52547ce6d8e25c304 assets/dragncrops/models/item/cantaloupe_seeds.json
@@ -31,6 +35,7 @@ eff91a6861b80c43a524fa15d385b6fcd14f8609 assets/dragncrops/models/item/cantaloup
 edf8d6c4eafc2992542d2be40aab25a1a043e1eb assets/dragncrops/models/item/cantaloupe_tart.json
 1a0f2593657ff790be2a12453d97fe71d77bd6e6 assets/dragncrops/models/item/cherries.json
 a16058a26bb8a4273969f272e442af3059658b82 assets/dragncrops/models/item/cherry_candy.json
+43a9510292fb235642a3d76c9a9e59708b2dfb2c assets/dragncrops/models/item/cherry_gelatin.json
 c398b0bdbc730ec18a6056d96ad304f31f556fd8 assets/dragncrops/models/item/cherry_jam.json
 147d2291eb6c7af5850d8bb8f4075832c29ef4a0 assets/dragncrops/models/item/cherry_mead.json
 8bd2a56cc7a0669567d56be9923e86914de7da68 assets/dragncrops/models/item/cherry_pit.json
@@ -50,6 +55,7 @@ d837782b7ea67bc6285d4fc323addcc176fc81b2 assets/dragncrops/models/item/cooked_po
 5184f349474f2552bc7b0bf4bbec684af1b1b529 assets/dragncrops/models/item/cranberry.json
 3bca62250578e93aac598d099e58978e65d2a577 assets/dragncrops/models/item/cranberry_bread.json
 9d6c652cd3e5da2d3349d8d791fb6541a64e650b assets/dragncrops/models/item/cranberry_candy.json
+fa408a9e6c55986e104e46b200e436dd01ca4a9f assets/dragncrops/models/item/cranberry_gelatin.json
 4010aa18a2de9db59820469863a56fc782ce3186 assets/dragncrops/models/item/cranberry_jam.json
 5039fc75b062a30cd9f6ad261698722fb633239e assets/dragncrops/models/item/cranberry_mead.json
 58572229908889728d4b96e60d590020e1a51caf assets/dragncrops/models/item/cranberry_tart.json
@@ -83,6 +89,7 @@ d65fdc802beccb953bf2f7b466d3ca6246896f5c assets/dragncrops/models/item/lime.json
 4322826ad5a5f67bdbbbc9c4097e817cbe316a93 assets/dragncrops/models/item/magma_cream_mead.json
 fb6d3c403fc0a42ab00a0192d2b890d11b1501f3 assets/dragncrops/models/item/mango.json
 7b781d31b4d24a086e63a23e2efa1527a4466cf8 assets/dragncrops/models/item/mango_candy.json
+f377cabdc692b3c0049e1a6e2ee90d0632a328ef assets/dragncrops/models/item/mango_gelatin.json
 b7480c9a360c2f19aa980c0e5f3dd0f3d6f52574 assets/dragncrops/models/item/mango_jam.json
 8b053c1536a08aa0f7abd007452cd2833456b6c5 assets/dragncrops/models/item/mango_mead.json
 a2b58df14acab02391558a6ae3769ca0c602e309 assets/dragncrops/models/item/mango_pit.json
@@ -90,6 +97,7 @@ e4a907e706b75a7a7f5fe25aab911ba29ab9d45e assets/dragncrops/models/item/mango_tar
 b8167d0d7f5a43bc7c31b857e50770b4c31fef42 assets/dragncrops/models/item/meat_and_vegetable_stew.json
 f692687a5594f84c988e823b5836bc9d8e65f73b assets/dragncrops/models/item/meat_mallet.json
 3efc0e0c821502867b64cf6a49a370417f661cb0 assets/dragncrops/models/item/melon_candy.json
+45f909eef78cefc7e9ec8b3e6d62032fb0368ff3 assets/dragncrops/models/item/melon_gelatin.json
 16f70c3ccc659f26103f080ef7b75365dd0734a1 assets/dragncrops/models/item/melon_jam.json
 0eccfd2b675b51ef0c7f3c251182350b36fce5ca assets/dragncrops/models/item/melon_mead.json
 af103ca67673d42ad6ae22fba9d41a13ba83c88f assets/dragncrops/models/item/melon_tart.json
@@ -102,6 +110,7 @@ b74ca3773a3189fee9cd36ffa2defb0426a3b8f2 assets/dragncrops/models/item/pork_saus
 06013e2dc1df66c06815141b6df86463c10460c4 assets/dragncrops/models/item/purple_potato.json
 3ec1b630035e12bf28b1d2faae9dc1c78c941dfa assets/dragncrops/models/item/raspberry.json
 85dd56eeee46712e8c00280fd5b3353eca596eb4 assets/dragncrops/models/item/raspberry_candy.json
+f2683c5330a4f5f2f6d86d5796a7d99ed5f78293 assets/dragncrops/models/item/raspberry_gelatin.json
 8afe00271256e58759c276bff1ed13f2bea4463f assets/dragncrops/models/item/raspberry_jam.json
 17fa3307538ee52187a820b7030b0e93b8a02662 assets/dragncrops/models/item/raspberry_mead.json
 3f95b2eaca87668da0c9dcc1bb22fef87c80264a assets/dragncrops/models/item/raspberry_tart.json
@@ -116,6 +125,7 @@ f4bab4f93709b3db7b6093fa5af919dfac61bdc0 assets/dragncrops/models/item/rice_seed
 8fa6db77e6cecf08d3f6bebfeba92a60b00b2e8d assets/dragncrops/models/item/stock.json
 5b69f0c79939bc3bb6e71bdade7dccc1ad7bd0b5 assets/dragncrops/models/item/strawberry.json
 0f4772258f4f33b6cbab55ed1b49e73851d62b58 assets/dragncrops/models/item/strawberry_candy.json
+67aefad630cafea6a2edbaccfd96daad7b2ad463 assets/dragncrops/models/item/strawberry_gelatin.json
 04de4672734ba3789e500978733d9d3d022ff02b assets/dragncrops/models/item/strawberry_jam.json
 0c1cc3ca89f3068650ffe438e73222aacde353c1 assets/dragncrops/models/item/strawberry_mead.json
 d9a9a314b9587bdc2f9466365cacc4ad886d952d assets/dragncrops/models/item/strawberry_tart.json
@@ -137,6 +147,7 @@ cd44f8c0f53dfadb50df93abd1b05ac2bcf27ca4 assets/dragncrops/models/item/sugar_bee
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_watermelon_mead.json
 e8c874e27c8103632bd177b0e14e8e5a1d0f0b11 assets/dragncrops/models/item/vegetable_soup.json
 452e69cf21b4e03364f05a78181e9ece2b4c84f2 assets/dragncrops/models/item/watermelon_candy.json
+6ddd1347ad723c515970b3383149c54629ae5ef7 assets/dragncrops/models/item/watermelon_gelatin.json
 30ad1fa594fede87a80d8aa7f4126feb6e1baf77 assets/dragncrops/models/item/watermelon_jam.json
 29d4404efb4b8948bf35f3f453fad37f5ef55772 assets/dragncrops/models/item/watermelon_mead.json
 964e63a6916256e6f9c2e2597d55f505ac7da5e6 assets/dragncrops/models/item/watermelon_tart.json

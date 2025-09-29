@@ -40,7 +40,7 @@ public class MeadJarBlock extends DecorRotator {
 
     public MeadJarBlock() {
         super(NORTH, EAST, SOUTH, WEST,
-                Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.STONE).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
+                Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.STONE).strength(0.2F).noOcclusion().pushReaction(PushReaction.DESTROY));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 

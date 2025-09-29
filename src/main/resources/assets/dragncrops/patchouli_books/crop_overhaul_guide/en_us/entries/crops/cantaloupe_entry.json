@@ -1,0 +1,19 @@
+{
+  "name": "Cantaloupe",
+  "icon": "dragncrops:cantaloupe",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Fruit $(br)$(l)Spawns In: $()Plains"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cantaloupe"
+      },
+      "text": "Can be turned into jam, pie, and candy.",
+      "title": "Cantaloupe"
+    }
+  ]
+}

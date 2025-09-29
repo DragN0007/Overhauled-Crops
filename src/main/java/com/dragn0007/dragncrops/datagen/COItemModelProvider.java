@@ -175,6 +175,18 @@ public class COItemModelProvider extends ItemModelProvider {
         advancedItem(COItems.UNFERMENTED_HONEY_MEAD, "unfermented_mead");
         advancedItem(COItems.UNFERMENTED_MAGMA_CREAM_MEAD, "unfermented_mead");
         advancedItem(COItems.UNFERMENTED_BEETROOT_MEAD, "unfermented_mead");
+
+        simpleItem(COItems.APPLE_GELATIN);
+        simpleItem(COItems.BLACKBERRY_GELATIN);
+        simpleItem(COItems.BLUEBERRY_GELATIN);
+        simpleItem(COItems.CANTALOUPE_GELATIN);
+        simpleItem(COItems.CHERRY_GELATIN);
+        simpleItem(COItems.CRANBERRY_GELATIN);
+        simpleItem(COItems.MANGO_GELATIN);
+        simpleItem(COItems.MELON_GELATIN);
+        simpleItem(COItems.RASPBERRY_GELATIN);
+        simpleItem(COItems.STRAWBERRY_GELATIN);
+        simpleItem(COItems.WATERMELON_GELATIN);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
