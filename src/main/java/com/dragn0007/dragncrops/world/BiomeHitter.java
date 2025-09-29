@@ -177,10 +177,10 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.RASPBERRIES)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-        context.register(WHITE_RASPBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_FOREST),
-                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.WHITE_RASPBERRIES)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+//        context.register(WHITE_RASPBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+//                biomes.getOrThrow(BiomeTags.IS_FOREST),
+//                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.WHITE_RASPBERRIES)),
+//                GenerationStep.Decoration.VEGETAL_DECORATION));
 
 
         context.register(PURPLE_CARROTS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

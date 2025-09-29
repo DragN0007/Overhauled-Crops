@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "dragncrops:red_apple",
+    "minecraft:apple",
     "dragncrops:yellow_apple",
     "dragncrops:green_apple",
     "dragncrops:cherries",

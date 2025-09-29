@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-14T23:43:04.2973563	Registries
+// 1.20.1	2025-09-29T02:42:07.6165973	Registries
 c85bddddee5c190ef6b71e1bae28df037b5c6d79 data/dragncrops/forge/biome_modifier/beetroots.json
 d06c0ebbdc1107e427d46a37f7599e3832c35e31 data/dragncrops/forge/biome_modifier/blackberries.json
 c0ffeb127462fc7a6775545a34c18a708df99ed2 data/dragncrops/forge/biome_modifier/blueberries.json
@@ -29,7 +29,6 @@ ac31c02ac016eba19f9f2d124c70a923ba29cbd5 data/dragncrops/forge/biome_modifier/re
 a07717a9715e836afac7e83937b2ca1284f7db5f data/dragncrops/forge/biome_modifier/strawberries.json
 f99f413bedc2d75d0c8a86d8670a1b28aa0ce8a0 data/dragncrops/forge/biome_modifier/sugar_beets.json
 0dd6ebb6ab9ca16ce9199181651cdea02f461271 data/dragncrops/forge/biome_modifier/wheat.json
-b1135f05d7dc0edee0b2e2926fcbb74699a88a77 data/dragncrops/forge/biome_modifier/white_raspberries.json
 424c426483323db689eca2e688a110625bf1832b data/dragncrops/forge/biome_modifier/yellow_apple_tree.json
 46888ff4e40ca5f65e0cbd00d3a1422dba0a126a data/dragncrops/forge/biome_modifier/yellow_carrots.json
 53488c7a6029b1ec0e2f5fc43b637ff7b349dd88 data/dragncrops/worldgen/configured_feature/beetroots.json
