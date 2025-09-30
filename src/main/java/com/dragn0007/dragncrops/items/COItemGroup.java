@@ -79,7 +79,9 @@ public class COItemGroup {
                         output.accept(Items.BREAD);
                         output.accept(COItems.BLUEBERRY_BREAD.get());
                         output.accept(COItems.CRANBERRY_BREAD.get());
+                        output.accept(COItems.CORN_BREAD.get());
                         output.accept(COItems.NUT_BREAD.get());
+                        output.accept(COItems.POTATO_BREAD.get());
                         output.accept(COItems.RYE_BREAD.get());
                         output.accept(COItems.WHITE_BREAD.get());
 

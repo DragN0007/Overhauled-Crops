@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dragncrops:rye"
+        "recipe": "dragncrops:rye_bread"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "dragncrops:rye"
+      "dragncrops:rye_bread"
     ]
   },
   "sends_telemetry_event": false

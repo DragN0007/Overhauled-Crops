@@ -1,0 +1,141 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:cooked_beef_sausage",
+    "dragncrops:cooked_chicken_sausage",
+    "dragncrops:cooked_pork_sausage",
+    "dragncrops:cooked_mutton_sausage",
+    "dragncrops:cooked_fish_sausage",
+    "dragncrops:cooked_generic_sausage",
+    "dragncrops:cooked_game_sausage",
+    "minecraft:bread",
+    "dragncrops:blueberry_bread",
+    "dragncrops:corn_bread",
+    "dragncrops:cranberry_bread",
+    "dragncrops:nut_bread",
+    "dragncrops:potato_bread",
+    "dragncrops:rye_bread",
+    "dragncrops:white_bread",
+
+    {
+      "id": "dragnlivestock:cooked_beef_rib_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_beef_sirloin_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_horse",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_horse_rib_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_horse_sirloin_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_caribou",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_caribou_rib_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_unicorn",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_unicorn_rib_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_unicorn_sirloin_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_caribou_sirloin_steak",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_llama",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_llama_rib",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_llama_loin",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_mutton_rib",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_mutton_loin",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_pork_rib_chop",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_pork_tenderloin",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_camel",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_camel_rib",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_camel_loin",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_chicken_thigh",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_rabbit_thigh",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_chevon",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_chevon_rib",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_chevon_loin",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_frog",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_grub",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_salmon_fillet",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:cooked_cod_fillet",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Pickling",
+  "icon": "dragncrops:fermented_pickles",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Pickles can be made by crafting Unfermented Pickles. Once you've crafted your pickles, place them on the ground for up to a few days to allow them to ferment."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:fermented_pickles"
+      },
+      "text": "Created by placing down Unfermented Pickles and allowing them to ferment for a few days.",
+      "title": "Pickles"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:apple_jam",
+    "dragncrops:blackberry_jam",
+    "dragncrops:blueberry_jam",
+    "dragncrops:cantaloupe_jam",
+    "dragncrops:cherry_jam",
+    "dragncrops:cranberry_jam",
+    "dragncrops:mango_jam",
+    "dragncrops:melon_jam",
+    "dragncrops:raspberry_jam",
+    "dragncrops:strawberry_jam",
+    "dragncrops:watermelon_jam",
+    "dragncrops:stock",
+    "dragncrops:vegetable_soup",
+    "dragncrops:meat_and_vegetable_stew"
+  ]
+}

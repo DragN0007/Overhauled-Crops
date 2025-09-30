@@ -71,6 +71,8 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.NUT_BREAD);
         simpleItem(COItems.RYE_BREAD);
         simpleItem(COItems.WHITE_BREAD);
+        simpleItem(COItems.CORN_BREAD);
+        simpleItem(COItems.POTATO_BREAD);
 
         simpleItem(COItems.APPLE_JAM);
         simpleItem(COItems.BLACKBERRY_JAM);

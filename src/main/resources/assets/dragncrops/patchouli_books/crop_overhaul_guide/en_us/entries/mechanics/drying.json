@@ -1,0 +1,19 @@
+{
+  "name": "Drying",
+  "icon": "dragncrops:dried_beef_sausage",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dried foods can be made by placing raw counterparts a wall for up to a few days to allow it to dry. Once it's dried, you can pick it up and eat as much as you like."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:dried_beef_sausage"
+      },
+      "text": "Created by placing down raw sausage and allowing it to dry for a few days.",
+      "title": "Dried Beef Sausage"
+    }
+  ]
+}

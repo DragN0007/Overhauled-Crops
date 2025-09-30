@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:apple_candy",
+    "dragncrops:blackberry_candy",
+    "dragncrops:blueberry_candy",
+    "dragncrops:cantaloupe_candy",
+    "dragncrops:cherry_candy",
+    "dragncrops:cranberry_candy",
+    "dragncrops:mango_candy",
+    "dragncrops:melon_candy",
+    "dragncrops:raspberry_candy",
+    "dragncrops:strawberry_candy",
+    "dragncrops:watermelon_candy"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "spoiled:spoil_recipe",
+  "ingredient": {
+    "tag": "dragncrops:cooked"
+  },
+  "result": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "spoiltime": 60,
+  "priority": 5
+}

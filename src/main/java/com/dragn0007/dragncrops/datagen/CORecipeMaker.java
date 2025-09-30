@@ -299,6 +299,26 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .save(pFinishedRecipeConsumer, new ResourceLocation(CropOverhaul.MODID, "sugar_from_honey_bottle"));
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CORN_BREAD.get())
+                .requires(COItems.CORN.get())
+                .requires(COItems.CORN.get())
+                .requires(COItems.CORN.get())
+                .requires(COTags.Items.FLOUR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.POTATO_BREAD.get())
+                .requires(COTags.Items.POTATOES)
+                .requires(COTags.Items.POTATOES)
+                .requires(COTags.Items.POTATOES)
+                .requires(COTags.Items.FLOUR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BLUEBERRY_BREAD.get())
                 .requires(COItems.BLUEBERRY.get())
                 .requires(COItems.BLUEBERRY.get())
@@ -332,7 +352,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RYE.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RYE_BREAD.get())
                 .requires(COItems.RYE.get())
                 .requires(COItems.RYE.get())
                 .requires(COItems.RYE.get())

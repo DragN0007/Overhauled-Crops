@@ -1,0 +1,23 @@
+{
+  "name": "Grain & Flour",
+  "icon": "dragncrops:flour",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:grain"
+      },
+      "text": "Grain can be produced by placing Wheat, Corn, Rice, or Rye on the ground and breaking it with a Flail. The grain can then be crafted into Flour.",
+      "title": "Grain"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:flail"
+      },
+      "text": "Used to break up grains.",
+      "title": "Flail"
+    }
+  ]
+}

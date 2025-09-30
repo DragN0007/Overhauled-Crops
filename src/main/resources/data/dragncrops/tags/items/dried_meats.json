@@ -1,0 +1,40 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:dried_beef_sausage",
+    "dragncrops:dried_chicken_sausage",
+    "dragncrops:dried_pork_sausage",
+    "dragncrops:dried_mutton_sausage",
+    "dragncrops:dried_fish_sausage",
+    "dragncrops:dried_generic_sausage",
+    "dragncrops:dried_game_sausage",
+
+    {
+      "id": "dragnlivestock:beef_jerky",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:chicken_jerky",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:pork_jerky",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:mutton_jerky",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:fish_jerky",
+      "required": false
+    },{
+      "id": "dragnlivestock:generic_jerky",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:game_jerky",
+      "required": false
+    }
+  ]
+}

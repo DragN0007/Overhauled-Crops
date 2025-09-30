@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:apple_mead",
+    "dragncrops:blackberry_mead",
+    "dragncrops:blueberry_mead",
+    "dragncrops:cantaloupe_mead",
+    "dragncrops:cherry_mead",
+    "dragncrops:cranberry_mead",
+    "dragncrops:mango_mead",
+    "dragncrops:melon_mead",
+    "dragncrops:raspberry_mead",
+    "dragncrops:strawberry_mead",
+    "dragncrops:watermelon_mead",
+    "dragncrops:honey_mead",
+    "dragncrops:beetroot_mead",
+    "dragncrops:magma_cream_mead",
+    "dragncrops:fermented_pickles",
+
+    {
+      "id": "dragnlivestock:cheese",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:sheep_cheese",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:llama_cheese",
+      "required": false
+    },
+    {
+      "id": "dragnlivestock:goat_cheese",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "spoiled:spoil_recipe",
+  "ingredient": {
+    "tag": "dragncrops:candy"
+  },
+  "result": {
+    "item": "minecraft:sugar"
+  },
+  "spoiltime": 200,
+  "priority": 5
+}

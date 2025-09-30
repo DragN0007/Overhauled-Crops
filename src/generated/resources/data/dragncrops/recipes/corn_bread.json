@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:corn"
+    },
+    {
+      "item": "dragncrops:corn"
+    },
+    {
+      "item": "dragncrops:corn"
+    },
+    {
+      "tag": "forge:flour"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:corn_bread"
+  }
+}

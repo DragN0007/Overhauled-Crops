@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:canned_carrots",
+    "dragncrops:canned_potatoes",
+    "dragncrops:canned_beets",
+    "dragncrops:canned_beef",
+    "dragncrops:canned_fruit",
+    "dragncrops:canned_vegetables"
+  ]
+}

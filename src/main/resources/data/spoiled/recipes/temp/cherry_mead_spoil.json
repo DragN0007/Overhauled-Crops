@@ -1,11 +1,11 @@
 {
   "type": "spoiled:spoil_recipe",
   "ingredient": {
-    "item": "dragncrops:blackberry_jam"
+    "item": "dragncrops:cherry_jam"
   },
   "result": {
     "item": "minecraft:bone_meal"
   },
-  "spoiltime": 80,
+  "spoiltime": 800,
   "priority": 5
 }

@@ -1,0 +1,15 @@
+{
+  "name": "Placing",
+  "icon": "dragncrops:strawberry_jam",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:strawberry_jam"
+      },
+      "text": "Many food items can be placed down for storage and decoration. Some food items can even be stacked on eachother.",
+      "title": "Strawberry Jam"
+    }
+  ]
+}

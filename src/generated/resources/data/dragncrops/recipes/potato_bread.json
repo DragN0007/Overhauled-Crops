@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:potatoes"
+    },
+    {
+      "tag": "forge:potatoes"
+    },
+    {
+      "tag": "forge:potatoes"
+    },
+    {
+      "tag": "forge:flour"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:potato_bread"
+  }
+}

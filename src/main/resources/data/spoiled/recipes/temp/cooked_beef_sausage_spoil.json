@@ -1,0 +1,11 @@
+{
+  "type": "spoiled:spoil_recipe",
+  "ingredient": {
+    "item": "dragncrops:cooked_beef_sausage"
+  },
+  "result": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "spoiltime": 200,
+  "priority": 5
+}

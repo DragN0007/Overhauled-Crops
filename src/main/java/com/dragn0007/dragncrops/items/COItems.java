@@ -154,14 +154,13 @@ public class COItems {
             () -> new PlaceableItem(COBlocks.WHITE_BREAD.get(),
                     (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1F).build()))));
 
-    //TODO
-//    public static final RegistryObject<Item> POTATO_BREAD = ITEMS.register("potato_bread",
-//            () -> new PlaceableItem(COBlocks.POTATO_BREAD.get(),
-//                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1F).build()))));
-//
-//    public static final RegistryObject<Item> CORN_BREAD = ITEMS.register("corn_bread",
-//            () -> new PlaceableItem(COBlocks.CORN_BREAD.get(),
-//                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1F).build()))));
+    public static final RegistryObject<Item> POTATO_BREAD = ITEMS.register("potato_bread",
+            () -> new PlaceableItem(COBlocks.POTATO_BREAD.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6F).build()))));
+
+    public static final RegistryObject<Item> CORN_BREAD = ITEMS.register("corn_bread",
+            () -> new PlaceableItem(COBlocks.CORN_BREAD.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6F).build()))));
 
     //Jams
     public static final RegistryObject<Item> APPLE_JAM = ITEMS.register("apple_jam",
