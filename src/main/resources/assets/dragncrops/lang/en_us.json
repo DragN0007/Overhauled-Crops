@@ -367,6 +367,23 @@
   "block.dragncrops.vegetable_soup": "Vegetable Soup",
   "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
 
+
+  "item.dragncrops.apple_cocktail": "Apple Fruit Cocktail",
+  "item.dragncrops.blackberry_cocktail": "Blackberry Fruit Cocktail",
+  "item.dragncrops.blueberry_cocktail": "Blueberry Fruit Cocktail",
+  "item.dragncrops.cantaloupe_cocktail": "Cantaloupe Fruit Cocktail",
+  "item.dragncrops.cherry_cocktail": "Cherry Fruit Cocktail",
+  "item.dragncrops.cranberry_cocktail": "Cranberry Fruit Cocktail",
+  "item.dragncrops.mango_cocktail": "Mango Fruit Cocktail",
+  "item.dragncrops.melon_cocktail": "Melon Fruit Cocktail",
+  "item.dragncrops.raspberry_cocktail": "Raspberry Fruit Cocktail",
+  "item.dragncrops.strawberry_cocktail": "Strawberry Fruit Cocktail",
+  "item.dragncrops.watermelon_cocktail": "Watermelon Fruit Cocktail",
+  "item.dragncrops.honey_cocktail": "Honey Fruit Cocktail",
+  "item.dragncrops.beetroot_cocktail": "Beetroot Fruit Cocktail",
+  "item.dragncrops.magma_cream_cocktail": "Magma Cream Fruit Cocktail",
+
+
   "item.dragncrops.meat_mallet": "Meat Mallet",
 
   "item.dragncrops.beef_sausage": "Beef Sausage",

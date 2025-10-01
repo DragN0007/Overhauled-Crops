@@ -170,6 +170,18 @@ public class COItemGroup {
                         output.accept(COItems.STRAWBERRY_GELATIN.get());
                         output.accept(COItems.WATERMELON_GELATIN.get());
 
+                        output.accept(COItems.APPLE_COCKTAIL.get());
+                        output.accept(COItems.BLACKBERRY_COCKTAIL.get());
+                        output.accept(COItems.BLUEBERRY_COCKTAIL.get());
+                        output.accept(COItems.CANTALOUPE_COCKTAIL.get());
+                        output.accept(COItems.CHERRY_COCKTAIL.get());
+                        output.accept(COItems.CRANBERRY_COCKTAIL.get());
+                        output.accept(COItems.MANGO_COCKTAIL.get());
+                        output.accept(COItems.MELON_COCKTAIL.get());
+                        output.accept(COItems.RASPBERRY_COCKTAIL.get());
+                        output.accept(COItems.STRAWBERRY_COCKTAIL.get());
+                        output.accept(COItems.WATERMELON_COCKTAIL.get());
+
                         output.accept(COItems.APPLE_MEAD.get());
                         output.accept(COItems.BLACKBERRY_MEAD.get());
                         output.accept(COItems.BLUEBERRY_MEAD.get());

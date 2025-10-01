@@ -930,6 +930,118 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.APPLE_COCKTAIL.get())
+                .requires(COTags.Items.APPLES)
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BLACKBERRY_COCKTAIL.get())
+                .requires(COItems.BLACKBERRY.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BLUEBERRY_COCKTAIL.get())
+                .requires(COItems.BLUEBERRY.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANTALOUPE_COCKTAIL.get())
+                .requires(COItems.CANTALOUPE_SLICE.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CHERRY_COCKTAIL.get())
+                .requires(COItems.CHERRIES.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CRANBERRY_COCKTAIL.get())
+                .requires(COItems.CRANBERRY.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MANGO_COCKTAIL.get())
+                .requires(COItems.MANGO.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MELON_COCKTAIL.get())
+                .requires(COItems.HONEYDEW_SLICE.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RASPBERRY_COCKTAIL.get())
+                .requires(COItems.RASPBERRY.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.STRAWBERRY_COCKTAIL.get())
+                .requires(COItems.STRAWBERRY.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.WATERMELON_COCKTAIL.get())
+                .requires(Items.MELON_SLICE)
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.BEEF_SAUSAGE.get())
                 .requires(COItems.MEAT_MALLET.get())
                 .requires(COTags.Items.MAKES_BEEF_SAUSAGE)

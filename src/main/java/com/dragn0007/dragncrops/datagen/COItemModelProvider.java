@@ -189,6 +189,18 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_GELATIN);
         simpleItem(COItems.STRAWBERRY_GELATIN);
         simpleItem(COItems.WATERMELON_GELATIN);
+
+        simpleItem(COItems.APPLE_COCKTAIL);
+        simpleItem(COItems.BLACKBERRY_COCKTAIL);
+        simpleItem(COItems.BLUEBERRY_COCKTAIL);
+        simpleItem(COItems.CANTALOUPE_COCKTAIL);
+        simpleItem(COItems.CHERRY_COCKTAIL);
+        simpleItem(COItems.CRANBERRY_COCKTAIL);
+        simpleItem(COItems.MANGO_COCKTAIL);
+        simpleItem(COItems.MELON_COCKTAIL);
+        simpleItem(COItems.RASPBERRY_COCKTAIL);
+        simpleItem(COItems.STRAWBERRY_COCKTAIL);
+        simpleItem(COItems.WATERMELON_COCKTAIL);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

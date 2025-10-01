@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:raspberry"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "dragncrops:coconut"
+    },
+    {
+      "item": "dragncrops:lime"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:raspberry_cocktail"
+  }
+}
