@@ -149,6 +149,7 @@ public class COBlocks {
     public static final RegistryObject<Block> WHITE_BREAD = registerBlockWithoutItem("white_bread", BreadBlock::new);
     public static final RegistryObject<Block> CORN_BREAD = registerBlockWithoutItem("corn_bread", BreadBlock::new);
     public static final RegistryObject<Block> POTATO_BREAD = registerBlockWithoutItem("potato_bread", BreadBlock::new);
+    public static final RegistryObject<Block> RICE_BREAD = registerBlockWithoutItem("rice_bread", BreadBlock::new);
 
     public static final RegistryObject<Block> APPLE_JAM = registerBlockWithoutItem("apple_jam", JamJarBlock::new);
     public static final RegistryObject<Block> BLACKBERRY_JAM = registerBlockWithoutItem("blackberry_jam", JamJarBlock::new);

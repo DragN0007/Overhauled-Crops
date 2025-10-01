@@ -82,6 +82,7 @@ public class COItemGroup {
                         output.accept(COItems.CORN_BREAD.get());
                         output.accept(COItems.NUT_BREAD.get());
                         output.accept(COItems.POTATO_BREAD.get());
+                        output.accept(COItems.RICE_BREAD.get());
                         output.accept(COItems.RYE_BREAD.get());
                         output.accept(COItems.WHITE_BREAD.get());
 
@@ -181,6 +182,17 @@ public class COItemGroup {
                         output.accept(COItems.RASPBERRY_COCKTAIL.get());
                         output.accept(COItems.STRAWBERRY_COCKTAIL.get());
                         output.accept(COItems.WATERMELON_COCKTAIL.get());
+
+                        output.accept(COItems.APPLE_PIE.get());
+                        output.accept(COItems.BLACKBERRY_PIE.get());
+                        output.accept(COItems.BLUEBERRY_PIE.get());
+                        output.accept(COItems.CHERRY_PIE.get());
+                        output.accept(COItems.CRANBERRY_PIE.get());
+                        output.accept(COItems.RASPBERRY_PIE.get());
+                        output.accept(COItems.STRAWBERRY_PIE.get());
+                        output.accept(COItems.COCONUT_PIE.get());
+                        output.accept(COItems.BEETROOT_PIE.get());
+                        output.accept(COItems.KEY_LIME_PIE.get());
 
                         output.accept(COItems.APPLE_MEAD.get());
                         output.accept(COItems.BLACKBERRY_MEAD.get());

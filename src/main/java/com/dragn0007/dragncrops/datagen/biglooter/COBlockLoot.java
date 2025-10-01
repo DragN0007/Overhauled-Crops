@@ -55,6 +55,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.WHITE_BREAD.get(), COItems.WHITE_BREAD.get());
         this.dropOther(COBlocks.POTATO_BREAD.get(), COItems.POTATO_BREAD.get());
         this.dropOther(COBlocks.CORN_BREAD.get(), COItems.CORN_BREAD.get());
+        this.dropOther(COBlocks.RICE_BREAD.get(), COItems.RICE_BREAD.get());
 
         this.dropOther(COBlocks.FERMENTED_PICKLES.get(), COItems.FERMENTED_PICKLES.get());
         this.dropOther(COBlocks.UNFERMENTED_PICKLES.get(), COItems.UNFERMENTED_PICKLES.get());

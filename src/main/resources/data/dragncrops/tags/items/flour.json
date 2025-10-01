@@ -6,6 +6,11 @@
     {
       "id": "medievalembroidery:flour",
       "required": false
+    },
+
+    {
+      "id": "dffeasts:flour",
+      "required": false
     }
   ]
 }

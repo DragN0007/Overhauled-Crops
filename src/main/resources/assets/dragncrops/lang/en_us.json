@@ -136,6 +136,7 @@
   "item.dragncrops.white_bread": "White Bread",
   "item.dragncrops.potato_bread": "Potato Bread",
   "item.dragncrops.corn_bread": "Corn Bread",
+  "item.dragncrops.rice_bread": "Rice Bread",
 
   "block.dragncrops.bread": "Wheat Bread",
   "block.dragncrops.blueberry_bread": "Blueberry Bread",
@@ -145,6 +146,7 @@
   "block.dragncrops.white_bread": "White Bread",
   "block.dragncrops.potato_bread": "Potato Bread",
   "block.dragncrops.corn_bread": "Corn Bread",
+  "block.dragncrops.rice_bread": "Rice Bread",
 
 
   "item.dragncrops.apple_jam": "Apple Jam",
@@ -379,9 +381,22 @@
   "item.dragncrops.raspberry_cocktail": "Raspberry Fruit Cocktail",
   "item.dragncrops.strawberry_cocktail": "Strawberry Fruit Cocktail",
   "item.dragncrops.watermelon_cocktail": "Watermelon Fruit Cocktail",
-  "item.dragncrops.honey_cocktail": "Honey Fruit Cocktail",
-  "item.dragncrops.beetroot_cocktail": "Beetroot Fruit Cocktail",
-  "item.dragncrops.magma_cream_cocktail": "Magma Cream Fruit Cocktail",
+
+
+  "item.dragncrops.apple_pie": "Apple Pie",
+  "item.dragncrops.blackberry_pie": "Blackberry Pie",
+  "item.dragncrops.blueberry_pie": "Blueberry Pie",
+  "item.dragncrops.cantaloupe_pie": "Cantaloupe Pie",
+  "item.dragncrops.cherry_pie": "Cherry Pie",
+  "item.dragncrops.cranberry_pie": "Cranberry Pie",
+  "item.dragncrops.mango_pie": "Mango Pie",
+  "item.dragncrops.melon_pie": "Melon Pie",
+  "item.dragncrops.raspberry_pie": "Raspberry Pie",
+  "item.dragncrops.strawberry_pie": "Strawberry Pie",
+  "item.dragncrops.watermelon_pie": "Watermelon Pie",
+  "item.dragncrops.coconut_pie": "Coconut Pie",
+  "item.dragncrops.beetroot_pie": "Beetroot Pie",
+  "item.dragncrops.key_lime_pie": "Key Lime Pie",
 
 
   "item.dragncrops.meat_mallet": "Meat Mallet",

@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-30T01:21:00.0234733	Loot Tables
+// 1.20.1	2025-10-01T14:48:36.4278705	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 9b824821fc1b9776a4b5bdadbd2e8f24c144c466 data/dragncrops/loot_tables/blocks/apple_gelatin.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
@@ -120,6 +120,7 @@ ca5f02fa857c24599de770b1aed234c34e9cc1fc data/dragncrops/loot_tables/blocks/red_
 fe7931d27c2e7067300b5f775c61a71fcc69370f data/dragncrops/loot_tables/blocks/red_apple_sapling.json
 f123f8bd95e28e6cf730d9da82fd04ab2ca29f80 data/dragncrops/loot_tables/blocks/red_potatoes.json
 feb0aee781ba4a8d76299ba6886498a97cd808f3 data/dragncrops/loot_tables/blocks/rice.json
+a018653681ff9320152361384e2a4a0c881c24d8 data/dragncrops/loot_tables/blocks/rice_bread.json
 64d773632ec2501730b402bb2bfdf3dd4c6db09e data/dragncrops/loot_tables/blocks/rice_grain.json
 69db4467f96797bf559e70b1ade585947ef93dee data/dragncrops/loot_tables/blocks/rosemary.json
 74235e586993b246651ac68579e7f5709b793242 data/dragncrops/loot_tables/blocks/rye.json

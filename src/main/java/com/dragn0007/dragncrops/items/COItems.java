@@ -152,15 +152,19 @@ public class COItems {
 
     public static final RegistryObject<Item> WHITE_BREAD = ITEMS.register("white_bread",
             () -> new PlaceableItem(COBlocks.WHITE_BREAD.get(),
-                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(1F).build()))));
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(1F).build()))));
 
     public static final RegistryObject<Item> POTATO_BREAD = ITEMS.register("potato_bread",
             () -> new PlaceableItem(COBlocks.POTATO_BREAD.get(),
-                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6F).build()))));
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6F).build()))));
 
     public static final RegistryObject<Item> CORN_BREAD = ITEMS.register("corn_bread",
             () -> new PlaceableItem(COBlocks.CORN_BREAD.get(),
-                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.6F).build()))));
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6F).build()))));
+
+    public static final RegistryObject<Item> RICE_BREAD = ITEMS.register("rice_bread",
+            () -> new PlaceableItem(COBlocks.RICE_BREAD.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.6F).build()))));
 
     //Jams
     public static final RegistryObject<Item> APPLE_JAM = ITEMS.register("apple_jam",
@@ -651,6 +655,78 @@ public class COItems {
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
+                            .build()))));
+
+
+    //Pie
+    public static final RegistryObject<Item> APPLE_PIE = ITEMS.register("apple_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> BLACKBERRY_PIE = ITEMS.register("blackberry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> BLUEBERRY_PIE = ITEMS.register("blueberry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> CHERRY_PIE = ITEMS.register("cherry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> CRANBERRY_PIE = ITEMS.register("cranberry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> RASPBERRY_PIE = ITEMS.register("raspberry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> STRAWBERRY_PIE = ITEMS.register("strawberry_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> COCONUT_PIE = ITEMS.register("coconut_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> BEETROOT_PIE = ITEMS.register("beetroot_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .build()))));
+
+    public static final RegistryObject<Item> KEY_LIME_PIE = ITEMS.register("key_lime_pie",
+            () -> new Item((new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(8).saturationMod(0.3F)
+                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
                             .build()))));
 
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:rice"
+    },
+    {
+      "item": "dragncrops:rice"
+    },
+    {
+      "item": "dragncrops:rice"
+    },
+    {
+      "tag": "forge:flour"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:rice_bread"
+  }
+}
