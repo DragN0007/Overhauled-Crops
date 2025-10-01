@@ -1,0 +1,44 @@
+{
+  "variants": {
+    "bottles=1": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead"
+      }
+    ],
+    "bottles=2": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_2"
+      }
+    ],
+    "bottles=3": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_3"
+      }
+    ],
+    "bottles=4": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_4"
+      }
+    ],
+    "bottles=5": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_4"
+      }
+    ],
+    "bottles=6": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_4"
+      }
+    ],
+    "bottles=7": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_4"
+      }
+    ],
+    "bottles=8": [
+      {
+        "model": "dragncrops:block/mead/honey/honey_mead_4"
+      }
+    ]
+  }
+}
