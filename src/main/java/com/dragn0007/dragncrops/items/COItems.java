@@ -95,11 +95,14 @@ public class COItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F).build())));
 
     public static final RegistryObject<Item> CILANTRO = ITEMS.register("cilantro",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
+            () -> new ItemNameBlockItem(COBlocks.CILANTRO.get(),
+                    new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
     public static final RegistryObject<Item> OREGANO = ITEMS.register("oregano",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
+            () -> new ItemNameBlockItem(COBlocks.OREGANO.get(),
+                    new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
     public static final RegistryObject<Item> ROSEMARY = ITEMS.register("rosemary",
-            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
+            () -> new ItemNameBlockItem(COBlocks.ROSEMARY.get(),
+                    new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1F).build())));
 
     //Seeds
     public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
