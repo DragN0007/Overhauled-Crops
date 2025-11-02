@@ -14,15 +14,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class GrainItem extends ItemNameBlockItem {
+public class ShiftPlaceableItem extends ItemNameBlockItem {
 
-    public GrainItem(Block p_41579_, Properties p_41580_) {
+    public ShiftPlaceableItem(Block p_41579_, Properties p_41580_) {
         super(p_41579_, p_41580_);
     }
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
-        if (context.getPlayer() != null && context.getPlayer().isCrouching()) {
+        if (context.getPlayer() != null && (context.getPlayer().isCrouching() || context.getLevel().getBlockState(context.getClickedPos()).is(this.getBlock()))) {
             InteractionResult interactionresult = this.place(new BlockPlaceContext(context));
             if (!interactionresult.consumesAction() && this.isEdible()) {
                 InteractionResult interactionresult1 = this.use(context.getLevel(), context.getPlayer(), context.getHand()).getResult();
@@ -35,8 +35,9 @@ public class GrainItem extends ItemNameBlockItem {
         return InteractionResult.PASS;
     }
 
+
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.dragncrops.grain.tooltip").withStyle(ChatFormatting.GOLD));
+        pTooltipComponents.add(Component.translatable("tooltip.dragncrops.placeable.tooltip").withStyle(ChatFormatting.GRAY));
     }
 }

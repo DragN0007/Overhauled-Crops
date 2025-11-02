@@ -52,7 +52,6 @@ public class CropOverhaul {
         ComposterBlock.COMPOSTABLES.put(COItems.BLACKBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.BLUEBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.RASPBERRY.get(), 0.5F);
-        ComposterBlock.COMPOSTABLES.put(COItems.WHITE_RASPBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.CRANBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.STRAWBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.PEANUT.get(), 0.5F);

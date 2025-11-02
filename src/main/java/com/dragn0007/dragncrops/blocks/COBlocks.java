@@ -37,8 +37,6 @@ public class COBlocks {
             () -> new BlueberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
     public static final RegistryObject<Block> RASPBERRIES = registerBlockWithoutItem("raspberries",
             () -> new RaspberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
-    public static final RegistryObject<Block> WHITE_RASPBERRIES = registerBlockWithoutItem("white_raspberries",
-            () -> new WhiteRaspberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
 
     public static final RegistryObject<Block> WILD_CARROTS = registerBlockWithoutItem("wild_carrots",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));

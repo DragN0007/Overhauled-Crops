@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
-public class CanItem extends PlaceableItem {
+public class CanItem extends ShiftPlaceableItem {
     public CanItem(Block block, Properties properties) {
         super(block, properties);
     }

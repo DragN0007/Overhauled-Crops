@@ -23,7 +23,6 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> BLACKBERRIES = registerKey("blackberries");
     public static final ResourceKey<BiomeModifier> BLUEBERRIES = registerKey("blueberries");
     public static final ResourceKey<BiomeModifier> RASPBERRIES = registerKey("raspberries");
-    public static final ResourceKey<BiomeModifier> WHITE_RASPBERRIES = registerKey("white_raspberries");
 
     public static final ResourceKey<BiomeModifier> PURPLE_CARROTS = registerKey("purple_carrots");
     public static final ResourceKey<BiomeModifier> YELLOW_CARROTS = registerKey("yellow_carrots");

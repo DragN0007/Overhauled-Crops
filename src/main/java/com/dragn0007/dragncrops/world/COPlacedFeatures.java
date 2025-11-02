@@ -24,7 +24,6 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> BLACKBERRIES = registerKey("blackberries");
     public static final ResourceKey<PlacedFeature> BLUEBERRIES = registerKey("blueberries");
     public static final ResourceKey<PlacedFeature> RASPBERRIES = registerKey("raspberries");
-    public static final ResourceKey<PlacedFeature> WHITE_RASPBERRIES = registerKey("white_raspberries");
 
     public static final ResourceKey<PlacedFeature> PURPLE_CARROTS = registerKey("purple_carrots");
     public static final ResourceKey<PlacedFeature> YELLOW_CARROTS = registerKey("yellow_carrots");
@@ -183,12 +182,6 @@ public class COPlacedFeatures {
                         BiomeFilter.biome()));
 
         register(context, RASPBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.RASPBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(32),
-                        InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
-
-        register(context, WHITE_RASPBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.WHITE_RASPBERRIES),
                 List.of(RarityFilter.onAverageOnceEvery(32),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,

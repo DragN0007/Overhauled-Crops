@@ -41,7 +41,6 @@ public class COItemGroup {
                         output.accept(COItems.BLACKBERRY.get());
                         output.accept(COItems.BLUEBERRY.get());
                         output.accept(COItems.RASPBERRY.get());
-//                        output.accept(COItems.WHITE_RASPBERRY.get());
                         output.accept(COItems.CRANBERRY.get());
                         output.accept(COItems.STRAWBERRY.get());
                         output.accept(COItems.PEANUT.get());

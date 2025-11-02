@@ -28,7 +28,6 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.BLACKBERRY);
         simpleItem(COItems.BLUEBERRY);
         simpleItem(COItems.RASPBERRY);
-        simpleItem(COItems.WHITE_RASPBERRY);
         simpleItem(COItems.CRANBERRY);
         simpleItem(COItems.STRAWBERRY);
         simpleItem(COItems.PEANUT);

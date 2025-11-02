@@ -6,7 +6,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 
-public class JarItem extends PlaceableItem {
+public class JarItem extends ShiftPlaceableItem {
     public JarItem(Block block, Properties properties) {
         super(block, properties);
     }

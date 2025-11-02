@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-26T14:16:50.1123177	Block States: dragncrops
+// 1.20.1	2025-10-24T04:07:13.15742	Block States: dragncrops
 7bdbcb9bd8b1f5ade18c3451ce328c4acf6b33ad assets/dragncrops/blockstates/blackberries.json
 90046365dc81b6079379fe66631e562e09239b17 assets/dragncrops/blockstates/blueberries.json
 bf5b6c9d4758bbdde98c13bb508013f17d9c48cc assets/dragncrops/blockstates/cherry_leaves.json
@@ -27,7 +27,6 @@ efc26c3fb047fe1116cb8478847ae9306513027c assets/dragncrops/blockstates/rice.json
 da3453ed4a933699dea766ea46582c901e88ec20 assets/dragncrops/blockstates/rosemary.json
 5a72d0afa66a49c5077b9d89b1f742eb7db2fb2a assets/dragncrops/blockstates/strawberries.json
 fba8362274b4835ae93d923c64ba5de4d3ec73a6 assets/dragncrops/blockstates/sugar_beets.json
-14f110c61a3139e9c7edddf502b15a923e3fc7c1 assets/dragncrops/blockstates/white_raspberries.json
 983aa99c2afa40d488e9e7c71b5385740335668b assets/dragncrops/blockstates/wild_beetroots.json
 7c2924d412f889e7f73511f8d8d1256490287c50 assets/dragncrops/blockstates/wild_carrots.json
 e8cbc5ba820755bf57e959ab33144b1510d329cc assets/dragncrops/blockstates/wild_cilantro.json
@@ -146,11 +145,6 @@ bb7bf01ba28a457502408527d3e2295ae53c57a4 assets/dragncrops/models/block/strawber
 51ce9044750a6e66100cfdb1001fa65f0e3f28c5 assets/dragncrops/models/block/sugar_beets_stage1.json
 9ac2c1dc0dfc9247de6217afcad031f882824cb6 assets/dragncrops/models/block/sugar_beets_stage2.json
 fa8259c5d3cf526f0ba277a1ebd20943dd1e3e96 assets/dragncrops/models/block/sugar_beets_stage3.json
-609e585dc54d3a43a9b670c481c2c6881a052a69 assets/dragncrops/models/block/white_raspberries_stage0.json
-20df8ba5a5dd4c655434381016d3c6d036d52e4a assets/dragncrops/models/block/white_raspberries_stage1.json
-a26db732c1b665f49e3622625d7547b6ac0690b1 assets/dragncrops/models/block/white_raspberries_stage2.json
-f4540db4aa4a395cd9765ae906909e20793d39f9 assets/dragncrops/models/block/white_raspberries_stage3.json
-1f7bdf75dad35b3c7971b05b67852e6bc0791d90 assets/dragncrops/models/block/white_raspberries_stage4.json
 22b438bb8c70594c9126661015fcfb7659a93268 assets/dragncrops/models/block/wild_beetroots.json
 3ab525aa6936b1d8f8f2dee9950cb02a2bc0ac37 assets/dragncrops/models/block/wild_carrots.json
 49ec1e30255e4d80ca016506e061028f239223cc assets/dragncrops/models/block/wild_cilantro.json

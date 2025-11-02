@@ -4,7 +4,7 @@
     "tag": "dragncrops:canned_goods"
   },
   "result": {
-    "item": "minecraft:sugar"
+    "item": "dragncrops:empty_can"
   },
   "spoiltime": 800,
   "priority": 5

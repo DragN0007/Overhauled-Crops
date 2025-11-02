@@ -15,6 +15,9 @@
     "dragncrops:rice",
     "dragncrops:cantaloupe",
     "dragncrops:honeydew",
-    "dragncrops:rosemary"
+    "dragncrops:rosemary",
+    "dragncrops:blueberry",
+    "dragncrops:raspberry",
+    "dragncrops:blackberry"
   ]
 }

@@ -1,4 +1,4 @@
-// 1.20.1	2025-09-29T02:42:07.6165973	Registries
+// 1.20.1	2025-10-24T04:01:27.5789879	Registries
 c85bddddee5c190ef6b71e1bae28df037b5c6d79 data/dragncrops/forge/biome_modifier/beetroots.json
 d06c0ebbdc1107e427d46a37f7599e3832c35e31 data/dragncrops/forge/biome_modifier/blackberries.json
 c0ffeb127462fc7a6775545a34c18a708df99ed2 data/dragncrops/forge/biome_modifier/blueberries.json
@@ -61,7 +61,6 @@ edbb1b07acf09b966759f56ddedef55de9a5b1d4 data/dragncrops/worldgen/configured_fea
 a37150778b29c737e958759b74e76f86be755f31 data/dragncrops/worldgen/configured_feature/strawberries.json
 371efa16afcf970babffde75055015f56f9e7795 data/dragncrops/worldgen/configured_feature/sugar_beets.json
 1aa69293651b6c39d70589f322794bc1502dbe1a data/dragncrops/worldgen/configured_feature/wheat.json
-c19c892532481b0e2782db8ad5bfe0b1ac9bf819 data/dragncrops/worldgen/configured_feature/white_raspberries.json
 3e729550662dd6bdc9501cebb42d25e289ee57c8 data/dragncrops/worldgen/configured_feature/yellow_apple_tree.json
 93b343fa700a0e32ee3d06a34822138dc64f8fa3 data/dragncrops/worldgen/configured_feature/yellow_carrots.json
 45af7075a398a939a4cf57fea7a9579d3c40d8d2 data/dragncrops/worldgen/placed_feature/beetroots.json
@@ -94,6 +93,5 @@ ddacb6e1fff796c7ae7f82bb63c30ac09df4958d data/dragncrops/worldgen/placed_feature
 3d8d22baf71d0542d33a5eec1d4c2cc35c758625 data/dragncrops/worldgen/placed_feature/strawberries.json
 a2bd1ca77236ec45e45302f6a69c2ccc543536f5 data/dragncrops/worldgen/placed_feature/sugar_beets.json
 3610e9f6bd79ed41cb8a28a243ddd7d8ace29218 data/dragncrops/worldgen/placed_feature/wheat.json
-13a97391dc8aea6500fe641b522488963ad4cdfa data/dragncrops/worldgen/placed_feature/white_raspberries.json
 f6cae4cb9b12214c4f0e0e02440ca402e429d92f data/dragncrops/worldgen/placed_feature/yellow_apple_tree.json
 5ba5f7aa3ee971a94984e4545526c8e41b210d0f data/dragncrops/worldgen/placed_feature/yellow_carrots.json

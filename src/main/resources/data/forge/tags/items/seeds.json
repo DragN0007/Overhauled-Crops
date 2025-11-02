@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:corn_seeds",
+    "dragncrops:rice_seeds",
+    "dragncrops:rye_seeds",
+    "dragncrops:honeydew_seeds",
+    "dragncrops:cantaloupe_seeds"
+  ]
+}

@@ -32,7 +32,6 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLACKBERRIES = registerKey("blackberries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BLUEBERRIES = registerKey("blueberries");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RASPBERRIES = registerKey("raspberries");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE_RASPBERRIES = registerKey("white_raspberries");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE_CARROTS = registerKey("purple_carrots");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_CARROTS = registerKey("yellow_carrots");
@@ -182,11 +181,6 @@ public class COConfigFeatures {
         register(context, RASPBERRIES, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(12, 4, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.RASPBERRIES.get().defaultBlockState()
-                                .setValue(OBushBlock.AGE, Integer.valueOf(4)))))));
-
-        register(context, WHITE_RASPBERRIES, Feature.RANDOM_PATCH,
-                new RandomPatchConfiguration(12, 4, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WHITE_RASPBERRIES.get().defaultBlockState()
                                 .setValue(OBushBlock.AGE, Integer.valueOf(4)))))));
 
 

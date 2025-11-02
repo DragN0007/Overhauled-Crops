@@ -452,6 +452,6 @@
 
   "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
-  "tooltip.dragncrops.placeable.tooltip": "Placeable",
-  "tooltip.dragncrops.grain.tooltip": "Can be placed for grain production."
+  "tooltip.dragncrops.placeable.tooltip": "Shift-Placeable",
+  "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production."
 }

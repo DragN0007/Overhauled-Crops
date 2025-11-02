@@ -68,9 +68,6 @@ public class COBlockstateProvider extends BlockStateProvider {
         createBush((OBushBlock) COBlocks.RASPBERRIES.get(), "raspberries", "raspberries",
                 0, 1, 2, 3, 4);
 
-        createBush((OBushBlock) COBlocks.WHITE_RASPBERRIES.get(), "white_raspberries", "white_raspberries",
-                0, 1, 2, 3, 4);
-
 
         createCrop((OCropBlock) COBlocks.PURPLE_CARROTS.get(), "purple_carrots", "purple_carrots",
                 0, 0, 1, 1, 2, 2, 2, 3);

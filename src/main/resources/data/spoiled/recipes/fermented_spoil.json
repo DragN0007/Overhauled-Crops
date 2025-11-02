@@ -4,7 +4,7 @@
     "tag": "dragncrops:fermented_goods"
   },
   "result": {
-    "item": "minecraft:sugar"
+    "item": "minecraft:rotten_flesh"
   },
   "spoiltime": 800,
   "priority": 5

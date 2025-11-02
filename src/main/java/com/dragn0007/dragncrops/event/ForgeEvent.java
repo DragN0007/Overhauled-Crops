@@ -88,7 +88,7 @@ public class ForgeEvent {
 
         if (itemStack.is(Items.BREAD)) {
             BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
-            if (level.isEmptyBlock(blockPos)) {
+            if (level.isEmptyBlock(blockPos) && player.isShiftKeyDown()) {
                 if (!level.isClientSide) {
                     Direction playerFacing = player.getDirection();
                     BlockState blockState = COBlocks.BREAD.get()
@@ -106,7 +106,7 @@ public class ForgeEvent {
 
         if (itemStack.is(Items.WHEAT)) {
             BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
-            if (level.isEmptyBlock(blockPos)) {
+            if (level.isEmptyBlock(blockPos) && player.isShiftKeyDown()) {
                 if (!level.isClientSide) {
                     Direction playerFacing = player.getDirection();
                     BlockState blockState = COBlocks.WHEAT_GRAIN.get()
@@ -124,7 +124,7 @@ public class ForgeEvent {
 
         if (itemStack.is(Items.APPLE)) {
             BlockPos blockPos = event.getPos().relative(Objects.requireNonNull(event.getFace()));
-            if (level.isEmptyBlock(blockPos) && !(state.getBlock() instanceof AppleBlock)) {
+            if (level.isEmptyBlock(blockPos) && !(state.getBlock() instanceof AppleBlock) && player.isShiftKeyDown()) {
                 if (!level.isClientSide) {
                     BlockState blockState = COBlocks.RED_APPLE.get().defaultBlockState().setValue(AppleBlock.APPLES, Integer.valueOf(1))
                             .setValue(AppleBlock.WATERLOGGED, Boolean.valueOf(false));

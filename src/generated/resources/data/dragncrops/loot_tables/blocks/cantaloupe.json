@@ -10,8 +10,26 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "dragncrops:cantaloupe"
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "block": "dragncrops:cantaloupe",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "7"
+                  }
+                }
+              ],
+              "name": "dragncrops:cantaloupe"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "dragncrops:cantaloupe_seeds"
+            }
+          ]
         }
       ],
       "rolls": 1.0
@@ -36,12 +54,12 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 2,
-                "probability": 0.5815288
+                "extra": 3,
+                "probability": 0.5714286
               }
             }
           ],
-          "name": "dragncrops:cantaloupe"
+          "name": "dragncrops:cantaloupe_seeds"
         }
       ],
       "rolls": 1.0
