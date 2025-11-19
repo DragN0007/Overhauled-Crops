@@ -2,10 +2,10 @@
   "replace": false,
   "values": [
     "#forge:vegetables",
-    "#forge:fruits",
     "#forge:grains",
     "#forge:herbs",
     "#forge:eggs",
+    "dragncrops:peanut",
     "dragncrops:beef_sausage",
     "dragncrops:chicken_sausage",
     "dragncrops:pork_sausage",

@@ -122,6 +122,29 @@ public class COBlocks {
     public static final RegistryObject<Block> WILD_ROSEMARY = registerBlockWithoutItem("wild_rosemary",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
+    public static final RegistryObject<Block> PUFFBALL_MUSHROOM = registerBlockWithoutItem("puffball_mushroom",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_PUFFBALL_MUSHROOM = registerBlockWithoutItem("wild_puffball_mushroom",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+
+    public static final RegistryObject<Block> CRIMSONBERRIES = registerBlockWithoutItem("crimsonberries",
+            () -> new CrimsonberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
+    public static final RegistryObject<Block> GOLDENBERRIES = registerBlockWithoutItem("goldenberries",
+            () -> new GoldenberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
+
+    public static final RegistryObject<Block> GOLDEN_RHUBARB = registerBlockWithoutItem("golden_rhubarb",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_GOLDEN_RHUBARB = registerBlockWithoutItem("wild_golden_rhubarb",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> THORN_BARLEY = registerBlockWithoutItem("thorn_barely",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_THORN_BARLEY = registerBlockWithoutItem("wild_thorn_barely",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> ASHERB = registerBlockWithoutItem("asherb",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_ASHERB = registerBlockWithoutItem("wild_asherb",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
                     .requiresCorrectToolForDrops().noCollission()));
@@ -132,6 +155,9 @@ public class COBlocks {
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
                     .requiresCorrectToolForDrops().noCollission()));
     public static final RegistryObject<Block> CORN_GRAIN = registerBlockWithoutItem("corn_grain",
+            ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
+    public static final RegistryObject<Block> THORN_BARLEY_GRAIN = registerBlockWithoutItem("thorn_barley_grain",
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
                     .requiresCorrectToolForDrops().noCollission()));
 
@@ -148,6 +174,7 @@ public class COBlocks {
     public static final RegistryObject<Block> CORN_BREAD = registerBlockWithoutItem("corn_bread", BreadBlock::new);
     public static final RegistryObject<Block> POTATO_BREAD = registerBlockWithoutItem("potato_bread", BreadBlock::new);
     public static final RegistryObject<Block> RICE_BREAD = registerBlockWithoutItem("rice_bread", BreadBlock::new);
+    public static final RegistryObject<Block> THORN_BARLEY_BREAD = registerBlockWithoutItem("thorn_barley_bread", BreadBlock::new);
 
     public static final RegistryObject<Block> APPLE_JAM = registerBlockWithoutItem("apple_jam", JamJarBlock::new);
     public static final RegistryObject<Block> BLACKBERRY_JAM = registerBlockWithoutItem("blackberry_jam", JamJarBlock::new);
@@ -160,6 +187,9 @@ public class COBlocks {
     public static final RegistryObject<Block> RASPBERRY_JAM = registerBlockWithoutItem("raspberry_jam", JamJarBlock::new);
     public static final RegistryObject<Block> STRAWBERRY_JAM = registerBlockWithoutItem("strawberry_jam", JamJarBlock::new);
     public static final RegistryObject<Block> WATERMELON_JAM = registerBlockWithoutItem("watermelon_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> PLUM_JAM = registerBlockWithoutItem("plum_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> CRIMSONBERRY_JAM = registerBlockWithoutItem("crimsonberry_jam", JamJarBlock::new);
+    public static final RegistryObject<Block> GOLDENBERRY_JAM = registerBlockWithoutItem("goldenberry_jam", JamJarBlock::new);
 
     public static final RegistryObject<TartBlock> APPLE_TART = registerPixelPlacerWithoutItem("apple_tart", TartBlock::new);
     public static final RegistryObject<TartBlock> BLACKBERRY_TART = registerPixelPlacerWithoutItem("blackberry_tart", TartBlock::new);
@@ -172,6 +202,9 @@ public class COBlocks {
     public static final RegistryObject<TartBlock> RASPBERRY_TART = registerPixelPlacerWithoutItem("raspberry_tart", TartBlock::new);
     public static final RegistryObject<TartBlock> STRAWBERRY_TART = registerPixelPlacerWithoutItem("strawberry_tart", TartBlock::new);
     public static final RegistryObject<TartBlock> WATERMELON_TART = registerPixelPlacerWithoutItem("watermelon_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> PLUM_TART = registerPixelPlacerWithoutItem("plum_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> CRIMSONBERRY_TART = registerPixelPlacerWithoutItem("crimsonberry_tart", TartBlock::new);
+    public static final RegistryObject<TartBlock> GOLDENBERRY_TART = registerPixelPlacerWithoutItem("goldenberry_tart", TartBlock::new);
 
     public static final RegistryObject<Block> APPLE_CANDY = registerBlockWithoutItem("apple_candy", CandyBlock::new);
     public static final RegistryObject<Block> BLACKBERRY_CANDY = registerBlockWithoutItem("blackberry_candy", CandyBlock::new);
@@ -184,6 +217,9 @@ public class COBlocks {
     public static final RegistryObject<Block> RASPBERRY_CANDY = registerBlockWithoutItem("raspberry_candy", CandyBlock::new);
     public static final RegistryObject<Block> STRAWBERRY_CANDY = registerBlockWithoutItem("strawberry_candy", CandyBlock::new);
     public static final RegistryObject<Block> WATERMELON_CANDY = registerBlockWithoutItem("watermelon_candy", CandyBlock::new);
+    public static final RegistryObject<Block> PLUM_CANDY = registerBlockWithoutItem("plum_candy", CandyBlock::new);
+    public static final RegistryObject<Block> CRIMSONBERRY_CANDY = registerBlockWithoutItem("crimsonberry_candy", CandyBlock::new);
+    public static final RegistryObject<Block> GOLDENBERRY_CANDY = registerBlockWithoutItem("goldenberry_candy", CandyBlock::new);
 
     public static final RegistryObject<Block> CANNED_CARROTS = registerBlockWithoutItem("canned_carrots", CanBlock::new);
     public static final RegistryObject<Block> CANNED_POTATOES = registerBlockWithoutItem("canned_potatoes", CanBlock::new);
@@ -191,6 +227,7 @@ public class COBlocks {
     public static final RegistryObject<Block> CANNED_VEGETABLES = registerBlockWithoutItem("canned_vegetables", CanBlock::new);
     public static final RegistryObject<Block> CANNED_FRUIT = registerBlockWithoutItem("canned_fruit", CanBlock::new);
     public static final RegistryObject<Block> CANNED_BEEF = registerBlockWithoutItem("canned_beef", CanBlock::new);
+    public static final RegistryObject<Block> CANNED_MUSHROOMS = registerBlockWithoutItem("canned_mushrooms", CanBlock::new);
 
     public static final RegistryObject<Block> UNFERMENTED_PICKLES = registerBlockWithoutItem("unfermented_pickles", UnfermentedPickles::new);
     public static final RegistryObject<Block> FERMENTED_PICKLES = registerBlockWithoutItem("fermented_pickles", JarBlock::new);
@@ -241,6 +278,12 @@ public class COBlocks {
     public static final RegistryObject<Block> FERMENTED_MAGMA_CREAM_MEAD = registerBlockWithoutItem("fermented_magma_cream_mead", MeadJarBlock::new);
     public static final RegistryObject<Block> UNFERMENTED_BEETROOT_MEAD = registerBlockWithoutItem("unfermented_beetroot_mead", UnfermentedBeetrootMead::new);
     public static final RegistryObject<Block> FERMENTED_BEETROOT_MEAD = registerBlockWithoutItem("fermented_beetroot_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_PLUM_MEAD = registerBlockWithoutItem("unfermented_plum_mead", UnfermentedPlumMead::new);
+    public static final RegistryObject<Block> FERMENTED_PLUM_MEAD = registerBlockWithoutItem("fermented_plum_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_CRIMSONBERRY_MEAD = registerBlockWithoutItem("unfermented_crimsonberry_mead", UnfermentedCrimsonberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_CRIMSONBERRY_MEAD = registerBlockWithoutItem("fermented_crimsonberry_mead", MeadJarBlock::new);
+    public static final RegistryObject<Block> UNFERMENTED_GOLDENBERRY_MEAD = registerBlockWithoutItem("unfermented_goldenberry_mead", UnfermentedGoldenberryMead::new);
+    public static final RegistryObject<Block> FERMENTED_GOLDENBERRY_MEAD = registerBlockWithoutItem("fermented_goldenberry_mead", MeadJarBlock::new);
 
     public static final RegistryObject<Block> HONEY_MEAD = registerBlockWithoutItem("honey_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> APPLE_MEAD = registerBlockWithoutItem("apple_mead", MeadBottleBlock::new);
@@ -256,6 +299,9 @@ public class COBlocks {
     public static final RegistryObject<Block> WATERMELON_MEAD = registerBlockWithoutItem("watermelon_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> MAGMA_CREAM_MEAD = registerBlockWithoutItem("magma_cream_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> BEETROOT_MEAD = registerBlockWithoutItem("beetroot_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> PLUM_MEAD = registerBlockWithoutItem("plum_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> CRIMSONBERRY_MEAD = registerBlockWithoutItem("crimsonberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> GOLDENBERRY_MEAD = registerBlockWithoutItem("goldenberry_mead", MeadBottleBlock::new);
 
     public static final RegistryObject<Block> APPLE_GELATIN = registerBlockWithoutItem("apple_gelatin", GelatinBlock::new);
     public static final RegistryObject<Block> BLACKBERRY_GELATIN = registerBlockWithoutItem("blackberry_gelatin", GelatinBlock::new);
@@ -268,6 +314,9 @@ public class COBlocks {
     public static final RegistryObject<Block> RASPBERRY_GELATIN = registerBlockWithoutItem("raspberry_gelatin", GelatinBlock::new);
     public static final RegistryObject<Block> STRAWBERRY_GELATIN = registerBlockWithoutItem("strawberry_gelatin", GelatinBlock::new);
     public static final RegistryObject<Block> WATERMELON_GELATIN = registerBlockWithoutItem("watermelon_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> PLUM_GELATIN = registerBlockWithoutItem("plum_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> CRIMSONBERRY_GELATIN = registerBlockWithoutItem("crimsonberry_gelatin", GelatinBlock::new);
+    public static final RegistryObject<Block> GOLDENBERRY_GELATIN = registerBlockWithoutItem("goldenberry_gelatin", GelatinBlock::new);
 
     public static final RegistryObject<Block> RED_APPLE_SAPLING = registerBlockWithoutItem("red_apple_sapling",
             () -> new SaplingBlock(new RedAppleTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
@@ -297,6 +346,10 @@ public class COBlocks {
             () -> new SaplingBlock(new CherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> CHERRY_LEAVES = registerBlock("cherry_leaves",
             () -> new CherryLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
+    public static final RegistryObject<Block> PLUM_SAPLING = registerBlockWithoutItem("plum_sapling",
+            () -> new SaplingBlock(new CherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryObject<Block> PLUM_LEAVES = registerBlock("plum_leaves",
+            () -> new PlumLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
 
     public static <T extends Block>RegistryObject<T> registerBlockWithoutItem(String name, Supplier<T> block){
         return BLOCKS.register(name, block);

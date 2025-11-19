@@ -3,7 +3,7 @@ package com.dragn0007.dragncrops.world;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
-import com.dragn0007.dragncrops.blocks.crop.RedAppleLeaves;
+import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -59,6 +59,7 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> COCONUT_TREE = registerKey("coconut_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> LIME_TREE = registerKey("lime_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MANGO_TREE = registerKey("mango_tree");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PLUM_TREE = registerKey("plum_tree");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
@@ -72,42 +73,49 @@ public class COConfigFeatures {
         register(context, YELLOW_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.OAK_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.YELLOW_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.YELLOW_APPLE_LEAVES.get().defaultBlockState().setValue(YellowAppleLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, GREEN_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.OAK_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.GREEN_APPLE_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.GREEN_APPLE_LEAVES.get().defaultBlockState().setValue(GreenAppleLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, CHERRY_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.CHERRY_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.CHERRY_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.CHERRY_LEAVES.get().defaultBlockState().setValue(CherryLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, MANGO_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.JUNGLE_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.MANGO_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.MANGO_LEAVES.get().defaultBlockState().setValue(MangoLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, COCONUT_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.JUNGLE_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.COCONUT_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.COCONUT_LEAVES.get().defaultBlockState().setValue(CoconutLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 
         register(context, LIME_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
                 BlockStateProvider.simple(Blocks.OAK_LOG),
                 new StraightTrunkPlacer(2, 0, 2),
-                BlockStateProvider.simple(COBlocks.LIME_LEAVES.get().defaultBlockState().setValue(RedAppleLeaves.AGE, Integer.valueOf(2))),
+                BlockStateProvider.simple(COBlocks.LIME_LEAVES.get().defaultBlockState().setValue(LimeLeaves.AGE, Integer.valueOf(2))),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
+                new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+
+        register(context, PLUM_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(Blocks.OAK_LOG),
+                new StraightTrunkPlacer(2, 0, 2),
+                BlockStateProvider.simple(COBlocks.PLUM_LEAVES.get().defaultBlockState().setValue(PlumLeaves.AGE, Integer.valueOf(2))),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 1),
                 new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
 

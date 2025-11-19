@@ -51,6 +51,7 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> COCONUT_TREE = registerKey("coconut_tree");
     public static final ResourceKey<PlacedFeature> LIME_TREE = registerKey("lime_tree");
     public static final ResourceKey<PlacedFeature> MANGO_TREE = registerKey("mango_tree");
+    public static final ResourceKey<PlacedFeature> PLUM_TREE = registerKey("plum_tree");
 
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
@@ -83,6 +84,10 @@ public class COPlacedFeatures {
         register(context, CHERRY_TREE, configuredFeatures.getOrThrow(COConfigFeatures.CHERRY_TREE),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
                         COBlocks.CHERRY_SAPLING.get()));
+
+        register(context, PLUM_TREE, configuredFeatures.getOrThrow(COConfigFeatures.PLUM_TREE),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
+                        COBlocks.PLUM_SAPLING.get()));
 
         register(context, HONEYDEW, configuredFeatures.getOrThrow(COConfigFeatures.HONEYDEW),
                 List.of(RarityFilter.onAverageOnceEvery(72),

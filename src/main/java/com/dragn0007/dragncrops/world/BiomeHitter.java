@@ -50,6 +50,7 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> COCONUT_TREE = registerKey("coconut_tree");
     public static final ResourceKey<BiomeModifier> LIME_TREE = registerKey("lime_tree");
     public static final ResourceKey<BiomeModifier> MANGO_TREE = registerKey("mango_tree");
+    public static final ResourceKey<BiomeModifier> PLUM_TREE = registerKey("plum_tree");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -88,6 +89,11 @@ public class BiomeHitter {
         context.register(LIME_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.LIME_TREE)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(PLUM_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_FOREST),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.PLUM_TREE)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(CANTALOUPE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
