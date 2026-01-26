@@ -47,6 +47,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.COCONUT_SAPLING.get(), COItems.COCONUT.get());
         this.dropOther(COBlocks.MANGO_SAPLING.get(), COItems.MANGO_PIT.get());
         this.dropOther(COBlocks.CHERRY_SAPLING.get(), COItems.CHERRY_PIT.get());
+        this.dropOther(COBlocks.PLUM_SAPLING.get(), COItems.PLUM_PIT.get());
 
         this.dropOther(COBlocks.BREAD.get(), Items.BREAD);
         this.dropOther(COBlocks.BLUEBERRY_BREAD.get(), COItems.BLUEBERRY_BREAD.get());
@@ -57,6 +58,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.POTATO_BREAD.get(), COItems.POTATO_BREAD.get());
         this.dropOther(COBlocks.CORN_BREAD.get(), COItems.CORN_BREAD.get());
         this.dropOther(COBlocks.RICE_BREAD.get(), COItems.RICE_BREAD.get());
+        this.dropOther(COBlocks.THORN_BARLEY_BREAD.get(), COItems.THORN_BARLEY_BREAD.get());
 
         this.dropOther(COBlocks.FERMENTED_PICKLES.get(), COItems.FERMENTED_PICKLES.get());
         this.dropOther(COBlocks.UNFERMENTED_PICKLES.get(), COItems.UNFERMENTED_PICKLES.get());
@@ -91,6 +93,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         LootItemCondition.Builder builder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CORN_GRAIN.get());
         this.add(COBlocks.CORN_GRAIN.get(), this.createMultiDrops(COBlocks.CORN_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder3));
 
+        LootItemCondition.Builder builder4 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.THORN_BARLEY_GRAIN.get());
+        this.add(COBlocks.THORN_BARLEY_GRAIN.get(), this.createMultiDrops(COBlocks.THORN_BARLEY_GRAIN.get(), COItems.GRAIN.get(), COItems.GRAIN.get(), builder4));
+
         this.add(COBlocks.APPLE_JAM.get(), createJamDrops(COBlocks.APPLE_JAM.get(), COItems.APPLE_JAM.get()));
         this.add(COBlocks.BLACKBERRY_JAM.get(), createJamDrops(COBlocks.BLACKBERRY_JAM.get(), COItems.BLACKBERRY_JAM.get()));
         this.add(COBlocks.BLUEBERRY_JAM.get(), createJamDrops(COBlocks.BLUEBERRY_JAM.get(), COItems.BLUEBERRY_JAM.get()));
@@ -102,6 +107,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.RASPBERRY_JAM.get(), createJamDrops(COBlocks.RASPBERRY_JAM.get(), COItems.RASPBERRY_JAM.get()));
         this.add(COBlocks.STRAWBERRY_JAM.get(), createJamDrops(COBlocks.STRAWBERRY_JAM.get(), COItems.STRAWBERRY_JAM.get()));
         this.add(COBlocks.WATERMELON_JAM.get(), createJamDrops(COBlocks.WATERMELON_JAM.get(), COItems.WATERMELON_JAM.get()));
+        this.add(COBlocks.PLUM_JAM.get(), createJamDrops(COBlocks.PLUM_JAM.get(), COItems.PLUM_JAM.get()));
+        this.add(COBlocks.CRIMSONBERRY_JAM.get(), createJamDrops(COBlocks.CRIMSONBERRY_JAM.get(), COItems.CRIMSONBERRY_JAM.get()));
+        this.add(COBlocks.GOLDENBERRY_JAM.get(), createJamDrops(COBlocks.GOLDENBERRY_JAM.get(), COItems.GOLDENBERRY_JAM.get()));
 
         this.dropOther(COBlocks.APPLE_TART.get(), COItems.APPLE_TART.get());
         this.dropOther(COBlocks.BLACKBERRY_TART.get(), COItems.BLACKBERRY_TART.get());
@@ -114,6 +122,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.RASPBERRY_TART.get(), COItems.RASPBERRY_TART.get());
         this.dropOther(COBlocks.STRAWBERRY_TART.get(), COItems.STRAWBERRY_TART.get());
         this.dropOther(COBlocks.WATERMELON_TART.get(), COItems.WATERMELON_TART.get());
+        this.dropOther(COBlocks.PLUM_TART.get(), COItems.PLUM_TART.get());
+        this.dropOther(COBlocks.CRIMSONBERRY_TART.get(), COItems.CRIMSONBERRY_TART.get());
+        this.dropOther(COBlocks.GOLDENBERRY_TART.get(), COItems.GOLDENBERRY_TART.get());
 
         this.add(COBlocks.APPLE_CANDY.get(), createCandyDrops(COBlocks.APPLE_CANDY.get(), COItems.APPLE_CANDY.get()));
         this.add(COBlocks.BLACKBERRY_CANDY.get(), createCandyDrops(COBlocks.BLACKBERRY_CANDY.get(), COItems.BLACKBERRY_CANDY.get()));
@@ -126,6 +137,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.RASPBERRY_CANDY.get(), createCandyDrops(COBlocks.RASPBERRY_CANDY.get(), COItems.RASPBERRY_CANDY.get()));
         this.add(COBlocks.STRAWBERRY_CANDY.get(), createCandyDrops(COBlocks.STRAWBERRY_CANDY.get(), COItems.STRAWBERRY_CANDY.get()));
         this.add(COBlocks.WATERMELON_CANDY.get(), createCandyDrops(COBlocks.WATERMELON_CANDY.get(), COItems.WATERMELON_CANDY.get()));
+        this.dropOther(COBlocks.PLUM_CANDY.get(), COItems.PLUM_CANDY.get());
+        this.dropOther(COBlocks.CRIMSONBERRY_CANDY.get(), COItems.CRIMSONBERRY_CANDY.get());
+        this.dropOther(COBlocks.GOLDENBERRY_CANDY.get(), COItems.GOLDENBERRY_CANDY.get());
 
         this.dropOther(COBlocks.APPLE_GELATIN.get(), COItems.APPLE_GELATIN.get());
         this.dropOther(COBlocks.BLACKBERRY_GELATIN.get(), COItems.BLACKBERRY_GELATIN.get());
@@ -138,6 +152,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.RASPBERRY_GELATIN.get(), COItems.RASPBERRY_GELATIN.get());
         this.dropOther(COBlocks.STRAWBERRY_GELATIN.get(), COItems.STRAWBERRY_GELATIN.get());
         this.dropOther(COBlocks.WATERMELON_GELATIN.get(), COItems.WATERMELON_GELATIN.get());
+        this.dropOther(COBlocks.PLUM_GELATIN.get(), COItems.PLUM_GELATIN.get());
+        this.dropOther(COBlocks.CRIMSONBERRY_GELATIN.get(), COItems.CRIMSONBERRY_GELATIN.get());
+        this.dropOther(COBlocks.GOLDENBERRY_GELATIN.get(), COItems.GOLDENBERRY_GELATIN.get());
 
         this.add(COBlocks.APPLE_MEAD.get(), createMeadDrops(COBlocks.APPLE_MEAD.get(), COItems.APPLE_MEAD.get()));
         this.add(COBlocks.BLACKBERRY_MEAD.get(), createMeadDrops(COBlocks.BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get()));
@@ -153,6 +170,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.HONEY_MEAD.get(), createMeadDrops(COBlocks.HONEY_MEAD.get(), COItems.HONEY_MEAD.get()));
         this.add(COBlocks.MAGMA_CREAM_MEAD.get(), createMeadDrops(COBlocks.MAGMA_CREAM_MEAD.get(), COItems.MAGMA_CREAM_MEAD.get()));
         this.add(COBlocks.BEETROOT_MEAD.get(), createMeadDrops(COBlocks.BEETROOT_MEAD.get(), COItems.BEETROOT_MEAD.get()));
+        this.add(COBlocks.PLUM_MEAD.get(), createMeadDrops(COBlocks.PLUM_MEAD.get(), COItems.PLUM_MEAD.get()));
+        this.add(COBlocks.CRIMSONBERRY_MEAD.get(), createMeadDrops(COBlocks.CRIMSONBERRY_MEAD.get(), COItems.CRIMSONBERRY_MEAD.get()));
+        this.add(COBlocks.GOLDENBERRY_MEAD.get(), createMeadDrops(COBlocks.GOLDENBERRY_MEAD.get(), COItems.GOLDENBERRY_MEAD.get()));
         this.dropOther(COBlocks.FERMENTED_APPLE_MEAD.get(), COItems.APPLE_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_BLUEBERRY_MEAD.get(), COItems.BLUEBERRY_MEAD.get());
@@ -167,6 +187,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.FERMENTED_HONEY_MEAD.get(), COItems.HONEY_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_BEETROOT_MEAD.get(), COItems.BEETROOT_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_MAGMA_CREAM_MEAD.get(), COItems.MAGMA_CREAM_MEAD.get());
+        this.dropOther(COBlocks.FERMENTED_PLUM_MEAD.get(), COItems.PLUM_MEAD.get());
+        this.dropOther(COBlocks.FERMENTED_CRIMSONBERRY_MEAD.get(), COItems.CRIMSONBERRY_MEAD.get());
+        this.dropOther(COBlocks.FERMENTED_GOLDENBERRY_MEAD.get(), COItems.GOLDENBERRY_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_APPLE_MEAD.get(), COItems.UNFERMENTED_APPLE_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), COItems.UNFERMENTED_BLACKBERRY_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), COItems.UNFERMENTED_BLUEBERRY_MEAD.get());
@@ -181,6 +204,9 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.UNFERMENTED_HONEY_MEAD.get(), COItems.UNFERMENTED_HONEY_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_BEETROOT_MEAD.get(), COItems.UNFERMENTED_BEETROOT_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_MAGMA_CREAM_MEAD.get(), COItems.UNFERMENTED_MAGMA_CREAM_MEAD.get());
+        this.dropOther(COBlocks.UNFERMENTED_PLUM_MEAD.get(), COItems.UNFERMENTED_PLUM_MEAD.get());
+        this.dropOther(COBlocks.UNFERMENTED_CRIMSONBERRY_MEAD.get(), COItems.UNFERMENTED_CRIMSONBERRY_MEAD.get());
+        this.dropOther(COBlocks.UNFERMENTED_GOLDENBERRY_MEAD.get(), COItems.UNFERMENTED_GOLDENBERRY_MEAD.get());
 
         this.add(COBlocks.CANNED_CARROTS.get(), createCanDrops(COBlocks.CANNED_CARROTS.get(), COItems.CANNED_CARROTS.get()));
         this.add(COBlocks.CANNED_POTATOES.get(), createCanDrops(COBlocks.CANNED_POTATOES.get(), COItems.CANNED_POTATOES.get()));
@@ -188,6 +214,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.CANNED_VEGETABLES.get(), createCanDrops(COBlocks.CANNED_VEGETABLES.get(), COItems.CANNED_VEGETABLES.get()));
         this.add(COBlocks.CANNED_FRUIT.get(), createCanDrops(COBlocks.CANNED_FRUIT.get(), COItems.CANNED_FRUIT.get()));
         this.add(COBlocks.CANNED_BEEF.get(), createCanDrops(COBlocks.CANNED_BEEF.get(), COItems.CANNED_BEEF.get()));
+        this.add(COBlocks.CANNED_MUSHROOMS.get(), createCanDrops(COBlocks.CANNED_MUSHROOMS.get(), COItems.CANNED_MUSHROOMS.get()));
 
 
         LootItemCondition.Builder wildVanillaBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_CARROTS.get());
@@ -229,6 +256,22 @@ public class COBlockLoot extends BlockLootSubProvider {
                 this.applyExplosionDecay(COBlocks.RASPBERRIES.get(),
                         LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.RASPBERRY.get())))
                                 .withPool(LootPool.lootPool().when(bushBuilder2).add(LootItem.lootTableItem(COItems.RASPBERRY.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+
+        LootItemCondition.Builder bushBuilder3 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.GOLDENBERRIES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OBushBlock.AGE, 4));
+        this.add(COBlocks.GOLDENBERRIES.get(),
+                this.applyExplosionDecay(COBlocks.GOLDENBERRIES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.GOLDENBERRIES.get())))
+                                .withPool(LootPool.lootPool().when(bushBuilder3).add(LootItem.lootTableItem(COItems.GOLDENBERRIES.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
+
+        LootItemCondition.Builder bushBuilder4 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CRIMSONBERRIES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OBushBlock.AGE, 4));
+        this.add(COBlocks.CRIMSONBERRIES.get(),
+                this.applyExplosionDecay(COBlocks.CRIMSONBERRIES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.CRIMSONBERRY.get())))
+                                .withPool(LootPool.lootPool().when(bushBuilder4).add(LootItem.lootTableItem(COItems.CRIMSONBERRY.get())
                                         .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5714286F, 3))))));
 
 
@@ -414,6 +457,62 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.WILD_OREGANO.get(), this.createMultiDrops(COBlocks.WILD_OREGANO.get(), COItems.OREGANO.get(), COItems.OREGANO.get(),
                 wildBuilder17));
 
+        LootItemCondition.Builder cropBuilder18 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.ASHERB.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.ASHERB.get(),
+                this.applyExplosionDecay(COBlocks.ASHERB.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.ASHERB.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder18).add(LootItem.lootTableItem(COItems.ASHERB.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder18 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_ASHERB.get());
+        this.add(COBlocks.WILD_ASHERB.get(), this.createMultiDrops(COBlocks.WILD_ASHERB.get(), COItems.ASHERB.get(), COItems.ASHERB.get(),
+                wildBuilder18));
+
+        LootItemCondition.Builder cropBuilder19 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.NETHER_BEET.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.NETHER_BEET.get(),
+                this.applyExplosionDecay(COBlocks.NETHER_BEET.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.NETHER_BEET.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder19).add(LootItem.lootTableItem(COItems.NETHER_BEET.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder19 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_NETHER_BEET.get());
+        this.add(COBlocks.WILD_NETHER_BEET.get(), this.createMultiDrops(COBlocks.WILD_NETHER_BEET.get(), COItems.NETHER_BEET.get(), COItems.NETHER_BEET.get(),
+                wildBuilder19));
+
+        LootItemCondition.Builder cropBuilder20 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.GOLDEN_RHUBARB.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.GOLDEN_RHUBARB.get(),
+                this.applyExplosionDecay(COBlocks.GOLDEN_RHUBARB.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.GOLDEN_RHUBARB.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder20).add(LootItem.lootTableItem(COItems.GOLDEN_RHUBARB.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder20 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_GOLDEN_RHUBARB.get());
+        this.add(COBlocks.WILD_GOLDEN_RHUBARB.get(), this.createMultiDrops(COBlocks.WILD_GOLDEN_RHUBARB.get(), COItems.GOLDEN_RHUBARB.get(), COItems.GOLDEN_RHUBARB.get(),
+                wildBuilder20));
+
+        LootItemCondition.Builder cropBuilder21 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.THORN_BARLEY.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.THORN_BARLEY.get(),
+                this.applyExplosionDecay(COBlocks.THORN_BARLEY.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.THORN_BARLEY.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder21).add(LootItem.lootTableItem(COItems.THORN_BARLEY.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder21 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_THORN_BARLEY.get());
+        this.add(COBlocks.WILD_THORN_BARLEY.get(), this.createMultiDrops(COBlocks.WILD_THORN_BARLEY.get(), COItems.THORN_BARLEY.get(), COItems.THORN_BARLEY.get(),
+                wildBuilder21));
+
+        LootItemCondition.Builder cropBuilder22 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.PUFFBALL_MUSHROOM.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.PUFFBALL_MUSHROOM.get(),
+                this.applyExplosionDecay(COBlocks.PUFFBALL_MUSHROOM.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.PUFFBALL_MUSHROOM.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder22).add(LootItem.lootTableItem(COItems.PUFFBALL_MUSHROOM.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder22 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_PUFFBALL_MUSHROOM.get());
+        this.add(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), this.createMultiDrops(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), COItems.PUFFBALL_MUSHROOM.get(), COItems.PUFFBALL_MUSHROOM.get(),
+                wildBuilder22));
+
+
 
 
         LootItemCondition.Builder leafBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.RED_APPLE_LEAVES.get())
@@ -470,6 +569,14 @@ public class COBlockLoot extends BlockLootSubProvider {
                 this.applyExplosionDecay(COBlocks.CHERRY_LEAVES.get(),
                         LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.CHERRIES.get())))
                                 .withPool(LootPool.lootPool().when(leafBuilder6).add(LootItem.lootTableItem(COItems.CHERRIES.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+
+        LootItemCondition.Builder leafBuilder7 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.CHERRY_LEAVES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(FruitLeaves.AGE, 3));
+        this.add(COBlocks.PLUM_LEAVES.get(),
+                this.applyExplosionDecay(COBlocks.PLUM_LEAVES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.PLUM.get())))
+                                .withPool(LootPool.lootPool().when(leafBuilder7).add(LootItem.lootTableItem(COItems.PLUM.get())
                                         .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
 
     }

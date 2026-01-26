@@ -58,7 +58,6 @@ public class DrinkItem extends Item {
                         int duration = effectInstance.getDuration();
 
                         Component text = Component.translatable(effectName)
-                                .append(" ")
                                 .append(Component.translatable("potion.potency." + amplifier))
                                 .append(String.format(" (%ds)", duration / 20))
                                 .withStyle(ChatFormatting.GOLD);

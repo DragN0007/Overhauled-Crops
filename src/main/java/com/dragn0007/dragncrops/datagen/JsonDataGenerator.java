@@ -2,6 +2,7 @@ package com.dragn0007.dragncrops.datagen;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.datagen.biglooter.COLootTableProvider;
+import com.dragn0007.dragncrops.datagen.compat.COThirstProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -26,5 +27,7 @@ public class JsonDataGenerator {
         generator.addProvider(event.includeClient(), new COBlockstateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new COItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new COWorldGenerator(packOutput, lookupProvider));
+
+        generator.addProvider(event.includeServer(), new COThirstProvider(packOutput, lookupProvider, existingFileHelper));
     }
 }

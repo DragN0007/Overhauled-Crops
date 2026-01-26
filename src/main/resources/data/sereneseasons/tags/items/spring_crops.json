@@ -3,6 +3,7 @@
   "values": [
     "dragncrops:yellow_apple",
     "dragncrops:cherries",
+    "dragncrops:plum",
     "dragncrops:strawberry",
     "dragncrops:yellow_carrot",
     "dragncrops:red_potato",
@@ -13,6 +14,13 @@
     "dragncrops:cantaloupe",
     "dragncrops:honeydew",
     "dragncrops:cilantro",
-    "dragncrops:blueberry"
+    "dragncrops:blueberry",
+
+    "dragncrops:yellow_apple_seeds",
+    "dragncrops:cherry_pit",
+    "dragncrops:plum_pit",
+    "dragncrops:rice_seeds",
+    "dragncrops:cantaloupe_seeds",
+    "dragncrops:honeydew_seeds"
   ]
 }

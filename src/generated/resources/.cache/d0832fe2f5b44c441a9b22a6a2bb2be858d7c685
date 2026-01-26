@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-24T04:07:13.15742	Block States: dragncrops
+// 1.20.1	2026-01-24T23:06:18.5174603	Block States: dragncrops
 7bdbcb9bd8b1f5ade18c3451ce328c4acf6b33ad assets/dragncrops/blockstates/blackberries.json
 90046365dc81b6079379fe66631e562e09239b17 assets/dragncrops/blockstates/blueberries.json
 bf5b6c9d4758bbdde98c13bb508013f17d9c48cc assets/dragncrops/blockstates/cherry_leaves.json
@@ -17,6 +17,8 @@ bf91c15caea2bb7c4b878be1e1393d9987384b7d assets/dragncrops/blockstates/lime_sapl
 ecff89746994305fbe452ea41f81f80b643caffe assets/dragncrops/blockstates/mango_sapling.json
 85c042f3a55fdc13c8efb96799d49f4d0ba0341f assets/dragncrops/blockstates/oregano.json
 a42f3f26a6e8d052c857291c743dcf3b30e31626 assets/dragncrops/blockstates/peanuts.json
+eb30dde683e96cc59d7af3d2ad310486f6900e99 assets/dragncrops/blockstates/plum_leaves.json
+9680994e7d967d3ee2cdf25201d9e7b16f3eee78 assets/dragncrops/blockstates/plum_sapling.json
 8b08e7067ab75bc87bf6d76946bb7fe407391a82 assets/dragncrops/blockstates/purple_carrots.json
 19a77b11c74df9e37ca5a149c31ea00276f8b340 assets/dragncrops/blockstates/purple_potatoes.json
 3421e62ce05c0f861f9e2347e2bc10a5897ccf7f assets/dragncrops/blockstates/raspberries.json
@@ -106,6 +108,11 @@ b361fd68d56c3c24fbc154010b7df03a32ae79b0 assets/dragncrops/models/block/peanuts_
 5a1b0109c349177e2f0fd26e70fecd2435c845ac assets/dragncrops/models/block/peanuts_stage1.json
 f1b4b74fe71a836665286a640f2c7a2e91776fe2 assets/dragncrops/models/block/peanuts_stage2.json
 7325d23e327ae402221883c9bd0f80a59c51227c assets/dragncrops/models/block/peanuts_stage3.json
+62b0bb90b169316e99e200e6054d91b89ddfa220 assets/dragncrops/models/block/plum_leaves_stage0.json
+bab303a5c0937056f2abcd4576b1e23c575c2f5f assets/dragncrops/models/block/plum_leaves_stage1.json
+792267c20353891094f048e691bc53b0b0c35695 assets/dragncrops/models/block/plum_leaves_stage2.json
+d02db6a346a16d782c0f4e3f872c0c8e4ba6bfdc assets/dragncrops/models/block/plum_leaves_stage3.json
+835b31dad594eaf581c6dd083e14951dd32ff558 assets/dragncrops/models/block/plum_sapling.json
 7f2747b2abd8098a9d6b1c6878398dda8a566b11 assets/dragncrops/models/block/purple_carrots_stage0.json
 a3c7452170de394f803212191c4e3ee3281a8285 assets/dragncrops/models/block/purple_carrots_stage1.json
 7f6acce0171a71bf661da8313d7fad8e19723385 assets/dragncrops/models/block/purple_carrots_stage2.json

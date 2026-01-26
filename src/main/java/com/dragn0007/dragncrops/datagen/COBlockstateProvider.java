@@ -45,6 +45,9 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.CHERRY_SAPLING.get(), models().cross(COBlocks.CHERRY_SAPLING.getId().getPath(),
                wildPlantTexture("cherry_sapling")).renderType("cutout"));
 
+        simpleBlock(COBlocks.PLUM_SAPLING.get(), models().cross(COBlocks.PLUM_SAPLING.getId().getPath(),
+                wildPlantTexture("plum_sapling")).renderType("cutout"));
+
 
         simpleBlock(COBlocks.WILD_CARROTS.get(), models().cross(COBlocks.WILD_CARROTS.getId().getPath(),
                 wildVanillaPlantTexture("carrots_stage3")).renderType("cutout"));
@@ -159,6 +162,9 @@ public class COBlockstateProvider extends BlockStateProvider {
                 0, 1, 2, 3);
 
         createLeaves((FruitLeaves) COBlocks.CHERRY_LEAVES.get(), "cherry_leaves", "cherry_leaves",
+                0, 1, 2, 3);
+
+        createLeaves((FruitLeaves) COBlocks.PLUM_LEAVES.get(), "plum_leaves", "plum_leaves",
                 0, 1, 2, 3);
     }
 

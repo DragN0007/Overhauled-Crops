@@ -5,6 +5,7 @@
     "dragncrops:mango",
     "dragncrops:coconut",
     "dragncrops:lime",
+    "dragncrops:plum",
     "dragncrops:corn",
     "dragncrops:strawberry",
     "dragncrops:yellow_carrot",
@@ -18,6 +19,22 @@
     "dragncrops:rosemary",
     "dragncrops:blueberry",
     "dragncrops:raspberry",
-    "dragncrops:blackberry"
+    "dragncrops:blackberry",
+    "dragncrops:thorn_barley",
+    "dragncrops:crimsonberry",
+    "dragncrops:goldenberries",
+    "dragncrops:golden_rhubarb",
+    "dragncrops:nether_beet",
+    "dragncrops:asherb",
+
+    "dragncrops:red_apple_seeds",
+    "dragncrops:mango_pit",
+    "dragncrops:lime_seeds",
+    "dragncrops:plum_pit",
+    "dragncrops:corn_seeds",
+    "dragncrops:rice_seeds",
+    "dragncrops:cantaloupe_seeds",
+    "dragncrops:honeydew_seeds",
+    "dragncrops:thorn_barley_seeds"
   ]
 }

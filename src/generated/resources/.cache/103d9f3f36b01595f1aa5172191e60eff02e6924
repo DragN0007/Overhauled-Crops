@@ -1,4 +1,4 @@
-// 1.20.1	2025-10-24T04:01:27.5789879	Registries
+// 1.20.1	2025-11-21T01:11:09.8317305	Registries
 c85bddddee5c190ef6b71e1bae28df037b5c6d79 data/dragncrops/forge/biome_modifier/beetroots.json
 d06c0ebbdc1107e427d46a37f7599e3832c35e31 data/dragncrops/forge/biome_modifier/blackberries.json
 c0ffeb127462fc7a6775545a34c18a708df99ed2 data/dragncrops/forge/biome_modifier/blueberries.json
@@ -17,6 +17,7 @@ ad0fb59a1ed395ded9127d0de08a886afb0a773d data/dragncrops/forge/biome_modifier/ci
 9aafaf91754383ff10f53be6ba602856dfbc28ef data/dragncrops/forge/biome_modifier/mango_tree.json
 643b23239fe660008f577f79597d49ae5d3a85ea data/dragncrops/forge/biome_modifier/oregano.json
 f65b6a20142eb7d6089fdc7d7046df2159eaba7c data/dragncrops/forge/biome_modifier/peanuts.json
+9a3fdd854a7ae5231f3962eb7172fc33e48c8a99 data/dragncrops/forge/biome_modifier/plum_tree.json
 f246a4adbed5b86c64a43fb1d84aca885d6bfe4d data/dragncrops/forge/biome_modifier/potatoes.json
 9bde64bb407531052cb418944b7913ba9fcb845f data/dragncrops/forge/biome_modifier/purple_carrots.json
 5f632816c8c31835e10d1f06e613063da572dd9e data/dragncrops/forge/biome_modifier/purple_potatoes.json
@@ -49,6 +50,7 @@ a06e613b631a0b944a4c317b6a98616f3da9f04a data/dragncrops/worldgen/configured_fea
 01e082d2aee24b1d83c22050cc42dd0be5cfa27b data/dragncrops/worldgen/configured_feature/mango_tree.json
 79e69061f4c8c5b0a2f4d88acff5489d6c90369f data/dragncrops/worldgen/configured_feature/oregano.json
 d5cd8e6f02a6a047d1eae70b62bf732ca8207276 data/dragncrops/worldgen/configured_feature/peanuts.json
+888f8309c1520096d90d0de9710b325a2fc2c785 data/dragncrops/worldgen/configured_feature/plum_tree.json
 97d2c0ba903e62844ae6f510671c0e7cb0f22ac7 data/dragncrops/worldgen/configured_feature/potatoes.json
 f615b91a1923ffd88e4255ae0088c39ff7ec3b03 data/dragncrops/worldgen/configured_feature/purple_carrots.json
 6474deee242ac74f2781d0ba882b01bfad6bdecd data/dragncrops/worldgen/configured_feature/purple_potatoes.json
@@ -81,6 +83,7 @@ b6cd666c968135101734eeb1a6e07c0a33e31a89 data/dragncrops/worldgen/placed_feature
 133f1c0c9994850cc5f754165fe7f09ccc4b6a8f data/dragncrops/worldgen/placed_feature/mango_tree.json
 299af626fe5125483fc215616e4810f738aafcf3 data/dragncrops/worldgen/placed_feature/oregano.json
 4a1c2e27d5afc349b34763855bb07f12aaaca265 data/dragncrops/worldgen/placed_feature/peanuts.json
+4b85bf1624fca3c288c3d94870ce962d44b099ee data/dragncrops/worldgen/placed_feature/plum_tree.json
 117f7190ce1d71f460d340179733316c083b874e data/dragncrops/worldgen/placed_feature/potatoes.json
 efa89c294db16d8ee81791acc4a4ab5cf7edcef0 data/dragncrops/worldgen/placed_feature/purple_carrots.json
 5a2d206fa16d4d47b38be03477420949cff3fdf6 data/dragncrops/worldgen/placed_feature/purple_potatoes.json

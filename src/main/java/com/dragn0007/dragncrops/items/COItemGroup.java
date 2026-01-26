@@ -48,9 +48,10 @@ public class COItemGroup {
                         output.accept(COItems.GOLDENBERRIES.get());
                         output.accept(COItems.PEANUT.get());
                         output.accept(COItems.CUCUMBER.get());
-                        output.accept(COItems.GARLIC.get());
                         output.accept(COItems.GOLDEN_RHUBARB.get());
+                        output.accept(COItems.GARLIC.get());
                         output.accept(COItems.SUGAR_BEET.get());
+                        output.accept(COItems.NETHER_BEET.get());
                         output.accept(COItems.CHERRIES.get());
                         output.accept(COItems.MANGO.get());
                         output.accept(COItems.COCONUT.get());

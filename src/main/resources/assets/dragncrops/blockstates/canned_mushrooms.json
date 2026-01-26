@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "cans=1": [
+      {
+        "model": "dragncrops:block/can/can"
+      }
+    ],
+    "cans=2": [
+      {
+        "model": "dragncrops:block/can/can_2"
+      }
+    ],
+    "cans=3": [
+      {
+        "model": "dragncrops:block/can/can_3"
+      }
+    ],
+    "cans=4": [
+      {
+        "model": "dragncrops:block/can/can_4"
+      }
+    ],
+    "cans=5": [
+      {
+        "model": "dragncrops:block/can/can_5"
+      }
+    ],
+    "cans=6": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=7": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=8": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=9": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=10": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=11": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=12": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=13": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=14": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=15": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ],
+    "cans=16": [
+      {
+        "model": "dragncrops:block/can/can_crate"
+      }
+    ]
+  }
+}

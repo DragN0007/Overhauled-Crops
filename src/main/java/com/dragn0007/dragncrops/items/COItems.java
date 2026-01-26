@@ -122,9 +122,13 @@ public class COItems {
     public static final RegistryObject<Item> THORN_BARLEY = ITEMS.register("thorn_barley",
             () -> new GrainItem(COBlocks.THORN_BARLEY_GRAIN.get(), (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.3F).build()))));
 
-    public static final RegistryObject<Item> GOLDEN_RHUBARB = ITEMS.register("rosemary",
+    public static final RegistryObject<Item> GOLDEN_RHUBARB = ITEMS.register("golden_rhubarb",
             () -> new ItemNameBlockItem(COBlocks.GOLDEN_RHUBARB.get(),
                     new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
+
+    public static final RegistryObject<Item> NETHER_BEET = ITEMS.register("nether_beet",
+            () -> new ItemNameBlockItem(COBlocks.NETHER_BEET.get(),
+                    new Item.Properties().food(new FoodProperties.Builder().nutrition(3).saturationMod(0.3F).build())));
 
     //Seeds
     public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds",
@@ -490,12 +494,12 @@ public class COItems {
 
     //Mead
     public static final RegistryObject<Item> UNFERMENTED_APPLE_MEAD = ITEMS.register("unfermented_apple_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_APPLE_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_APPLE_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> APPLE_MEAD = ITEMS.register("apple_mead",
-            () -> new ShiftPlaceableItem(COBlocks.APPLE_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.APPLE_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -503,12 +507,12 @@ public class COItems {
                             .build()))));
     
     public static final RegistryObject<Item> UNFERMENTED_BLACKBERRY_MEAD = ITEMS.register("unfermented_blackberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> BLACKBERRY_MEAD = ITEMS.register("blackberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.BLACKBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.BLACKBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -516,12 +520,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_BLUEBERRY_MEAD = ITEMS.register("unfermented_blueberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> BLUEBERRY_MEAD = ITEMS.register("blueberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.BLUEBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.BLUEBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -529,12 +533,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_CANTALOUPE_MEAD = ITEMS.register("unfermented_cantaloupe_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_CANTALOUPE_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_CANTALOUPE_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> CANTALOUPE_MEAD = ITEMS.register("cantaloupe_mead",
-            () -> new ShiftPlaceableItem(COBlocks.CANTALOUPE_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.CANTALOUPE_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -542,12 +546,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_CHERRY_MEAD = ITEMS.register("unfermented_cherry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_CHERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_CHERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> CHERRY_MEAD = ITEMS.register("cherry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.CHERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.CHERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -555,12 +559,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_CRANBERRY_MEAD = ITEMS.register("unfermented_cranberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_CRANBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_CRANBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> CRANBERRY_MEAD = ITEMS.register("cranberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.CRANBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.CRANBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -568,12 +572,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_MANGO_MEAD = ITEMS.register("unfermented_mango_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_MANGO_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_MANGO_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> MANGO_MEAD = ITEMS.register("mango_mead",
-            () -> new ShiftPlaceableItem(COBlocks.MANGO_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.MANGO_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -581,12 +585,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_MELON_MEAD = ITEMS.register("unfermented_melon_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_MELON_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_MELON_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> MELON_MEAD = ITEMS.register("melon_mead",
-            () -> new ShiftPlaceableItem(COBlocks.MELON_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.MELON_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -594,12 +598,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_RASPBERRY_MEAD = ITEMS.register("unfermented_raspberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_RASPBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_RASPBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> RASPBERRY_MEAD = ITEMS.register("raspberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.RASPBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.RASPBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -607,12 +611,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_STRAWBERRY_MEAD = ITEMS.register("unfermented_strawberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_STRAWBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_STRAWBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> STRAWBERRY_MEAD = ITEMS.register("strawberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.STRAWBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.STRAWBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -620,12 +624,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_WATERMELON_MEAD = ITEMS.register("unfermented_watermelon_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_WATERMELON_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_WATERMELON_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> WATERMELON_MEAD = ITEMS.register("watermelon_mead",
-            () -> new ShiftPlaceableItem(COBlocks.WATERMELON_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.WATERMELON_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -633,12 +637,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_BEETROOT_MEAD = ITEMS.register("unfermented_beetroot_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_BEETROOT_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_BEETROOT_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> BEETROOT_MEAD = ITEMS.register("beetroot_mead",
-            () -> new ShiftPlaceableItem(COBlocks.BEETROOT_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.BEETROOT_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -646,12 +650,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_HONEY_MEAD = ITEMS.register("unfermented_honey_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_HONEY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_HONEY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> HONEY_MEAD = ITEMS.register("honey_mead",
-            () -> new ShiftPlaceableItem(COBlocks.HONEY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.HONEY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -659,12 +663,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_MAGMA_CREAM_MEAD = ITEMS.register("unfermented_magma_cream_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_MAGMA_CREAM_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_MAGMA_CREAM_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> MAGMA_CREAM_MEAD = ITEMS.register("magma_cream_mead",
-            () -> new ShiftPlaceableItem(COBlocks.MAGMA_CREAM_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.MAGMA_CREAM_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -673,12 +677,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_PLUM_MEAD = ITEMS.register("unfermented_plum_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_PLUM_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_PLUM_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> PLUM_MEAD = ITEMS.register("plum_mead",
-            () -> new ShiftPlaceableItem(COBlocks.PLUM_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.PLUM_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -686,12 +690,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_CRIMSONBERRY_MEAD = ITEMS.register("unfermented_crimsonberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_CRIMSONBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_CRIMSONBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> CRIMSONBERRY_MEAD = ITEMS.register("crimsonberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.CRIMSONBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.CRIMSONBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -699,12 +703,12 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> UNFERMENTED_GOLDENBERRY_MEAD = ITEMS.register("unfermented_goldenberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.UNFERMENTED_GOLDENBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.UNFERMENTED_GOLDENBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.CONFUSION, 600, 0), 0.8F)
                             .build()))));
     public static final RegistryObject<Item> GOLDENBERRY_MEAD = ITEMS.register("goldenberry_mead",
-            () -> new ShiftPlaceableItem(COBlocks.GOLDENBERRY_MEAD.get(), (new Item.Properties()
+            () -> new ShiftPlaceableDrinkItem(COBlocks.GOLDENBERRY_MEAD.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.LUCK, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
@@ -714,98 +718,98 @@ public class COItems {
 
     //Cocktail
    public static final RegistryObject<Item> APPLE_COCKTAIL = ITEMS.register("apple_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
-                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> BLACKBERRY_COCKTAIL = ITEMS.register("blackberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
-                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> BLUEBERRY_COCKTAIL = ITEMS.register("blueberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
-                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> CANTALOUPE_COCKTAIL = ITEMS.register("cantaloupe_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
-                            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 0.8F)
+                            .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> CHERRY_COCKTAIL = ITEMS.register("cherry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> CRANBERRY_COCKTAIL = ITEMS.register("cranberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> MANGO_COCKTAIL = ITEMS.register("mango_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> MELON_COCKTAIL = ITEMS.register("melon_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> RASPBERRY_COCKTAIL = ITEMS.register("raspberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> STRAWBERRY_COCKTAIL = ITEMS.register("strawberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> WATERMELON_COCKTAIL = ITEMS.register("watermelon_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> PLUM_COCKTAIL = ITEMS.register("plum_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> CRIMSONBERRY_COCKTAIL = ITEMS.register("crimsonberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
                             .build()))));
 
     public static final RegistryObject<Item> GOLDENBERRY_COCKTAIL = ITEMS.register("goldenberry_cocktail",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.8F)
@@ -913,7 +917,7 @@ public class COItems {
 
     //Tea
     public static final RegistryObject<Item> TEA = ITEMS.register("tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -921,7 +925,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> APPLE_TEA = ITEMS.register("apple_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -929,7 +933,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> BLACKBERRY_TEA = ITEMS.register("blackberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -937,7 +941,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> BLUEBERRY_TEA = ITEMS.register("blueberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -945,7 +949,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> CANTALOUPE_TEA = ITEMS.register("cantaloupe_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -953,7 +957,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> CHERRY_TEA = ITEMS.register("cherry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -961,7 +965,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> CRANBERRY_TEA = ITEMS.register("cranberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -969,7 +973,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> MANGO_TEA = ITEMS.register("mango_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -977,7 +981,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> MELON_TEA = ITEMS.register("melon_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -985,7 +989,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> RASPBERRY_TEA = ITEMS.register("raspberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -993,7 +997,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> STRAWBERRY_TEA = ITEMS.register("strawberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -1001,7 +1005,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> WATERMELON_TEA = ITEMS.register("watermelon_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -1009,7 +1013,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> PLUM_TEA = ITEMS.register("plum_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -1017,7 +1021,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> CRIMSONBERRY_TEA = ITEMS.register("crimsonberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)
@@ -1025,7 +1029,7 @@ public class COItems {
                             .build()))));
 
     public static final RegistryObject<Item> GOLDENBERRY_TEA = ITEMS.register("goldenberry_tea",
-            () -> new Item((new Item.Properties()
+            () -> new DrinkItem((new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0), 0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 0), 0.8F)

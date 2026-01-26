@@ -144,6 +144,10 @@ public class COBlocks {
             () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_ASHERB = registerBlockWithoutItem("wild_asherb",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> NETHER_BEET = registerBlockWithoutItem("nether_beet",
+            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_NETHER_BEET = registerBlockWithoutItem("wild_nether_beet",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> WHEAT_GRAIN = registerBlockWithoutItem("wheat_grain",
             ()-> new GrainBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).sound(SoundType.GRASS).noOcclusion().strength(0.5f, 0.5f)
@@ -347,7 +351,7 @@ public class COBlocks {
     public static final RegistryObject<Block> CHERRY_LEAVES = registerBlock("cherry_leaves",
             () -> new CherryLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
     public static final RegistryObject<Block> PLUM_SAPLING = registerBlockWithoutItem("plum_sapling",
-            () -> new SaplingBlock(new CherryTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+            () -> new SaplingBlock(new PlumTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> PLUM_LEAVES = registerBlock("plum_leaves",
             () -> new PlumLeaves(Block.Properties.copy(Blocks.OAK_LEAVES).strength(0.1F).randomTicks().sound(SoundType.GRASS).noOcclusion()));
 

@@ -37,6 +37,15 @@
   "item.dragncrops.cilantro": "Cilantro",
   "item.dragncrops.oregano": "Oregano",
   "item.dragncrops.rosemary": "Rosemary",
+  "item.dragncrops.asherb": "Asherb",
+  "item.dragncrops.nether_beet": "Nether Beet",
+  "item.dragncrops.crimsonberry": "Crimsonberry",
+  "item.dragncrops.goldenberries": "Goldenberries",
+  "item.dragncrops.golden_rhubarb": "Golden Rhubarb",
+  "item.dragncrops.thorn_barley": "Thorn Barley",
+  "item.dragncrops.puffball_mushroom": "Puffball Mushroom",
+  "item.dragncrops.plum": "Plum",
+  "item.dragncrops.grapes": "Grapes",
 
   "item.minecraft.melon_seeds": "Watermelon Seeds",
   "item.dragncrops.corn_seeds": "Corn Seeds",
@@ -47,9 +56,11 @@
   "item.dragncrops.green_apple_seeds": "Green Apple Seeds",
   "item.dragncrops.cantaloupe_seeds": "Cantaloupe Seeds",
   "item.dragncrops.honeydew_seeds": "Honeydew Seeds",
+  "item.dragncrops.thorn_barley_seeds": "Thorn Barley Seeds",
   "item.dragncrops.lime_seeds": "Lime Seeds",
   "item.dragncrops.mango_pit": "Mango Pit",
   "item.dragncrops.cherry_pit": "Cherry Pit",
+  "item.dragncrops.plum_pit": "Plum Pit",
 
   "block.minecraft.melon": "Watermelon",
   "block.dragncrops.red_apple": "Red Apple Basket",
@@ -77,6 +88,14 @@
   "block.dragncrops.cilantro": "Cilantro",
   "block.dragncrops.oregano": "Oregano",
   "block.dragncrops.rosemary": "Rosemary",
+  "block.dragncrops.asherb": "Asherb",
+  "block.dragncrops.nether_beet": "Nether Beet",
+  "block.dragncrops.crimsonberries": "Crimsonberries",
+  "block.dragncrops.goldenberries": "Goldenberries",
+  "block.dragncrops.golden_rhubarb": "Golden Rhubarb",
+  "block.dragncrops.thorn_barley": "Thorn Barley",
+  "block.dragncrops.puffball_mushroom": "Puffball Mushroom",
+  "block.dragncrops.grapes": "Grapes",
 
   "block.dragncrops.wild_carrots": "Wild Carrots",
   "block.dragncrops.wild_potatoes": "Wild Potatoes",
@@ -93,7 +112,7 @@
   "block.dragncrops.wild_cranberries": "Wild Cranberries",
   "block.dragncrops.wild_strawberries": "Wild Strawberries",
   "block.dragncrops.wild_peanuts": "Wild Peanuts",
-  "block.dragncrops.wild_cucumbers": "Wild Cucumbers",
+  "block.dragncrops.wild_cucumber": "Wild Cucumbers",
   "block.dragncrops.wild_garlic": "Wild Garlic",
   "block.dragncrops.wild_corn": "Wild Corn",
   "block.dragncrops.wild_rice": "Wild Rice",
@@ -102,6 +121,14 @@
   "block.dragncrops.wild_cilantro": "Wild Cilantro",
   "block.dragncrops.wild_oregano": "Wild Oregano",
   "block.dragncrops.wild_rosemary": "Wild Rosemary",
+  "block.dragncrops.wild_asherb": "Wild Asherb",
+  "block.dragncrops.wild_nether_beet": "Wild Nether Beet",
+  "block.dragncrops.wild_crimsonberries": "Wild Crimsonberries",
+  "block.dragncrops.wild_goldenberries": "Wild Goldenberries",
+  "block.dragncrops.wild_golden_rhubarb": "Wild Golden Rhubarb",
+  "block.dragncrops.wild_thorn_barley": "Wild Thorn Barley",
+  "block.dragncrops.wild_puffball_mushroom": "Wild Puffball Mushroom",
+  "block.dragncrops.wild_grapes": "Wild Grapes",
 
   "block.dragncrops.red_apple_leaves": "Red Apple Leaves",
   "block.dragncrops.yellow_apple_leaves": "Yellow Apple Leaves",
@@ -110,6 +137,7 @@
   "block.dragncrops.coconut_leaves": "Coconut Leaves",
   "block.dragncrops.cherry_leaves": "Cherry Leaves",
   "block.dragncrops.lime_leaves": "Lime Leaves",
+  "block.dragncrops.plum_leaves": "Plum Leaves",
   "block.dragncrops.red_apple_sapling": "Red Apple Sapling",
   "block.dragncrops.yellow_apple_sapling": "Yellow Apple Sapling",
   "block.dragncrops.green_apple_sapling": "Green Apple Sapling",
@@ -117,11 +145,13 @@
   "block.dragncrops.coconut_sapling": "Coconut Sapling",
   "block.dragncrops.cherry_sapling": "Cherry Sapling",
   "block.dragncrops.lime_sapling": "Lime Sapling",
+  "block.dragncrops.plum_sapling": "Plum Sapling",
 
   "block.dragncrops.wheat_grain": "Wheat",
   "block.dragncrops.rye_grain": "Rye",
   "block.dragncrops.rice_grain": "Rice",
   "block.dragncrops.corn_grain": "Corn",
+  "block.dragncrops.thorn_barley_grain": "Thorn Barley",
 
   "item.dragncrops.grain": "Grain",
   "block.dragncrops.flour": "Flour",
@@ -137,6 +167,7 @@
   "item.dragncrops.potato_bread": "Potato Bread",
   "item.dragncrops.corn_bread": "Corn Bread",
   "item.dragncrops.rice_bread": "Rice Bread",
+  "item.dragncrops.thorn_barley_bread": "Thorn Barley Bread",
 
   "block.dragncrops.bread": "Wheat Bread",
   "block.dragncrops.blueberry_bread": "Blueberry Bread",
@@ -147,6 +178,7 @@
   "block.dragncrops.potato_bread": "Potato Bread",
   "block.dragncrops.corn_bread": "Corn Bread",
   "block.dragncrops.rice_bread": "Rice Bread",
+  "block.dragncrops.thorn_barley_bread": "Thorn Barley Bread",
 
 
   "item.dragncrops.apple_jam": "Apple Jam",
@@ -160,6 +192,10 @@
   "item.dragncrops.raspberry_jam": "Raspberry Jam",
   "item.dragncrops.strawberry_jam": "Strawberry Jam",
   "item.dragncrops.watermelon_jam": "Watermelon Jam",
+  "item.dragncrops.plum_jam": "Plum Jam",
+  "item.dragncrops.crimsonberry_jam": "Crimsonberry Jam",
+  "item.dragncrops.goldenberry_jam": "Goldenberry Jam",
+  "item.dragncrops.grape_jam": "Grape Jam",
 
   "block.dragncrops.apple_jam": "Apple Jam",
   "block.dragncrops.blackberry_jam": "Blackberry Jam",
@@ -172,6 +208,10 @@
   "block.dragncrops.raspberry_jam": "Raspberry Jam",
   "block.dragncrops.strawberry_jam": "Strawberry Jam",
   "block.dragncrops.watermelon_jam": "Watermelon Jam",
+  "block.dragncrops.plum_jam": "Plum Jam",
+  "block.dragncrops.crimsonberry_jam": "Crimsonberry Jam",
+  "block.dragncrops.goldenberry_jam": "Goldenberry Jam",
+  "block.dragncrops.grape_jam": "Grape Jam",
 
 
   "item.dragncrops.apple_tart": "Apple Tart",
@@ -185,6 +225,10 @@
   "item.dragncrops.raspberry_tart": "Raspberry Tart",
   "item.dragncrops.strawberry_tart": "Strawberry Tart",
   "item.dragncrops.watermelon_tart": "Watermelon Tart",
+  "item.dragncrops.plum_tart": "Plum Tart",
+  "item.dragncrops.crimsonberry_tart": "Crimsonberry Tart",
+  "item.dragncrops.goldenberry_tart": "Goldenberry Tart",
+  "item.dragncrops.grape_tart": "Grape Tart",
 
   "block.dragncrops.apple_tart": "Apple Tart",
   "block.dragncrops.blackberry_tart": "Blackberry Tart",
@@ -197,6 +241,10 @@
   "block.dragncrops.raspberry_tart": "Raspberry Tart",
   "block.dragncrops.strawberry_tart": "Strawberry Tart",
   "block.dragncrops.watermelon_tart": "Watermelon Tart",
+  "block.dragncrops.plum_tart": "Plum Tart",
+  "block.dragncrops.crimsonberry_tart": "Crimsonberry Tart",
+  "block.dragncrops.goldenberry_tart": "Goldenberry Tart",
+  "block.dragncrops.grape_tart": "Grape Tart",
 
 
   "item.dragncrops.apple_candy": "Apple Candy",
@@ -210,6 +258,10 @@
   "item.dragncrops.raspberry_candy": "Raspberry Candy",
   "item.dragncrops.strawberry_candy": "Strawberry Candy",
   "item.dragncrops.watermelon_candy": "Watermelon Candy",
+  "item.dragncrops.plum_candy": "Plum Candy",
+  "item.dragncrops.crimsonberry_candy": "Crimsonberry Candy",
+  "item.dragncrops.goldenberry_candy": "Goldenberry Candy",
+  "item.dragncrops.grape_candy": "Grape Candy",
 
   "block.dragncrops.apple_candy": "Apple Candy",
   "block.dragncrops.blackberry_candy": "Blackberry Candy",
@@ -222,6 +274,10 @@
   "block.dragncrops.raspberry_candy": "Raspberry Candy",
   "block.dragncrops.strawberry_candy": "Strawberry Candy",
   "block.dragncrops.watermelon_candy": "Watermelon Candy",
+  "block.dragncrops.plum_candy": "Plum Candy",
+  "block.dragncrops.crimsonberry_candy": "Crimsonberry Candy",
+  "block.dragncrops.goldenberry_candy": "Goldenberry Candy",
+  "block.dragncrops.grape_candy": "Grape Candy",
 
 
   "item.dragncrops.apple_gelatin": "Apple Gelatin",
@@ -235,6 +291,10 @@
   "item.dragncrops.raspberry_gelatin": "Raspberry Gelatin",
   "item.dragncrops.strawberry_gelatin": "Strawberry Gelatin",
   "item.dragncrops.watermelon_gelatin": "Watermelon Gelatin",
+  "item.dragncrops.plum_gelatin": "Plum Gelatin",
+  "item.dragncrops.crimsonberry_gelatin": "Crimsonberry Gelatin",
+  "item.dragncrops.goldenberry_gelatin": "Goldenberry Gelatin",
+  "item.dragncrops.grape_gelatin": "Grape Gelatin",
 
   "block.dragncrops.apple_gelatin": "Apple Gelatin",
   "block.dragncrops.blackberry_gelatin": "Blackberry Gelatin",
@@ -247,6 +307,10 @@
   "block.dragncrops.raspberry_gelatin": "Raspberry Gelatin",
   "block.dragncrops.strawberry_gelatin": "Strawberry Gelatin",
   "block.dragncrops.watermelon_gelatin": "Watermelon Gelatin",
+  "block.dragncrops.plum_gelatin": "Plum Gelatin",
+  "block.dragncrops.crimsonberry_gelatin": "Crimsonberry Gelatin",
+  "block.dragncrops.goldenberry_gelatin": "Goldenberry Gelatin",
+  "block.dragncrops.grape_gelatin": "Grape Gelatin",
 
 
   "item.dragncrops.apple_mead": "Apple Mead",
@@ -263,6 +327,10 @@
   "item.dragncrops.honey_mead": "Honey Mead",
   "item.dragncrops.beetroot_mead": "Beetroot Mead",
   "item.dragncrops.magma_cream_mead": "Magma Cream Mead",
+  "item.dragncrops.plum_mead": "Plum Mead",
+  "item.dragncrops.crimsonberry_mead": "Crimsonberry Mead",
+  "item.dragncrops.goldenberry_mead": "Goldenberry Mead",
+  "item.dragncrops.grape_mead": "Grape Mead",
 
   "block.dragncrops.apple_mead": "Apple Mead",
   "block.dragncrops.blackberry_mead": "Blackberry Mead",
@@ -278,6 +346,10 @@
   "block.dragncrops.honey_mead": "Honey Mead",
   "block.dragncrops.beetroot_mead": "Beetroot Mead",
   "block.dragncrops.magma_cream_mead": "Magma Cream Mead",
+  "block.dragncrops.plum_mead": "Plum Mead",
+  "block.dragncrops.crimsonberry_mead": "Crimsonberry Mead",
+  "block.dragncrops.goldenberry_mead": "Goldenberry Mead",
+  "block.dragncrops.grape_mead": "Grape Mead",
 
 
   "item.dragncrops.fermented_apple_mead": "Fermented Apple Mead",
@@ -294,6 +366,10 @@
   "item.dragncrops.fermented_honey_mead": "Fermented Honey Mead",
   "item.dragncrops.fermented_beetroot_mead": "Fermented Beetroot Mead",
   "item.dragncrops.fermented_magma_cream_mead": "Fermented Magma Cream Mead",
+  "item.dragncrops.fermented_plum_mead": "Fermented Plum Mead",
+  "item.dragncrops.fermented_crimsonberry_mead": "Fermented Crimsonberry Mead",
+  "item.dragncrops.fermented_goldenberry_mead": "Fermented Goldenberry Mead",
+  "item.dragncrops.fermented_grape_mead": "Fermented Grape Mead",
 
   "block.dragncrops.fermented_apple_mead": "Fermented Apple Mead",
   "block.dragncrops.fermented_blackberry_mead": "Fermented Blackberry Mead",
@@ -309,6 +385,10 @@
   "block.dragncrops.fermented_honey_mead": "Fermented Honey Mead",
   "block.dragncrops.fermented_beetroot_mead": "Fermented Beetroot Mead",
   "block.dragncrops.fermented_magma_cream_mead": "Fermented Magma Cream Mead",
+  "block.dragncrops.fermented_plum_mead": "Fermented Plum Mead",
+  "block.dragncrops.fermented_crimsonberry_mead": "Fermented Crimsonberry Mead",
+  "block.dragncrops.fermented_goldenberry_mead": "Fermented Goldenberry Mead",
+  "block.dragncrops.fermented_grape_mead": "Fermented Grape Mead",
 
 
   "item.dragncrops.unfermented_apple_mead": "Unfermented Apple Mead",
@@ -325,6 +405,10 @@
   "item.dragncrops.unfermented_honey_mead": "Unfermented Honey Mead",
   "item.dragncrops.unfermented_beetroot_mead": "Unfermented Beetroot Mead",
   "item.dragncrops.unfermented_magma_cream_mead": "Unfermented Magma Cream Mead",
+  "item.dragncrops.unfermented_plum_mead": "Unfermented Plum Mead",
+  "item.dragncrops.unfermented_crimsonberry_mead": "Unfermented Crimsonberry Mead",
+  "item.dragncrops.unfermented_goldenberry_mead": "Unfermented Goldenberry Mead",
+  "item.dragncrops.unfermented_grape_mead": "Unfermented Grape Mead",
 
   "block.dragncrops.unfermented_apple_mead": "Unfermented Apple Mead",
   "block.dragncrops.unfermented_blackberry_mead": "Unfermented Blackberry Mead",
@@ -340,6 +424,10 @@
   "block.dragncrops.unfermented_honey_mead": "Unfermented Honey Mead",
   "block.dragncrops.unfermented_beetroot_mead": "Unfermented Beetroot Mead",
   "block.dragncrops.unfermented_magma_cream_mead": "Unfermented Magma Cream Mead",
+  "block.dragncrops.unfermented_plum_mead": "Unfermented Plum Mead",
+  "block.dragncrops.unfermented_crimsonberry_mead": "Unfermented Crimsonberry Mead",
+  "block.dragncrops.unfermented_goldenberry_mead": "Unfermented Goldenberry Mead",
+  "block.dragncrops.unfermented_grape_mead": "Unfermented Grape Mead",
 
 
   "item.dragncrops.canned_carrots": "Canned Carrots",
@@ -348,6 +436,7 @@
   "item.dragncrops.canned_vegetables": "Canned Vegetables",
   "item.dragncrops.canned_fruit": "Canned Fruit",
   "item.dragncrops.canned_beef": "Canned Beef",
+  "item.dragncrops.canned_mushrooms": "Canned Mushrooms",
 
   "block.dragncrops.canned_carrots": "Canned Carrots",
   "block.dragncrops.canned_potatoes": "Canned Potatoes",
@@ -355,6 +444,7 @@
   "block.dragncrops.canned_vegetables": "Canned Vegetables",
   "block.dragncrops.canned_fruit": "Canned Fruit",
   "block.dragncrops.canned_beef": "Canned Beef",
+  "block.dragncrops.canned_mushrooms": "Canned Mushrooms",
 
 
   "item.dragncrops.fermented_pickles": "Pickles",
@@ -381,6 +471,27 @@
   "item.dragncrops.raspberry_cocktail": "Raspberry Fruit Cocktail",
   "item.dragncrops.strawberry_cocktail": "Strawberry Fruit Cocktail",
   "item.dragncrops.watermelon_cocktail": "Watermelon Fruit Cocktail",
+  "item.dragncrops.plum_cocktail": "Plum Fruit Cocktail",
+  "item.dragncrops.crimsonberry_cocktail": "Crimsonberry Fruit Cocktail",
+  "item.dragncrops.goldenberry_cocktail": "Goldenberry Fruit Cocktail",
+  "item.dragncrops.grape_cocktail": "Grape Fruit Cocktail",
+
+  "item.dragncrops.tea": "Tea",
+  "item.dragncrops.apple_tea": "Apple Fruit Tea",
+  "item.dragncrops.blackberry_tea": "Blackberry Fruit Tea",
+  "item.dragncrops.blueberry_tea": "Blueberry Fruit Tea",
+  "item.dragncrops.cantaloupe_tea": "Cantaloupe Fruit Tea",
+  "item.dragncrops.cherry_tea": "Cherry Fruit Tea",
+  "item.dragncrops.cranberry_tea": "Cranberry Fruit Tea",
+  "item.dragncrops.mango_tea": "Mango Fruit Tea",
+  "item.dragncrops.melon_tea": "Melon Fruit Tea",
+  "item.dragncrops.raspberry_tea": "Raspberry Fruit Tea",
+  "item.dragncrops.strawberry_tea": "Strawberry Fruit Tea",
+  "item.dragncrops.watermelon_tea": "Watermelon Fruit Tea",
+  "item.dragncrops.plum_tea": "Plum Fruit Tea",
+  "item.dragncrops.crimsonberry_tea": "Crimsonberry Fruit Tea",
+  "item.dragncrops.goldenberry_tea": "Goldenberry Fruit Tea",
+  "item.dragncrops.grape_tea": "Grape Fruit Tea",
 
 
   "item.dragncrops.apple_pie": "Apple Pie",
@@ -397,6 +508,11 @@
   "item.dragncrops.coconut_pie": "Coconut Pie",
   "item.dragncrops.beetroot_pie": "Beetroot Pie",
   "item.dragncrops.key_lime_pie": "Key Lime Pie",
+  "item.dragncrops.golden_rhubarb_pie": "Golden Rhubarb Pie",
+  "item.dragncrops.plum_pie": "Plum Pie",
+  "item.dragncrops.crimsonberry_pie": "Crimsonberry Pie",
+  "item.dragncrops.goldenberry_pie": "Goldenberry Pie",
+  "item.dragncrops.grape_pie": "Grape Pie",
 
 
   "item.dragncrops.meat_mallet": "Meat Mallet",
@@ -450,7 +566,7 @@
   "config.jade.plugin_dragncrops.ferment_time": "Display Ferment Percent",
   "config.jade.plugin_dragncrops.dry_time": "Display Dried Percent",
 
-  "tooltip.dragncrops.flail.tooltip": "Used to seperate grain from Wheat, Rye, Rice or Corn.",
+  "tooltip.dragncrops.flail.tooltip": "Used to separate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
   "tooltip.dragncrops.placeable.tooltip": "Shift-Placeable",
   "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production."
