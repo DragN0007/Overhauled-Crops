@@ -71,6 +71,12 @@ public class COBlockstateProvider extends BlockStateProvider {
         createBush((OBushBlock) COBlocks.RASPBERRIES.get(), "raspberries", "raspberries",
                 0, 1, 2, 3, 4);
 
+        createBush((OBushBlock) COBlocks.CRIMSONBERRIES.get(), "crimsonberries", "crimsonberries",
+                0, 1, 2, 3, 4);
+
+        createBush((OBushBlock) COBlocks.GOLDENBERRIES.get(), "goldenberries", "goldenberries",
+                0, 1, 2, 3, 4);
+
 
         createCrop((OCropBlock) COBlocks.PURPLE_CARROTS.get(), "purple_carrots", "purple_carrots",
                 0, 0, 1, 1, 2, 2, 2, 3);
@@ -127,6 +133,16 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_SUGAR_BEETS.get(), models().cross(COBlocks.WILD_SUGAR_BEETS.getId().getPath(),
                 wildPlantTexture("sugar_beets_stage3")).renderType("cutout"));
 
+        createCrop((OCropBlock) COBlocks.NETHER_BEET.get(), "nether_beetroots", "nether_beetroots",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_NETHER_BEET.get(), models().cross(COBlocks.WILD_NETHER_BEET.getId().getPath(),
+                wildPlantTexture("nether_beetroots_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.GOLDEN_RHUBARB.get(), "golden_rhubarb", "golden_rhubarb",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_GOLDEN_RHUBARB.get(), models().cross(COBlocks.WILD_GOLDEN_RHUBARB.getId().getPath(),
+                wildPlantTexture("golden_rhubarb_stage3")).renderType("cutout"));
+
         createCrop((OCropBlock) COBlocks.CILANTRO.get(), "cilantro", "cilantro",
                 0, 0, 1, 1, 2, 2, 2, 3);
         simpleBlock(COBlocks.WILD_CILANTRO.get(), models().cross(COBlocks.WILD_CILANTRO.getId().getPath(),
@@ -141,6 +157,11 @@ public class COBlockstateProvider extends BlockStateProvider {
                 0, 0, 1, 1, 2, 2, 2, 3);
         simpleBlock(COBlocks.WILD_ROSEMARY.get(), models().cross(COBlocks.WILD_ROSEMARY.getId().getPath(),
                 wildPlantTexture("rosemary_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.ASHERB.get(), "asherb", "asherb",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_ASHERB.get(), models().cross(COBlocks.WILD_ASHERB.getId().getPath(),
+                wildPlantTexture("asherb_stage3")).renderType("cutout"));
 
 
         createLeaves((FruitLeaves) COBlocks.RED_APPLE_LEAVES.get(), "red_apple_leaves", "red_apple_leaves",

@@ -12,10 +12,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraftforge.common.Tags;
 
 public class CrimsonberryBushBlock extends OBushBlock implements BonemealableBlock {
 
@@ -46,5 +48,17 @@ public class CrimsonberryBushBlock extends OBushBlock implements BonemealableBlo
       } else {
          return super.use(state, level, pos, player, hand, result);
       }
+   }
+
+   public boolean mayPlaceOn(BlockState p_52302_, BlockGetter p_52303_, BlockPos p_52304_) {
+      return p_52302_.is(Tags.Blocks.NETHERRACK);
+   }
+
+   @Override
+   public boolean isValidBonemealTarget(LevelReader reader, BlockPos pos, BlockState state, boolean p_52261_) {
+      if (reader instanceof Level level && level.dimension() != Level.NETHER) {
+         return false;
+      }
+      return super.isValidBonemealTarget(reader, pos, state, p_52261_);
    }
 }

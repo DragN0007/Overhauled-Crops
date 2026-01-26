@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:plum"
+    },
+    {
+      "item": "dragncrops:plum"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "dragncrops:flour"
+    },
+    {
+      "tag": "forge:egg"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:plum_pie"
+  }
+}

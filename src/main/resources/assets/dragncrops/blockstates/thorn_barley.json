@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "dragncrops:block/crop/thorn_barley_stage0"
+    },
+    "age=1": {
+      "model": "dragncrops:block/crop/thorn_barley_stage1"
+    },
+    "age=2": {
+      "model": "dragncrops:block/crop/thorn_barley_stage2"
+    },
+    "age=3": {
+      "model": "dragncrops:block/crop/thorn_barley_stage3"
+    },
+    "age=4": {
+      "model": "dragncrops:block/crop/thorn_barley_stage4"
+    },
+    "age=5": {
+      "model": "dragncrops:block/crop/thorn_barley_stage5"
+    },
+    "age=6": {
+      "model": "dragncrops:block/crop/thorn_barley_stage6"
+    },
+    "age=7": {
+      "model": "dragncrops:block/crop/thorn_barley_stage7"
+    }
+  }
+}

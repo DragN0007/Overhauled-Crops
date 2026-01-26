@@ -1,11 +1,14 @@
 package com.dragn0007.dragncrops.util;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 
 public class COTags {
@@ -54,6 +57,20 @@ public class COTags {
         }
         private static TagKey<Block> forgeTag (String name) {
             return BlockTags.create(new ResourceLocation("forge", name));
+        }
+    }
+
+    public static class Biomes {
+
+        public static final TagKey<Biome> GOLDENBERRY_SPAWNS = tag("goldenberry_spawns");
+        public static final TagKey<Biome> GOLDEN_RHUBARB_SPAWNS = tag("golden_rhubarb_spawns");
+        public static final TagKey<Biome> THORN_BARLEY_SPAWNS = tag("golden_barley_spawns");
+
+        private static TagKey<Biome> tag (String name) {
+            return TagKey.create(Registries.BIOME, new ResourceLocation(CropOverhaul.MODID, name));
+        }
+        private static TagKey<Biome> forgeTag (String name) {
+            return TagKey.create(Registries.BIOME, new ResourceLocation("forge", name));
         }
     }
 

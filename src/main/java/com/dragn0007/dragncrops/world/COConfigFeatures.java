@@ -61,6 +61,13 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> MANGO_TREE = registerKey("mango_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> PLUM_TREE = registerKey("plum_tree");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ASHERB = registerKey("asherb");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSONBERRIES = registerKey("crimsonberries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDENBERRIES = registerKey("goldenberries");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GOLDEN_RHUBARB = registerKey("golden_rhubarb");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_BEETS = registerKey("nether_beets");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> THORN_BARLEY = registerKey("thorn_barley");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
 
         register(context, RED_APPLE_TREE, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
@@ -139,6 +146,10 @@ public class COConfigFeatures {
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_ROSEMARY.get().defaultBlockState())))));
 
+        register(context, ASHERB, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_ASHERB.get().defaultBlockState())))));
+
         register(context, SUGAR_BEETS, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_SUGAR_BEETS.get().defaultBlockState())))));
@@ -191,6 +202,16 @@ public class COConfigFeatures {
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.RASPBERRIES.get().defaultBlockState()
                                 .setValue(OBushBlock.AGE, Integer.valueOf(4)))))));
 
+        register(context, CRIMSONBERRIES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(12, 4, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.CRIMSONBERRIES.get().defaultBlockState()
+                                .setValue(OBushBlock.AGE, Integer.valueOf(4)))))));
+
+        register(context, GOLDENBERRIES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(12, 4, 3, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.GOLDENBERRIES.get().defaultBlockState()
+                                .setValue(OBushBlock.AGE, Integer.valueOf(4)))))));
+
 
         register(context, PURPLE_CARROTS, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(8, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
@@ -224,6 +245,21 @@ public class COConfigFeatures {
         register(context, BEETROOTS, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_BEETROOTS.get().defaultBlockState())))));
+
+
+        register(context, THORN_BARLEY, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_THORN_BARLEY.get().defaultBlockState())))));
+
+        register(context, NETHER_BEETS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_NETHER_BEET.get().defaultBlockState())))));
+
+        register(context, GOLDEN_RHUBARB, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_GOLDEN_RHUBARB.get().defaultBlockState())))));
+
+        //todo: fix spawns(?) and placing of nether crops
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

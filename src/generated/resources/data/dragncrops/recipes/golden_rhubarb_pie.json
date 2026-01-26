@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:golden_rhubarb_pie"
+    },
+    {
+      "item": "dragncrops:golden_rhubarb_pie"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "dragncrops:flour"
+    },
+    {
+      "tag": "forge:egg"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:golden_rhubarb_pie"
+  }
+}

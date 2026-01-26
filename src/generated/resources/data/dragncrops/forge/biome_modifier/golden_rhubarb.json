@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#dragncrops:golden_rhubarb_spawns",
+  "features": "dragncrops:golden_rhubarb",
+  "step": "vegetal_decoration"
+}

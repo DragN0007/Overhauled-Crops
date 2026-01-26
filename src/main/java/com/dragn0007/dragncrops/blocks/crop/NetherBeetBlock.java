@@ -6,10 +6,14 @@ import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.common.Tags;
 
 public class NetherBeetBlock extends OCropBlock {
    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{Block.box(0.0D, 0.0D, 0.0D, 16.0D, 2.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 3.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 5.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 7.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D), Block.box(0.0D, 0.0D, 0.0D, 16.0D, 9.0D, 16.0D)};
@@ -29,5 +33,25 @@ public class NetherBeetBlock extends OCropBlock {
 
    public VoxelShape getShape(BlockState p_51330_, BlockGetter p_51331_, BlockPos p_51332_, CollisionContext p_51333_) {
       return SHAPE_BY_AGE[this.getAge(p_51330_)];
+   }
+
+   public boolean mayPlaceOn(BlockState p_52302_, BlockGetter p_52303_, BlockPos p_52304_) {
+      return p_52302_.is(Tags.Blocks.NETHERRACK) || p_52302_.is(Blocks.WARPED_NYLIUM) || p_52302_.is(Blocks.CRIMSON_NYLIUM) || p_52302_.is(Blocks.SOUL_SOIL) || p_52302_.is(Blocks.SOUL_SAND);
+   }
+
+   @Override
+   public void growCrops(Level level, BlockPos pos, BlockState state) {
+      if (level.dimension() != Level.NETHER) {
+         return;
+      }
+      super.growCrops(level, pos, state);
+   }
+
+   @Override
+   public boolean isValidBonemealTarget(LevelReader reader, BlockPos pos, BlockState state, boolean p_52261_) {
+      if (reader instanceof Level level && level.dimension() != Level.NETHER) {
+         return false;
+      }
+      return super.isValidBonemealTarget(reader, pos, state, p_52261_);
    }
 }

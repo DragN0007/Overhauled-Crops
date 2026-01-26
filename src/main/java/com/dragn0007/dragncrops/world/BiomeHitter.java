@@ -1,13 +1,16 @@
 package com.dragn0007.dragncrops.world;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.world.BiomeModifier;
 import net.minecraftforge.common.world.ForgeBiomeModifiers;
@@ -51,6 +54,13 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> LIME_TREE = registerKey("lime_tree");
     public static final ResourceKey<BiomeModifier> MANGO_TREE = registerKey("mango_tree");
     public static final ResourceKey<BiomeModifier> PLUM_TREE = registerKey("plum_tree");
+
+    public static final ResourceKey<BiomeModifier> ASHERB = registerKey("asherb");
+    public static final ResourceKey<BiomeModifier> CRIMSONBERRIES = registerKey("crimsonberries");
+    public static final ResourceKey<BiomeModifier> GOLDENBERRIES = registerKey("goldenberries");
+    public static final ResourceKey<BiomeModifier> GOLDEN_RHUBARB = registerKey("golden_rhubarb");
+    public static final ResourceKey<BiomeModifier> NETHER_BEETS = registerKey("nether_beets");
+    public static final ResourceKey<BiomeModifier> THORN_BARLEY = registerKey("thorn_barley");
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
@@ -121,6 +131,11 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.ROSEMARY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(ASHERB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.ASHERB)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
         context.register(SUGAR_BEETS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.SUGAR_BEETS)),
@@ -166,6 +181,11 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.RYE)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(THORN_BARLEY, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(COTags.Biomes.THORN_BARLEY_SPAWNS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.THORN_BARLEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
 
         context.register(BLACKBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_FOREST),
@@ -182,10 +202,15 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.RASPBERRIES)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
-//        context.register(WHITE_RASPBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-//                biomes.getOrThrow(BiomeTags.IS_FOREST),
-//                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.WHITE_RASPBERRIES)),
-//                GenerationStep.Decoration.VEGETAL_DECORATION));
+        context.register(CRIMSONBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.CRANBERRIES)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(GOLDENBERRIES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(COTags.Biomes.GOLDENBERRY_SPAWNS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.GOLDENBERRIES)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
 
         context.register(PURPLE_CARROTS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
@@ -227,6 +252,17 @@ public class BiomeHitter {
         context.register(BEETROOTS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.BEETROOTS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+
+        context.register(NETHER_BEETS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.NETHER_BEETS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(GOLDEN_RHUBARB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(COTags.Biomes.GOLDEN_RHUBARB_SPAWNS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.GOLDEN_RHUBARB)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }

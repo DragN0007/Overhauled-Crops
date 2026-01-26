@@ -155,6 +155,8 @@ public class COItems {
             () -> new ItemNameBlockItem(COBlocks.CHERRY_SAPLING.get(), (new Item.Properties())));
     public static final RegistryObject<Item> PLUM_PIT = ITEMS.register("plum_pit",
             () -> new ItemNameBlockItem(COBlocks.PLUM_SAPLING.get(), (new Item.Properties())));
+    public static final RegistryObject<Item> THORN_BARLEY_SEEDS = ITEMS.register("thorn_barley_seeds",
+            () -> new ItemNameBlockItem(COBlocks.THORN_BARLEY.get(), (new Item.Properties())));
 
 
     //Ingredients

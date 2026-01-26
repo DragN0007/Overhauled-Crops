@@ -5,7 +5,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()$(br)-Plains (Cilantro) $(br)-Forests (Oregano) $(br)-Cold Biomes (Rosemary)"
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()$(br)-Plains (Cilantro) $(br)-Forests (Oregano) $(br)-Cold Biomes (Rosemary) $(br)-Cold Biomes (Asherb)"
     },
     {
       "type": "patchouli:spotlight",

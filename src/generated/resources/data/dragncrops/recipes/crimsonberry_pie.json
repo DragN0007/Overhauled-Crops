@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:crimsonberry"
+    },
+    {
+      "item": "dragncrops:crimsonberry"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "dragncrops:flour"
+    },
+    {
+      "tag": "forge:egg"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:crimsonberry_pie"
+  }
+}

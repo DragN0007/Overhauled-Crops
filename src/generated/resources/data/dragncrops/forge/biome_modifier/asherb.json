@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "dragncrops:asherb",
+  "step": "vegetal_decoration"
+}

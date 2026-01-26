@@ -133,19 +133,19 @@ public class COBlocks {
             () -> new GoldenberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
 
     public static final RegistryObject<Block> GOLDEN_RHUBARB = registerBlockWithoutItem("golden_rhubarb",
-            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+            () -> new GoldenRhubarbBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_GOLDEN_RHUBARB = registerBlockWithoutItem("wild_golden_rhubarb",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> THORN_BARLEY = registerBlockWithoutItem("thorn_barely",
-            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+            () -> new ThornBarleyBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_THORN_BARLEY = registerBlockWithoutItem("wild_thorn_barely",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> ASHERB = registerBlockWithoutItem("asherb",
-            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+            () -> new AsherbBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_ASHERB = registerBlockWithoutItem("wild_asherb",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> NETHER_BEET = registerBlockWithoutItem("nether_beet",
-            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+            () -> new NetherBeetBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission()));
     public static final RegistryObject<Block> WILD_NETHER_BEET = registerBlockWithoutItem("wild_nether_beet",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 

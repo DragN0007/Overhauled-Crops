@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dragncrops:thorn_barley_bread"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_thorn_barley": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dragncrops:thorn_barley"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_thorn_barley",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "dragncrops:thorn_barley_bread"
+    ]
+  },
+  "sends_telemetry_event": false
+}
