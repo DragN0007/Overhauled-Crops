@@ -3,7 +3,6 @@ package com.dragn0007.dragncrops.util;
 import com.dragn0007.dragncrops.CropOverhaul;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -40,6 +39,8 @@ public class COTags {
         public static final TagKey<Item> MAKES_GAME_SAUSAGE = tag("makes_game_sausage");
         public static final TagKey<Item> MAKES_GENERIC_SAUSAGE = tag("makes_generic_sausage");
 
+        public static final TagKey<Item> BREWING_ADD_INS = forgeTag("brewing_add_ins");
+
         private static TagKey<Item> tag (String name) {
             return ItemTags.create(new ResourceLocation(CropOverhaul.MODID, name));
         }
@@ -51,6 +52,7 @@ public class COTags {
     public static class Blocks {
 
         public static final TagKey<Block> MINEABLE_WITH_FLAIL = tag("mineable/flail");
+        public static final TagKey<Block> HEATING_BLOCKS = forgeTag("heating_blocks");
 
         private static TagKey<Block> tag (String name) {
             return BlockTags.create(new ResourceLocation(CropOverhaul.MODID, name));

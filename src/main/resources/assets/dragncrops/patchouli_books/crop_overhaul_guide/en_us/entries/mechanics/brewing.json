@@ -1,0 +1,15 @@
+{
+  "name": "Brewing",
+  "icon": "dragncrops:terracotta_teapot",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:terracotta_teapot"
+      },
+      "text": "Teapots are used to brew Tea from Tea Leaves, and, optionally, different fruits to flavor it. Teapots must have some form of heat source, such as a campfire or a lit furnace under them to be able to brew tea.",
+      "title": "Teapot"
+    }
+  ]
+}

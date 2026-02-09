@@ -1,6 +1,8 @@
 package com.dragn0007.dragncrops;
 
+import com.dragn0007.dragncrops.blocks.COBlockEntities;
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import com.dragn0007.dragncrops.common.gui.COMenuTypes;
 import com.dragn0007.dragncrops.items.COItemGroup;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.world.level.block.ComposterBlock;
@@ -22,6 +24,8 @@ public class CropOverhaul {
         COItems.register(eventBus);
         COItemGroup.register(eventBus);
         COBlocks.register(eventBus);
+        COBlockEntities.register(eventBus);
+        COMenuTypes.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/teapot/gold_teapot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/teapot/gold_teapot"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/teapot/gold_teapot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/teapot/gold_teapot",
+      "y": 270
+    }
+  }
+}

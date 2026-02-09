@@ -1,4 +1,4 @@
-// 1.20.1	2026-01-26T01:44:45.4784128	Block States: dragncrops
+// 1.20.1	2026-02-09T00:15:46.3395889	Block States: dragncrops
 f3ffde203656c6a3acd5a102bf20ffe64da47c8d assets/dragncrops/blockstates/asherb.json
 7bdbcb9bd8b1f5ade18c3451ce328c4acf6b33ad assets/dragncrops/blockstates/blackberries.json
 90046365dc81b6079379fe66631e562e09239b17 assets/dragncrops/blockstates/blueberries.json
@@ -34,6 +34,7 @@ efc26c3fb047fe1116cb8478847ae9306513027c assets/dragncrops/blockstates/rice.json
 da3453ed4a933699dea766ea46582c901e88ec20 assets/dragncrops/blockstates/rosemary.json
 5a72d0afa66a49c5077b9d89b1f742eb7db2fb2a assets/dragncrops/blockstates/strawberries.json
 fba8362274b4835ae93d923c64ba5de4d3ec73a6 assets/dragncrops/blockstates/sugar_beets.json
+90111e8ba3d9cfb233cbed4e9e31482450e405db assets/dragncrops/blockstates/tea.json
 8f80a296c8c70028dc273815479440bbb54f1379 assets/dragncrops/blockstates/wild_asherb.json
 983aa99c2afa40d488e9e7c71b5385740335668b assets/dragncrops/blockstates/wild_beetroots.json
 7c2924d412f889e7f73511f8d8d1256490287c50 assets/dragncrops/blockstates/wild_carrots.json
@@ -53,6 +54,7 @@ e83e4cc740db3a26bd184294899765d275dadddf assets/dragncrops/blockstates/wild_purp
 88aa1eff9c5ede14e37d65c41730854c94e515fd assets/dragncrops/blockstates/wild_rosemary.json
 fe13c57396303cb7a766b538767c4cc98d4a26f4 assets/dragncrops/blockstates/wild_strawberries.json
 b67eeacd839998fb10337cbf0bc6d22e50d47c4c assets/dragncrops/blockstates/wild_sugar_beets.json
+0263d5d1f742c1ae52ff513091ae0bc761c1eaf2 assets/dragncrops/blockstates/wild_tea.json
 6645814f6cea453af1bd978c4e71bbdd01f94bd6 assets/dragncrops/blockstates/wild_yellow_carrots.json
 79d83381cdaaca0280738fe4c0dafc40c12ad2f7 assets/dragncrops/blockstates/yellow_apple_leaves.json
 0e4544caae15b821cedd00617cf234a83ed688c6 assets/dragncrops/blockstates/yellow_apple_sapling.json
@@ -182,6 +184,10 @@ bb7bf01ba28a457502408527d3e2295ae53c57a4 assets/dragncrops/models/block/strawber
 51ce9044750a6e66100cfdb1001fa65f0e3f28c5 assets/dragncrops/models/block/sugar_beets_stage1.json
 9ac2c1dc0dfc9247de6217afcad031f882824cb6 assets/dragncrops/models/block/sugar_beets_stage2.json
 fa8259c5d3cf526f0ba277a1ebd20943dd1e3e96 assets/dragncrops/models/block/sugar_beets_stage3.json
+51c5799a06dd4dc760ddd6949f4b98f3323b2f1a assets/dragncrops/models/block/tea_stage0.json
+0dd478799b37b963818d32782e0e94be42c57d9c assets/dragncrops/models/block/tea_stage1.json
+e5924141173b0d5589c5f98cc36f6075b482e353 assets/dragncrops/models/block/tea_stage2.json
+e24bc8892b33b5d3cbe432e1373b22c7c372e090 assets/dragncrops/models/block/tea_stage3.json
 c7cd8511daca0d7939256b2ab19a24aadd63cad0 assets/dragncrops/models/block/wild_asherb.json
 22b438bb8c70594c9126661015fcfb7659a93268 assets/dragncrops/models/block/wild_beetroots.json
 3ab525aa6936b1d8f8f2dee9950cb02a2bc0ac37 assets/dragncrops/models/block/wild_carrots.json
@@ -201,6 +207,7 @@ b8eea37b9b4476836945fd07660a707dfbfac287 assets/dragncrops/models/block/wild_pot
 66593d68d4e6c2cf99668df9e8323e5b8936e7da assets/dragncrops/models/block/wild_rosemary.json
 63b848fb85264685fcf4f93e378c85a88f175435 assets/dragncrops/models/block/wild_strawberries.json
 967cd9c64099abb1376d8c298ee0f57fdd24b16b assets/dragncrops/models/block/wild_sugar_beets.json
+c7fb9b51033ec1884cc6b32e3b831b49bb899047 assets/dragncrops/models/block/wild_tea.json
 2fe5973e47f706785a79d826bc4c91b9b753eff4 assets/dragncrops/models/block/wild_yellow_carrots.json
 ed68de60fbb3c8678bfc9edb572d94d4d3020af5 assets/dragncrops/models/block/yellow_apple_leaves_stage0.json
 b0e1b20350dc5aca70fe057a8eed5cc15fc412f4 assets/dragncrops/models/block/yellow_apple_leaves_stage1.json

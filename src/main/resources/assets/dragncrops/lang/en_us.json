@@ -46,6 +46,7 @@
   "item.dragncrops.puffball_mushroom": "Puffball Mushroom",
   "item.dragncrops.plum": "Plum",
   "item.dragncrops.grapes": "Grapes",
+  "item.dragncrops.tea_leaf": "Tea Leaf",
 
   "item.minecraft.melon_seeds": "Watermelon Seeds",
   "item.dragncrops.corn_seeds": "Corn Seeds",
@@ -96,6 +97,7 @@
   "block.dragncrops.thorn_barley": "Thorn Barley",
   "block.dragncrops.puffball_mushroom": "Puffball Mushroom",
   "block.dragncrops.grapes": "Grapes",
+  "block.dragncrops.tea": "Tea",
 
   "block.dragncrops.wild_carrots": "Wild Carrots",
   "block.dragncrops.wild_potatoes": "Wild Potatoes",
@@ -131,6 +133,7 @@
   "block.dragncrops.wild_thorn_barley": "Wild Thorn Barley",
   "block.dragncrops.wild_puffball_mushroom": "Wild Puffball Mushroom",
   "block.dragncrops.wild_grapes": "Wild Grapes",
+  "block.dragncrops.wild_tea": "Wild Tea",
 
   "block.dragncrops.red_apple_leaves": "Red Apple Leaves",
   "block.dragncrops.yellow_apple_leaves": "Yellow Apple Leaves",
@@ -556,6 +559,14 @@
   "block.dragncrops.game_sausage": "Game Sausage",
   "block.dragncrops.dried_game_sausage": "Dried Game Sausage",
 
+  "blockentities.dragncrops.teapot": "Teapot",
+  "block.dragncrops.black_teapot": "Black Teapot",
+  "block.dragncrops.deepslate_teapot": "Deepslate Teapot",
+  "block.dragncrops.gold_teapot": "Gold Teapot",
+  "block.dragncrops.iron_teapot": "Iron Teapot",
+  "block.dragncrops.stone_teapot": "Stone Teapot",
+  "block.dragncrops.terracotta_teapot": "Terracotta Teapot",
+  "block.dragncrops.white_teapot": "White Teapot",
 
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
 
@@ -567,9 +578,11 @@
   "config.jade.plugin_dragncrops.cans": "Amount of Cans in Stacks/ Crates",
   "config.jade.plugin_dragncrops.ferment_time": "Display Ferment Percent",
   "config.jade.plugin_dragncrops.dry_time": "Display Dried Percent",
+  "config.jade.plugin_dragncrops.tea_hunt": "Display Teapot Hint",
 
   "tooltip.dragncrops.flail.tooltip": "Used to separate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
   "tooltip.dragncrops.placeable.tooltip": "Shift-Placeable",
-  "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production."
+  "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production.",
+  "tooltip.dragncrops.tea.tooltip": "Brewed from Tea Leaves in a Teapot, optionally with fruit for extra flavor."
 }

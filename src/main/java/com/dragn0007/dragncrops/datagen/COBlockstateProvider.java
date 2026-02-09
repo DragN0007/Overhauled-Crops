@@ -163,6 +163,11 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_ASHERB.get(), models().cross(COBlocks.WILD_ASHERB.getId().getPath(),
                 wildPlantTexture("asherb_stage3")).renderType("cutout"));
 
+        createCrop((OCropBlock) COBlocks.TEA.get(), "tea", "tea",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_TEA.get(), models().cross(COBlocks.WILD_TEA.getId().getPath(),
+                wildPlantTexture("tea_stage3")).renderType("cutout"));
+
 
         createLeaves((FruitLeaves) COBlocks.RED_APPLE_LEAVES.get(), "red_apple_leaves", "red_apple_leaves",
                 0, 1, 2, 3);

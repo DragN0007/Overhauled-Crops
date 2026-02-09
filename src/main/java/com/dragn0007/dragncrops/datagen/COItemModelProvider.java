@@ -55,6 +55,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.OREGANO);
         simpleItem(COItems.ROSEMARY);
         simpleItem(COItems.ASHERB);
+        simpleItem(COItems.TEA_LEAF);
 
         simpleItem(COItems.CORN_SEEDS);
         simpleItem(COItems.RICE_SEEDS);

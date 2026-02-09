@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:melon_slice",
+    "#forge:apples",
+    "dragncrops:blackberry",
+    "dragncrops:blueberry",
+    "dragncrops:raspberry",
+    "dragncrops:strawberry",
+    "dragncrops:cranberry",
+    "dragncrops:cantaloupe",
+    "dragncrops:honeydew",
+    "dragncrops:mango",
+    "dragncrops:cherries",
+    "dragncrops:crimsonberry",
+    "dragncrops:goldenberries",
+    "dragncrops:plum"
+  ]
+}

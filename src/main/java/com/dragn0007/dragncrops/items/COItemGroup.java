@@ -1,6 +1,7 @@
 package com.dragn0007.dragncrops.items;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.COBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -61,6 +62,7 @@ public class COItemGroup {
                         output.accept(COItems.OREGANO.get());
                         output.accept(COItems.ROSEMARY.get());
                         output.accept(COItems.ASHERB.get());
+                        output.accept(COItems.TEA_LEAF.get());
 
                         output.accept(COItems.CORN_SEEDS.get());
                         output.accept(COItems.RICE_SEEDS.get());
@@ -272,6 +274,14 @@ public class COItemGroup {
                         output.accept(COItems.UNFERMENTED_HONEY_MEAD.get());
                         output.accept(COItems.UNFERMENTED_MAGMA_CREAM_MEAD.get());
                         output.accept(COItems.UNFERMENTED_BEETROOT_MEAD.get());
+
+                        output.accept(COBlocks.BLACK_TEAPOT.get());
+                        output.accept(COBlocks.DEEPSLATE_TEAPOT.get());
+                        output.accept(COBlocks.GOLD_TEAPOT.get());
+                        output.accept(COBlocks.IRON_TEAPOT.get());
+                        output.accept(COBlocks.STONE_TEAPOT.get());
+                        output.accept(COBlocks.TERRACOTTA_TEAPOT.get());
+                        output.accept(COBlocks.WHITE_TEAPOT.get());
 
                     }).build());
 

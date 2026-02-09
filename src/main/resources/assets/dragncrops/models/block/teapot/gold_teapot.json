@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/teapot",
+	"textures": {
+		"texture": "dragncrops:block/gold_teapot"
+	}
+}

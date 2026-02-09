@@ -2,7 +2,7 @@ package com.dragn0007.dragncrops.event;
 
 
 import com.dragn0007.dragncrops.blocks.COBlocks;
-import com.dragn0007.dragncrops.blocks.custom.AppleBlock;
+import com.dragn0007.dragncrops.blocks.custom.food.AppleBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

@@ -3,7 +3,8 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
-import com.dragn0007.dragncrops.blocks.custom.*;
+import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
+import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerContainer;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntity;
@@ -30,6 +31,21 @@ public class COBlocks {
             = DeferredRegister.create(ForgeRegistries.BLOCKS, CropOverhaul.MODID);
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES
             = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, CropOverhaul.MODID);
+
+    public static final RegistryObject<Block> BLACK_TEAPOT = registerBlock("black_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> DEEPSLATE_TEAPOT = registerBlock("deepslate_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> GOLD_TEAPOT = registerBlock("gold_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> IRON_TEAPOT = registerBlock("iron_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> STONE_TEAPOT = registerBlock("stone_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> TERRACOTTA_TEAPOT = registerBlock("terracotta_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> WHITE_TEAPOT = registerBlock("white_teapot",
+            () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     public static final RegistryObject<Block> BLACKBERRIES = registerBlockWithoutItem("blackberries",
             () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
@@ -120,6 +136,11 @@ public class COBlocks {
     public static final RegistryObject<Block> ROSEMARY = registerBlockWithoutItem("rosemary",
             () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_ROSEMARY = registerBlockWithoutItem("wild_rosemary",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+
+    public static final RegistryObject<Block> TEA = registerBlockWithoutItem("tea",
+            () -> new TeaBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_TEA = registerBlockWithoutItem("wild_tea",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> PUFFBALL_MUSHROOM = registerBlockWithoutItem("puffball_mushroom",

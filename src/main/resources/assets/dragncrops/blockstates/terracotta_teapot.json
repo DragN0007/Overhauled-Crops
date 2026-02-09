@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/teapot/terracotta_teapot",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/teapot/terracotta_teapot"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/teapot/terracotta_teapot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/teapot/terracotta_teapot",
+      "y": 270
+    }
+  }
+}
