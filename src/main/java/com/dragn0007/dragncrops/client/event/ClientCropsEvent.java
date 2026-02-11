@@ -6,8 +6,6 @@ import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntityRen
 import com.dragn0007.dragncrops.client.gui.TeapotScreen;
 import com.dragn0007.dragncrops.common.gui.COMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

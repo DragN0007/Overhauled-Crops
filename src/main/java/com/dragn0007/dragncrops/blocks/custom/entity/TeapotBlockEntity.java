@@ -1,7 +1,6 @@
 package com.dragn0007.dragncrops.blocks.custom.entity;
 
 import com.dragn0007.dragncrops.blocks.COBlockEntities;
-import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
 import com.dragn0007.dragncrops.common.gui.TeapotMenu;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
@@ -10,26 +9,24 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.*;
+import net.minecraft.world.Container;
+import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.inventory.BrewingStandMenu;
 import net.minecraft.world.inventory.ContainerData;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractFurnaceBlock;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
-import net.minecraft.world.level.block.entity.BrewingStandBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
-import java.util.Optional;
 
 public class TeapotBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer {
    public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);

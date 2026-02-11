@@ -45,6 +45,7 @@ public class COItemGroup {
                         output.accept(COItems.RASPBERRY.get());
                         output.accept(COItems.CRANBERRY.get());
                         output.accept(COItems.STRAWBERRY.get());
+                        output.accept(COItems.GRAPES.get());
                         output.accept(COItems.CRIMSONBERRY.get());
                         output.accept(COItems.GOLDENBERRIES.get());
                         output.accept(COItems.PEANUT.get());
@@ -142,6 +143,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_JAM.get());
                         output.accept(COItems.CRIMSONBERRY_JAM.get());
                         output.accept(COItems.GOLDENBERRY_JAM.get());
+                        output.accept(COItems.GRAPE_JAM.get());
                         output.accept(COItems.MANGO_JAM.get());
                         output.accept(COItems.MELON_JAM.get());
                         output.accept(COItems.PLUM_JAM.get());
@@ -157,6 +159,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_TART.get());
                         output.accept(COItems.CRIMSONBERRY_TART.get());
                         output.accept(COItems.GOLDENBERRY_TART.get());
+                        output.accept(COItems.GRAPE_TART.get());
                         output.accept(COItems.MANGO_TART.get());
                         output.accept(COItems.MELON_TART.get());
                         output.accept(COItems.PLUM_TART.get());
@@ -172,6 +175,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_CANDY.get());
                         output.accept(COItems.CRIMSONBERRY_CANDY.get());
                         output.accept(COItems.GOLDENBERRY_CANDY.get());
+                        output.accept(COItems.GRAPE_CANDY.get());
                         output.accept(COItems.MANGO_CANDY.get());
                         output.accept(COItems.MELON_CANDY.get());
                         output.accept(COItems.PLUM_CANDY.get());
@@ -187,6 +191,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_GELATIN.get());
                         output.accept(COItems.CRIMSONBERRY_GELATIN.get());
                         output.accept(COItems.GOLDENBERRY_GELATIN.get());
+                        output.accept(COItems.GRAPE_GELATIN.get());
                         output.accept(COItems.MANGO_GELATIN.get());
                         output.accept(COItems.MELON_GELATIN.get());
                         output.accept(COItems.PLUM_GELATIN.get());
@@ -202,6 +207,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_COCKTAIL.get());
                         output.accept(COItems.CRIMSONBERRY_COCKTAIL.get());
                         output.accept(COItems.GOLDENBERRY_COCKTAIL.get());
+                        output.accept(COItems.GRAPE_COCKTAIL.get());
                         output.accept(COItems.MANGO_COCKTAIL.get());
                         output.accept(COItems.MELON_COCKTAIL.get());
                         output.accept(COItems.PLUM_COCKTAIL.get());
@@ -233,6 +239,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_TEA.get());
                         output.accept(COItems.CRIMSONBERRY_TEA.get());
                         output.accept(COItems.GOLDENBERRY_TEA.get());
+                        output.accept(COItems.GRAPE_TEA.get());
                         output.accept(COItems.MANGO_TEA.get());
                         output.accept(COItems.MELON_TEA.get());
                         output.accept(COItems.PLUM_GELATIN.get());
@@ -248,6 +255,7 @@ public class COItemGroup {
                         output.accept(COItems.CRANBERRY_MEAD.get());
                         output.accept(COItems.CRIMSONBERRY_MEAD.get());
                         output.accept(COItems.GOLDENBERRY_MEAD.get());
+                        output.accept(COItems.GRAPE_MEAD.get());
                         output.accept(COItems.MANGO_MEAD.get());
                         output.accept(COItems.MELON_MEAD.get());
                         output.accept(COItems.PLUM_MEAD.get());
@@ -265,6 +273,7 @@ public class COItemGroup {
                         output.accept(COItems.UNFERMENTED_CRANBERRY_MEAD.get());
                         output.accept(COItems.UNFERMENTED_CRIMSONBERRY_MEAD.get());
                         output.accept(COItems.UNFERMENTED_GOLDENBERRY_MEAD.get());
+                        output.accept(COItems.UNFERMENTED_GRAPE_MEAD.get());
                         output.accept(COItems.UNFERMENTED_MANGO_MEAD.get());
                         output.accept(COItems.UNFERMENTED_MELON_MEAD.get());
                         output.accept(COItems.UNFERMENTED_RASPBERRY_MEAD.get());

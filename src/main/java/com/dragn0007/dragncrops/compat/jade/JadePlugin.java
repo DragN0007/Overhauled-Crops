@@ -1,6 +1,5 @@
 package com.dragn0007.dragncrops.compat.jade;
 
-import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
 import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.compat.jade.block.*;
 import snownee.jade.api.IWailaClientRegistration;

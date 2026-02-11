@@ -4,8 +4,8 @@ import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.FruitLeaves;
 import com.dragn0007.dragncrops.blocks.crop.base.OBushBlock;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
-import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.blocks.custom.food.*;
+import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
@@ -118,6 +118,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.PLUM_JAM.get(), createJamDrops(COBlocks.PLUM_JAM.get(), COItems.PLUM_JAM.get()));
         this.add(COBlocks.CRIMSONBERRY_JAM.get(), createJamDrops(COBlocks.CRIMSONBERRY_JAM.get(), COItems.CRIMSONBERRY_JAM.get()));
         this.add(COBlocks.GOLDENBERRY_JAM.get(), createJamDrops(COBlocks.GOLDENBERRY_JAM.get(), COItems.GOLDENBERRY_JAM.get()));
+        this.add(COBlocks.GRAPE_JAM.get(), createJamDrops(COBlocks.GRAPE_JAM.get(), COItems.GRAPE_JAM.get()));
 
         this.dropOther(COBlocks.APPLE_TART.get(), COItems.APPLE_TART.get());
         this.dropOther(COBlocks.BLACKBERRY_TART.get(), COItems.BLACKBERRY_TART.get());
@@ -133,6 +134,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.PLUM_TART.get(), COItems.PLUM_TART.get());
         this.dropOther(COBlocks.CRIMSONBERRY_TART.get(), COItems.CRIMSONBERRY_TART.get());
         this.dropOther(COBlocks.GOLDENBERRY_TART.get(), COItems.GOLDENBERRY_TART.get());
+        this.dropOther(COBlocks.GRAPE_TART.get(), COItems.GRAPE_TART.get());
 
         this.add(COBlocks.APPLE_CANDY.get(), createCandyDrops(COBlocks.APPLE_CANDY.get(), COItems.APPLE_CANDY.get()));
         this.add(COBlocks.BLACKBERRY_CANDY.get(), createCandyDrops(COBlocks.BLACKBERRY_CANDY.get(), COItems.BLACKBERRY_CANDY.get()));
@@ -148,6 +150,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.PLUM_CANDY.get(), COItems.PLUM_CANDY.get());
         this.dropOther(COBlocks.CRIMSONBERRY_CANDY.get(), COItems.CRIMSONBERRY_CANDY.get());
         this.dropOther(COBlocks.GOLDENBERRY_CANDY.get(), COItems.GOLDENBERRY_CANDY.get());
+        this.dropOther(COBlocks.GRAPE_CANDY.get(), COItems.GRAPE_CANDY.get());
 
         this.dropOther(COBlocks.APPLE_GELATIN.get(), COItems.APPLE_GELATIN.get());
         this.dropOther(COBlocks.BLACKBERRY_GELATIN.get(), COItems.BLACKBERRY_GELATIN.get());
@@ -163,6 +166,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.PLUM_GELATIN.get(), COItems.PLUM_GELATIN.get());
         this.dropOther(COBlocks.CRIMSONBERRY_GELATIN.get(), COItems.CRIMSONBERRY_GELATIN.get());
         this.dropOther(COBlocks.GOLDENBERRY_GELATIN.get(), COItems.GOLDENBERRY_GELATIN.get());
+        this.dropOther(COBlocks.GRAPE_GELATIN.get(), COItems.GRAPE_GELATIN.get());
 
         this.add(COBlocks.APPLE_MEAD.get(), createMeadDrops(COBlocks.APPLE_MEAD.get(), COItems.APPLE_MEAD.get()));
         this.add(COBlocks.BLACKBERRY_MEAD.get(), createMeadDrops(COBlocks.BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get()));
@@ -181,6 +185,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.PLUM_MEAD.get(), createMeadDrops(COBlocks.PLUM_MEAD.get(), COItems.PLUM_MEAD.get()));
         this.add(COBlocks.CRIMSONBERRY_MEAD.get(), createMeadDrops(COBlocks.CRIMSONBERRY_MEAD.get(), COItems.CRIMSONBERRY_MEAD.get()));
         this.add(COBlocks.GOLDENBERRY_MEAD.get(), createMeadDrops(COBlocks.GOLDENBERRY_MEAD.get(), COItems.GOLDENBERRY_MEAD.get()));
+        this.add(COBlocks.GRAPE_MEAD.get(), createMeadDrops(COBlocks.GRAPE_MEAD.get(), COItems.GRAPE_MEAD.get()));
         this.dropOther(COBlocks.FERMENTED_APPLE_MEAD.get(), COItems.APPLE_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_BLACKBERRY_MEAD.get(), COItems.BLACKBERRY_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_BLUEBERRY_MEAD.get(), COItems.BLUEBERRY_MEAD.get());
@@ -198,6 +203,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.FERMENTED_PLUM_MEAD.get(), COItems.PLUM_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_CRIMSONBERRY_MEAD.get(), COItems.CRIMSONBERRY_MEAD.get());
         this.dropOther(COBlocks.FERMENTED_GOLDENBERRY_MEAD.get(), COItems.GOLDENBERRY_MEAD.get());
+        this.dropOther(COBlocks.FERMENTED_GRAPE_MEAD.get(), COItems.GRAPE_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_APPLE_MEAD.get(), COItems.UNFERMENTED_APPLE_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_BLACKBERRY_MEAD.get(), COItems.UNFERMENTED_BLACKBERRY_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_BLUEBERRY_MEAD.get(), COItems.UNFERMENTED_BLUEBERRY_MEAD.get());
@@ -215,6 +221,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.UNFERMENTED_PLUM_MEAD.get(), COItems.UNFERMENTED_PLUM_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_CRIMSONBERRY_MEAD.get(), COItems.UNFERMENTED_CRIMSONBERRY_MEAD.get());
         this.dropOther(COBlocks.UNFERMENTED_GOLDENBERRY_MEAD.get(), COItems.UNFERMENTED_GOLDENBERRY_MEAD.get());
+        this.dropOther(COBlocks.UNFERMENTED_GRAPE_MEAD.get(), COItems.UNFERMENTED_GRAPE_MEAD.get());
 
         this.add(COBlocks.CANNED_CARROTS.get(), createCanDrops(COBlocks.CANNED_CARROTS.get(), COItems.CANNED_CARROTS.get()));
         this.add(COBlocks.CANNED_POTATOES.get(), createCanDrops(COBlocks.CANNED_POTATOES.get(), COItems.CANNED_POTATOES.get()));

@@ -1,0 +1,15 @@
+{
+  "name": "Soups",
+  "icon": "dragncrops:deepslate_pot",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:deepslate_pot"
+      },
+      "text": "Pots are used to cook Soups and Stews. Pots will take multiple kinds of foods, especially vegetables and meats, and create a soup or stew based on the ingredients provided. There must be at least two ingredients, plus water or milk in the pot to make a soup or stew.",
+      "title": "Pot"
+    }
+  ]
+}

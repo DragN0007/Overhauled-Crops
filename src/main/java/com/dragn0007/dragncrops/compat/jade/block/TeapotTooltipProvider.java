@@ -1,10 +1,8 @@
 package com.dragn0007.dragncrops.compat.jade.block;
 
 import com.dragn0007.dragncrops.CropOverhaul;
-import com.dragn0007.dragncrops.blocks.custom.food.JamJarBlock;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import snownee.jade.api.BlockAccessor;
 import snownee.jade.api.IBlockComponentProvider;
 import snownee.jade.api.ITooltip;

@@ -1,0 +1,15 @@
+{
+  "name": "Wine",
+  "icon": "dragncrops:spruce_wine_barrel",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:spruce_wine_barrel"
+      },
+      "text": "Wine Barrels are used to brew Wine from Grapes, and, optionally, different fruits to flavor it. Wine requires, at the very least, Grapes and Grain to ferment. If desired, fruit can be used to flavor it further.",
+      "title": "Wine Barrel"
+    }
+  ]
+}

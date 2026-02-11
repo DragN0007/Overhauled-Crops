@@ -56,6 +56,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.ROSEMARY);
         simpleItem(COItems.ASHERB);
         simpleItem(COItems.TEA_LEAF);
+        simpleItem(COItems.GRAPES);
 
         simpleItem(COItems.CORN_SEEDS);
         simpleItem(COItems.RICE_SEEDS);
@@ -138,6 +139,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_JAM);
         simpleItem(COItems.STRAWBERRY_JAM);
         simpleItem(COItems.WATERMELON_JAM);
+        simpleItem(COItems.GRAPE_JAM);
 
         simpleItem(COItems.APPLE_TART);
         simpleItem(COItems.BLACKBERRY_TART);
@@ -153,6 +155,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_TART);
         simpleItem(COItems.STRAWBERRY_TART);
         simpleItem(COItems.WATERMELON_TART);
+        simpleItem(COItems.GRAPE_TART);
 
         simpleItem(COItems.APPLE_CANDY);
         simpleItem(COItems.BLACKBERRY_CANDY);
@@ -168,6 +171,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_CANDY);
         simpleItem(COItems.STRAWBERRY_CANDY);
         simpleItem(COItems.WATERMELON_CANDY);
+        simpleItem(COItems.GRAPE_CANDY);
 
         simpleItem(COItems.APPLE_GELATIN);
         simpleItem(COItems.BLACKBERRY_GELATIN);
@@ -183,6 +187,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_GELATIN);
         simpleItem(COItems.STRAWBERRY_GELATIN);
         simpleItem(COItems.WATERMELON_GELATIN);
+        simpleItem(COItems.GRAPE_GELATIN);
 
         simpleItem(COItems.APPLE_COCKTAIL);
         simpleItem(COItems.BLACKBERRY_COCKTAIL);
@@ -198,6 +203,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_COCKTAIL);
         simpleItem(COItems.STRAWBERRY_COCKTAIL);
         simpleItem(COItems.WATERMELON_COCKTAIL);
+        simpleItem(COItems.GRAPE_COCKTAIL);
 
         simpleItem(COItems.APPLE_PIE);
         simpleItem(COItems.BLACKBERRY_PIE);
@@ -229,6 +235,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.RASPBERRY_TEA);
         simpleItem(COItems.STRAWBERRY_TEA);
         simpleItem(COItems.WATERMELON_TEA);
+        simpleItem(COItems.GRAPE_TEA);
 
         simpleItem(COItems.APPLE_MEAD);
         simpleItem(COItems.BLACKBERRY_MEAD);
@@ -247,6 +254,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.HONEY_MEAD);
         simpleItem(COItems.MAGMA_CREAM_MEAD);
         simpleItem(COItems.BEETROOT_MEAD);
+        simpleItem(COItems.GRAPE_MEAD);
 
         advancedItem(COItems.UNFERMENTED_APPLE_MEAD, "unfermented_mead");
         advancedItem(COItems.UNFERMENTED_BLACKBERRY_MEAD, "unfermented_mead");
@@ -265,6 +273,7 @@ public class COItemModelProvider extends ItemModelProvider {
         advancedItem(COItems.UNFERMENTED_HONEY_MEAD, "unfermented_mead");
         advancedItem(COItems.UNFERMENTED_MAGMA_CREAM_MEAD, "unfermented_mead");
         advancedItem(COItems.UNFERMENTED_BEETROOT_MEAD, "unfermented_mead");
+        advancedItem(COItems.UNFERMENTED_GRAPE_MEAD, "unfermented_mead");
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
