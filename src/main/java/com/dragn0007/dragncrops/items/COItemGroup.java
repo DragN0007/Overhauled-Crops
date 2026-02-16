@@ -64,6 +64,7 @@ public class COItemGroup {
                         output.accept(COItems.ROSEMARY.get());
                         output.accept(COItems.ASHERB.get());
                         output.accept(COItems.TEA_LEAF.get());
+                        output.accept(COItems.PUFFBALL_MUSHROOM.get());
 
                         output.accept(COItems.CORN_SEEDS.get());
                         output.accept(COItems.RICE_SEEDS.get());
@@ -242,7 +243,7 @@ public class COItemGroup {
                         output.accept(COItems.GRAPE_TEA.get());
                         output.accept(COItems.MANGO_TEA.get());
                         output.accept(COItems.MELON_TEA.get());
-                        output.accept(COItems.PLUM_GELATIN.get());
+                        output.accept(COItems.PLUM_TEA.get());
                         output.accept(COItems.RASPBERRY_TEA.get());
                         output.accept(COItems.STRAWBERRY_TEA.get());
                         output.accept(COItems.WATERMELON_TEA.get());
@@ -290,7 +291,11 @@ public class COItemGroup {
                         output.accept(COBlocks.IRON_TEAPOT.get());
                         output.accept(COBlocks.STONE_TEAPOT.get());
                         output.accept(COBlocks.TERRACOTTA_TEAPOT.get());
-                        output.accept(COBlocks.WHITE_TEAPOT.get());
+
+                        output.accept(COBlocks.DEEPSLATE_POT.get());
+                        output.accept(COBlocks.IRON_POT.get());
+                        output.accept(COBlocks.STONE_POT.get());
+                        output.accept(COBlocks.TERRACOTTA_POT.get());
 
                     }).build());
 

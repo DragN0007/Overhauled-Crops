@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.client.event;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntityRenderer;
+import com.dragn0007.dragncrops.client.gui.PotScreen;
 import com.dragn0007.dragncrops.client.gui.TeapotScreen;
 import com.dragn0007.dragncrops.common.gui.COMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -24,6 +25,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
     @SubscribeEvent
     public static void clientSetupEvent(FMLClientSetupEvent event) {
         MenuScreens.register(COMenuTypes.TEAPOT_MENU.get(), TeapotScreen::new);
+        MenuScreens.register(COMenuTypes.POT_MENU.get(), PotScreen::new);
     }
 
 }

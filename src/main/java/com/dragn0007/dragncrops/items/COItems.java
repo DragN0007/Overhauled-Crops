@@ -1150,7 +1150,32 @@ public class COItems {
                     .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.8F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
 
+    public static final RegistryObject<Item> VEGETABLE_CREAM_SOUP = ITEMS.register("vegetable_cream_soup",
+            () -> new JarItem(COBlocks.VEGETABLE_SOUP.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.8F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
     public static final RegistryObject<Item> MEAT_AND_VEGETABLE_STEW = ITEMS.register("meat_and_vegetable_stew",
+            () -> new JarItem(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(1.0F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> MEAT_AND_VEGETABLE_CREAM_SOUP = ITEMS.register("meat_and_vegetable_cream_soup",
+            () -> new JarItem(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(1.0F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> MUSHROOM_SOUP = ITEMS.register("mushroom_soup",
+            () -> new JarItem(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(1.0F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> MUSHROOM_CREAM_SOUP = ITEMS.register("mushroom_cream_soup",
+            () -> new JarItem(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), (new Item.Properties()
+                    .food(new FoodProperties.Builder().nutrition(9).saturationMod(1.0F)
+                            .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));
+
+    public static final RegistryObject<Item> CREAM_SOUP = ITEMS.register("cream_soup",
             () -> new JarItem(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), (new Item.Properties()
                     .food(new FoodProperties.Builder().nutrition(9).saturationMod(1.0F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build()))));

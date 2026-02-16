@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dragncrops:tea"
+          "name": "dragncrops:grapes"
         }
       ],
       "rolls": 1.0
@@ -20,7 +20,7 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "dragncrops:tea",
+          "block": "dragncrops:grapes",
           "condition": "minecraft:block_state_property",
           "properties": {
             "age": "7"
@@ -41,11 +41,11 @@
               }
             }
           ],
-          "name": "dragncrops:tea_leaf"
+          "name": "dragncrops:grapes"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dragncrops:blocks/tea"
+  "random_sequence": "dragncrops:blocks/grapes"
 }

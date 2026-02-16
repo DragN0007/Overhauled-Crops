@@ -57,6 +57,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.ASHERB);
         simpleItem(COItems.TEA_LEAF);
         simpleItem(COItems.GRAPES);
+        simpleItem(COItems.PUFFBALL_MUSHROOM);
 
         simpleItem(COItems.CORN_SEEDS);
         simpleItem(COItems.RICE_SEEDS);
@@ -100,8 +101,13 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.UNFERMENTED_PICKLES);
         simpleItem(COItems.FERMENTED_PICKLES);
         simpleItem(COItems.STOCK);
+        simpleItem(COItems.CREAM_SOUP);
         simpleItem(COItems.VEGETABLE_SOUP);
+        simpleItem(COItems.VEGETABLE_CREAM_SOUP);
         simpleItem(COItems.MEAT_AND_VEGETABLE_STEW);
+        simpleItem(COItems.MEAT_AND_VEGETABLE_CREAM_SOUP);
+        simpleItem(COItems.MUSHROOM_SOUP);
+        simpleItem(COItems.MUSHROOM_CREAM_SOUP);
 
         simpleItem(COItems.BEEF_SAUSAGE);
         simpleItem(COItems.DRIED_BEEF_SAUSAGE);
@@ -231,7 +237,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.GOLDENBERRY_TEA);
         simpleItem(COItems.MANGO_TEA);
         simpleItem(COItems.MELON_TEA);
-        simpleItem(COItems.PLUM_GELATIN);
+        simpleItem(COItems.PLUM_TEA);
         simpleItem(COItems.RASPBERRY_TEA);
         simpleItem(COItems.STRAWBERRY_TEA);
         simpleItem(COItems.WATERMELON_TEA);

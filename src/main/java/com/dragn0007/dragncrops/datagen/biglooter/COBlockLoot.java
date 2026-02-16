@@ -44,6 +44,11 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropSelf(COBlocks.TERRACOTTA_TEAPOT.get());
         this.dropSelf(COBlocks.WHITE_TEAPOT.get());
 
+        this.dropSelf(COBlocks.DEEPSLATE_POT.get());
+        this.dropSelf(COBlocks.IRON_POT.get());
+        this.dropSelf(COBlocks.STONE_POT.get());
+        this.dropSelf(COBlocks.TERRACOTTA_POT.get());
+
         this.add(COBlocks.RED_APPLE.get(), createAppleDrops(COBlocks.RED_APPLE.get(), Items.APPLE));
         this.add(COBlocks.YELLOW_APPLE.get(), createAppleDrops(COBlocks.YELLOW_APPLE.get(), COItems.YELLOW_APPLE.get()));
         this.add(COBlocks.GREEN_APPLE.get(), createAppleDrops(COBlocks.GREEN_APPLE.get(), COItems.GREEN_APPLE.get()));
@@ -527,7 +532,7 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), this.createMultiDrops(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), COItems.PUFFBALL_MUSHROOM.get(), COItems.PUFFBALL_MUSHROOM.get(),
                 wildBuilder22));
 
-        LootItemCondition.Builder cropBuilder23 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.PUFFBALL_MUSHROOM.get())
+        LootItemCondition.Builder cropBuilder23 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.TEA.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
         this.add(COBlocks.TEA.get(),
                 this.applyExplosionDecay(COBlocks.TEA.get(),
@@ -537,6 +542,17 @@ public class COBlockLoot extends BlockLootSubProvider {
         LootItemCondition.Builder wildBuilder23 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_TEA.get());
         this.add(COBlocks.WILD_TEA.get(), this.createMultiDrops(COBlocks.WILD_TEA.get(), COItems.TEA_LEAF.get(), COItems.TEA_LEAF.get(),
                 wildBuilder23));
+
+        LootItemCondition.Builder cropBuilder24 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.GRAPES.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.GRAPES.get(),
+                this.applyExplosionDecay(COBlocks.GRAPES.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.GRAPES.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder24).add(LootItem.lootTableItem(COItems.GRAPES.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder24 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_GRAPES.get());
+        this.add(COBlocks.WILD_GRAPES.get(), this.createMultiDrops(COBlocks.WILD_GRAPES.get(), COItems.GRAPES.get(), COItems.GRAPES.get(),
+                wildBuilder24));
 
 
 

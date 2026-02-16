@@ -1,7 +1,7 @@
 package com.dragn0007.dragncrops.blocks.custom.entity;
 
 import com.dragn0007.dragncrops.blocks.COBlockEntities;
-import com.dragn0007.dragncrops.common.gui.TeapotMenu;
+import com.dragn0007.dragncrops.common.gui.PotMenu;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.core.BlockPos;
@@ -17,7 +17,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractFurnaceBlock;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -28,40 +27,40 @@ import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 
-public class TeapotBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer {
-   public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);
+public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer {
+   public NonNullList<ItemStack> items = NonNullList.withSize(4, ItemStack.EMPTY);
    int brewTime;
-   public static final int LEAF_SLOT = 0;
-   public static final int OUTPUT_SLOT = 1;
-   public static final int ADD_IN_SLOT = 2;
+   public static final int INGREDIENT_SLOT_LEFT = 0;
+   public static final int INGREDIENT_SLOT_RIGHT = 1;
+   public static final int OUTPUT_SLOT = 2;
+   public static final int LIQUID_SLOT = 3;
    public ItemStack brewingCurrently = null;
 
    protected final ContainerData dataAccess = new ContainerData() {
       public int get(int slot) {
-          if (slot == LEAF_SLOT) {
-              return TeapotBlockEntity.this.brewTime;
+          if (slot == INGREDIENT_SLOT_LEFT || slot == INGREDIENT_SLOT_RIGHT) {
+              return PotBlockEntity.this.brewTime;
           }
           return 0;
       }
 
       public void set(int i, int value) {
-          if (i == LEAF_SLOT) {
-              TeapotBlockEntity.this.brewTime = value;
-          }
-
+         if (i == INGREDIENT_SLOT_LEFT || i == INGREDIENT_SLOT_RIGHT) {
+           PotBlockEntity.this.brewTime = value;
+         }
       }
 
       public int getCount() {
-         return 1;
+         return 2;
       }
    };
 
-   public TeapotBlockEntity(BlockPos pos, BlockState state) {
-      super(COBlockEntities.TEAPOT.get(), pos, state);
+   public PotBlockEntity(BlockPos pos, BlockState state) {
+      super(COBlockEntities.POT.get(), pos, state);
    }
 
    protected Component getDefaultName() {
-      return Component.translatable("blockentities.dragncrops.teapot");
+      return Component.translatable("blockentities.dragncrops.pot");
    }
 
    public int getContainerSize() {
@@ -78,7 +77,7 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
       return true;
    }
 
-   public static void serverTick(Level level, BlockPos pos, BlockState state, TeapotBlockEntity entity) {
+   public static void serverTick(Level level, BlockPos pos, BlockState state, PotBlockEntity entity) {
       if (!entity.hasBoilinSource(level, pos)) {
          if (entity.brewTime < 400 && entity.brewTime > 0) {
             ++entity.brewTime;
@@ -86,8 +85,9 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
          return;
       }
 
-      ItemStack leafSlotItem = entity.getItem(LEAF_SLOT);
-      ItemStack addInSlotItem = entity.getItem(ADD_IN_SLOT);
+      ItemStack leftSlotItem = entity.getItem(INGREDIENT_SLOT_LEFT);
+      ItemStack rightSlotItem = entity.getItem(INGREDIENT_SLOT_RIGHT);
+      ItemStack liquidSlotItem = entity.getItem(LIQUID_SLOT);
       ItemStack outputSlotItem = entity.getItem(OUTPUT_SLOT);
       ItemStack potentialOutput = null;
 
@@ -103,37 +103,30 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
             setChanged(level, pos, state);
          }
       } else if (entity.brewTime <= 0) {
-         if (!leafSlotItem.isEmpty()) {
-            if (addInSlotItem.is(COTags.Items.APPLES)) {
-               potentialOutput = COItems.APPLE_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.BLACKBERRY.get())) {
-               potentialOutput = COItems.BLACKBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.BLUEBERRY.get())) {
-               potentialOutput = COItems.BLUEBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.CANTALOUPE_SLICE.get())) {
-               potentialOutput = COItems.CANTALOUPE_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.CHERRIES.get())) {
-               potentialOutput = COItems.CHERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.CRANBERRY.get())) {
-               potentialOutput = COItems.CRANBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.CRIMSONBERRY.get())) {
-               potentialOutput = COItems.CRIMSONBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.GOLDENBERRIES.get())) {
-               potentialOutput = COItems.GOLDENBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.HONEYDEW_SLICE.get())) {
-               potentialOutput = COItems.MELON_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.MANGO.get())) {
-               potentialOutput = COItems.MANGO_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.PLUM.get())) {
-               potentialOutput = COItems.PLUM_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.RASPBERRY.get())) {
-               potentialOutput = COItems.RASPBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(COItems.STRAWBERRY.get())) {
-               potentialOutput = COItems.STRAWBERRY_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.is(Items.MELON_SLICE)) {
-               potentialOutput = COItems.WATERMELON_TEA.get().getDefaultInstance();
-            } else if (addInSlotItem.isEmpty()) {
-               potentialOutput = COItems.TEA.get().getDefaultInstance();
+         if (!leftSlotItem.isEmpty() && !rightSlotItem.isEmpty() && !liquidSlotItem.isEmpty()) {
+            if (leftSlotItem.is(COTags.Items.VEGETABLES) && rightSlotItem.is(COTags.Items.VEGETABLES)) {
+               if (liquidSlotItem.is(COTags.Items.MILK)) {
+                  potentialOutput = COItems.VEGETABLE_CREAM_SOUP.get().getDefaultInstance();
+               } else if (liquidSlotItem.is(COItems.STOCK.get())) {
+                  potentialOutput = COItems.VEGETABLE_SOUP.get().getDefaultInstance();
+               }
+            } else if ((leftSlotItem.is(COTags.Items.VEGETABLES) && rightSlotItem.is(COTags.Items.RAW_MEATS)) ||
+                    (leftSlotItem.is(COTags.Items.RAW_MEATS) && rightSlotItem.is(COTags.Items.VEGETABLES))) {
+               if (liquidSlotItem.is(COTags.Items.MILK)) {
+                  potentialOutput = COItems.MEAT_AND_VEGETABLE_CREAM_SOUP.get().getDefaultInstance();
+               } else if (liquidSlotItem.is(COItems.STOCK.get())) {
+                  potentialOutput = COItems.MEAT_AND_VEGETABLE_STEW.get().getDefaultInstance();
+               }
+            } else if (leftSlotItem.is(COTags.Items.MUSHROOMS) && rightSlotItem.is(COTags.Items.MUSHROOMS)) {
+               if (liquidSlotItem.is(COTags.Items.MILK)) {
+                  potentialOutput = COItems.MUSHROOM_CREAM_SOUP.get().getDefaultInstance();
+               } else if (liquidSlotItem.is(COItems.STOCK.get())) {
+                  potentialOutput = COItems.MUSHROOM_SOUP.get().getDefaultInstance();
+               }
+            } else if (leftSlotItem.is(COTags.Items.MILK) && rightSlotItem.is(COTags.Items.MILK)) {
+               if (liquidSlotItem.is(COItems.STOCK.get())) {
+                  potentialOutput = COItems.CREAM_SOUP.get().getDefaultInstance();
+               }
             }
          }
 
@@ -143,11 +136,12 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
 
          entity.brewingCurrently = potentialOutput;
 
-         if (addInSlotItem.is(COTags.Items.BREWING_ADD_INS)) {
-            leafSlotItem.shrink(1);
-            addInSlotItem.shrink(1);
-         } else if (addInSlotItem.isEmpty()) {
-            leafSlotItem.shrink(1);
+         if (liquidSlotItem.is(COItems.STOCK.get()) || liquidSlotItem.is(COTags.Items.MILK)) {
+            ItemStack remainder = liquidSlotItem.getCraftingRemainingItem();
+            leftSlotItem.shrink(1);
+            rightSlotItem.shrink(1);
+            liquidSlotItem.shrink(1);
+            entity.setItem(LIQUID_SLOT, remainder);
          }
          entity.brewTime = 400;
          setChanged(level, pos, state);
@@ -173,9 +167,9 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
       @Override
       public boolean isItemValid(int slot, @NotNull ItemStack stack) {
          return switch (slot) {
-            case LEAF_SLOT -> stack.getItem() == COItems.TEA_LEAF.get();
+            case INGREDIENT_SLOT_LEFT, INGREDIENT_SLOT_RIGHT -> stack.is(COTags.Items.VEGETABLES) || stack.is(COTags.Items.RAW_MEATS) || stack.is(COTags.Items.MUSHROOMS);
             case OUTPUT_SLOT -> false;
-            case ADD_IN_SLOT -> stack.is(COTags.Items.FRUITS);
+            case LIQUID_SLOT -> stack.is(COItems.STOCK.get()) || stack.is(COTags.Items.MILK);
             default -> super.isItemValid(slot, stack);
          };
       }
@@ -184,7 +178,7 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
    @Nullable
    @Override
    public AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
-      return new TeapotMenu(pContainerId, pPlayerInventory, this, dataAccess);
+      return new PotMenu(pContainerId, pPlayerInventory, this, dataAccess);
    }
 
    public void load(CompoundTag tag) {
@@ -237,7 +231,7 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
    }
 
    protected AbstractContainerMenu createMenu(int p_58990_, Inventory p_58991_) {
-      return new TeapotMenu(p_58990_, p_58991_, this, this.dataAccess);
+      return new PotMenu(p_58990_, p_58991_, this, this.dataAccess);
    }
 
    net.minecraftforge.common.util.LazyOptional<? extends net.minecraftforge.items.IItemHandler>[] handlers =

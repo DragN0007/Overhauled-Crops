@@ -31,11 +31,11 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:mammoth_milk_bucket",
+      "id": "permafrost:mammoth_milk_bucket",
       "required": false
     },
     {
-      "id": "dragnlivestock:mammoth_milk_jug",
+      "id": "permafrost:mammoth_milk_jug",
       "required": false
     }
   ]

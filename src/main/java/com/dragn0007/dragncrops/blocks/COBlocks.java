@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
+import com.dragn0007.dragncrops.blocks.custom.crafting.PotBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
 import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
@@ -46,6 +47,15 @@ public class COBlocks {
             () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> WHITE_TEAPOT = registerBlock("white_teapot",
             () -> new TeapotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> DEEPSLATE_POT = registerBlock("deepslate_pot",
+            () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> IRON_POT = registerBlock("iron_pot",
+            () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> STONE_POT = registerBlock("stone_pot",
+            () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+    public static final RegistryObject<Block> TERRACOTTA_POT = registerBlock("terracotta_pot",
+            () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     public static final RegistryObject<Block> BLACKBERRIES = registerBlockWithoutItem("blackberries",
             () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
@@ -337,7 +347,7 @@ public class COBlocks {
     public static final RegistryObject<Block> PLUM_MEAD = registerBlockWithoutItem("plum_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> CRIMSONBERRY_MEAD = registerBlockWithoutItem("crimsonberry_mead", MeadBottleBlock::new);
     public static final RegistryObject<Block> GOLDENBERRY_MEAD = registerBlockWithoutItem("goldenberry_mead", MeadBottleBlock::new);
-    public static final RegistryObject<Block> GRAPE_MEAD = registerBlockWithoutItem("goldenberry_mead", MeadBottleBlock::new);
+    public static final RegistryObject<Block> GRAPE_MEAD = registerBlockWithoutItem("grape_mead", MeadBottleBlock::new);
 
     public static final RegistryObject<Block> APPLE_GELATIN = registerBlockWithoutItem("apple_gelatin", GelatinBlock::new);
     public static final RegistryObject<Block> BLACKBERRY_GELATIN = registerBlockWithoutItem("blackberry_gelatin", GelatinBlock::new);

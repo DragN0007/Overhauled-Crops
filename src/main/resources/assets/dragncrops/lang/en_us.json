@@ -455,14 +455,24 @@
   "item.dragncrops.fermented_pickles": "Pickles",
   "item.dragncrops.unfermented_pickles": "Unfermented Pickles",
   "item.dragncrops.stock": "Stock",
+  "item.dragncrops.cream_soup": "Cream Soup",
   "item.dragncrops.vegetable_soup": "Vegetable Soup",
+  "item.dragncrops.vegetable_cream_soup": "Vegetable Cream Soup",
   "item.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
+  "item.dragncrops.meat_and_vegetable_cream_soup": "Meat & Vegetable Cream Soup",
+  "item.dragncrops.mushroom_soup": "Mushroom Soup",
+  "item.dragncrops.mushroom_cream_soup": "Mushroom Cream Soup",
 
   "block.dragncrops.fermented_pickles": "Fermented Pickles",
   "block.dragncrops.unfermented_pickles": "Unfermented Pickles",
   "block.dragncrops.stock": "Stock",
+  "block.dragncrops.cream_soup": "Cream Soup",
   "block.dragncrops.vegetable_soup": "Vegetable Soup",
+  "block.dragncrops.vegetable_cream_soup": "Vegetable Cream Soup",
   "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
+  "block.dragncrops.meat_and_vegetable_cream_soup": "Meat & Vegetable Cream Soup",
+  "block.dragncrops.mushroom_soup": "Mushroom Soup",
+  "block.dragncrops.mushroom_cream_soup": "Mushroom Cream Soup",
 
 
   "item.dragncrops.apple_cocktail": "Apple Fruit Cocktail",
@@ -567,6 +577,12 @@
   "block.dragncrops.stone_teapot": "Stone Teapot",
   "block.dragncrops.terracotta_teapot": "Terracotta Teapot",
   "block.dragncrops.white_teapot": "White Teapot",
+
+  "blockentities.dragncrops.pot": "Pot",
+  "block.dragncrops.deepslate_pot": "Deepslate Pot",
+  "block.dragncrops.iron_pot": "Iron Pot",
+  "block.dragncrops.stone_pot": "Stone Pot",
+  "block.dragncrops.terracotta_pot": "Terracotta Pot",
 
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
 

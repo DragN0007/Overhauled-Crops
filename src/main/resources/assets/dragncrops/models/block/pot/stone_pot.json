@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/pot",
+	"textures": {
+		"texture": "dragncrops:block/stone_pot"
+	}
+}
