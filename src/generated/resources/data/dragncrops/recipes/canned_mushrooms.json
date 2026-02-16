@@ -3,22 +3,19 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "dragncrops:stock"
+      "item": "dragncrops:empty_can"
     },
     {
-      "tag": "forge:cooked_meats"
+      "tag": "forge:mushrooms"
     },
     {
-      "tag": "forge:vegetables"
+      "tag": "forge:mushrooms"
     },
     {
       "item": "dragncrops:garlic"
-    },
-    {
-      "tag": "forge:herbs"
     }
   ],
   "result": {
-    "item": "dragncrops:meat_and_vegetable_stew"
+    "item": "dragncrops:canned_mushrooms"
   }
 }

@@ -11,7 +11,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.stream.Stream;
 
-public class SausageBlock extends DecorRotator {
+public class DriedBlock extends DecorRotator {
 
     public static final VoxelShape NORTH = Stream.of(
             Block.box(3, 0, 14, 13, 14, 16)
@@ -29,7 +29,7 @@ public class SausageBlock extends DecorRotator {
             Block.box(14, 0, 3, 16, 14, 13)
     ).reduce((v1, v2) -> Shapes.join(v1, v2,BooleanOp.OR)).get();
 
-    public SausageBlock() {
+    public DriedBlock() {
         super(NORTH, EAST, SOUTH, WEST,
                 Properties.copy(Blocks.OAK_PLANKS).noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));

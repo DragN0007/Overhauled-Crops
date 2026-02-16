@@ -74,6 +74,7 @@ public class COItemGroup {
                         output.accept(COItems.RED_APPLE_SEEDS.get());
                         output.accept(COItems.YELLOW_APPLE_SEEDS.get());
                         output.accept(COItems.GREEN_APPLE_SEEDS.get());
+                        output.accept(COItems.THORN_BARLEY_SEEDS.get());
                         output.accept(COItems.LIME_SEEDS.get());
                         output.accept(COItems.MANGO_PIT.get());
                         output.accept(COItems.CHERRY_PIT.get());
@@ -109,8 +110,15 @@ public class COItemGroup {
                         output.accept(COItems.UNFERMENTED_PICKLES.get());
                         output.accept(COItems.FERMENTED_PICKLES.get());
                         output.accept(COItems.STOCK.get());
+                        output.accept(COItems.CREAM_SOUP.get());
                         output.accept(COItems.VEGETABLE_SOUP.get());
+                        output.accept(COItems.VEGETABLE_CREAM_SOUP.get());
                         output.accept(COItems.MEAT_AND_VEGETABLE_STEW.get());
+                        output.accept(COItems.MEAT_AND_VEGETABLE_CREAM_SOUP.get());
+                        output.accept(COItems.MUSHROOM_SOUP.get());
+                        output.accept(COItems.MUSHROOM_CREAM_SOUP.get());
+                        output.accept(COItems.HERB_SOUP.get());
+                        output.accept(COItems.HERB_CREAM_SOUP.get());
 
                         output.accept(COItems.BEEF_SAUSAGE.get());
                         output.accept(COItems.DRIED_BEEF_SAUSAGE.get());
@@ -135,6 +143,9 @@ public class COItemGroup {
                             output.accept(COItems.DRIED_GAME_SAUSAGE.get());
                             output.accept(COItems.COOKED_GAME_SAUSAGE.get());
                         }
+
+                        output.accept(COItems.MUSHROOM_JERKY.get());
+                        output.accept(COItems.FRUIT_JERKY.get());
 
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());

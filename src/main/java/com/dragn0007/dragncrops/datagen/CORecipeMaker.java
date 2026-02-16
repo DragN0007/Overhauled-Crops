@@ -93,28 +93,6 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer, new ResourceLocation(CropOverhaul.MODID, "stock_from_vegetables"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.VEGETABLE_SOUP.get())
-                .requires(COItems.STOCK.get())
-                .requires(COTags.Items.VEGETABLES)
-                .requires(COTags.Items.VEGETABLES)
-                .requires(COItems.GARLIC.get())
-                .requires(COTags.Items.HERBS)
-                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(COItems.GLASS_JAR.get())
-                        .build()))
-                .save(pFinishedRecipeConsumer);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MEAT_AND_VEGETABLE_STEW.get())
-                .requires(COItems.STOCK.get())
-                .requires(COTags.Items.COOKED_MEATS)
-                .requires(COTags.Items.VEGETABLES)
-                .requires(COItems.GARLIC.get())
-                .requires(COTags.Items.HERBS)
-                .unlockedBy("has_jar", inventoryTrigger(ItemPredicate.Builder.item()
-                        .of(COItems.GLASS_JAR.get())
-                        .build()))
-                .save(pFinishedRecipeConsumer);
-
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_CARROTS.get())
                 .requires(COItems.EMPTY_CAN.get())
@@ -170,6 +148,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .requires(COItems.EMPTY_CAN.get())
                 .requires(COTags.Items.RAW_BEEF)
                 .requires(COTags.Items.RAW_BEEF)
+                .requires(COItems.GARLIC.get())
+                .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.EMPTY_CAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CANNED_MUSHROOMS.get())
+                .requires(COItems.EMPTY_CAN.get())
+                .requires(COTags.Items.MUSHROOMS)
+                .requires(COTags.Items.MUSHROOMS)
                 .requires(COItems.GARLIC.get())
                 .unlockedBy("has_can", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(COItems.EMPTY_CAN.get())
@@ -268,10 +256,24 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.PLUM_PIT.get(), 1)
+                .requires(COItems.PLUM.get())
+                .unlockedBy("has_plum", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.PLUM.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.WHEAT_SEEDS, 1)
                 .requires(Items.WHEAT)
                 .unlockedBy("has_wheat", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(Items.WHEAT)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.THORN_BARLEY_SEEDS.get(), 1)
+                .requires(COItems.THORN_BARLEY.get())
+                .unlockedBy("has_thorn_barley", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.THORN_BARLEY.get())
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
@@ -531,6 +533,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_JAM.get())
+                .requires(COItems.GRAPES.get())
+                .requires(COItems.GRAPES.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.APPLE_CANDY.get())
@@ -639,6 +651,14 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDENBERRY_CANDY.get())
                 .requires(COItems.GOLDENBERRIES.get())
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_CANDY.get())
+                .requires(COItems.GRAPES.get())
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
                         .of(COTags.Items.SUGAR)
@@ -766,6 +786,15 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDENBERRY_TART.get())
                 .requires(COItems.GOLDENBERRIES.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.FLOUR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_TART.get())
+                .requires(COItems.GRAPES.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.FLOUR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -908,6 +937,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDENBERRY_GELATIN.get())
                 .requires(COItems.GOLDENBERRY_JAM.get())
                 .requires(COItems.GOLDENBERRY_JAM.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_GELATIN.get())
+                .requires(COItems.GRAPE_JAM.get())
+                .requires(COItems.GRAPE_JAM.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -1087,6 +1126,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                         .build()))
                 .save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_GRAPE_MEAD.get())
+                .requires(COItems.GRAPES.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.GRAIN.get())
+                .requires(Items.HONEY_BOTTLE)
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.APPLE_COCKTAIL.get())
@@ -1221,6 +1270,16 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDENBERRY_COCKTAIL.get())
                 .requires(COItems.GOLDENBERRIES.get())
+                .requires(COTags.Items.SUGAR)
+                .requires(COItems.COCONUT.get())
+                .requires(COItems.LIME.get())
+                .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.SUGAR)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_COCKTAIL.get())
+                .requires(COItems.GRAPES.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COItems.COCONUT.get())
                 .requires(COItems.LIME.get())
@@ -1385,8 +1444,8 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .save(pFinishedRecipeConsumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDEN_RHUBARB_PIE.get())
-                .requires(COItems.GOLDEN_RHUBARB_PIE.get())
-                .requires(COItems.GOLDEN_RHUBARB_PIE.get())
+                .requires(COItems.GOLDEN_RHUBARB.get())
+                .requires(COItems.GOLDEN_RHUBARB.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.FLOUR)
                 .requires(COTags.Items.EGG)

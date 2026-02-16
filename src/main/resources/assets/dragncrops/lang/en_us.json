@@ -462,6 +462,8 @@
   "item.dragncrops.meat_and_vegetable_cream_soup": "Meat & Vegetable Cream Soup",
   "item.dragncrops.mushroom_soup": "Mushroom Soup",
   "item.dragncrops.mushroom_cream_soup": "Mushroom Cream Soup",
+  "item.dragncrops.herb_soup": "Herb Soup",
+  "item.dragncrops.herb_cream_soup": "Herb Cream Soup",
 
   "block.dragncrops.fermented_pickles": "Fermented Pickles",
   "block.dragncrops.unfermented_pickles": "Unfermented Pickles",
@@ -469,10 +471,12 @@
   "block.dragncrops.cream_soup": "Cream Soup",
   "block.dragncrops.vegetable_soup": "Vegetable Soup",
   "block.dragncrops.vegetable_cream_soup": "Vegetable Cream Soup",
-  "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Stew",
+  "block.dragncrops.meat_and_vegetable_stew": "Meat & Vegetable Soup",
   "block.dragncrops.meat_and_vegetable_cream_soup": "Meat & Vegetable Cream Soup",
   "block.dragncrops.mushroom_soup": "Mushroom Soup",
   "block.dragncrops.mushroom_cream_soup": "Mushroom Cream Soup",
+  "block.dragncrops.herb_soup": "Herb Soup",
+  "block.dragncrops.herb_cream_soup": "Herb Cream Soup",
 
 
   "item.dragncrops.apple_cocktail": "Apple Fruit Cocktail",
@@ -569,6 +573,11 @@
   "block.dragncrops.game_sausage": "Game Sausage",
   "block.dragncrops.dried_game_sausage": "Dried Game Sausage",
 
+
+  "item.dragncrops.mushroom_jerky": "Mushroom Jerky",
+  "item.dragncrops.fruit_jerky": "Fruit Jerky",
+
+
   "blockentities.dragncrops.teapot": "Teapot",
   "block.dragncrops.black_teapot": "Black Teapot",
   "block.dragncrops.deepslate_teapot": "Deepslate Teapot",
@@ -594,11 +603,16 @@
   "config.jade.plugin_dragncrops.cans": "Amount of Cans in Stacks/ Crates",
   "config.jade.plugin_dragncrops.ferment_time": "Display Ferment Percent",
   "config.jade.plugin_dragncrops.dry_time": "Display Dried Percent",
-  "config.jade.plugin_dragncrops.tea_hunt": "Display Teapot Hint",
+  "config.jade.plugin_dragncrops.tea_hint": "Display Teapot Hint",
+  "config.jade.plugin_dragncrops.pot_hint": "Display Pot Hint",
 
   "tooltip.dragncrops.flail.tooltip": "Used to separate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
   "tooltip.dragncrops.placeable.tooltip": "Shift-Placeable",
   "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production.",
-  "tooltip.dragncrops.tea.tooltip": "Brewed from Tea Leaves in a Teapot, optionally with fruit for extra flavor."
+  "tooltip.dragncrops.tea.tooltip": "Brewed from Tea Leaves in a Teapot, optionally with fruit for extra flavor.",
+  "tooltip.dragncrops.soup.tooltip": "Cooked in a Pot.",
+  "tooltip.dragncrops.grains.tooltip": "Obtained by processing grain-crops with a Flail.",
+  "tooltip.dragncrops.jerky.tooltip": "Obtained by drying certain crops in the Dehydrator.",
+  "tooltip.dragncrops.sausage.tooltip": "Obtained by hanging up raw sausage to air dry over time."
 }

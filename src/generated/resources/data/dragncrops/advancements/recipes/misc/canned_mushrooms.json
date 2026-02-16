@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_jar": {
+    "has_can": {
       "conditions": {
         "items": [
           {
             "items": [
-              "dragncrops:glass_jar"
+              "dragncrops:empty_can"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "dragncrops:meat_and_vegetable_stew"
+        "recipe": "dragncrops:canned_mushrooms"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_jar",
+      "has_can",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "dragncrops:meat_and_vegetable_stew"
+      "dragncrops:canned_mushrooms"
     ]
   },
   "sends_telemetry_event": false

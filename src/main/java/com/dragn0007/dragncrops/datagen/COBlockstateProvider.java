@@ -168,6 +168,16 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_TEA.get(), models().cross(COBlocks.WILD_TEA.getId().getPath(),
                 wildPlantTexture("tea_stage3")).renderType("cutout"));
 
+        createCrop((OCropBlock) COBlocks.GRAPES.get(), "grapes", "grapes",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_GRAPES.get(), models().cross(COBlocks.WILD_GRAPES.getId().getPath(),
+                wildPlantTexture("grapes_stage3")).renderType("cutout"));
+
+        createCrop((OCropBlock) COBlocks.PUFFBALL_MUSHROOM.get(), "puffball_mushroom", "puffball_mushroom",
+                0, 0, 1, 1, 2, 2, 2, 3);
+        simpleBlock(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), models().cross(COBlocks.WILD_PUFFBALL_MUSHROOM.getId().getPath(),
+                wildPlantTexture("puffball_mushroom_stage3")).renderType("cutout"));
+
 
         createLeaves((FruitLeaves) COBlocks.RED_APPLE_LEAVES.get(), "red_apple_leaves", "red_apple_leaves",
                 0, 1, 2, 3);

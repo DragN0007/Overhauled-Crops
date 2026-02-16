@@ -17,6 +17,8 @@
     "dragncrops:rye_bread",
     "dragncrops:white_bread",
     "dragncrops:thorn_barley_bread",
+    "dragncrops:mushroom_jerky",
+    "dragncrops:fruit_jerky",
 
     {
       "id": "dragnlivestock:cooked_beef_rib_steak",

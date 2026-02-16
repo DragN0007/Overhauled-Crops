@@ -123,6 +123,12 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
                } else if (liquidSlotItem.is(COItems.STOCK.get())) {
                   potentialOutput = COItems.MUSHROOM_SOUP.get().getDefaultInstance();
                }
+            } else if (leftSlotItem.is(COTags.Items.HERBS) && rightSlotItem.is(COTags.Items.HERBS)) {
+               if (liquidSlotItem.is(COTags.Items.MILK)) {
+                  potentialOutput = COItems.HERB_CREAM_SOUP.get().getDefaultInstance();
+               } else if (liquidSlotItem.is(COItems.STOCK.get())) {
+                  potentialOutput = COItems.HERB_SOUP.get().getDefaultInstance();
+               }
             } else if (leftSlotItem.is(COTags.Items.MILK) && rightSlotItem.is(COTags.Items.MILK)) {
                if (liquidSlotItem.is(COItems.STOCK.get())) {
                   potentialOutput = COItems.CREAM_SOUP.get().getDefaultInstance();

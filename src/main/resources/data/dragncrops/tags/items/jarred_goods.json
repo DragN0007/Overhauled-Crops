@@ -3,7 +3,12 @@
   "values": [
     "#forge:jams",
     "dragncrops:stock",
+    "dragncrops:cream_soup",
     "dragncrops:vegetable_soup",
-    "dragncrops:meat_and_vegetable_stew"
+    "dragncrops:vegetable_cream_soup",
+    "dragncrops:meat_and_vegetable_stew",
+    "dragncrops:meat_and_vegetable_cream_soup",
+    "dragncrops:mushroom_soup",
+    "dragncrops:mushroom_cream_soup"
   ]
 }

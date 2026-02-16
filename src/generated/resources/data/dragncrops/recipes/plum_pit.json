@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:plum"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:plum_pit"
+  }
+}

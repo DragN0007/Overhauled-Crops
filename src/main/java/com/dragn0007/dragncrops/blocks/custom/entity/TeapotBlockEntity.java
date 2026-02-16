@@ -120,6 +120,8 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
                potentialOutput = COItems.CRIMSONBERRY_TEA.get().getDefaultInstance();
             } else if (addInSlotItem.is(COItems.GOLDENBERRIES.get())) {
                potentialOutput = COItems.GOLDENBERRY_TEA.get().getDefaultInstance();
+            } else if (addInSlotItem.is(COItems.GRAPES.get())) {
+               potentialOutput = COItems.GRAPE_TEA.get().getDefaultInstance();
             } else if (addInSlotItem.is(COItems.HONEYDEW_SLICE.get())) {
                potentialOutput = COItems.MELON_TEA.get().getDefaultInstance();
             } else if (addInSlotItem.is(COItems.MANGO.get())) {

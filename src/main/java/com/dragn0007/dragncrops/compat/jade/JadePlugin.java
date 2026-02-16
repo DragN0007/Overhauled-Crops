@@ -1,5 +1,7 @@
 package com.dragn0007.dragncrops.compat.jade;
 
+import com.dragn0007.dragncrops.blocks.custom.crafting.PotBlock;
+import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
 import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.compat.jade.block.*;
 import snownee.jade.api.IWailaClientRegistration;
@@ -19,5 +21,7 @@ public class JadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new BottlesTooltipProvider(), MeadBottleBlock.class);
         registration.registerBlockComponent(new FermentTooltipProvider(), FermentedBase.class);
         registration.registerBlockComponent(new DryTooltipProvider(), DriedBase.class);
+        registration.registerBlockComponent(new TeapotTooltipProvider(), TeapotBlock.class);
+        registration.registerBlockComponent(new PotTooltipProvider(), PotBlock.class);
     }
 }

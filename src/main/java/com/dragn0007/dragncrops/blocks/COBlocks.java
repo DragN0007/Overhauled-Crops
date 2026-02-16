@@ -154,7 +154,7 @@ public class COBlocks {
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
     public static final RegistryObject<Block> PUFFBALL_MUSHROOM = registerBlockWithoutItem("puffball_mushroom",
-            () -> new RosemaryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+            () -> new PuffballMushroomBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_PUFFBALL_MUSHROOM = registerBlockWithoutItem("wild_puffball_mushroom",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
 
@@ -279,19 +279,19 @@ public class COBlocks {
     public static final RegistryObject<Block> MEAT_AND_VEGETABLE_STEW = registerBlockWithoutItem("meat_and_vegetable_stew", JarBlock::new);
 
     public static final RegistryObject<Block> BEEF_SAUSAGE = registerBlockWithoutItem("beef_sausage", UndriedBeefSausage::new);
-    public static final RegistryObject<Block> DRIED_BEEF_SAUSAGE = registerBlockWithoutItem("dried_beef_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_BEEF_SAUSAGE = registerBlockWithoutItem("dried_beef_sausage", DriedBlock::new);
     public static final RegistryObject<Block> CHICKEN_SAUSAGE = registerBlockWithoutItem("chicken_sausage", UndriedChickenSausage::new);
-    public static final RegistryObject<Block> DRIED_CHICKEN_SAUSAGE = registerBlockWithoutItem("dried_chicken_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_CHICKEN_SAUSAGE = registerBlockWithoutItem("dried_chicken_sausage", DriedBlock::new);
     public static final RegistryObject<Block> PORK_SAUSAGE = registerBlockWithoutItem("pork_sausage", UndriedPorkSausage::new);
-    public static final RegistryObject<Block> DRIED_PORK_SAUSAGE = registerBlockWithoutItem("dried_pork_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_PORK_SAUSAGE = registerBlockWithoutItem("dried_pork_sausage", DriedBlock::new);
     public static final RegistryObject<Block> MUTTON_SAUSAGE = registerBlockWithoutItem("mutton_sausage", UndriedMuttonSausage::new);
-    public static final RegistryObject<Block> DRIED_MUTTON_SAUSAGE = registerBlockWithoutItem("dried_mutton_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_MUTTON_SAUSAGE = registerBlockWithoutItem("dried_mutton_sausage", DriedBlock::new);
     public static final RegistryObject<Block> FISH_SAUSAGE = registerBlockWithoutItem("fish_sausage", UndriedFishSausage::new);
-    public static final RegistryObject<Block> DRIED_FISH_SAUSAGE = registerBlockWithoutItem("dried_fish_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_FISH_SAUSAGE = registerBlockWithoutItem("dried_fish_sausage", DriedBlock::new);
     public static final RegistryObject<Block> GENERIC_SAUSAGE = registerBlockWithoutItem("generic_sausage", UndriedGenericSausage::new);
-    public static final RegistryObject<Block> DRIED_GENERIC_SAUSAGE = registerBlockWithoutItem("dried_generic_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_GENERIC_SAUSAGE = registerBlockWithoutItem("dried_generic_sausage", DriedBlock::new);
     public static final RegistryObject<Block> GAME_SAUSAGE = registerBlockWithoutItem("game_sausage", UndriedGameSausage::new);
-    public static final RegistryObject<Block> DRIED_GAME_SAUSAGE = registerBlockWithoutItem("dried_game_sausage", SausageBlock::new);
+    public static final RegistryObject<Block> DRIED_GAME_SAUSAGE = registerBlockWithoutItem("dried_game_sausage", DriedBlock::new);
 
     public static final RegistryObject<Block> UNFERMENTED_HONEY_MEAD = registerBlockWithoutItem("unfermented_honey_mead", UnfermentedHoneyMead::new);
     public static final RegistryObject<Block> FERMENTED_HONEY_MEAD = registerBlockWithoutItem("fermented_honey_mead", MeadJarBlock::new);
