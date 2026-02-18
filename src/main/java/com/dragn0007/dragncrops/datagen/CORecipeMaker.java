@@ -1,6 +1,7 @@
 package com.dragn0007.dragncrops.datagen;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.datagen.compat.TeapotRecipeBuilder;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -21,6 +22,10 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+
+        new TeapotRecipeBuilder(COItems.TEA_LEAF.get(), COItems.TEA.get(), 1)
+                .unlockedBy("has_tea_leaf", has(COItems.TEA_LEAF.get())).save(pFinishedRecipeConsumer);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.FLAIL.get())
                 .define('A', ItemTags.PLANKS)
