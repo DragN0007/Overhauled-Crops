@@ -1,0 +1,11 @@
+{
+  "type": "dragncrops:teapot",
+  "ingredients": [
+    {
+      "item": "dragncrops:tea_leaf"
+    }
+  ],
+  "output": {
+    "item": "dragncrops:tea"
+  }
+}

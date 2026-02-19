@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.blocks.custom.entity;
 import com.dragn0007.dragncrops.blocks.COBlockEntities;
 import com.dragn0007.dragncrops.common.gui.TeapotMenu;
 import com.dragn0007.dragncrops.items.COItems;
+import com.dragn0007.dragncrops.recipe.TeapotRecipe;
 import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -11,6 +12,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
+import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -27,6 +29,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
+import java.util.Optional;
 
 public class TeapotBlockEntity extends BaseContainerBlockEntity implements WorldlyContainer {
    public NonNullList<ItemStack> items = NonNullList.withSize(3, ItemStack.EMPTY);

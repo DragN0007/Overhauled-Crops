@@ -26,11 +26,14 @@ public class TeapotRecipe implements Recipe<SimpleContainer> {
 
     @Override
     public boolean matches(SimpleContainer pContainer, Level pLevel) {
-        if(pLevel.isClientSide()) {
-            return false;
+        if (pLevel.isClientSide()) return false;
+        boolean leafMatch = inputItems.get(0).test(pContainer.getItem(0));
+
+        if (inputItems.size() > 1) {
+            return leafMatch && inputItems.get(1).test(pContainer.getItem(1));
         }
 
-        return inputItems.get(0).test(pContainer.getItem(0));
+        return leafMatch && pContainer.getItem(1).isEmpty();
     }
 
     @Override
@@ -81,15 +84,13 @@ public class TeapotRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public TeapotRecipe fromJson(ResourceLocation id, JsonObject json) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "output"));
-
+            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(json, "result"));
             JsonArray ingredients = GsonHelper.getAsJsonArray(json, "ingredients");
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1, Ingredient.EMPTY);
+            NonNullList<Ingredient> inputs = NonNullList.withSize(ingredients.size(), Ingredient.EMPTY);
 
-            for (int i = 0; i < inputs.size(); i++) {
+            for (int i = 0; i < ingredients.size(); i++) {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
-
             return new TeapotRecipe(id, output, inputs);
         }
 

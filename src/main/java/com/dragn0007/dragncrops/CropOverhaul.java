@@ -5,6 +5,7 @@ import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.common.gui.COMenuTypes;
 import com.dragn0007.dragncrops.items.COItemGroup;
 import com.dragn0007.dragncrops.items.COItems;
+import com.dragn0007.dragncrops.recipe.CORecipes;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,6 +27,7 @@ public class CropOverhaul {
         COBlocks.register(eventBus);
         COBlockEntities.register(eventBus);
         COMenuTypes.register(eventBus);
+        CORecipes.register(eventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -52,6 +54,11 @@ public class CropOverhaul {
         ComposterBlock.COMPOSTABLES.put(COItems.CHERRIES.get(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(COItems.MANGO.get(), 0.65F);
         ComposterBlock.COMPOSTABLES.put(COItems.LIME.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(COItems.GOLDEN_RHUBARB.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(COItems.NETHER_BEET.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(COItems.THORN_BARLEY.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(COItems.GRAPES.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(COItems.PLUM.get(), 0.65F);
 
         ComposterBlock.COMPOSTABLES.put(COItems.BLACKBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.BLUEBERRY.get(), 0.5F);
@@ -59,15 +66,22 @@ public class CropOverhaul {
         ComposterBlock.COMPOSTABLES.put(COItems.CRANBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.STRAWBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.PEANUT.get(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(COItems.CRIMSONBERRY.get(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(COItems.GOLDENBERRIES.get(), 0.5F);
 
         ComposterBlock.COMPOSTABLES.put(COItems.CILANTRO.get(), 0.4F);
         ComposterBlock.COMPOSTABLES.put(COItems.OREGANO.get(), 0.4F);
         ComposterBlock.COMPOSTABLES.put(COItems.ROSEMARY.get(), 0.4F);
+        ComposterBlock.COMPOSTABLES.put(COItems.ASHERB.get(), 0.4F);
 
         ComposterBlock.COMPOSTABLES.put(COItems.CORN_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(COItems.RICE_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(COItems.RYE_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(COItems.CANTALOUPE_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(COItems.HONEYDEW_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(COItems.CHERRY_PIT.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(COItems.PLUM_PIT.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(COItems.MANGO_PIT.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(COItems.THORN_BARLEY_SEEDS.get(), 0.3F);
     }
 }

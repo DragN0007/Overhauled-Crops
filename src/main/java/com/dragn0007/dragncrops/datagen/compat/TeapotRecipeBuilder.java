@@ -52,7 +52,7 @@ public class TeapotRecipeBuilder implements RecipeBuilder {
     @Override
     public void save(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ResourceLocation pRecipeId) {
         this.advancement.parent(new ResourceLocation("recipes/root"))
-                .addCriterion("has_the_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
+                .addCriterion("has_recipe", RecipeUnlockedTrigger.unlocked(pRecipeId))
                 .rewards(AdvancementRewards.Builder.recipe(pRecipeId)).requirements(RequirementsStrategy.OR);
 
         pFinishedRecipeConsumer.accept(new Result(pRecipeId, this.result, this.count, this.ingredient,
