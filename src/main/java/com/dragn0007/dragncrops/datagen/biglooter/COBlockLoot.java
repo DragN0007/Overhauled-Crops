@@ -550,6 +550,17 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.add(COBlocks.WILD_GRAPES.get(), this.createMultiDrops(COBlocks.WILD_GRAPES.get(), COItems.GRAPES.get(), COItems.GRAPES.get(),
                 wildBuilder24));
 
+        LootItemCondition.Builder cropBuilder25 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.SOYBEANS.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
+        this.add(COBlocks.SOYBEANS.get(),
+                this.applyExplosionDecay(COBlocks.SOYBEANS.get(),
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.SOYBEAN.get())))
+                                .withPool(LootPool.lootPool().when(cropBuilder25).add(LootItem.lootTableItem(COItems.SOYBEAN.get())
+                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+        LootItemCondition.Builder wildBuilder25 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_SOYBEANS.get());
+        this.add(COBlocks.WILD_SOYBEANS.get(), this.createMultiDrops(COBlocks.WILD_SOYBEANS.get(), COItems.SOYBEAN.get(), COItems.SOYBEAN.get(),
+                wildBuilder25));
+
 
 
 

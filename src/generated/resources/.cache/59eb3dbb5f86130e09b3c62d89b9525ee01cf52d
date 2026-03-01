@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-01T14:44:28.3779169	Loot Tables
+// 1.20.1	2026-03-01T16:24:06.5570583	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 9b824821fc1b9776a4b5bdadbd2e8f24c144c466 data/dragncrops/loot_tables/blocks/apple_gelatin.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
@@ -166,6 +166,7 @@ a018653681ff9320152361384e2a4a0c881c24d8 data/dragncrops/loot_tables/blocks/rice
 01de8745e8999c7df3790dfb315e2a3944ec6d78 data/dragncrops/loot_tables/blocks/rye.json
 96076bbbb8ea18867326658b1289b8abb8888780 data/dragncrops/loot_tables/blocks/rye_bread.json
 6f309f7dd5c20b659d597905437e96f3e9d91d02 data/dragncrops/loot_tables/blocks/rye_grain.json
+d2c6256dac2a58d85bd0e1c53561c1a1c11878fb data/dragncrops/loot_tables/blocks/soybeans.json
 78bc3a067bb43339cb537f4d3a074301e28a77f8 data/dragncrops/loot_tables/blocks/stock.json
 92262cee0d0eab48302a5ddb645f443ce5822db8 data/dragncrops/loot_tables/blocks/stone_pot.json
 ab94cb80ab1feb5462d48afe2c73a29f7518862c data/dragncrops/loot_tables/blocks/stone_teapot.json
@@ -233,6 +234,7 @@ ff6e3f97225ccaadba123418cffbbf9e0db9c3e9 data/dragncrops/loot_tables/blocks/wild
 28e14df73237cb1405dd0ead508974f9b76ece3f data/dragncrops/loot_tables/blocks/wild_rice.json
 b7c9d9a78c4b09bacd064087f7e1e01f5843d366 data/dragncrops/loot_tables/blocks/wild_rosemary.json
 4cd9cbedbbf2aa6cb9113b6e3829859aded040cc data/dragncrops/loot_tables/blocks/wild_rye.json
+e1b7aefe867acd95c08cd3f5eadeab2d9155922e data/dragncrops/loot_tables/blocks/wild_soybeans.json
 009653998795ee7633c45e4c03788866a7a9b4f4 data/dragncrops/loot_tables/blocks/wild_strawberries.json
 553ceb8e2cd08d03c875f133a74a1cf526243f5c data/dragncrops/loot_tables/blocks/wild_sugar_beets.json
 e134c34743239aa630bae02e18abfd802728625c data/dragncrops/loot_tables/blocks/wild_tea.json

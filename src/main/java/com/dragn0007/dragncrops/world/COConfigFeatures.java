@@ -47,11 +47,15 @@ public class COConfigFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GARLIC = registerKey("garlic");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RICE = registerKey("rice");
     public static final ResourceKey<ConfiguredFeature<?, ?>> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SOYBEANS = registerKey("soybeans");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HONEYDEW = registerKey("honeydew");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CANTALOUPE = registerKey("cantaloupe");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CILANTRO = registerKey("cilantro");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OREGANO = registerKey("oregano");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PUFFBALL = registerKey("puffball");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TEA = registerKey("tea");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GRAPES = registerKey("grapes");
     public static final ResourceKey<ConfiguredFeature<?, ?>> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_APPLE_TREE = registerKey("green_apple_tree");
@@ -185,6 +189,22 @@ public class COConfigFeatures {
         register(context, RYE, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_RYE.get().defaultBlockState())))));
+
+        register(context, SOYBEANS, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_SOYBEANS.get().defaultBlockState())))));
+
+        register(context, PUFFBALL, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_PUFFBALL_MUSHROOM.get().defaultBlockState())))));
+
+        register(context, TEA, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_TEA.get().defaultBlockState())))));
+
+        register(context, GRAPES, Feature.RANDOM_PATCH,
+                new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_GRAPES.get().defaultBlockState())))));
 
 
         register(context, BLACKBERRIES, Feature.RANDOM_PATCH,

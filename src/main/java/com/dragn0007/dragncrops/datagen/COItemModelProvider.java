@@ -46,6 +46,7 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.GARLIC);
         simpleItem(COItems.SUGAR_BEET);
         simpleItem(COItems.NETHER_BEET);
+        simpleItem(COItems.SOYBEAN);
         simpleItem(COItems.CHERRIES);
         simpleItem(COItems.MANGO);
         simpleItem(COItems.COCONUT);
@@ -80,6 +81,8 @@ public class COItemModelProvider extends ItemModelProvider {
 
         simpleItem(COItems.GRAIN);
         simpleItem(COItems.FLOUR);
+        simpleItem(COItems.TOFU);
+        simpleItem(COItems.COOKED_TOFU);
 
         simpleItem(COItems.BLUEBERRY_BREAD);
         simpleItem(COItems.CRANBERRY_BREAD);

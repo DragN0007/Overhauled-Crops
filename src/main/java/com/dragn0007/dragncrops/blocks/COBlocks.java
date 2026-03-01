@@ -127,6 +127,10 @@ public class COBlocks {
             () -> new SugarBeetsBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_SUGAR_BEETS = registerBlockWithoutItem("wild_sugar_beets",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
+    public static final RegistryObject<Block> SOYBEANS = registerBlockWithoutItem("soybeans",
+            () -> new SoybeansBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
+    public static final RegistryObject<Block> WILD_SOYBEANS = registerBlockWithoutItem("wild_soybeans",
+            () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> CANTALOUPE = registerBlockWithoutItem("cantaloupe",
             () -> new CantaloupeBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_CANTALOUPE = registerBlockWithoutItem("wild_cantaloupe",

@@ -76,6 +76,9 @@ public class COItems {
     public static final RegistryObject<Item> SUGAR_BEET = ITEMS.register("sugar_beet",
             () -> new ItemNameBlockItem(COBlocks.SUGAR_BEETS.get(),
                     (new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build()))));
+    public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean",
+            () -> new ItemNameBlockItem(COBlocks.SOYBEANS.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.6F).build()))));
     public static final RegistryObject<Item> CANTALOUPE_SLICE = ITEMS.register("cantaloupe_slice",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).build())));
     public static final RegistryObject<Item> HONEYDEW_SLICE = ITEMS.register("honeydew_slice",
@@ -171,6 +174,10 @@ public class COItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
     public static final RegistryObject<Item> GRAIN = ITEMS.register("grain",
             () -> new GrainsItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
+    public static final RegistryObject<Item> TOFU = ITEMS.register("tofu",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).build())));
+    public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build())));
 
 
     //Breads

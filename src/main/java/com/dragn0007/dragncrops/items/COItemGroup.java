@@ -54,6 +54,7 @@ public class COItemGroup {
                         output.accept(COItems.GARLIC.get());
                         output.accept(COItems.SUGAR_BEET.get());
                         output.accept(COItems.NETHER_BEET.get());
+                        output.accept(COItems.SOYBEAN.get());
                         output.accept(COItems.CHERRIES.get());
                         output.accept(COItems.MANGO.get());
                         output.accept(COItems.COCONUT.get());
@@ -87,6 +88,8 @@ public class COItemGroup {
 
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
+                        output.accept(COItems.TOFU.get());
+                        output.accept(COItems.COOKED_TOFU.get());
 
                         output.accept(Items.BREAD);
                         output.accept(COItems.BLUEBERRY_BREAD.get());

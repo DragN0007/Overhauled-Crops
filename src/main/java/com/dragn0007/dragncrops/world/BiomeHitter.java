@@ -39,11 +39,15 @@ public class BiomeHitter {
     public static final ResourceKey<BiomeModifier> GARLIC = registerKey("garlic");
     public static final ResourceKey<BiomeModifier> RICE = registerKey("rice");
     public static final ResourceKey<BiomeModifier> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<BiomeModifier> SOYBEANS = registerKey("soybeans");
     public static final ResourceKey<BiomeModifier> HONEYDEW = registerKey("honeydew");
     public static final ResourceKey<BiomeModifier> CANTALOUPE = registerKey("cantaloupe");
     public static final ResourceKey<BiomeModifier> CILANTRO = registerKey("cilantro");
     public static final ResourceKey<BiomeModifier> OREGANO = registerKey("oregano");
     public static final ResourceKey<BiomeModifier> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<BiomeModifier> PUFFBALL = registerKey("puffball");
+    public static final ResourceKey<BiomeModifier> TEA = registerKey("tea");
+    public static final ResourceKey<BiomeModifier> GRAPES = registerKey("grapes");
     public static final ResourceKey<BiomeModifier> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<BiomeModifier> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<BiomeModifier> GREEN_APPLE_TREE = registerKey("green_apple_tree");
@@ -129,6 +133,21 @@ public class BiomeHitter {
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.ROSEMARY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
+        context.register(PUFFBALL, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_DENSE),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.PUFFBALL)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(TEA, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.TEA)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(GRAPES, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.GRAPES)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
         context.register(ASHERB, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.ASHERB)),
@@ -137,6 +156,11 @@ public class BiomeHitter {
         context.register(SUGAR_BEETS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_WET_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.SUGAR_BEETS)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(SOYBEANS, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(Tags.Biomes.IS_HOT_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(COPlacedFeatures.SOYBEANS)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 
         context.register(RICE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_dense",
+  "features": "dragncrops:puffball",
+  "step": "vegetal_decoration"
+}

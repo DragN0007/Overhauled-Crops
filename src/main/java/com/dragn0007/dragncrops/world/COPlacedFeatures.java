@@ -45,11 +45,15 @@ public class COPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GARLIC = registerKey("garlic");
     public static final ResourceKey<PlacedFeature> RICE = registerKey("rice");
     public static final ResourceKey<PlacedFeature> SUGAR_BEETS = registerKey("sugar_beets");
+    public static final ResourceKey<PlacedFeature> SOYBEANS = registerKey("soybeans");
     public static final ResourceKey<PlacedFeature> HONEYDEW = registerKey("honeydew");
     public static final ResourceKey<PlacedFeature> CANTALOUPE = registerKey("cantaloupe");
     public static final ResourceKey<PlacedFeature> CILANTRO = registerKey("cilantro");
     public static final ResourceKey<PlacedFeature> OREGANO = registerKey("oregano");
     public static final ResourceKey<PlacedFeature> ROSEMARY = registerKey("rosemary");
+    public static final ResourceKey<PlacedFeature> PUFFBALL = registerKey("puffball");
+    public static final ResourceKey<PlacedFeature> TEA = registerKey("tea");
+    public static final ResourceKey<PlacedFeature> GRAPES = registerKey("grapes");
     public static final ResourceKey<PlacedFeature> RED_APPLE_TREE = registerKey("red_apple_tree");
     public static final ResourceKey<PlacedFeature> YELLOW_APPLE_TREE = registerKey("yellow_apple_tree");
     public static final ResourceKey<PlacedFeature> GREEN_APPLE_TREE = registerKey("green_apple_tree");
@@ -120,6 +124,24 @@ public class COPlacedFeatures {
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
 
+        register(context, SOYBEANS, configuredFeatures.getOrThrow(COConfigFeatures.SOYBEANS),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, TEA, configuredFeatures.getOrThrow(COConfigFeatures.TEA),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, GRAPES, configuredFeatures.getOrThrow(COConfigFeatures.GRAPES),
+                List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
         register(context, CILANTRO, configuredFeatures.getOrThrow(COConfigFeatures.CILANTRO),
                 List.of(RarityFilter.onAverageOnceEvery(64),
                         InSquarePlacement.spread(),
@@ -134,6 +156,12 @@ public class COPlacedFeatures {
 
         register(context, ROSEMARY, configuredFeatures.getOrThrow(COConfigFeatures.ROSEMARY),
                 List.of(RarityFilter.onAverageOnceEvery(32),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
+                        BiomeFilter.biome()));
+
+        register(context, PUFFBALL, configuredFeatures.getOrThrow(COConfigFeatures.PUFFBALL),
+                List.of(RarityFilter.onAverageOnceEvery(48),
                         InSquarePlacement.spread(),
                         PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()));
