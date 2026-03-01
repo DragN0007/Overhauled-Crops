@@ -108,7 +108,7 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     //compat stuff
-    implementation fg.deobf("curse.maven:dragns-livestock-overhaul-1131669:7033844")
+    implementation fg.deobf("curse.maven:dragns-livestock-overhaul-1131669:7578482")
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.4.4')
 //    implementation fg.deobf("curse.maven:spoiled-364918:6828889")
     implementation fg.deobf("curse.maven:legendary-survival-overhaul-840254:7278266")

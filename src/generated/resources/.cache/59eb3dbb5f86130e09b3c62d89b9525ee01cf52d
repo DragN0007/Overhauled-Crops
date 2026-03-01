@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-01T16:24:06.5570583	Loot Tables
+// 1.20.1	2026-03-01T17:23:32.6806956	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 9b824821fc1b9776a4b5bdadbd2e8f24c144c466 data/dragncrops/loot_tables/blocks/apple_gelatin.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
@@ -177,7 +177,7 @@ fb53c78edc23a71da3909986d369610a36c8969a data/dragncrops/loot_tables/blocks/stra
 b7468095c5cd251d9c16b79b4abd9794c7fa0d78 data/dragncrops/loot_tables/blocks/strawberry_mead.json
 6b4cd533c5b9878c1f8f4a5ef67ca36c925c63ab data/dragncrops/loot_tables/blocks/strawberry_tart.json
 c6f2d22a81cc4d99517d9ca494e7c67afbd60721 data/dragncrops/loot_tables/blocks/sugar_beets.json
-cca0e9b51c941d8adec764c1a06b6491c7f954a5 data/dragncrops/loot_tables/blocks/tea.json
+b00f6ded5cc207d859735ede5ed31be7abf12a09 data/dragncrops/loot_tables/blocks/tea.json
 a8f7f0d6d6cb3e3d5a0f28bdb64b37e8b81ad331 data/dragncrops/loot_tables/blocks/terracotta_pot.json
 d999bce7c3bb18394b3bdb1a1fc25783f7443e3c data/dragncrops/loot_tables/blocks/terracotta_teapot.json
 339b1057b6bcc06ac31aef80d95d0eeaf4bcdb2f data/dragncrops/loot_tables/blocks/thorn_barley.json

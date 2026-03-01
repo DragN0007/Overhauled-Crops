@@ -37,6 +37,7 @@ public class COThirstProvider extends ThirstDataProvider {
         consumable(COItems.STRAWBERRY.get()).addThirst(thirstData(2, 0.5f));
         consumable(COItems.CRIMSONBERRY.get()).addThirst(thirstData(2, 0.5f));
         consumable(COItems.GOLDENBERRIES.get()).addThirst(thirstData(2, 0.5f));
+        consumable(COItems.GRAPES.get()).addThirst(thirstData(2, 0.5f));
         consumable(COItems.CUCUMBER.get()).addThirst(thirstData(2, 0.5f));
         consumable(COItems.CHERRIES.get()).addThirst(thirstData(2, 0.5f));
         consumable(COItems.MANGO.get()).addThirst(thirstData(2, 0.5f));

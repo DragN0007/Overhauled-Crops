@@ -532,7 +532,7 @@ public class COBlockLoot extends BlockLootSubProvider {
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
         this.add(COBlocks.TEA.get(),
                 this.applyExplosionDecay(COBlocks.TEA.get(),
-                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.TEA.get())))
+                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.TEA_LEAF.get())))
                                 .withPool(LootPool.lootPool().when(cropBuilder23).add(LootItem.lootTableItem(COItems.TEA_LEAF.get())
                                         .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
         LootItemCondition.Builder wildBuilder23 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_TEA.get());

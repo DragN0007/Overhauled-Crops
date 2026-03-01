@@ -67,6 +67,17 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .save(pFinishedRecipeConsumer);
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.TOFU.get())
+                .requires(COItems.SOYBEAN.get())
+                .requires(COItems.SOYBEAN.get())
+                .requires(COItems.SOYBEAN.get())
+                .requires(COItems.SOYBEAN.get())
+                .unlockedBy("has_soybean", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.SOYBEAN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.UNFERMENTED_PICKLES.get())
                 .requires(COItems.GLASS_JAR.get())
                 .requires(COItems.CUCUMBER.get())
@@ -1565,6 +1576,14 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy("has_game_sausage", has(COItems.GAME_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_game_smelting"));
         SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.GAME_SAUSAGE.get()), RecipeCategory.MISC, COItems.COOKED_GAME_SAUSAGE.get(), 0.35F, 600)
                 .unlockedBy("has_game_sausage", has(COItems.GAME_SAUSAGE.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_game_campfire_cooking"));
+
+        SimpleCookingRecipeBuilder.smoking(Ingredient.of(COItems.TOFU.get()), RecipeCategory.MISC, COItems.COOKED_TOFU.get(), 0.35F, 100)
+                .unlockedBy("has_tofu", has(COItems.TOFU.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_tofu_smoking"));
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(COItems.TOFU.get()), RecipeCategory.MISC, COItems.COOKED_TOFU.get(), 0.35F, 200)
+                .unlockedBy("has_tofu", has(COItems.TOFU.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_tofu_smelting"));
+        SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(COItems.TOFU.get()), RecipeCategory.MISC, COItems.COOKED_TOFU.get(), 0.35F, 600)
+                .unlockedBy("has_tofu", has(COItems.TOFU.get())).save(pFinishedRecipeConsumer, new ResourceLocation("dragncrops", "cooked_tofu_campfire_cooking"));
+
 
     }
 }

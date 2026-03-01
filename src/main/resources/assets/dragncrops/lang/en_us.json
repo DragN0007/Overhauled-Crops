@@ -46,6 +46,7 @@
   "item.dragncrops.plum": "Plum",
   "item.dragncrops.grapes": "Grapes",
   "item.dragncrops.tea_leaf": "Tea Leaf",
+  "item.dragncrops.soybean": "Soybean",
 
   "item.minecraft.melon_seeds": "Watermelon Seeds",
   "item.dragncrops.corn_seeds": "Corn Seeds",
@@ -160,6 +161,8 @@
   "item.dragncrops.grain": "Grain",
   "block.dragncrops.flour": "Flour",
   "item.dragncrops.flour": "Flour",
+  "item.dragncrops.tofu": "Tofu",
+  "item.dragncrops.cooked_tofu": "Cooked Tofu",
 
 
   "item.minecraft.bread": "Wheat Bread",

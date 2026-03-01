@@ -311,6 +311,14 @@ public class COItemGroup {
                         output.accept(COBlocks.STONE_POT.get());
                         output.accept(COBlocks.TERRACOTTA_POT.get());
 
+                        output.accept(COBlocks.RED_APPLE_LEAVES.get());
+                        output.accept(COBlocks.YELLOW_APPLE_LEAVES.get());
+                        output.accept(COBlocks.GREEN_APPLE_LEAVES.get());
+                        output.accept(COBlocks.LIME_LEAVES.get());
+                        output.accept(COBlocks.MANGO_LEAVES.get());
+                        output.accept(COBlocks.CHERRY_LEAVES.get());
+                        output.accept(COBlocks.PLUM_LEAVES.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

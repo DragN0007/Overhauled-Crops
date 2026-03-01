@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:soybean"
+    },
+    {
+      "item": "dragncrops:soybean"
+    },
+    {
+      "item": "dragncrops:soybean"
+    },
+    {
+      "item": "dragncrops:soybean"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:tofu"
+  }
+}

@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-16T16:43:01.8609759	Block States: dragncrops
+// 1.20.1	2026-03-01T17:20:58.608377	Block States: dragncrops
 f3ffde203656c6a3acd5a102bf20ffe64da47c8d assets/dragncrops/blockstates/asherb.json
 7bdbcb9bd8b1f5ade18c3451ce328c4acf6b33ad assets/dragncrops/blockstates/blackberries.json
 90046365dc81b6079379fe66631e562e09239b17 assets/dragncrops/blockstates/blueberries.json
@@ -34,6 +34,7 @@ eb30dde683e96cc59d7af3d2ad310486f6900e99 assets/dragncrops/blockstates/plum_leav
 dc21241ed2a59b0981a4e5feff78e76ad69abdf7 assets/dragncrops/blockstates/red_potatoes.json
 efc26c3fb047fe1116cb8478847ae9306513027c assets/dragncrops/blockstates/rice.json
 da3453ed4a933699dea766ea46582c901e88ec20 assets/dragncrops/blockstates/rosemary.json
+19dc9ca3631b388a0b4e95f09e634e394ccc0449 assets/dragncrops/blockstates/soybeans.json
 5a72d0afa66a49c5077b9d89b1f742eb7db2fb2a assets/dragncrops/blockstates/strawberries.json
 fba8362274b4835ae93d923c64ba5de4d3ec73a6 assets/dragncrops/blockstates/sugar_beets.json
 90111e8ba3d9cfb233cbed4e9e31482450e405db assets/dragncrops/blockstates/tea.json
@@ -56,6 +57,7 @@ e83e4cc740db3a26bd184294899765d275dadddf assets/dragncrops/blockstates/wild_purp
 641952c41cbd1f00b3990017b1184880f22d62a7 assets/dragncrops/blockstates/wild_red_potatoes.json
 6b91fe66dfba354505b6003484a18e424d61238f assets/dragncrops/blockstates/wild_rice.json
 88aa1eff9c5ede14e37d65c41730854c94e515fd assets/dragncrops/blockstates/wild_rosemary.json
+7e9e35ae5db5ae08f39eafbad46eb6480bd36985 assets/dragncrops/blockstates/wild_soybeans.json
 fe13c57396303cb7a766b538767c4cc98d4a26f4 assets/dragncrops/blockstates/wild_strawberries.json
 b67eeacd839998fb10337cbf0bc6d22e50d47c4c assets/dragncrops/blockstates/wild_sugar_beets.json
 0263d5d1f742c1ae52ff513091ae0bc761c1eaf2 assets/dragncrops/blockstates/wild_tea.json
@@ -188,6 +190,10 @@ b78fea840fe0eaf8f526d29afb1d64c58f737766 assets/dragncrops/models/block/rice_sta
 11924747d0960aac2c16fba4bd1381448e963d8f assets/dragncrops/models/block/rosemary_stage1.json
 fc37c3ab00f620ab897d9c709de1db14b74fcfdc assets/dragncrops/models/block/rosemary_stage2.json
 8f85a4007fd823e2662b98c5aa1f011b04b40396 assets/dragncrops/models/block/rosemary_stage3.json
+a79c6bc3379edb72c734caf789d13eeebcaf17e6 assets/dragncrops/models/block/soybeans_stage0.json
+80c74126f5194602a30a170c648332a7fd41e3ee assets/dragncrops/models/block/soybeans_stage1.json
+d6f3fcb91c4b9004e30e05827232e9064841617f assets/dragncrops/models/block/soybeans_stage2.json
+d7473e495b803318c9141f2c6bd011d39b8038cb assets/dragncrops/models/block/soybeans_stage3.json
 7af906afcdfc5d4ba5384bac7ffebc25139f451d assets/dragncrops/models/block/strawberries_stage0.json
 bb7bf01ba28a457502408527d3e2295ae53c57a4 assets/dragncrops/models/block/strawberries_stage1.json
 9843fdb5eecabca465aaf81467c53ca17c2058b2 assets/dragncrops/models/block/strawberries_stage2.json
@@ -219,6 +225,7 @@ ceb2556df5c449e2900ce00582bdb8894a0bcbec assets/dragncrops/models/block/wild_puf
 82b073f62cd45454f8d6422adc36f95b59d9fd6c assets/dragncrops/models/block/wild_red_potatoes.json
 1c9a7f715249f419ef5ac4e865108954b18ea651 assets/dragncrops/models/block/wild_rice.json
 66593d68d4e6c2cf99668df9e8323e5b8936e7da assets/dragncrops/models/block/wild_rosemary.json
+88aeb9cbbf9ef5a9edf6f49de4afcb34f60ca2db assets/dragncrops/models/block/wild_soybeans.json
 63b848fb85264685fcf4f93e378c85a88f175435 assets/dragncrops/models/block/wild_strawberries.json
 967cd9c64099abb1376d8c298ee0f57fdd24b16b assets/dragncrops/models/block/wild_sugar_beets.json
 c7fb9b51033ec1884cc6b32e3b831b49bb899047 assets/dragncrops/models/block/wild_tea.json
