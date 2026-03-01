@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#dragncrops:golden_barley_spawns",
+  "biomes": "#dragncrops:thorn_barley_spawns",
   "features": "dragncrops:thorn_barley",
   "step": "vegetal_decoration"
 }

@@ -5,6 +5,7 @@ import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -51,7 +52,7 @@ public class CrimsonberryBushBlock extends OBushBlock implements BonemealableBlo
    }
 
    public boolean mayPlaceOn(BlockState p_52302_, BlockGetter p_52303_, BlockPos p_52304_) {
-      return p_52302_.is(Tags.Blocks.NETHERRACK);
+      return p_52302_.is(Tags.Blocks.NETHERRACK) || p_52302_.is(BlockTags.NYLIUM);
    }
 
    @Override

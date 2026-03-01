@@ -167,9 +167,9 @@ public class COBlocks {
             () -> new GoldenRhubarbBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
     public static final RegistryObject<Block> WILD_GOLDEN_RHUBARB = registerBlockWithoutItem("wild_golden_rhubarb",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
-    public static final RegistryObject<Block> THORN_BARLEY = registerBlockWithoutItem("thorn_barely",
+    public static final RegistryObject<Block> THORN_BARLEY = registerBlockWithoutItem("thorn_barley",
             () -> new ThornBarleyBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));
-    public static final RegistryObject<Block> WILD_THORN_BARLEY = registerBlockWithoutItem("wild_thorn_barely",
+    public static final RegistryObject<Block> WILD_THORN_BARLEY = registerBlockWithoutItem("wild_thorn_barley",
             () -> new WildCropBlock(BlockBehaviour.Properties.copy(Blocks.GRASS).noCollission()));
     public static final RegistryObject<Block> ASHERB = registerBlockWithoutItem("asherb",
             () -> new AsherbBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noCollission()));

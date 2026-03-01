@@ -258,8 +258,6 @@ public class COConfigFeatures {
         register(context, GOLDEN_RHUBARB, Feature.RANDOM_PATCH,
                 new RandomPatchConfiguration(6, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                         new SimpleBlockConfiguration(BlockStateProvider.simple(COBlocks.WILD_GOLDEN_RHUBARB.get().defaultBlockState())))));
-
-        //todo: fix spawns(?) and placing of nether crops
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

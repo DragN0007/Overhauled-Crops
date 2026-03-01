@@ -4,6 +4,8 @@ import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.crop.base.OCropBlock;
 import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
@@ -35,8 +37,9 @@ public class NetherBeetBlock extends OCropBlock {
       return SHAPE_BY_AGE[this.getAge(p_51330_)];
    }
 
+   @Override
    public boolean mayPlaceOn(BlockState p_52302_, BlockGetter p_52303_, BlockPos p_52304_) {
-      return p_52302_.is(Tags.Blocks.NETHERRACK) || p_52302_.is(Blocks.WARPED_NYLIUM) || p_52302_.is(Blocks.CRIMSON_NYLIUM) || p_52302_.is(Blocks.SOUL_SOIL) || p_52302_.is(Blocks.SOUL_SAND);
+      return p_52302_.is(Tags.Blocks.NETHERRACK) || p_52302_.is(BlockTags.NYLIUM) || p_52302_.is(Blocks.SOUL_SOIL) || p_52302_.is(Blocks.SOUL_SAND);
    }
 
    @Override
@@ -45,6 +48,14 @@ public class NetherBeetBlock extends OCropBlock {
          return;
       }
       super.growCrops(level, pos, state);
+   }
+
+   @Override
+   public boolean canSurvive(BlockState state, LevelReader levelReader, BlockPos pos) {
+      BlockPos blockpos = pos.below();
+      if (state.getBlock() == this)
+         return levelReader.getBlockState(blockpos).canSustainPlant(levelReader, blockpos, Direction.UP, this);
+      return this.mayPlaceOn(levelReader.getBlockState(blockpos), levelReader, blockpos);
    }
 
    @Override

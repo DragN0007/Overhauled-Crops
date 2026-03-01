@@ -147,6 +147,7 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
             leftSlotItem.shrink(1);
             rightSlotItem.shrink(1);
             liquidSlotItem.shrink(1);
+            if (liquidSlotItem.isEmpty())
             entity.setItem(LIQUID_SLOT, remainder);
          }
          entity.brewTime = 400;
@@ -173,7 +174,7 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
       @Override
       public boolean isItemValid(int slot, @NotNull ItemStack stack) {
          return switch (slot) {
-            case INGREDIENT_SLOT_LEFT, INGREDIENT_SLOT_RIGHT -> stack.is(COTags.Items.VEGETABLES) || stack.is(COTags.Items.RAW_MEATS) || stack.is(COTags.Items.MUSHROOMS);
+            case INGREDIENT_SLOT_LEFT, INGREDIENT_SLOT_RIGHT -> stack.is(COTags.Items.VEGETABLES) || stack.is(COTags.Items.RAW_MEATS) || stack.is(COTags.Items.HERBS) || stack.is(COTags.Items.MUSHROOMS) || stack.is(COTags.Items.MILK);
             case OUTPUT_SLOT -> false;
             case LIQUID_SLOT -> stack.is(COItems.STOCK.get()) || stack.is(COTags.Items.MILK);
             default -> super.isItemValid(slot, stack);

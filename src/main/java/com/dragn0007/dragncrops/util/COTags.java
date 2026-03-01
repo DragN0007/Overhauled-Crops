@@ -66,9 +66,9 @@ public class COTags {
 
     public static class Biomes {
 
-        public static final TagKey<Biome> GOLDENBERRY_SPAWNS = tag("goldenberry_spawns");
         public static final TagKey<Biome> GOLDEN_RHUBARB_SPAWNS = tag("golden_rhubarb_spawns");
-        public static final TagKey<Biome> THORN_BARLEY_SPAWNS = tag("golden_barley_spawns");
+        public static final TagKey<Biome> GOLDENBERRY_SPAWNS = tag("goldenberry_spawns");
+        public static final TagKey<Biome> THORN_BARLEY_SPAWNS = tag("thorn_barley_spawns");
 
         private static TagKey<Biome> tag (String name) {
             return TagKey.create(Registries.BIOME, new ResourceLocation(CropOverhaul.MODID, name));

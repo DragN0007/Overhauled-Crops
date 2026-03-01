@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-16T13:59:43.7245116	Loot Tables
+// 1.20.1	2026-03-01T14:44:28.3779169	Loot Tables
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 9b824821fc1b9776a4b5bdadbd2e8f24c144c466 data/dragncrops/loot_tables/blocks/apple_gelatin.json
 d7d9a1759f39df060dd6d760b4d8f8cc04500989 data/dragncrops/loot_tables/blocks/apple_jam.json
@@ -179,7 +179,7 @@ c6f2d22a81cc4d99517d9ca494e7c67afbd60721 data/dragncrops/loot_tables/blocks/suga
 cca0e9b51c941d8adec764c1a06b6491c7f954a5 data/dragncrops/loot_tables/blocks/tea.json
 a8f7f0d6d6cb3e3d5a0f28bdb64b37e8b81ad331 data/dragncrops/loot_tables/blocks/terracotta_pot.json
 d999bce7c3bb18394b3bdb1a1fc25783f7443e3c data/dragncrops/loot_tables/blocks/terracotta_teapot.json
-bb59c37f9309872f32086cbfabae3c5c483ed3ca data/dragncrops/loot_tables/blocks/thorn_barely.json
+339b1057b6bcc06ac31aef80d95d0eeaf4bcdb2f data/dragncrops/loot_tables/blocks/thorn_barley.json
 9e52ac67c49849cf672c672498e69dc30413a13c data/dragncrops/loot_tables/blocks/thorn_barley_bread.json
 4ca5cc68a5b85a6569818b22783fd0b274ce4bcd data/dragncrops/loot_tables/blocks/thorn_barley_grain.json
 6e72262788cb34373321896447098655d23dee9f data/dragncrops/loot_tables/blocks/unfermented_apple_mead.json
@@ -236,7 +236,7 @@ b7c9d9a78c4b09bacd064087f7e1e01f5843d366 data/dragncrops/loot_tables/blocks/wild
 009653998795ee7633c45e4c03788866a7a9b4f4 data/dragncrops/loot_tables/blocks/wild_strawberries.json
 553ceb8e2cd08d03c875f133a74a1cf526243f5c data/dragncrops/loot_tables/blocks/wild_sugar_beets.json
 e134c34743239aa630bae02e18abfd802728625c data/dragncrops/loot_tables/blocks/wild_tea.json
-c433564a09493b52114ca6f629f9774eaf955b4c data/dragncrops/loot_tables/blocks/wild_thorn_barely.json
+b4929e2dc8d150e78707a98c58bb61d1945a4b64 data/dragncrops/loot_tables/blocks/wild_thorn_barley.json
 dcb10e19bd21d4e9511840377473b53907556e7b data/dragncrops/loot_tables/blocks/wild_wheat.json
 47bbaa3fb4608dce5c959fcf4157715c4f98cc81 data/dragncrops/loot_tables/blocks/wild_yellow_carrots.json
 55f8524139cce138fd0e75a9c33394e138dca00e data/dragncrops/loot_tables/blocks/yellow_apple.json

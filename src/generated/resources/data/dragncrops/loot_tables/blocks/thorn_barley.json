@@ -16,18 +16,10 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "block": "dragncrops:wild_thorn_barely",
-                  "condition": "minecraft:block_state_property"
-                }
-              ],
-              "functions": [
-                {
-                  "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:binomial_with_bonus_count",
-                  "function": "minecraft:apply_bonus",
-                  "parameters": {
-                    "extra": 1,
-                    "probability": 0.5714286
+                  "block": "dragncrops:thorn_barley",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "7"
                   }
                 }
               ],
@@ -35,7 +27,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "dragncrops:thorn_barley"
+              "name": "dragncrops:thorn_barley_seeds"
             }
           ]
         }
@@ -46,8 +38,11 @@
       "bonus_rolls": 0.0,
       "conditions": [
         {
-          "block": "dragncrops:wild_thorn_barely",
-          "condition": "minecraft:block_state_property"
+          "block": "dragncrops:thorn_barley",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "7"
+          }
         }
       ],
       "entries": [
@@ -59,16 +54,16 @@
               "formula": "minecraft:binomial_with_bonus_count",
               "function": "minecraft:apply_bonus",
               "parameters": {
-                "extra": 2,
+                "extra": 3,
                 "probability": 0.5714286
               }
             }
           ],
-          "name": "dragncrops:thorn_barley"
+          "name": "dragncrops:thorn_barley_seeds"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "dragncrops:blocks/wild_thorn_barely"
+  "random_sequence": "dragncrops:blocks/thorn_barley"
 }

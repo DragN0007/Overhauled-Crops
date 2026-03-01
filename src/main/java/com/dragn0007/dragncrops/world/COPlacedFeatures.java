@@ -2,6 +2,7 @@ package com.dragn0007.dragncrops.world;
 
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -10,8 +11,13 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
+import net.minecraftforge.common.Tags;
 
 import java.util.List;
 
@@ -133,10 +139,14 @@ public class COPlacedFeatures {
                         BiomeFilter.biome()));
 
         register(context, ASHERB, configuredFeatures.getOrThrow(COConfigFeatures.ASHERB),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(3),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
 
         register(context, RICE, configuredFeatures.getOrThrow(COConfigFeatures.RICE),
                 List.of(RarityFilter.onAverageOnceEvery(32),
@@ -206,16 +216,24 @@ public class COPlacedFeatures {
                         BiomeFilter.biome()));
 
         register(context, CRIMSONBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.CRIMSONBERRIES),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+                List.of(RarityFilter.onAverageOnceEvery(3),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
 
-        register(context, GOLDENBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.GOLDEN_RHUBARB),
-                List.of(RarityFilter.onAverageOnceEvery(32),
+        register(context, GOLDENBERRIES, configuredFeatures.getOrThrow(COConfigFeatures.GOLDENBERRIES),
+                List.of(RarityFilter.onAverageOnceEvery(3),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
 
 
         register(context, PURPLE_CARROTS, configuredFeatures.getOrThrow(COConfigFeatures.PURPLE_CARROTS),
@@ -269,22 +287,34 @@ public class COPlacedFeatures {
 
 
         register(context, THORN_BARLEY, configuredFeatures.getOrThrow(COConfigFeatures.THORN_BARLEY),
-                List.of(RarityFilter.onAverageOnceEvery(64),
+                List.of(RarityFilter.onAverageOnceEvery(1),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
 
         register(context, NETHER_BEETS, configuredFeatures.getOrThrow(COConfigFeatures.NETHER_BEETS),
-                List.of(RarityFilter.onAverageOnceEvery(64),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
 
         register(context, GOLDEN_RHUBARB, configuredFeatures.getOrThrow(COConfigFeatures.GOLDEN_RHUBARB),
-                List.of(RarityFilter.onAverageOnceEvery(64),
+                List.of(RarityFilter.onAverageOnceEvery(2),
                         InSquarePlacement.spread(),
-                        PlacementUtils.HEIGHTMAP,
-                        BiomeFilter.biome()));
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(6), VerticalAnchor.absolute(100)),
+                        BiomeFilter.biome(),
+                        BlockPredicateFilter.forPredicate(BlockPredicate.allOf(BlockPredicate.noFluid(), BlockPredicate.anyOf(
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.NYLIUM),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.BASE_STONE_NETHER),
+                                BlockPredicate.matchesTag(Direction.DOWN.getNormal(), BlockTags.SOUL_FIRE_BASE_BLOCKS))))));
     }
 
     public static ResourceKey<PlacedFeature> registerKey (String name){

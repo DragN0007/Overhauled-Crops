@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-19T16:45:00.7835408	Recipes
+// 1.20.1	2026-03-01T14:11:54.6435235	Recipes
 a1c98b92ee60e6430cf14d037d7bd44f0ff1c266 data/dragncrops/advancements/recipes/misc/apple_candy.json
 c83c6489f0a1604bae30e29214a3e889eab8f61b data/dragncrops/advancements/recipes/misc/apple_cocktail.json
 6c94a5895a49da44138955fde3714d699878c334 data/dragncrops/advancements/recipes/misc/apple_gelatin.json
@@ -175,7 +175,7 @@ fad3f142b794dda9ecdeb08ac146bc78b8c0718c data/dragncrops/advancements/recipes/mi
 9c01eae43aaa2d1e6a102c80054bba7a9da7f885 data/dragncrops/advancements/recipes/misc/watermelon_tart.json
 2fe7c35f3d2aad1e7e5ea3839b9fc5b0cb31bb52 data/dragncrops/advancements/recipes/misc/white_bread.json
 a78cae4886fb7f37f30f56a508ac5d90de54c4ab data/dragncrops/advancements/recipes/misc/yellow_apple_seeds.json
-3938df34ee003652de13f09f0d246eefed5126f2 data/dragncrops/advancements/recipes/tea.json
+644d6e7c98e39168a5c9aee963792989169ec273 data/dragncrops/advancements/recipes/tea.json
 d9fb4a40da3bf9ae48d53d7480fcfce9ccb75df9 data/dragncrops/recipes/apple_candy.json
 db3294db38c9608fd15366348f608d4a65ce7140 data/dragncrops/recipes/apple_cocktail.json
 81af87bb77fb587ca6724f11a17122d30937cdb7 data/dragncrops/recipes/apple_gelatin.json

@@ -511,14 +511,10 @@ public class COBlockLoot extends BlockLootSubProvider {
                 wildBuilder20));
 
         LootItemCondition.Builder cropBuilder21 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.THORN_BARLEY.get())
-                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(OCropBlock.AGE, 7));
-        this.add(COBlocks.THORN_BARLEY.get(),
-                this.applyExplosionDecay(COBlocks.THORN_BARLEY.get(),
-                        LootTable.lootTable().withPool(LootPool.lootPool().add(LootItem.lootTableItem(COItems.THORN_BARLEY.get())))
-                                .withPool(LootPool.lootPool().when(cropBuilder21).add(LootItem.lootTableItem(COItems.THORN_BARLEY.get())
-                                        .apply(ApplyBonusCount.addBonusBinomialDistributionCount(Enchantments.BLOCK_FORTUNE, 0.5815288F, 2))))));
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CropBlock.AGE, 7));
+        this.add(COBlocks.THORN_BARLEY.get(), this.createCropDrops(COBlocks.THORN_BARLEY.get(), COItems.THORN_BARLEY.get(), COItems.THORN_BARLEY_SEEDS.get(), cropBuilder21));
         LootItemCondition.Builder wildBuilder21 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.WILD_THORN_BARLEY.get());
-        this.add(COBlocks.WILD_THORN_BARLEY.get(), this.createMultiDrops(COBlocks.WILD_THORN_BARLEY.get(), COItems.THORN_BARLEY.get(), COItems.THORN_BARLEY.get(),
+        this.add(COBlocks.WILD_THORN_BARLEY.get(), this.createMultiDrops(COBlocks.WILD_THORN_BARLEY.get(), COItems.THORN_BARLEY.get(), COItems.THORN_BARLEY_SEEDS.get(),
                 wildBuilder21));
 
         LootItemCondition.Builder cropBuilder22 = LootItemBlockStatePropertyCondition.hasBlockStateProperties(COBlocks.PUFFBALL_MUSHROOM.get())
