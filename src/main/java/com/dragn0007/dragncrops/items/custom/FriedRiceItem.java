@@ -1,6 +1,5 @@
 package com.dragn0007.dragncrops.items.custom;
 
-import com.dragn0007.dragncrops.items.COItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.LivingEntity;
