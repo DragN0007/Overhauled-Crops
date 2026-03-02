@@ -21,6 +21,10 @@ public class COTags {
         public static final TagKey<Item> RAW_BEEF = forgeTag("raw_beef");
         public static final TagKey<Item> COOKED_MEATS = forgeTag("cooked_meats");
         public static final TagKey<Item> RAW_MEATS = forgeTag("raw_meats");
+        public static final TagKey<Item> COD = forgeTag("cod");
+        public static final TagKey<Item> SALMON = forgeTag("salmon");
+        public static final TagKey<Item> PUFFERFISH = forgeTag("pufferfish");
+        public static final TagKey<Item> TROPICAL_FISH = forgeTag("tropical_fish");
 
         public static final TagKey<Item> APPLES = forgeTag("apples");
         public static final TagKey<Item> CARROTS = forgeTag("carrots");
@@ -31,6 +35,7 @@ public class COTags {
         public static final TagKey<Item> NUTS = forgeTag("nuts");
         public static final TagKey<Item> HERBS = forgeTag("herbs");
         public static final TagKey<Item> MUSHROOMS = forgeTag("mushrooms");
+        public static final TagKey<Item> RICE = forgeTag("rice");
         public static final TagKey<Item> MILK = forgeTag("milk");
 
         public static final TagKey<Item> MAKES_BEEF_SAUSAGE = tag("makes_beef_sausage");

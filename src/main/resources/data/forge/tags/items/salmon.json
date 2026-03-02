@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:salmon",
+    {
+      "id": "dragnlivestock:salmon_fillet",
+      "required": false
+    }
+  ]
+}

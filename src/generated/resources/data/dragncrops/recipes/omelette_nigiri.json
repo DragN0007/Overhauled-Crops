@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:egg"
+    },
+    "B": {
+      "tag": "forge:rice"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "dragncrops:omelette_nigiri"
+  },
+  "show_notification": true
+}

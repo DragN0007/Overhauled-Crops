@@ -68,11 +68,13 @@ public class CropOverhaul {
         ComposterBlock.COMPOSTABLES.put(COItems.PEANUT.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.CRIMSONBERRY.get(), 0.5F);
         ComposterBlock.COMPOSTABLES.put(COItems.GOLDENBERRIES.get(), 0.5F);
+        ComposterBlock.COMPOSTABLES.put(COItems.SOYBEAN.get(), 0.5F);
 
         ComposterBlock.COMPOSTABLES.put(COItems.CILANTRO.get(), 0.4F);
         ComposterBlock.COMPOSTABLES.put(COItems.OREGANO.get(), 0.4F);
         ComposterBlock.COMPOSTABLES.put(COItems.ROSEMARY.get(), 0.4F);
         ComposterBlock.COMPOSTABLES.put(COItems.ASHERB.get(), 0.4F);
+        ComposterBlock.COMPOSTABLES.put(COItems.TEA_LEAF.get(), 0.4F);
 
         ComposterBlock.COMPOSTABLES.put(COItems.CORN_SEEDS.get(), 0.3F);
         ComposterBlock.COMPOSTABLES.put(COItems.RICE_SEEDS.get(), 0.3F);

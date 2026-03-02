@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-01T16:27:22.9344244	Item Models: dragncrops
+// 1.20.1	2026-03-02T00:47:24.9277388	Item Models: dragncrops
 378105d33588b24f1d22239e5d62ba5ffa050b15 assets/dragncrops/models/item/apple_candy.json
 6f1bfcda89929418c044c3c8ce81d1d352b2dace assets/dragncrops/models/item/apple_cocktail.json
 f3c1620b36b9b11c42da32f69f5398a672e222eb assets/dragncrops/models/item/apple_gelatin.json
@@ -61,6 +61,7 @@ d8bf27124c0d6eea1ee363f7252500dc5196e577 assets/dragncrops/models/item/chicken_s
 e1fffc483a818c3ca1ebceb5d88c5886d81bc7b8 assets/dragncrops/models/item/cilantro.json
 6abae7890214b902682c0769f83d8d4c088da49b assets/dragncrops/models/item/coconut.json
 b0f3eda0fff3cb3771e82aae2d601d8938521957 assets/dragncrops/models/item/coconut_pie.json
+8fb750a8a34a3263c950b9ca9daf8f357f94ae37 assets/dragncrops/models/item/cod_nigiri.json
 88d140ad410922de9aee7fd0196968b1634d9eab assets/dragncrops/models/item/cooked_beef_sausage.json
 89a78f3cd72447f4a727fb4ba0386f8af1e576ee assets/dragncrops/models/item/cooked_chicken_sausage.json
 bd18776389a631fcf63be12f46d0209a148f6da9 assets/dragncrops/models/item/cooked_fish_sausage.json
@@ -101,12 +102,14 @@ dcc4af44807c925ba28d09e39831074111e8b57f assets/dragncrops/models/item/crimsonbe
 2fc0f7c778174d5c0953f3e7f62f4f1b3805595f assets/dragncrops/models/item/dried_generic_sausage.json
 11c430ce9516e1a223be462c45ffe24323f6f368 assets/dragncrops/models/item/dried_mutton_sausage.json
 ad86accc7dd55ae6ae18c027e434b6eaf0a8fb76 assets/dragncrops/models/item/dried_pork_sausage.json
+dc406b24ceeba1cd41a9805a3f9740b9773809a3 assets/dragncrops/models/item/egg_fried_rice.json
 c92f3ed1374de73f93f8bc8b0d2d1f9142157e2d assets/dragncrops/models/item/empty_can.json
 8b8f15e8d77d78e0c0dd90ba5bdd419564544d8b assets/dragncrops/models/item/fermented_pickles.json
 94d90c833de6f6b201519b8055bba65cd9c6c728 assets/dragncrops/models/item/fish_sausage.json
 de2167e338bd08525ca28576e0c44b8c09704b29 assets/dragncrops/models/item/flail.json
 276e383dfcfe22092acd9caac31cf61802e3d714 assets/dragncrops/models/item/flour.json
 60cb271c4dd95b729d4ff0ffc473243c4b5cee90 assets/dragncrops/models/item/fruit_jerky.json
+b906cae97c0adb18c5ebc954f56bd50f9c40ebbf assets/dragncrops/models/item/fugu_nigiri.json
 d5f737694bbeaaf69952adc6b753d293769e93fe assets/dragncrops/models/item/game_sausage.json
 ca1ae55a1b48f1dd4496f44d0dc75d5af75a3070 assets/dragncrops/models/item/garlic.json
 3fecbbfb0f8319140572b9b3feb2592686ac4e54 assets/dragncrops/models/item/generic_sausage.json
@@ -154,6 +157,7 @@ e4a907e706b75a7a7f5fe25aab911ba29ab9d45e assets/dragncrops/models/item/mango_tar
 6a2ed6f411104cfd279599956b49ca182275daec assets/dragncrops/models/item/mango_tea.json
 c9d7e504816c725312465d540ff9f992edd7bc97 assets/dragncrops/models/item/meat_and_vegetable_cream_soup.json
 b8167d0d7f5a43bc7c31b857e50770b4c31fef42 assets/dragncrops/models/item/meat_and_vegetable_stew.json
+13997ff2f4e638eb8d5984dc551b7cedd74ad84e assets/dragncrops/models/item/meat_fried_rice.json
 f692687a5594f84c988e823b5836bc9d8e65f73b assets/dragncrops/models/item/meat_mallet.json
 3efc0e0c821502867b64cf6a49a370417f661cb0 assets/dragncrops/models/item/melon_candy.json
 00008fc301c8481dea0bb9677de1b93df8c60d2d assets/dragncrops/models/item/melon_cocktail.json
@@ -168,6 +172,7 @@ ea60bea5b296b143d4dc8895cc75a67f73aef526 assets/dragncrops/models/item/mushroom_
 ed8c176458e3a172fea5187f4b21a3cb451cfce3 assets/dragncrops/models/item/mutton_sausage.json
 833c4913680718670f7cd98768538d7d47f8fbe5 assets/dragncrops/models/item/nether_beet.json
 e1098db2f2355c248063b39f9e04379fe5d651a0 assets/dragncrops/models/item/nut_bread.json
+817bfe36e0e8f66c05fddccf9e30fd819becaeea assets/dragncrops/models/item/omelette_nigiri.json
 0c2fe58bd9000822dd6b8ae5195abfc9c0836836 assets/dragncrops/models/item/oregano.json
 5dde708b8eb3bd4a3050ad1334230e954d88bc0a assets/dragncrops/models/item/peanut.json
 f0f5a79ff6d6463eecfd4772a38ce279d76bf2af assets/dragncrops/models/item/plum.json
@@ -198,11 +203,14 @@ c85e4d04f78a87e766e8a2ade5cf35bc28793395 assets/dragncrops/models/item/raspberry
 ebbf89efa14c5c76781854cfa4833a2846db62db assets/dragncrops/models/item/red_potato.json
 745af64f5a71c577e6706ff5d8836db6fcf1117e assets/dragncrops/models/item/rice.json
 1aaeae74a5eba5d9f3e730f140b4cf5abfc381e2 assets/dragncrops/models/item/rice_bread.json
+69b950ab5b16b13e1e4b0d41217e14578069694b assets/dragncrops/models/item/rice_cake.json
+5735991c6966aeb95565cdeabbac6b586c14d21e assets/dragncrops/models/item/rice_pudding.json
 f4bab4f93709b3db7b6093fa5af919dfac61bdc0 assets/dragncrops/models/item/rice_seeds.json
 73c0a431fca5f5515574518dbc41cc67ba3510c1 assets/dragncrops/models/item/rosemary.json
 5dbbb34cce47aa1f53717a027b70a603e846e380 assets/dragncrops/models/item/rye.json
 06e58eaaf6373d15e3d651aa7d85ca5a383813e6 assets/dragncrops/models/item/rye_bread.json
 40c86f38300351909dc24290d210f1081c4139d3 assets/dragncrops/models/item/rye_seeds.json
+5e9158479def8e625dc67d5f75b7d9cc8f16f5f1 assets/dragncrops/models/item/salmon_nigiri.json
 51b41e85f2576f4042be77ce6d590169b7481b2a assets/dragncrops/models/item/soybean.json
 8fa6db77e6cecf08d3f6bebfeba92a60b00b2e8d assets/dragncrops/models/item/stock.json
 5b69f0c79939bc3bb6e71bdade7dccc1ad7bd0b5 assets/dragncrops/models/item/strawberry.json
@@ -221,6 +229,7 @@ da41089cca043676642c7f0f62e4ccaea5dd6574 assets/dragncrops/models/item/tea.json
 c53cb115f052d93606d38f92cf50ba5efe8081ca assets/dragncrops/models/item/thorn_barley_bread.json
 c0de3e2cb86b805981c770278ef0109d768440d3 assets/dragncrops/models/item/thorn_barley_seeds.json
 17b75cc99183823411d85ca6b8c927511b3fba5b assets/dragncrops/models/item/tofu.json
+536ff12aaa478853f5347a7fb065565d7dfbd946 assets/dragncrops/models/item/tropical_nigiri.json
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_apple_mead.json
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_beetroot_mead.json
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_blackberry_mead.json
@@ -241,6 +250,7 @@ c0de3e2cb86b805981c770278ef0109d768440d3 assets/dragncrops/models/item/thorn_bar
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_strawberry_mead.json
 57b1222fb331db0075cbbad4d13e34bfa33adfa4 assets/dragncrops/models/item/unfermented_watermelon_mead.json
 651c6075c4d33d6efd21d5153c034a989c6a3953 assets/dragncrops/models/item/vegetable_cream_soup.json
+5e711f1e476778a6037dc2d45aea797af4028861 assets/dragncrops/models/item/vegetable_fried_rice.json
 e8c874e27c8103632bd177b0e14e8e5a1d0f0b11 assets/dragncrops/models/item/vegetable_soup.json
 452e69cf21b4e03364f05a78181e9ece2b4c84f2 assets/dragncrops/models/item/watermelon_candy.json
 cdf0a934983fb7942c547505c7d416be442a3c94 assets/dragncrops/models/item/watermelon_cocktail.json

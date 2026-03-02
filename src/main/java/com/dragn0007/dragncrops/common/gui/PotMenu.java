@@ -13,6 +13,7 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
 public class PotMenu extends AbstractContainerMenu {
 
@@ -33,13 +34,21 @@ public class PotMenu extends AbstractContainerMenu {
         this.addSlot(new Slot(this.container, PotBlockEntity.INGREDIENT_SLOT_LEFT, 56, 24) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(COTags.Items.VEGETABLES) || itemStack.is(COTags.Items.RAW_MEATS) || itemStack.is(COTags.Items.MUSHROOMS);
+                return itemStack.is(COTags.Items.VEGETABLES) || itemStack.is(COTags.Items.RAW_MEATS) ||
+                                itemStack.is(COTags.Items.RICE) ||
+                                itemStack.is(COTags.Items.EGG) ||
+                                itemStack.is(COTags.Items.MILK) ||
+                                itemStack.is(COTags.Items.MUSHROOMS);
             }
         });
         this.addSlot(new Slot(this.container, PotBlockEntity.INGREDIENT_SLOT_RIGHT, 102, 24) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(COTags.Items.VEGETABLES) || itemStack.is(COTags.Items.RAW_MEATS) || itemStack.is(COTags.Items.MUSHROOMS);
+                return itemStack.is(COTags.Items.VEGETABLES) || itemStack.is(COTags.Items.RAW_MEATS) ||
+                        itemStack.is(COTags.Items.RICE) ||
+                        itemStack.is(COTags.Items.EGG) ||
+                        itemStack.is(COTags.Items.MILK) ||
+                        itemStack.is(COTags.Items.MUSHROOMS);
             }
         });
         this.addSlot(new Slot(this.container, PotBlockEntity.OUTPUT_SLOT, 79, 58) {
@@ -51,7 +60,7 @@ public class PotMenu extends AbstractContainerMenu {
         this.addSlot(new Slot(this.container, PotBlockEntity.LIQUID_SLOT, 17, 17) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(COItems.STOCK.get()) || itemStack.is(COTags.Items.MILK);
+                return itemStack.is(COItems.STOCK.get()) || itemStack.is(Items.BOWL) || itemStack.is(COTags.Items.MILK);
             }
         });
 

@@ -579,6 +579,17 @@
   "item.dragncrops.mushroom_jerky": "Mushroom Jerky",
   "item.dragncrops.fruit_jerky": "Fruit Jerky",
 
+  "item.dragncrops.rice_pudding": "Rice Pudding",
+  "item.dragncrops.rice_cake": "Rice Cake",
+  "item.dragncrops.meat_fried_rice": "Meat Fried Rice",
+  "item.dragncrops.vegetable_fried_rice": "Vegetable Fried Rice",
+  "item.dragncrops.egg_fried_rice": "Egg Fried Rice",
+  "item.dragncrops.cod_nigiri": "Cod Nigiri",
+  "item.dragncrops.fugu_nigiri": "Fugu Nigiri",
+  "item.dragncrops.salmon_nigiri": "Salmon Nigiri",
+  "item.dragncrops.tropical_nigiri": "Tropical Nigiri",
+  "item.dragncrops.omelette_nigiri": "Omelette Nigiri",
+
 
   "blockentities.dragncrops.teapot": "Teapot",
   "block.dragncrops.black_teapot": "Black Teapot",
@@ -616,5 +627,7 @@
   "tooltip.dragncrops.soup.tooltip": "Cooked in a Pot.",
   "tooltip.dragncrops.grains.tooltip": "Obtained by processing grain-crops with a Flail.",
   "tooltip.dragncrops.jerky.tooltip": "Obtained by drying certain crops in the Dehydrator.",
-  "tooltip.dragncrops.sausage.tooltip": "Obtained by hanging up raw sausage to air dry over time."
+  "tooltip.dragncrops.sausage.tooltip": "Obtained by hanging up raw sausage to air dry over time.",
+  "tooltip.dragncrops.rice_in_pot.tooltip": "Created in a Pot with Rice and one other ingredient.",
+  "tooltip.dragncrops.rice_pudding_in_pot.tooltip": "Created in a Pot with Rice and Milk."
 }

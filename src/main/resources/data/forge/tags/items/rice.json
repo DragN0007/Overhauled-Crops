@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:rice",
+
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    }
+  ]
+}

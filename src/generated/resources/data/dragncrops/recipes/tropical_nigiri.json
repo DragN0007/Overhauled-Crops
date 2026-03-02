@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "forge:tropical_fish"
+    },
+    "B": {
+      "tag": "forge:rice"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "item": "dragncrops:tropical_nigiri"
+  },
+  "show_notification": true
+}

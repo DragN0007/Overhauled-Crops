@@ -150,6 +150,17 @@ public class COItemGroup {
                         output.accept(COItems.MUSHROOM_JERKY.get());
                         output.accept(COItems.FRUIT_JERKY.get());
 
+                        output.accept(COItems.COD_NIGIRI.get());
+                        output.accept(COItems.FUGU_NIGIRI.get());
+                        output.accept(COItems.OMELETTE_NIGIRI.get());
+                        output.accept(COItems.TROPICAL_NIGIRI.get());
+                        output.accept(COItems.SALMON_NIGIRI.get());
+                        output.accept(COItems.RICE_PUDDING.get());
+                        output.accept(COItems.RICE_CAKE.get());
+                        output.accept(COItems.EGG_FRIED_RICE.get());
+                        output.accept(COItems.MEAT_FRIED_RICE.get());
+                        output.accept(COItems.VEGETABLE_FRIED_RICE.get());
+
                         output.accept(COItems.APPLE_JAM.get());
                         output.accept(COItems.BLACKBERRY_JAM.get());
                         output.accept(COItems.BLUEBERRY_JAM.get());

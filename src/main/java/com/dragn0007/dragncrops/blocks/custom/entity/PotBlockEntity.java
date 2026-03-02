@@ -17,6 +17,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.AbstractFurnaceBlock;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -133,6 +134,25 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
                if (liquidSlotItem.is(COItems.STOCK.get())) {
                   potentialOutput = COItems.CREAM_SOUP.get().getDefaultInstance();
                }
+            } else if ((leftSlotItem.is(COTags.Items.RICE) && rightSlotItem.is(COTags.Items.RAW_MEATS)) ||
+                    (leftSlotItem.is(COTags.Items.RAW_MEATS) && rightSlotItem.is(COTags.Items.RICE))) {
+               if (liquidSlotItem.is(Items.BOWL)) {
+                  potentialOutput = COItems.MEAT_FRIED_RICE.get().getDefaultInstance();
+               }
+            } else if ((leftSlotItem.is(COTags.Items.RICE) && rightSlotItem.is(COTags.Items.VEGETABLES)) ||
+                    (leftSlotItem.is(COTags.Items.VEGETABLES) && rightSlotItem.is(COTags.Items.RICE))) {
+               if (liquidSlotItem.is(Items.BOWL)) {
+                  potentialOutput = COItems.VEGETABLE_FRIED_RICE.get().getDefaultInstance();
+               }
+            } else if ((leftSlotItem.is(COTags.Items.RICE) && rightSlotItem.is(COTags.Items.EGG)) ||
+                    (leftSlotItem.is(COTags.Items.EGG) && rightSlotItem.is(COTags.Items.RICE))) {
+               if (liquidSlotItem.is(Items.BOWL)) {
+                  potentialOutput = COItems.EGG_FRIED_RICE.get().getDefaultInstance();
+               }
+            } else if (leftSlotItem.is(COTags.Items.RICE) && rightSlotItem.is(COTags.Items.RICE)) {
+               if (liquidSlotItem.is(COTags.Items.MILK)) {
+                  potentialOutput = COItems.RICE_PUDDING.get().getDefaultInstance();
+               }
             }
          }
 
@@ -142,7 +162,7 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
 
          entity.brewingCurrently = potentialOutput;
 
-         if (liquidSlotItem.is(COItems.STOCK.get()) || liquidSlotItem.is(COTags.Items.MILK)) {
+         if (liquidSlotItem.is(COItems.STOCK.get()) || liquidSlotItem.is(Items.BOWL) || liquidSlotItem.is(COTags.Items.MILK)) {
             ItemStack remainder = liquidSlotItem.getCraftingRemainingItem();
             leftSlotItem.shrink(1);
             rightSlotItem.shrink(1);
@@ -174,9 +194,15 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
       @Override
       public boolean isItemValid(int slot, @NotNull ItemStack stack) {
          return switch (slot) {
-            case INGREDIENT_SLOT_LEFT, INGREDIENT_SLOT_RIGHT -> stack.is(COTags.Items.VEGETABLES) || stack.is(COTags.Items.RAW_MEATS) || stack.is(COTags.Items.HERBS) || stack.is(COTags.Items.MUSHROOMS) || stack.is(COTags.Items.MILK);
+            case INGREDIENT_SLOT_LEFT, INGREDIENT_SLOT_RIGHT ->
+                                 stack.is(COTags.Items.VEGETABLES) ||
+                                 stack.is(COTags.Items.RAW_MEATS) ||
+                                 stack.is(COTags.Items.HERBS) ||
+                                 stack.is(COTags.Items.MUSHROOMS) ||
+                                 stack.is(COTags.Items.RICE) ||
+                                 stack.is(COTags.Items.MILK);
             case OUTPUT_SLOT -> false;
-            case LIQUID_SLOT -> stack.is(COItems.STOCK.get()) || stack.is(COTags.Items.MILK);
+            case LIQUID_SLOT -> stack.is(COItems.STOCK.get()) || stack.is(Items.BOWL) || stack.is(COTags.Items.MILK);
             default -> super.isItemValid(slot, stack);
          };
       }

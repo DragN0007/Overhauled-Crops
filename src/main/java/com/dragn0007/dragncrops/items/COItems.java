@@ -8,6 +8,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -1294,16 +1295,47 @@ public class COItems {
                     .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.5F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
 
+    //Other
+    public static final RegistryObject<Item> COD_NIGIRI = ITEMS.register("cod_nigiri",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> FUGU_NIGIRI = ITEMS.register("fugu_nigiri",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> OMELETTE_NIGIRI = ITEMS.register("omelette_nigiri",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> SALMON_NIGIRI = ITEMS.register("salmon_nigiri",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> TROPICAL_NIGIRI = ITEMS.register("tropical_nigiri",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(5).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.ABSORPTION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> RICE_PUDDING = ITEMS.register("rice_pudding",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> RICE_CAKE = ITEMS.register("rice_cake",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.REGENERATION, 600, 1), 0.8F).build())));
+
+    public static final RegistryObject<Item> EGG_FRIED_RICE = ITEMS.register("egg_fried_rice",
+            () -> new FriedRiceItem(new Item.Properties().craftRemainder(Items.BOWL).stacksTo(1).food(new FoodProperties.Builder().nutrition(8).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> MEAT_FRIED_RICE = ITEMS.register("meat_fried_rice",
+            () -> new FriedRiceItem(new Item.Properties().craftRemainder(Items.BOWL).stacksTo(1).food(new FoodProperties.Builder().nutrition(8).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 1), 0.8F).build())));
+    public static final RegistryObject<Item> VEGETABLE_FRIED_RICE = ITEMS.register("vegetable_fried_rice",
+            () -> new FriedRiceItem(new Item.Properties().craftRemainder(Items.BOWL).stacksTo(1).food(new FoodProperties.Builder().nutrition(8).saturationMod(0.5F)
+                    .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 1), 0.8F).build())));
+
     //Tools/ Supplies
     public static final RegistryObject<Item> FLAIL = ITEMS.register("flail",
             () -> new FlailItem(Tiers.DIAMOND, 1, -1.4F, new Item.Properties()));
-
     public static final RegistryObject<Item> EMPTY_CAN = ITEMS.register("empty_can",
             () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> GLASS_JAR = ITEMS.register("glass_jar",
             () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> MEAT_MALLET = ITEMS.register("meat_mallet", MeatMalletItem::new);
 
 

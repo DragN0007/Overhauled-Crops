@@ -26,6 +26,59 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
         new TeapotRecipeBuilder(COItems.TEA_LEAF.get(), COItems.TEA.get(), 1)
                 .unlockedBy("has_tea_leaf", has(COItems.TEA_LEAF.get())).save(pFinishedRecipeConsumer);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RICE_CAKE.get())
+                .requires(COTags.Items.RICE)
+                .requires(COTags.Items.SUGAR)
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE)
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.OMELETTE_NIGIRI.get())
+                .define('A', COTags.Items.EGG)
+                .define('B', COTags.Items.RICE)
+                .pattern("A")
+                .pattern("B")
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.COD_NIGIRI.get())
+                .define('A', COTags.Items.COD)
+                .define('B', COTags.Items.RICE)
+                .pattern("A")
+                .pattern("B")
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.SALMON_NIGIRI.get())
+                .define('A', COTags.Items.SALMON)
+                .define('B', COTags.Items.RICE)
+                .pattern("A")
+                .pattern("B")
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.FUGU_NIGIRI.get())
+                .define('A', COTags.Items.PUFFERFISH)
+                .define('B', COTags.Items.RICE)
+                .pattern("A")
+                .pattern("B")
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.TROPICAL_NIGIRI.get())
+                .define('A', COTags.Items.TROPICAL_FISH)
+                .define('B', COTags.Items.RICE)
+                .pattern("A")
+                .pattern("B")
+                .unlockedBy("has_rice", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COTags.Items.RICE).build()))
+                .save(pFinishedRecipeConsumer);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COItems.FLAIL.get())
                 .define('A', ItemTags.PLANKS)

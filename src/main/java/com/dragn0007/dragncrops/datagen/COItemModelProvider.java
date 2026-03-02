@@ -84,6 +84,17 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.TOFU);
         simpleItem(COItems.COOKED_TOFU);
 
+        simpleItem(COItems.COD_NIGIRI);
+        simpleItem(COItems.FUGU_NIGIRI);
+        simpleItem(COItems.OMELETTE_NIGIRI);
+        simpleItem(COItems.TROPICAL_NIGIRI);
+        simpleItem(COItems.SALMON_NIGIRI);
+        simpleItem(COItems.RICE_PUDDING);
+        simpleItem(COItems.RICE_CAKE);
+        simpleItem(COItems.EGG_FRIED_RICE);
+        simpleItem(COItems.MEAT_FRIED_RICE);
+        simpleItem(COItems.VEGETABLE_FRIED_RICE);
+
         simpleItem(COItems.BLUEBERRY_BREAD);
         simpleItem(COItems.CRANBERRY_BREAD);
         simpleItem(COItems.CORN_BREAD);
