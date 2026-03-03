@@ -1,6 +1,8 @@
 package com.dragn0007.dragncrops.common.gui;
 
+import com.dragn0007.dragncrops.blocks.custom.entity.PotBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.TeapotBlockEntity;
+import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
 import net.minecraft.network.FriendlyByteBuf;
@@ -13,39 +15,52 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
-public class TeapotMenu extends AbstractContainerMenu {
+public class WineBarrelMenu extends AbstractContainerMenu {
 
     private final Container container;
-    private final ContainerData teapotData;
+    private final ContainerData containerData;
 
-    public TeapotMenu(int i, Inventory inventory, FriendlyByteBuf friendlyByteBuf) {
-        this(i, inventory, new SimpleContainer(3), new SimpleContainerData(1));
+    public WineBarrelMenu(int i, Inventory inventory, FriendlyByteBuf friendlyByteBuf) {
+        this(i, inventory, new SimpleContainer(5), new SimpleContainerData(2));
     }
 
-    public TeapotMenu(int i, Inventory inventory, Container container, ContainerData data) {
-        super(COMenuTypes.TEAPOT_MENU.get(), i);
-        checkContainerSize(inventory, 3);
+    public WineBarrelMenu(int i, Inventory inventory, Container container, ContainerData data) {
+        super(COMenuTypes.WINE_BARREL_MENU.get(), i);
+        checkContainerSize(inventory, 5);
         this.container = container;
-        this.teapotData = data;
+        this.containerData = data;
         this.addDataSlots(data);
 
-        this.addSlot(new Slot(this.container, TeapotBlockEntity.LEAF_SLOT, 79, 17) {
+        this.addSlot(new Slot(this.container, WineBarrelBlockEntity.GRAPE_SLOT, 79, 17) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(COItems.TEA_LEAF.get());
+                return itemStack.is(COItems.GRAPES.get());
             }
         });
-        this.addSlot(new Slot(this.container, TeapotBlockEntity.OUTPUT_SLOT, 79, 58) {
+        this.addSlot(new Slot(this.container, WineBarrelBlockEntity.GRAIN_SLOT, 102, 24) {
+            @Override
+            public boolean mayPlace(ItemStack itemStack) {
+                return itemStack.is(COItems.GRAIN.get());
+            }
+        });
+        this.addSlot(new Slot(this.container, WineBarrelBlockEntity.ADD_IN_SLOT, 56, 24) {
+            @Override
+            public boolean mayPlace(ItemStack itemStack) {
+                return itemStack.is(COTags.Items.BREWING_ADD_INS);
+            }
+        });
+        this.addSlot(new Slot(this.container, WineBarrelBlockEntity.OUTPUT_SLOT, 79, 58) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
                 return false;
             }
         });
-        this.addSlot(new Slot(this.container, TeapotBlockEntity.ADD_IN_SLOT, 17, 17) {
+        this.addSlot(new Slot(this.container, WineBarrelBlockEntity.LIQUID_SLOT, 17, 17) {
             @Override
             public boolean mayPlace(ItemStack itemStack) {
-                return itemStack.is(COTags.Items.BREWING_ADD_INS);
+                return itemStack.is(COTags.Items.WATER);
             }
         });
 
@@ -60,7 +75,7 @@ public class TeapotMenu extends AbstractContainerMenu {
     }
 
     public int getBrewingTicks() {
-        return this.teapotData.get(0);
+        return this.containerData.get(0);
     }
 
     @Override

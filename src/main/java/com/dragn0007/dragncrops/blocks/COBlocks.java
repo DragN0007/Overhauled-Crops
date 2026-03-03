@@ -5,6 +5,7 @@ import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.PotBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
+import com.dragn0007.dragncrops.blocks.custom.crafting.WineBarrelBlock;
 import com.dragn0007.dragncrops.blocks.custom.food.*;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacer;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerContainer;
@@ -56,6 +57,27 @@ public class COBlocks {
             () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> TERRACOTTA_POT = registerBlock("terracotta_pot",
             () -> new PotBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> ACACIA_WINE_BARREL = registerBlock("acacia_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> BIRCH_WINE_BARREL = registerBlock("birch_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> CHERRY_WINE_BARREL = registerBlock("cherry_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> CRIMSON_WINE_BARREL = registerBlock("crimson_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> DARK_OAK_WINE_BARREL = registerBlock("dark_oak_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> JUNGLE_WINE_BARREL = registerBlock("jungle_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> MANGROVE_WINE_BARREL = registerBlock("mangrove_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> OAK_WINE_BARREL = registerBlock("oak_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> SPRUCE_WINE_BARREL = registerBlock("spruce_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+    public static final RegistryObject<Block> WARPED_WINE_BARREL = registerBlock("warped_wine_barrel",
+            () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
 
     public static final RegistryObject<Block> BLACKBERRIES = registerBlockWithoutItem("blackberries",
             () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));

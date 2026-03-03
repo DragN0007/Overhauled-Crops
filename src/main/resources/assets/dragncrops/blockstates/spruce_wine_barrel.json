@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/wine_barrel/spruce",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/wine_barrel/spruce"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/wine_barrel/spruce",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/wine_barrel/spruce",
+      "y": 270
+    }
+  }
+}

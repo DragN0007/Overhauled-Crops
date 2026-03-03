@@ -535,6 +535,38 @@
   "item.dragncrops.goldenberry_pie": "Goldenberry Pie",
   "item.dragncrops.grape_pie": "Grape Pie",
 
+  "item.dragncrops.apple_moonshine": "Apple Moonshine",
+  "item.dragncrops.blackberry_moonshine": "Blackberry Moonshine",
+  "item.dragncrops.blueberry_moonshine": "Blueberry Moonshine",
+  "item.dragncrops.cantaloupe_moonshine": "Cantaloupe Moonshine",
+  "item.dragncrops.cherry_moonshine": "Cherry Moonshine",
+  "item.dragncrops.cranberry_moonshine": "Cranberry Moonshine",
+  "item.dragncrops.mango_moonshine": "Mango Moonshine",
+  "item.dragncrops.melon_moonshine": "Melon Moonshine",
+  "item.dragncrops.raspberry_moonshine": "Raspberry Moonshine",
+  "item.dragncrops.strawberry_moonshine": "Strawberry Moonshine",
+  "item.dragncrops.watermelon_moonshine": "Watermelon Moonshine",
+  "item.dragncrops.plum_moonshine": "Plum Moonshine",
+  "item.dragncrops.crimsonberry_moonshine": "Crimsonberry Moonshine",
+  "item.dragncrops.goldenberry_moonshine": "Goldenberry Moonshine",
+  "item.dragncrops.grape_moonshine": "Grape Moonshine",
+
+  "item.dragncrops.apple_wine": "Apple Wine",
+  "item.dragncrops.blackberry_wine": "Blackberry Wine",
+  "item.dragncrops.blueberry_wine": "Blueberry Wine",
+  "item.dragncrops.cantaloupe_wine": "Cantaloupe Wine",
+  "item.dragncrops.cherry_wine": "Cherry Wine",
+  "item.dragncrops.cranberry_wine": "Cranberry Wine",
+  "item.dragncrops.mango_wine": "Mango Wine",
+  "item.dragncrops.melon_wine": "Melon Wine",
+  "item.dragncrops.raspberry_wine": "Raspberry Wine",
+  "item.dragncrops.strawberry_wine": "Strawberry Wine",
+  "item.dragncrops.watermelon_wine": "Watermelon Wine",
+  "item.dragncrops.plum_wine": "Plum Wine",
+  "item.dragncrops.crimsonberry_wine": "Crimsonberry Wine",
+  "item.dragncrops.goldenberry_wine": "Goldenberry Wine",
+  "item.dragncrops.grape_wine": "Grape Wine",
+
 
   "item.dragncrops.meat_mallet": "Meat Mallet",
 
@@ -606,6 +638,10 @@
   "block.dragncrops.stone_pot": "Stone Pot",
   "block.dragncrops.terracotta_pot": "Terracotta Pot",
 
+  "blockentities.dragncrops.wine_barrel": "Wine Barrel",
+  "block.dragncrops.spruce_wine_barrel": "Spruce Wine Barrel",
+
+
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
 
   "config.jade.plugin_dragncrops.flail_hint": "Flail Grain Hint",
@@ -624,6 +660,8 @@
   "tooltip.dragncrops.placeable.tooltip": "Shift-Placeable",
   "tooltip.dragncrops.grain.tooltip": "Can be shift-placed for grain production.",
   "tooltip.dragncrops.tea.tooltip": "Brewed from Tea Leaves in a Teapot, optionally with fruit for extra flavor.",
+  "tooltip.dragncrops.wine.tooltip": "Fermented from Grapes in a Wine Barrel, optionally with fruit for extra flavor.",
+  "tooltip.dragncrops.moonshine.tooltip": "Distilled from Mash in a Moonshine Distiller, with fruit for extra flavor.",
   "tooltip.dragncrops.soup.tooltip": "Cooked in a Pot.",
   "tooltip.dragncrops.grains.tooltip": "Obtained by processing grain-crops with a Flail.",
   "tooltip.dragncrops.jerky.tooltip": "Obtained by drying certain crops in the Dehydrator.",

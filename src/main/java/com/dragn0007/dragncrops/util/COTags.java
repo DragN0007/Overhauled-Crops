@@ -37,6 +37,7 @@ public class COTags {
         public static final TagKey<Item> MUSHROOMS = forgeTag("mushrooms");
         public static final TagKey<Item> RICE = forgeTag("rice");
         public static final TagKey<Item> MILK = forgeTag("milk");
+        public static final TagKey<Item> WATER = forgeTag("water");
 
         public static final TagKey<Item> MAKES_BEEF_SAUSAGE = tag("makes_beef_sausage");
         public static final TagKey<Item> MAKES_CHICKEN_SAUSAGE = tag("makes_chicken_sausage");

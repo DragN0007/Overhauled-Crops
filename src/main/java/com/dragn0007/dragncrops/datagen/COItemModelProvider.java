@@ -263,6 +263,38 @@ public class COItemModelProvider extends ItemModelProvider {
         simpleItem(COItems.WATERMELON_TEA);
         simpleItem(COItems.GRAPE_TEA);
 
+        simpleItem(COItems.APPLE_WINE);
+        simpleItem(COItems.BLACKBERRY_WINE);
+        simpleItem(COItems.BLUEBERRY_WINE);
+        simpleItem(COItems.CANTALOUPE_WINE);
+        simpleItem(COItems.CHERRY_WINE);
+        simpleItem(COItems.CRANBERRY_WINE);
+        simpleItem(COItems.CRIMSONBERRY_WINE);
+        simpleItem(COItems.GOLDENBERRY_WINE);
+        simpleItem(COItems.MANGO_WINE);
+        simpleItem(COItems.MELON_WINE);
+        simpleItem(COItems.PLUM_WINE);
+        simpleItem(COItems.RASPBERRY_WINE);
+        simpleItem(COItems.STRAWBERRY_WINE);
+        simpleItem(COItems.WATERMELON_WINE);
+        simpleItem(COItems.GRAPE_WINE);
+
+        simpleItem(COItems.APPLE_MOONSHINE);
+        simpleItem(COItems.BLACKBERRY_MOONSHINE);
+        simpleItem(COItems.BLUEBERRY_MOONSHINE);
+        simpleItem(COItems.CANTALOUPE_MOONSHINE);
+        simpleItem(COItems.CHERRY_MOONSHINE);
+        simpleItem(COItems.CRANBERRY_MOONSHINE);
+        simpleItem(COItems.CRIMSONBERRY_MOONSHINE);
+        simpleItem(COItems.GOLDENBERRY_MOONSHINE);
+        simpleItem(COItems.MANGO_MOONSHINE);
+        simpleItem(COItems.MELON_MOONSHINE);
+        simpleItem(COItems.PLUM_MOONSHINE);
+        simpleItem(COItems.RASPBERRY_MOONSHINE);
+        simpleItem(COItems.STRAWBERRY_MOONSHINE);
+        simpleItem(COItems.WATERMELON_MOONSHINE);
+        simpleItem(COItems.GRAPE_MOONSHINE);
+
         simpleItem(COItems.APPLE_MEAD);
         simpleItem(COItems.BLACKBERRY_MEAD);
         simpleItem(COItems.BLUEBERRY_MEAD);

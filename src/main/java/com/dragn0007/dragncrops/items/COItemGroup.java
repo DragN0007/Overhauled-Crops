@@ -273,6 +273,38 @@ public class COItemGroup {
                         output.accept(COItems.STRAWBERRY_TEA.get());
                         output.accept(COItems.WATERMELON_TEA.get());
 
+                        output.accept(COItems.APPLE_WINE.get());
+                        output.accept(COItems.BLACKBERRY_WINE.get());
+                        output.accept(COItems.BLUEBERRY_WINE.get());
+                        output.accept(COItems.CANTALOUPE_WINE.get());
+                        output.accept(COItems.CHERRY_WINE.get());
+                        output.accept(COItems.CRANBERRY_WINE.get());
+                        output.accept(COItems.CRIMSONBERRY_WINE.get());
+                        output.accept(COItems.GOLDENBERRY_WINE.get());
+                        output.accept(COItems.GRAPE_WINE.get());
+                        output.accept(COItems.MANGO_WINE.get());
+                        output.accept(COItems.MELON_WINE.get());
+                        output.accept(COItems.PLUM_WINE.get());
+                        output.accept(COItems.RASPBERRY_WINE.get());
+                        output.accept(COItems.STRAWBERRY_WINE.get());
+                        output.accept(COItems.WATERMELON_WINE.get());
+
+                        output.accept(COItems.APPLE_MOONSHINE.get());
+                        output.accept(COItems.BLACKBERRY_MOONSHINE.get());
+                        output.accept(COItems.BLUEBERRY_MOONSHINE.get());
+                        output.accept(COItems.CANTALOUPE_MOONSHINE.get());
+                        output.accept(COItems.CHERRY_MOONSHINE.get());
+                        output.accept(COItems.CRANBERRY_MOONSHINE.get());
+                        output.accept(COItems.CRIMSONBERRY_MOONSHINE.get());
+                        output.accept(COItems.GOLDENBERRY_MOONSHINE.get());
+                        output.accept(COItems.GRAPE_MOONSHINE.get());
+                        output.accept(COItems.MANGO_MOONSHINE.get());
+                        output.accept(COItems.MELON_MOONSHINE.get());
+                        output.accept(COItems.PLUM_MOONSHINE.get());
+                        output.accept(COItems.RASPBERRY_MOONSHINE.get());
+                        output.accept(COItems.STRAWBERRY_MOONSHINE.get());
+                        output.accept(COItems.WATERMELON_MOONSHINE.get());
+
                         output.accept(COItems.APPLE_MEAD.get());
                         output.accept(COItems.BLACKBERRY_MEAD.get());
                         output.accept(COItems.BLUEBERRY_MEAD.get());
@@ -321,6 +353,17 @@ public class COItemGroup {
                         output.accept(COBlocks.IRON_POT.get());
                         output.accept(COBlocks.STONE_POT.get());
                         output.accept(COBlocks.TERRACOTTA_POT.get());
+
+                        output.accept(COBlocks.ACACIA_WINE_BARREL.get());
+                        output.accept(COBlocks.BIRCH_WINE_BARREL.get());
+                        output.accept(COBlocks.CHERRY_WINE_BARREL.get());
+                        output.accept(COBlocks.CRIMSON_WINE_BARREL.get());
+                        output.accept(COBlocks.DARK_OAK_WINE_BARREL.get());
+                        output.accept(COBlocks.JUNGLE_WINE_BARREL.get());
+                        output.accept(COBlocks.MANGROVE_WINE_BARREL.get());
+                        output.accept(COBlocks.OAK_WINE_BARREL.get());
+                        output.accept(COBlocks.SPRUCE_WINE_BARREL.get());
+                        output.accept(COBlocks.WARPED_WINE_BARREL.get());
 
                         output.accept(COBlocks.RED_APPLE_LEAVES.get());
                         output.accept(COBlocks.YELLOW_APPLE_LEAVES.get());

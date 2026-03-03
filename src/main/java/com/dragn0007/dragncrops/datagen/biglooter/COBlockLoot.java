@@ -49,6 +49,17 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropSelf(COBlocks.STONE_POT.get());
         this.dropSelf(COBlocks.TERRACOTTA_POT.get());
 
+        this.dropSelf(COBlocks.ACACIA_WINE_BARREL.get());
+        this.dropSelf(COBlocks.BIRCH_WINE_BARREL.get());
+        this.dropSelf(COBlocks.CHERRY_WINE_BARREL.get());
+        this.dropSelf(COBlocks.CRIMSON_WINE_BARREL.get());
+        this.dropSelf(COBlocks.DARK_OAK_WINE_BARREL.get());
+        this.dropSelf(COBlocks.JUNGLE_WINE_BARREL.get());
+        this.dropSelf(COBlocks.MANGROVE_WINE_BARREL.get());
+        this.dropSelf(COBlocks.OAK_WINE_BARREL.get());
+        this.dropSelf(COBlocks.SPRUCE_WINE_BARREL.get());
+        this.dropSelf(COBlocks.WARPED_WINE_BARREL.get());
+
         this.add(COBlocks.RED_APPLE.get(), createAppleDrops(COBlocks.RED_APPLE.get(), Items.APPLE));
         this.add(COBlocks.YELLOW_APPLE.get(), createAppleDrops(COBlocks.YELLOW_APPLE.get(), COItems.YELLOW_APPLE.get()));
         this.add(COBlocks.GREEN_APPLE.get(), createAppleDrops(COBlocks.GREEN_APPLE.get(), COItems.GREEN_APPLE.get()));

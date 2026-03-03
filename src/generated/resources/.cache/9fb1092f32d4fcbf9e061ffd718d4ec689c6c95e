@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-02T00:47:24.9277388	Recipes
+// 1.20.1	2026-03-02T13:44:39.2303501	Recipes
 a1c98b92ee60e6430cf14d037d7bd44f0ff1c266 data/dragncrops/advancements/recipes/misc/apple_candy.json
 c83c6489f0a1604bae30e29214a3e889eab8f61b data/dragncrops/advancements/recipes/misc/apple_cocktail.json
 6c94a5895a49da44138955fde3714d699878c334 data/dragncrops/advancements/recipes/misc/apple_gelatin.json
@@ -327,7 +327,7 @@ e8b5c73f03bceb734d95a85f0c92a703a08100bc data/dragncrops/recipes/pork_sausage.js
 6bf9f0c4e17c365bc99fa85804a58edaf00c4c5b data/dragncrops/recipes/raspberry_tart.json
 512188004b0cf6f2de6a7237bf5fb74fade8b3ad data/dragncrops/recipes/red_apple_seeds.json
 fda70dd10756b0454ba3bc8dae545d5c700e2b6f data/dragncrops/recipes/rice_bread.json
-1f185fa938fa5eb7794787dbb5454655c1667d22 data/dragncrops/recipes/rice_cake.json
+9122f3c70224affd7993abc295d49220560b9c3c data/dragncrops/recipes/rice_cake.json
 7dc020c055e678a0ccec901bca9c7042730b4df5 data/dragncrops/recipes/rice_seeds.json
 830300f9c64611ed9624a7d54444fb4e5abcf7b7 data/dragncrops/recipes/rye_bread.json
 4476088debdbea2c2343474f9423c719c4bd5e08 data/dragncrops/recipes/rye_seeds.json

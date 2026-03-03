@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.custom.entity.PotBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.TeapotBlockEntity;
+import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +27,16 @@ public class COBlockEntities {
                     BlockEntityType.Builder.of(PotBlockEntity::new,
                             COBlocks.DEEPSLATE_POT.get(), COBlocks.IRON_POT.get(),
                             COBlocks.STONE_POT.get(), COBlocks.TERRACOTTA_POT.get()
+                    ).build(null));
+
+    public static final RegistryObject<BlockEntityType<WineBarrelBlockEntity>> WINE_BARREL =
+            BLOCK_ENTITIES.register("wine_barrel_entity", () ->
+                    BlockEntityType.Builder.of(WineBarrelBlockEntity::new,
+                            COBlocks.ACACIA_WINE_BARREL.get(), COBlocks.BIRCH_WINE_BARREL.get(),
+                            COBlocks.CHERRY_WINE_BARREL.get(), COBlocks.CRIMSON_WINE_BARREL.get(),
+                            COBlocks.DARK_OAK_WINE_BARREL.get(), COBlocks.JUNGLE_WINE_BARREL.get(),
+                            COBlocks.MANGROVE_WINE_BARREL.get(), COBlocks.OAK_WINE_BARREL.get(),
+                            COBlocks.SPRUCE_WINE_BARREL.get(), COBlocks.WARPED_WINE_BARREL.get()
                     ).build(null));
 
 
