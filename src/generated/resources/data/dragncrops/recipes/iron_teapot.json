@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " AA"
+  ],
+  "result": {
+    "item": "dragncrops:iron_teapot"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " AA"
+  ],
+  "result": {
+    "item": "dragncrops:white_teapot"
+  },
+  "show_notification": true
+}

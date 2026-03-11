@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " AA"
+  ],
+  "result": {
+    "item": "dragncrops:stone_teapot"
+  },
+  "show_notification": true
+}
