@@ -88,6 +88,9 @@ public class COItemGroup {
 
                         output.accept(COItems.GRAIN.get());
                         output.accept(COItems.FLOUR.get());
+                        output.accept(COItems.MASH.get());
+                        output.accept(COItems.FRUIT_PASTE.get());
+                        output.accept(COItems.MUSHROOM_PASTE.get());
                         output.accept(COItems.TOFU.get());
                         output.accept(COItems.COOKED_TOFU.get());
 
@@ -348,6 +351,7 @@ public class COItemGroup {
                         output.accept(COBlocks.IRON_TEAPOT.get());
                         output.accept(COBlocks.STONE_TEAPOT.get());
                         output.accept(COBlocks.TERRACOTTA_TEAPOT.get());
+                        output.accept(COBlocks.WHITE_TEAPOT.get());
 
                         output.accept(COBlocks.DEEPSLATE_POT.get());
                         output.accept(COBlocks.IRON_POT.get());
@@ -364,6 +368,8 @@ public class COItemGroup {
                         output.accept(COBlocks.OAK_WINE_BARREL.get());
                         output.accept(COBlocks.SPRUCE_WINE_BARREL.get());
                         output.accept(COBlocks.WARPED_WINE_BARREL.get());
+
+                        output.accept(COBlocks.DISTILLER.get());
 
                         output.accept(COBlocks.RED_APPLE_LEAVES.get());
                         output.accept(COBlocks.YELLOW_APPLE_LEAVES.get());

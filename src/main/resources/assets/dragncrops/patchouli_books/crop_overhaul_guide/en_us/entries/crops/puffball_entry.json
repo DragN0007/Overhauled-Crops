@@ -1,0 +1,33 @@
+{
+  "name": "Puffball Mushroom",
+  "icon": "dragncrops:puffball_mushroom",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Fungi $(br)$(l)Spawns In: $()Dense Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:puffball_mushroom"
+      },
+      "text": "Can be turned into Mushroom Jerky or used in soups and stews. Can be canned.",
+      "title": "Puffball Mushroom"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Puffball Mushroom",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:puffball_mushroom[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

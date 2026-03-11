@@ -161,6 +161,7 @@
   "item.dragncrops.grain": "Grain",
   "block.dragncrops.flour": "Flour",
   "item.dragncrops.flour": "Flour",
+  "item.dragncrops.mash": "Mash",
   "item.dragncrops.tofu": "Tofu",
   "item.dragncrops.cooked_tofu": "Cooked Tofu",
 
@@ -609,7 +610,13 @@
 
 
   "item.dragncrops.mushroom_jerky": "Mushroom Jerky",
+  "item.dragncrops.mushroom_paste": "Mushroom Paste",
+  "block.dragncrops.mushroom_jerky": "Dried Mushroom Jerky",
+  "block.dragncrops.mushroom_paste": "Mushroom Jerky",
   "item.dragncrops.fruit_jerky": "Fruit Jerky",
+  "item.dragncrops.fruit_paste": "Fruit Paste",
+  "block.dragncrops.fruit_jerky": "Dried Fruit Jerky",
+  "block.dragncrops.fruit_paste": "Fruit Jerky",
 
   "item.dragncrops.rice_pudding": "Rice Pudding",
   "item.dragncrops.rice_cake": "Rice Cake",
@@ -639,7 +646,31 @@
   "block.dragncrops.terracotta_pot": "Terracotta Pot",
 
   "blockentities.dragncrops.wine_barrel": "Wine Barrel",
+  "block.dragncrops.acacia_wine_barrel": "Acacia Wine Barrel",
+  "block.dragncrops.birch_wine_barrel": "Birch Wine Barrel",
+  "block.dragncrops.cherry_wine_barrel": "Cherry Wine Barrel",
+  "block.dragncrops.crimson_wine_barrel": "Crimson Wine Barrel",
+  "block.dragncrops.dark_oak_wine_barrel": "Dark Oak Wine Barrel",
+  "block.dragncrops.jungle_wine_barrel": "Jungle Wine Barrel",
+  "block.dragncrops.mangrove_wine_barrel": "Mangrove Wine Barrel",
+  "block.dragncrops.oak_wine_barrel": "Oak Wine Barrel",
   "block.dragncrops.spruce_wine_barrel": "Spruce Wine Barrel",
+  "block.dragncrops.warped_wine_barrel": "Warped Wine Barrel",
+
+  "blockentities.dragncrops.distiller": "Moonshine Distiller",
+  "block.dragncrops.distiller": "Moonshine Distiller",
+
+  "blockentities.dragncrops.dehydrator": "Dehydrator",
+  "block.dragncrops.acacia_dehydrator": "Acacia Dehydrator",
+  "block.dragncrops.birch_dehydrator": "Birch Dehydrator",
+  "block.dragncrops.cherry_dehydrator": "Cherry Dehydrator",
+  "block.dragncrops.crimson_dehydrator": "Crimson Dehydrator",
+  "block.dragncrops.dark_oak_dehydrator": "Dark Oak Dehydrator",
+  "block.dragncrops.jungle_dehydrator": "Jungle Dehydrator",
+  "block.dragncrops.mangrove_dehydrator": "Mangrove Dehydrator",
+  "block.dragncrops.oak_dehydrator": "Oak Dehydrator",
+  "block.dragncrops.spruce_dehydrator": "Spruce Dehydrator",
+  "block.dragncrops.warped_dehydrator": "Warped Dehydrator",
 
 
   "block.dragncrops.pixel_placer_container": "Pixel-Placed Decor",
@@ -654,6 +685,8 @@
   "config.jade.plugin_dragncrops.dry_time": "Display Dried Percent",
   "config.jade.plugin_dragncrops.tea_hint": "Display Teapot Hint",
   "config.jade.plugin_dragncrops.pot_hint": "Display Pot Hint",
+  "config.jade.plugin_dragncrops.distiller_hint": "Display Distiller Hint",
+  "config.jade.plugin_dragncrops.dehydrator_hint": "Display Dehydrator Hint",
 
   "tooltip.dragncrops.flail.tooltip": "Used to separate grain from Wheat, Rye, Rice or Corn.",
   "tooltip.dragncrops.meat_mallet.tooltip": "Used to grind and tenderize meat.",
@@ -664,7 +697,7 @@
   "tooltip.dragncrops.moonshine.tooltip": "Distilled from Mash in a Moonshine Distiller, with fruit for extra flavor.",
   "tooltip.dragncrops.soup.tooltip": "Cooked in a Pot.",
   "tooltip.dragncrops.grains.tooltip": "Obtained by processing grain-crops with a Flail.",
-  "tooltip.dragncrops.jerky.tooltip": "Obtained by drying certain crops in the Dehydrator.",
+  "tooltip.dragncrops.jerky.tooltip": "Obtained by hanging up paste to air dry over time.",
   "tooltip.dragncrops.sausage.tooltip": "Obtained by hanging up raw sausage to air dry over time.",
   "tooltip.dragncrops.rice_in_pot.tooltip": "Created in a Pot with Rice and one other ingredient.",
   "tooltip.dragncrops.rice_pudding_in_pot.tooltip": "Created in a Pot with Rice and Milk."

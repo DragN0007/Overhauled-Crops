@@ -1,0 +1,33 @@
+{
+  "name": "Soybeans",
+  "icon": "dragncrops:soybean",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Legume $(br)$(l)Spawns In: $()Hot Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:soybean"
+      },
+      "text": "Can be turned into Tofu to be used in meat-based recipes as a substitute, or in normal vegetable recipes.",
+      "title": "Soybeans"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Soybeans",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:soybeans[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

@@ -12,8 +12,20 @@
       "item": {
         "item": "dragncrops:cherries"
       },
-      "text": "Can be turned into jam, pie, and candy.",
+      "text": "Can be used in an assortment of recipes.",
       "title": "Cherries"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cherry Leaves",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cherry_leaves[age=3]"
+        }
+      }
     }
   ]
 }

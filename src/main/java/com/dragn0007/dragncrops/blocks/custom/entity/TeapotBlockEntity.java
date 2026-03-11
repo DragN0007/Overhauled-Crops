@@ -91,6 +91,7 @@ public class TeapotBlockEntity extends BaseContainerBlockEntity implements World
       ItemStack outputSlotItem = entity.getItem(OUTPUT_SLOT);
       ItemStack potentialOutput = null;
 
+
       if (entity.brewingCurrently != null && entity.brewTime > 0) {
          --entity.brewTime;
          if (entity.brewTime == 0) {

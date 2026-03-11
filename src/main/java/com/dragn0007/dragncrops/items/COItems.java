@@ -175,10 +175,18 @@ public class COItems {
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
     public static final RegistryObject<Item> GRAIN = ITEMS.register("grain",
             () -> new GrainsItem(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build())));
+    public static final RegistryObject<Item> MASH = ITEMS.register("mash",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TOFU = ITEMS.register("tofu",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2F).build())));
     public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build())));
+    public static final RegistryObject<Item> FRUIT_PASTE = ITEMS.register("fruit_paste",
+            () -> new ShiftPlaceableItem(COBlocks.FRUIT_PASTE.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build()))));
+    public static final RegistryObject<Item> MUSHROOM_PASTE = ITEMS.register("mushroom_paste",
+            () -> new ShiftPlaceableItem(COBlocks.MUSHROOM_PASTE.get(),
+                    (new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.2F).build()))));
 
 
     //Breads
@@ -1560,12 +1568,12 @@ public class COItems {
     //Jerky
     public static final RegistryObject<Item> MUSHROOM_JERKY = ITEMS.register("mushroom_jerky",
             () -> new JerkyItem(new Item.Properties()
-                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.5F)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.3F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
 
     public static final RegistryObject<Item> FRUIT_JERKY = ITEMS.register("fruit_jerky",
             () -> new JerkyItem(new Item.Properties()
-                    .food(new FoodProperties.Builder().nutrition(7).saturationMod(0.5F)
+                    .food(new FoodProperties.Builder().nutrition(6).saturationMod(0.3F)
                             .effect(new MobEffectInstance(MobEffects.SATURATION, 600, 1), 0.8F).build())));
 
     //Other

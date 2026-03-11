@@ -14,6 +14,48 @@
       },
       "text": "Can be turned into vegetable-based meals and soups, or canned.",
       "title": "Potatoes"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Potatoes",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "minecraft:potatoes[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Potatoes",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:red_potatoes[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Purple Potatoes",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:purple_potatoes[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

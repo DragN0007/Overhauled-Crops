@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/wine_barrel/cherry",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/wine_barrel/cherry"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/wine_barrel/cherry",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/wine_barrel/cherry",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "B": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    " AB"
+  ],
+  "result": {
+    "item": "dragncrops:distiller"
+  },
+  "show_notification": true
+}

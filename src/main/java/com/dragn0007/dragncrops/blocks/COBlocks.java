@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.blocks;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.crop.*;
 import com.dragn0007.dragncrops.blocks.crop.base.WildCropBlock;
+import com.dragn0007.dragncrops.blocks.custom.crafting.DistillerBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.PotBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.TeapotBlock;
 import com.dragn0007.dragncrops.blocks.custom.crafting.WineBarrelBlock;
@@ -78,6 +79,9 @@ public class COBlocks {
             () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
     public static final RegistryObject<Block> WARPED_WINE_BARREL = registerBlock("warped_wine_barrel",
             () -> new WineBarrelBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+
+    public static final RegistryObject<Block> DISTILLER = registerBlock("distiller",
+            () -> new DistillerBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).noOcclusion()));
 
     public static final RegistryObject<Block> BLACKBERRIES = registerBlockWithoutItem("blackberries",
             () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH).noCollission()));
@@ -303,6 +307,11 @@ public class COBlocks {
     public static final RegistryObject<Block> STOCK = registerBlockWithoutItem("stock", JarBlock::new);
     public static final RegistryObject<Block> VEGETABLE_SOUP = registerBlockWithoutItem("vegetable_soup", JarBlock::new);
     public static final RegistryObject<Block> MEAT_AND_VEGETABLE_STEW = registerBlockWithoutItem("meat_and_vegetable_stew", JarBlock::new);
+
+    public static final RegistryObject<Block> FRUIT_PASTE = registerBlockWithoutItem("fruit_paste", UndriedFruitJerky::new);
+    public static final RegistryObject<Block> DRIED_FRUIT_JERKY = registerBlockWithoutItem("fruit_jerky", DriedBlock::new);
+    public static final RegistryObject<Block> MUSHROOM_PASTE = registerBlockWithoutItem("mushroom_paste", UndriedMushroomJerky::new);
+    public static final RegistryObject<Block> DRIED_MUSHROOM_JERKY = registerBlockWithoutItem("mushroom_jerky", DriedBlock::new);
 
     public static final RegistryObject<Block> BEEF_SAUSAGE = registerBlockWithoutItem("beef_sausage", UndriedBeefSausage::new);
     public static final RegistryObject<Block> DRIED_BEEF_SAUSAGE = registerBlockWithoutItem("dried_beef_sausage", DriedBlock::new);

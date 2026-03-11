@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-02T14:12:43.6492895	Loot Tables
+// 1.20.1	2026-03-10T19:52:21.3907918	Loot Tables
 88a0d80f1213c07e6fd534c667b2f833a4445ede data/dragncrops/loot_tables/blocks/acacia_wine_barrel.json
 09a4de29d789dd5fc30f0456828e7598ba01a472 data/dragncrops/loot_tables/blocks/apple_candy.json
 9b824821fc1b9776a4b5bdadbd2e8f24c144c466 data/dragncrops/loot_tables/blocks/apple_gelatin.json
@@ -70,6 +70,7 @@ eb4a5ae1efcdec80750839e9c10719eb258b5705 data/dragncrops/loot_tables/blocks/cucu
 c9bd7e5925667e03776cef2a7bb447f20bfb015b data/dragncrops/loot_tables/blocks/dark_oak_wine_barrel.json
 9f75bd1f36bf13d4413a68ccd03dae01761f6237 data/dragncrops/loot_tables/blocks/deepslate_pot.json
 4c3a435a1c9275e814922620afa2bb0e9ba4edf4 data/dragncrops/loot_tables/blocks/deepslate_teapot.json
+cae89b506d73201d61d66d5c41833d30d387ca3a data/dragncrops/loot_tables/blocks/distiller.json
 321fb56b43ecdd918a2518c4ec9a906b100cb026 data/dragncrops/loot_tables/blocks/dried_beef_sausage.json
 5d5e8ed05c0b5711aac43dfa99b431c6539e7fb1 data/dragncrops/loot_tables/blocks/dried_chicken_sausage.json
 e85ec66ce1ce4bf81e500e75843fa68ce837751c data/dragncrops/loot_tables/blocks/dried_fish_sausage.json
@@ -97,6 +98,8 @@ aff8393e0613291d60a6be4a4898a1c6f9c1e8a3 data/dragncrops/loot_tables/blocks/ferm
 6f4a2034325a8d50e0e25033d4b42ceacff98ace data/dragncrops/loot_tables/blocks/fermented_strawberry_mead.json
 0e114b93849493c2fc87e0677fb4a425c6ccc153 data/dragncrops/loot_tables/blocks/fermented_watermelon_mead.json
 fcacf71301093c6da136a5cf6a89af360cd46b20 data/dragncrops/loot_tables/blocks/fish_sausage.json
+34d4d2d3b286eb7dfdea75e5fd15722decb9dcf2 data/dragncrops/loot_tables/blocks/fruit_jerky.json
+b2cb865b06fa3dbd64a0b775213e3286a0bfdcfd data/dragncrops/loot_tables/blocks/fruit_paste.json
 84c6b6d5c3437088a526aef847be1b5c540d11ec data/dragncrops/loot_tables/blocks/game_sausage.json
 9689980eaf45fc5d5e629b8545107f9b5d8c8f20 data/dragncrops/loot_tables/blocks/garlic.json
 afc943b8b3d0ae7692d4a98ffb1e473ce52b3d14 data/dragncrops/loot_tables/blocks/generic_sausage.json
@@ -139,6 +142,8 @@ ff2b11af2ab823f843e14894e101ede66918766b data/dragncrops/loot_tables/blocks/mang
 b4b9a7a62994c6b9243f0cc01896b798c510743f data/dragncrops/loot_tables/blocks/melon_jam.json
 f03ba5c61ee6d90c8b54ffd9fca0fbd5b90a39ca data/dragncrops/loot_tables/blocks/melon_mead.json
 9abcfcfae3433a82292a1f4591eca783a4651db4 data/dragncrops/loot_tables/blocks/melon_tart.json
+20d464d25b0b5da247a16edf923f883b88bb6d5f data/dragncrops/loot_tables/blocks/mushroom_jerky.json
+6a558124b322a54511b7b2a033a3c631b4229777 data/dragncrops/loot_tables/blocks/mushroom_paste.json
 4386dd6f627f586ebda22ac69eee8c762163ac0e data/dragncrops/loot_tables/blocks/mutton_sausage.json
 e29595d7a8f93e69b1bff48fdc368b14cffba261 data/dragncrops/loot_tables/blocks/nether_beet.json
 f09c9f7154e8ea0ed8cd846856556063ecc9b75b data/dragncrops/loot_tables/blocks/nut_bread.json

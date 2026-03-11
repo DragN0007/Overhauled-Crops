@@ -20,10 +20,8 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.AbstractFurnaceBlock;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -54,7 +52,7 @@ public class WineBarrelBlockEntity extends BaseContainerBlockEntity implements W
       }
 
       public int getCount() {
-         return 3;
+         return 2;
       }
    };
 
@@ -159,12 +157,12 @@ public class WineBarrelBlockEntity extends BaseContainerBlockEntity implements W
       }
    }
 
-   public final ItemStackHandler itemHandler = new ItemStackHandler(4) {
+   public final ItemStackHandler itemHandler = new ItemStackHandler(5) {
       @Override
       protected void onContentsChanged(int slot) {
          setChanged();
          if(!level.isClientSide()) {
-            level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 2);
+            level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
          }
       }
 

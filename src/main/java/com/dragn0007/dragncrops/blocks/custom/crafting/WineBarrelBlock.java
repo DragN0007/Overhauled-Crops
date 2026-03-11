@@ -2,8 +2,6 @@ package com.dragn0007.dragncrops.blocks.custom.crafting;
 
 import com.dragn0007.dragncrops.blocks.COBlockEntities;
 import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
-import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
-import com.dragn0007.dragncrops.client.gui.WineBarrelScreen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;

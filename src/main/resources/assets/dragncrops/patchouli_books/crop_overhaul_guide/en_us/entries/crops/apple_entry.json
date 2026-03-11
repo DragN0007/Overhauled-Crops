@@ -12,8 +12,44 @@
       "item": {
         "item": "dragncrops:green_apple"
       },
-      "text": "Can be turned into jam, pie, and candy.",
+      "text": "Can be used in an assortment of recipes.",
       "title": "Apples"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Red Apple Leaves",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:red_apple_leaves[age=3]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Yellow Apple Leaves",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:yellow_apple_leaves[age=3]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Green Apple Leaves",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:green_apple_leaves[age=3]"
+        }
+      }
     }
   ]
 }

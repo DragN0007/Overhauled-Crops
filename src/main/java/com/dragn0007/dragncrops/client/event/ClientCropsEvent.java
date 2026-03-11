@@ -3,6 +3,7 @@ package com.dragn0007.dragncrops.client.event;
 import com.dragn0007.dragncrops.CropOverhaul;
 import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.blocks.pixel_placement.util.PixelPlacerEntityRenderer;
+import com.dragn0007.dragncrops.client.gui.DistillerScreen;
 import com.dragn0007.dragncrops.client.gui.PotScreen;
 import com.dragn0007.dragncrops.client.gui.TeapotScreen;
 import com.dragn0007.dragncrops.client.gui.WineBarrelScreen;
@@ -28,6 +29,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
         MenuScreens.register(COMenuTypes.TEAPOT_MENU.get(), TeapotScreen::new);
         MenuScreens.register(COMenuTypes.POT_MENU.get(), PotScreen::new);
         MenuScreens.register(COMenuTypes.WINE_BARREL_MENU.get(), WineBarrelScreen::new);
+        MenuScreens.register(COMenuTypes.DISTILLER_MENU.get(), DistillerScreen::new);
     }
 
 }

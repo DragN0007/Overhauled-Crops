@@ -1,0 +1,33 @@
+{
+  "name": "Thorn Barley",
+  "icon": "dragncrops:thorn_barley",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Grain $(br)$(l)Spawns In: $()Nether - Warped Forest"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:thorn_barley"
+      },
+      "text": "Can be turned into Grain to be used in breads or pastries.",
+      "title": "Thorn Barley"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Thorn Barley",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:thorn_barley[age=7]",
+          "1": "minecraft:warped_nylium"
+        }
+      }
+    }
+  ]
+}

@@ -81,8 +81,11 @@ public class COItemModelProvider extends ItemModelProvider {
 
         simpleItem(COItems.GRAIN);
         simpleItem(COItems.FLOUR);
+        simpleItem(COItems.MASH);
         simpleItem(COItems.TOFU);
         simpleItem(COItems.COOKED_TOFU);
+        simpleItem(COItems.FRUIT_PASTE);
+        simpleItem(COItems.MUSHROOM_PASTE);
 
         simpleItem(COItems.COD_NIGIRI);
         simpleItem(COItems.FUGU_NIGIRI);

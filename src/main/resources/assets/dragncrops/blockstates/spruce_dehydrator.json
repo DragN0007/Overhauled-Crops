@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/dehydrator/spruce",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/dehydrator/spruce"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/dehydrator/spruce",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/dehydrator/spruce",
+      "y": 270
+    }
+  }
+}

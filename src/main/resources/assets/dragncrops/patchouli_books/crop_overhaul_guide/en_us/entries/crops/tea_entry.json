@@ -1,0 +1,33 @@
+{
+  "name": "Tea",
+  "icon": "dragncrops:tea_leaf",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Herbal $(br)$(l)Spawns In: $()Hot Biomes"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:tea_leaf"
+      },
+      "text": "Can be brewed into tea, optionally with different fruit flavors, in a Teapot.",
+      "title": "Tea Leaves"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Tea",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:tea[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

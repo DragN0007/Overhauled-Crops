@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/distiller",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/distiller"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/distiller",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/distiller",
+      "y": 270
+    }
+  }
+}

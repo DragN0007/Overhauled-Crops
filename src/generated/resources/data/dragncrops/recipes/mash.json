@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:grain"
+    },
+    {
+      "item": "dragncrops:grain"
+    },
+    {
+      "item": "dragncrops:grain"
+    },
+    {
+      "tag": "forge:water"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "item": "dragncrops:mash"
+  }
+}

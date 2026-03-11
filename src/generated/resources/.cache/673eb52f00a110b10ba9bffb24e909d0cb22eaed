@@ -1,4 +1,4 @@
-// 1.20.1	2026-03-02T13:44:39.2343766	Item Models: dragncrops
+// 1.20.1	2026-03-10T19:52:21.3954507	Item Models: dragncrops
 378105d33588b24f1d22239e5d62ba5ffa050b15 assets/dragncrops/models/item/apple_candy.json
 6f1bfcda89929418c044c3c8ce81d1d352b2dace assets/dragncrops/models/item/apple_cocktail.json
 f3c1620b36b9b11c42da32f69f5398a672e222eb assets/dragncrops/models/item/apple_gelatin.json
@@ -123,6 +123,7 @@ c92f3ed1374de73f93f8bc8b0d2d1f9142157e2d assets/dragncrops/models/item/empty_can
 de2167e338bd08525ca28576e0c44b8c09704b29 assets/dragncrops/models/item/flail.json
 276e383dfcfe22092acd9caac31cf61802e3d714 assets/dragncrops/models/item/flour.json
 60cb271c4dd95b729d4ff0ffc473243c4b5cee90 assets/dragncrops/models/item/fruit_jerky.json
+29f539341caf3952df6c528c5f11afa1f4f3792a assets/dragncrops/models/item/fruit_paste.json
 b906cae97c0adb18c5ebc954f56bd50f9c40ebbf assets/dragncrops/models/item/fugu_nigiri.json
 d5f737694bbeaaf69952adc6b753d293769e93fe assets/dragncrops/models/item/game_sausage.json
 ca1ae55a1b48f1dd4496f44d0dc75d5af75a3070 assets/dragncrops/models/item/garlic.json
@@ -175,6 +176,7 @@ a2b58df14acab02391558a6ae3769ca0c602e309 assets/dragncrops/models/item/mango_pit
 e4a907e706b75a7a7f5fe25aab911ba29ab9d45e assets/dragncrops/models/item/mango_tart.json
 6a2ed6f411104cfd279599956b49ca182275daec assets/dragncrops/models/item/mango_tea.json
 68d1b58a198165ebadddad76d604c05ee1277a9e assets/dragncrops/models/item/mango_wine.json
+905c4e52e64175aa4160b5a3684a8610047e828d assets/dragncrops/models/item/mash.json
 c9d7e504816c725312465d540ff9f992edd7bc97 assets/dragncrops/models/item/meat_and_vegetable_cream_soup.json
 b8167d0d7f5a43bc7c31b857e50770b4c31fef42 assets/dragncrops/models/item/meat_and_vegetable_stew.json
 13997ff2f4e638eb8d5984dc551b7cedd74ad84e assets/dragncrops/models/item/meat_fried_rice.json
@@ -190,6 +192,7 @@ e8f9ad51ef212f4f8a32523bc672f67551b4b5db assets/dragncrops/models/item/melon_tea
 7a87171537680fe3c1ec7462ee01968f0466c35c assets/dragncrops/models/item/melon_wine.json
 3ed48814e37d9c24a0215d0cea8455330af6a967 assets/dragncrops/models/item/mushroom_cream_soup.json
 8687fc30493ec397854f5a60815bdf8bf238c248 assets/dragncrops/models/item/mushroom_jerky.json
+77e1f2f3af7cfe0548b9ed504d0fb9e985a17e70 assets/dragncrops/models/item/mushroom_paste.json
 ea60bea5b296b143d4dc8895cc75a67f73aef526 assets/dragncrops/models/item/mushroom_soup.json
 ed8c176458e3a172fea5187f4b21a3cb451cfce3 assets/dragncrops/models/item/mutton_sausage.json
 833c4913680718670f7cd98768538d7d47f8fbe5 assets/dragncrops/models/item/nether_beet.json

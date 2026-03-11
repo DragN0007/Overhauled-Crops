@@ -1,0 +1,33 @@
+{
+  "name": "Golden Rhubarb",
+  "icon": "dragncrops:golden_rhubarb",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Vegetable $(br)$(l)Spawns In: $()Nether"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:golden_rhubarb"
+      },
+      "text": "Can be turned into vegetable-based meals, pies and soups, or canned.",
+      "title": "Golden Rhubarb"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Golden Rhubarb",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:golden_rhubarb[age=7]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

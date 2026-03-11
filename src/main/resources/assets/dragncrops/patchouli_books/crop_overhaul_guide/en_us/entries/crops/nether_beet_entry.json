@@ -1,0 +1,33 @@
+{
+  "name": "Nether Beets",
+  "icon": "dragncrops:nether_beet",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Root Vegetable $(br)$(l)Spawns In: $()Nether"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:nether_beet"
+      },
+      "text": "Can be turned into vegetable-based meals and soups, or canned.",
+      "title": "Nether Beets"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Nether Beets",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:nether_beet[age=7]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

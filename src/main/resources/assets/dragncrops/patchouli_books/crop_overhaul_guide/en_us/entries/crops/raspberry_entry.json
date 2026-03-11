@@ -12,8 +12,22 @@
       "item": {
         "item": "dragncrops:raspberry"
       },
-      "text": "Can be turned into jam, pie, and candy.",
+      "text": "Can be used in an assortment of recipes.",
       "title": "Raspberry"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Raspberries",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:raspberries[age=4]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

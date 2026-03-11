@@ -1,0 +1,23 @@
+{
+  "name": "Moonshine-Distilling",
+  "icon": "dragncrops:distiller",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:distiller"
+      },
+      "text": "Distillers are used to ferment Moonshine from Mash and different fruits to flavor it. Moonshine can take a while to ferment.",
+      "title": "Moonshine"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mash"
+      },
+      "text": "Mash, created from Grain, is used in the distilling process of Moonshine.",
+      "title": "Mash"
+    }
+  ]
+}

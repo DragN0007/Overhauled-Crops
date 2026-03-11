@@ -12,8 +12,22 @@
       "item": {
         "item": "dragncrops:honeydew"
       },
-      "text": "Can be turned into jam, pie, and candy.",
+      "text": "Can be used in an assortment of recipes.",
       "title": "Honeydew"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Honeydew",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:honeydew[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

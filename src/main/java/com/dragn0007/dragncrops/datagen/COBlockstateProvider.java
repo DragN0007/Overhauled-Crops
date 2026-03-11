@@ -173,7 +173,7 @@ public class COBlockstateProvider extends BlockStateProvider {
         simpleBlock(COBlocks.WILD_GRAPES.get(), models().cross(COBlocks.WILD_GRAPES.getId().getPath(),
                 wildPlantTexture("grapes_stage3")).renderType("cutout"));
 
-        createCrop((OCropBlock) COBlocks.PUFFBALL_MUSHROOM.get(), "puffball_mushroom", "puffball_mushroom",
+        createCrossCrop((OCropBlock) COBlocks.PUFFBALL_MUSHROOM.get(), "puffball_mushroom", "puffball_mushroom",
                 0, 0, 1, 1, 2, 2, 2, 3);
         simpleBlock(COBlocks.WILD_PUFFBALL_MUSHROOM.get(), models().cross(COBlocks.WILD_PUFFBALL_MUSHROOM.getId().getPath(),
                 wildPlantTexture("puffball_mushroom_stage3")).renderType("cutout"));
@@ -231,6 +231,32 @@ public class COBlockstateProvider extends BlockStateProvider {
             return ConfiguredModel.builder()
                     .modelFile(models().crop(modelName, new ResourceLocation(CropOverhaul.MODID, "block/" + texturePath))
                     .renderType("cutout"))
+                    .build();
+        });
+    }
+
+    public void createCrossCrop(OCropBlock block, String modelNamePrefix, String textureNamePrefix, int... stageMap) {
+        Property<Integer> ageProperty = block.getAgeProperty();
+        int maxAge = Collections.max(ageProperty.getPossibleValues());
+
+        if (stageMap == null || stageMap.length == 0) {
+            stageMap = new int[maxAge + 1];
+            for (int i = 0; i <= maxAge; i++) {
+                stageMap[i] = i;
+            }
+        }
+
+        final int[] finalStageMap = stageMap;
+
+        getVariantBuilder(block).forAllStates(state -> {
+            int age = state.getValue(ageProperty);
+            int stage = finalStageMap[age];
+            String modelName = modelNamePrefix + "_stage" + stage;
+            String texturePath = textureNamePrefix + "_stage" + stage;
+
+            return ConfiguredModel.builder()
+                    .modelFile(models().cross(modelName, new ResourceLocation(CropOverhaul.MODID, "block/" + texturePath))
+                            .renderType("cutout"))
                     .build();
         });
     }

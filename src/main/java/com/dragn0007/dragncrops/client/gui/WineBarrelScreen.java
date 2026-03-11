@@ -1,7 +1,6 @@
 package com.dragn0007.dragncrops.client.gui;
 
 import com.dragn0007.dragncrops.CropOverhaul;
-import com.dragn0007.dragncrops.common.gui.TeapotMenu;
 import com.dragn0007.dragncrops.common.gui.WineBarrelMenu;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;

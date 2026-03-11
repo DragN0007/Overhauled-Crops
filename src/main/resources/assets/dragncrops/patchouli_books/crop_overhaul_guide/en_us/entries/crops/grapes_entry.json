@@ -1,0 +1,33 @@
+{
+  "name": "Grapes",
+  "icon": "dragncrops:grapes",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Fruit $(br)$(l)Spawns In: $()Plains"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:grapes"
+      },
+      "text": "Can be used in an assortment of recipes.",
+      "title": "Grapes"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Grapes",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:grapes[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

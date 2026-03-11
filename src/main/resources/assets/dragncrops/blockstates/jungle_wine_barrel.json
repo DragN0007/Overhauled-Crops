@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/wine_barrel/jungle",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/wine_barrel/jungle"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/wine_barrel/jungle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/wine_barrel/jungle",
+      "y": 270
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package com.dragn0007.dragncrops.datagen;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.COBlocks;
 import com.dragn0007.dragncrops.datagen.compat.TeapotRecipeBuilder;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
@@ -24,7 +25,238 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
     public void buildRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
         new TeapotRecipeBuilder(COItems.TEA_LEAF.get(), COItems.TEA.get(), 1)
-                .unlockedBy("has_tea_leaf", has(COItems.TEA_LEAF.get())).save(pFinishedRecipeConsumer);
+                .unlockedBy("has_tea_leaf", has(COItems.TEA_LEAF.get())).save(pFinishedRecipeConsumer); //unused
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.DEEPSLATE_TEAPOT.get())
+                .define('A', Items.COBBLED_DEEPSLATE)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_deepslate", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.COBBLED_DEEPSLATE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.IRON_TEAPOT.get())
+                .define('A', Items.IRON_INGOT)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.GOLD_TEAPOT.get())
+                .define('A', Items.GOLD_INGOT)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_gold", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.GOLD_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.STONE_TEAPOT.get())
+                .define('A', Items.STONE)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_stone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STONE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.TERRACOTTA_TEAPOT.get())
+                .define('A', Items.TERRACOTTA)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_terracotta", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.TERRACOTTA).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.BLACK_TEAPOT.get())
+                .define('A', Items.BLACK_TERRACOTTA)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_terracotta", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.BLACK_TERRACOTTA).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.WHITE_TEAPOT.get())
+                .define('A', Items.WHITE_TERRACOTTA)
+                .pattern("AAA")
+                .pattern(" AA")
+                .unlockedBy("has_terracotta", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.WHITE_TERRACOTTA).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.DEEPSLATE_POT.get())
+                .define('A', Items.COBBLED_DEEPSLATE)
+                .pattern("A A")
+                .pattern("AAA")
+                .unlockedBy("has_deepslate", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.COBBLED_DEEPSLATE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.STONE_POT.get())
+                .define('A', Items.STONE)
+                .pattern("A A")
+                .pattern("AAA")
+                .unlockedBy("has_stone", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.STONE).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.IRON_POT.get())
+                .define('A', Items.IRON_INGOT)
+                .pattern("A A")
+                .pattern("AAA")
+                .unlockedBy("has_iron", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_INGOT).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.TERRACOTTA_POT.get())
+                .define('A', Items.TERRACOTTA)
+                .pattern("A A")
+                .pattern("AAA")
+                .unlockedBy("has_terracotta", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.TERRACOTTA).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.FRUIT_PASTE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.FRUITS)
+                .requires(COTags.Items.FRUITS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MUSHROOM_PASTE.get())
+                .requires(COItems.MEAT_MALLET.get())
+                .requires(COTags.Items.MUSHROOMS)
+                .requires(COTags.Items.MUSHROOMS)
+                .unlockedBy("has_mallet", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.MEAT_MALLET.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.ACACIA_WINE_BARREL.get())
+                .define('A', Items.ACACIA_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.BIRCH_WINE_BARREL.get())
+                .define('A', Items.BIRCH_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.CHERRY_WINE_BARREL.get())
+                .define('A', Items.CHERRY_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.CRIMSON_WINE_BARREL.get())
+                .define('A', Items.CRIMSON_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.DARK_OAK_WINE_BARREL.get())
+                .define('A', Items.DARK_OAK_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.JUNGLE_WINE_BARREL.get())
+                .define('A', Items.JUNGLE_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.MANGROVE_WINE_BARREL.get())
+                .define('A', Items.MANGROVE_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.OAK_WINE_BARREL.get())
+                .define('A', Items.OAK_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.SPRUCE_WINE_BARREL.get())
+                .define('A', Items.SPRUCE_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.WARPED_WINE_BARREL.get())
+                .define('A', Items.WARPED_PLANKS)
+                .define('B', Items.IRON_NUGGET)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .unlockedBy("has_iron_nugget", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.IRON_NUGGET).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, COBlocks.DISTILLER.get())
+                .define('A', Items.COPPER_BLOCK)
+                .define('B', Items.COPPER_INGOT)
+                .pattern("BBB")
+                .pattern(" AB")
+                .unlockedBy("has_copper", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(Items.COPPER_BLOCK).build()))
+                .save(pFinishedRecipeConsumer);
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.MASH.get(), 8)
+                .requires(COItems.GRAIN.get())
+                .requires(COItems.GRAIN.get())
+                .requires(COItems.GRAIN.get())
+                .requires(COTags.Items.WATER)
+                .unlockedBy("has_grain", inventoryTrigger(ItemPredicate.Builder.item()
+                        .of(COItems.GRAIN.get())
+                        .build()))
+                .save(pFinishedRecipeConsumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.RICE_CAKE.get())
                 .requires(COTags.Items.RICE)
@@ -985,7 +1217,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.PLUM_GELATIN.get())
                 .requires(COItems.PLUM_JAM.get())
-                .requires(COItems.PLUM_JAM.get())
+                .requires(COItems.PLUM.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -995,7 +1227,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.CRIMSONBERRY_GELATIN.get())
                 .requires(COItems.CRIMSONBERRY_JAM.get())
-                .requires(COItems.CRIMSONBERRY_JAM.get())
+                .requires(COItems.CRIMSONBERRY.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -1005,7 +1237,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GOLDENBERRY_GELATIN.get())
                 .requires(COItems.GOLDENBERRY_JAM.get())
-                .requires(COItems.GOLDENBERRY_JAM.get())
+                .requires(COItems.GOLDENBERRIES.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()
@@ -1015,7 +1247,7 @@ public class CORecipeMaker extends RecipeProvider implements IConditionBuilder {
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COItems.GRAPE_GELATIN.get())
                 .requires(COItems.GRAPE_JAM.get())
-                .requires(COItems.GRAPE_JAM.get())
+                .requires(COItems.GRAPES.get())
                 .requires(COTags.Items.SUGAR)
                 .requires(COTags.Items.SUGAR)
                 .unlockedBy("has_sugar", inventoryTrigger(ItemPredicate.Builder.item()

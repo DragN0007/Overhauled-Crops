@@ -1,0 +1,6 @@
+{
+	"parent": "dragncrops:block/parent/wine_barrel",
+	"textures": {
+		"texture": "dragncrops:block/warped_wine_barrel"
+	}
+}

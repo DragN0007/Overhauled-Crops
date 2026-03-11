@@ -14,6 +14,20 @@
       },
       "text": "Can be turned into/ used in place of sugar, or canned.",
       "title": "Sugar Beet"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Sugar Beets",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:sugar_beets[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

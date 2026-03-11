@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/dehydrator/warped",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/dehydrator/warped"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/dehydrator/warped",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/dehydrator/warped",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dragncrops:meat_mallet"
+    },
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "tag": "forge:fruits"
+    }
+  ],
+  "result": {
+    "item": "dragncrops:fruit_paste"
+  }
+}

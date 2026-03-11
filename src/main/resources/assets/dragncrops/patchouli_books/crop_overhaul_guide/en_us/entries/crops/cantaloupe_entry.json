@@ -12,8 +12,22 @@
       "item": {
         "item": "dragncrops:cantaloupe"
       },
-      "text": "Can be turned into jam, pie, and candy.",
+      "text": "Can be used in an assortment of recipes.",
       "title": "Cantaloupe"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Cantaloupe",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cantaloupe[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

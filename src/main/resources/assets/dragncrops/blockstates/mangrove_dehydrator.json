@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "dragncrops:block/dehydrator/mangrove",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "dragncrops:block/dehydrator/mangrove"
+    },
+    "facing=south": {
+      "model": "dragncrops:block/dehydrator/mangrove",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dragncrops:block/dehydrator/mangrove",
+      "y": 270
+    }
+  }
+}

@@ -1,7 +1,5 @@
 package com.dragn0007.dragncrops.common.gui;
 
-import com.dragn0007.dragncrops.blocks.custom.entity.PotBlockEntity;
-import com.dragn0007.dragncrops.blocks.custom.entity.TeapotBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
 import com.dragn0007.dragncrops.items.COItems;
 import com.dragn0007.dragncrops.util.COTags;
@@ -15,7 +13,6 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 
 public class WineBarrelMenu extends AbstractContainerMenu {
 

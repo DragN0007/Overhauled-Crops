@@ -1,0 +1,33 @@
+{
+  "name": "Crimsonberry",
+  "icon": "dragncrops:crimsonberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Type: $()Fruit $(br)$(l)Spawns In: $()Nether"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:crimsonberry"
+      },
+      "text": "Can be used in an assortment of recipes.",
+      "title": "Crimsonberry"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Crimsonberries",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:crimsonberries[age=4]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

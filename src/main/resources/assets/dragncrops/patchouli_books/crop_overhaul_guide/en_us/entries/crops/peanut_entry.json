@@ -14,6 +14,20 @@
       },
       "text": "Used to make nut butter or bread.",
       "title": "Peanut"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Peanuts",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:peanuts[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
     }
   ]
 }

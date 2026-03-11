@@ -1,6 +1,7 @@
 package com.dragn0007.dragncrops.blocks;
 
 import com.dragn0007.dragncrops.CropOverhaul;
+import com.dragn0007.dragncrops.blocks.custom.entity.DistillerBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.PotBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.TeapotBlockEntity;
 import com.dragn0007.dragncrops.blocks.custom.entity.WineBarrelBlockEntity;
@@ -37,6 +38,12 @@ public class COBlockEntities {
                             COBlocks.DARK_OAK_WINE_BARREL.get(), COBlocks.JUNGLE_WINE_BARREL.get(),
                             COBlocks.MANGROVE_WINE_BARREL.get(), COBlocks.OAK_WINE_BARREL.get(),
                             COBlocks.SPRUCE_WINE_BARREL.get(), COBlocks.WARPED_WINE_BARREL.get()
+                    ).build(null));
+
+    public static final RegistryObject<BlockEntityType<DistillerBlockEntity>> DISTILLER =
+            BLOCK_ENTITIES.register("distiller_entity", () ->
+                    BlockEntityType.Builder.of(DistillerBlockEntity::new,
+                            COBlocks.DISTILLER.get()
                     ).build(null));
 
 

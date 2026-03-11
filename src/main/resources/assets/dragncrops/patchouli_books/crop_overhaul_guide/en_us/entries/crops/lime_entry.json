@@ -14,6 +14,18 @@
       },
       "text": "Can be turned into pie and drinks.",
       "title": "Lime"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Lime Leaves",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:lime_leaves[age=3]"
+        }
+      }
     }
   ]
 }

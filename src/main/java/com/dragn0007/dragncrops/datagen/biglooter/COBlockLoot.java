@@ -60,6 +60,8 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropSelf(COBlocks.SPRUCE_WINE_BARREL.get());
         this.dropSelf(COBlocks.WARPED_WINE_BARREL.get());
 
+        this.dropSelf(COBlocks.DISTILLER.get());
+
         this.add(COBlocks.RED_APPLE.get(), createAppleDrops(COBlocks.RED_APPLE.get(), Items.APPLE));
         this.add(COBlocks.YELLOW_APPLE.get(), createAppleDrops(COBlocks.YELLOW_APPLE.get(), COItems.YELLOW_APPLE.get()));
         this.add(COBlocks.GREEN_APPLE.get(), createAppleDrops(COBlocks.GREEN_APPLE.get(), COItems.GREEN_APPLE.get()));
@@ -89,6 +91,11 @@ public class COBlockLoot extends BlockLootSubProvider {
         this.dropOther(COBlocks.STOCK.get(), COItems.STOCK.get());
         this.dropOther(COBlocks.VEGETABLE_SOUP.get(), COItems.VEGETABLE_SOUP.get());
         this.dropOther(COBlocks.MEAT_AND_VEGETABLE_STEW.get(), COItems.MEAT_AND_VEGETABLE_STEW.get());
+
+        this.dropOther(COBlocks.FRUIT_PASTE.get(), COItems.FRUIT_PASTE.get());
+        this.dropOther(COBlocks.DRIED_FRUIT_JERKY.get(), COItems.FRUIT_JERKY.get());
+        this.dropOther(COBlocks.MUSHROOM_PASTE.get(), COItems.MUSHROOM_PASTE.get());
+        this.dropOther(COBlocks.DRIED_MUSHROOM_JERKY.get(), COItems.MUSHROOM_JERKY.get());
 
         this.dropOther(COBlocks.BEEF_SAUSAGE.get(), COItems.BEEF_SAUSAGE.get());
         this.dropOther(COBlocks.DRIED_BEEF_SAUSAGE.get(), COItems.DRIED_BEEF_SAUSAGE.get());

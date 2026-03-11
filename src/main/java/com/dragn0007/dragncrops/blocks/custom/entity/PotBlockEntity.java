@@ -168,7 +168,7 @@ public class PotBlockEntity extends BaseContainerBlockEntity implements WorldlyC
             rightSlotItem.shrink(1);
             liquidSlotItem.shrink(1);
             if (liquidSlotItem.isEmpty())
-            entity.setItem(LIQUID_SLOT, remainder);
+               entity.setItem(LIQUID_SLOT, remainder);
          }
          entity.brewTime = 400;
          setChanged(level, pos, state);

@@ -5,23 +5,31 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Dried foods can be made by placing raw counterparts a wall for up to a few days to allow it to dry, or alternatively placing them in a Dehydrator. Once it's dried, you can pick it up and eat as much as you like."
+      "text": "Dried foods can be made by placing raw counterparts a wall for up to a few days to allow it to dry. Once it's dried, you can pick it up and eat as much as you like."
     },
     {
       "type": "patchouli:spotlight",
       "item": {
         "item": "dragncrops:dried_beef_sausage"
       },
-      "text": "Created by placing down raw sausage and allowing it to dry for a few days.",
+      "text": "Created by placing raw sausage on a wall and allowing it to dry for a few days.",
       "title": "Dried Beef Sausage"
     },
     {
       "type": "patchouli:spotlight",
       "item": {
-        "item": "dragncrops:dehydrator"
+        "item": "dragncrops:fruit_jerky"
       },
-      "text": "Dries certain items at a slightly faster rate than hanging them up on the wall.",
-      "title": "Dehydrator"
+      "text": "Created by placing Fruit Paste on a wall and allowing it to dry for a few days.",
+      "title": "Fruit Jerky"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mushroom_jerky"
+      },
+      "text": "Created by placing Mushroom Paste on a wall and allowing it to dry for a few days.",
+      "title": "Mushroom Jerky"
     }
   ]
 }
