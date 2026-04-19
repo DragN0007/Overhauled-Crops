@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#dragncrops:dried_meats",
+    "dragncrops:stock",
+    "dragncrops:meat_and_vegetable_stew",
+    "dragncrops:meat_and_vegetable_cream_soup",
+    "dragncrops:canned_beef",
+    "dragncrops:cod_nigiri",
+    "dragncrops:fugu_nigiri",
+    "dragncrops:salmon_nigiri",
+    "dragncrops:tropical_nigiri"
+  ]
+}
