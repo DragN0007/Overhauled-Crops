@@ -95,7 +95,7 @@ public class DistillerBlockEntity extends BaseContainerBlockEntity implements Wo
             setChanged(level, pos, state);
          }
       } else if (entity.brewTime <= 0) {
-         if (!grainSlotItem.isEmpty() && !liquidSlotItem.isEmpty()) {
+         if (!addInSlotItem.isEmpty() && !grainSlotItem.isEmpty() && !liquidSlotItem.isEmpty()) {
             if (addInSlotItem.is(COTags.Items.APPLES)) {
                potentialOutput = COItems.APPLE_MOONSHINE.get().getDefaultInstance();
             } else if (addInSlotItem.is(COItems.BLACKBERRY.get())) {
@@ -124,7 +124,7 @@ public class DistillerBlockEntity extends BaseContainerBlockEntity implements Wo
                potentialOutput = COItems.STRAWBERRY_MOONSHINE.get().getDefaultInstance();
             } else if (addInSlotItem.is(Items.MELON_SLICE)) {
                potentialOutput = COItems.WATERMELON_MOONSHINE.get().getDefaultInstance();
-            } else if (addInSlotItem.isEmpty()) {
+            } else if (addInSlotItem.is(COItems.GRAPES.get())) {
                potentialOutput = COItems.GRAPE_MOONSHINE.get().getDefaultInstance();
             }
          }
