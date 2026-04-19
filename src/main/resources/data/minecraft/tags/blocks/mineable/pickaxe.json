@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:black_teapot",
+    "dragncrops:deepslate_teapot",
+    "dragncrops:gold_teapot",
+    "dragncrops:iron_teapot",
+    "dragncrops:stone_teapot",
+    "dragncrops:terracotta_teapot",
+    "dragncrops:white_teapot",
+    "dragncrops:deepslate_pot",
+    "dragncrops:iron_pot",
+    "dragncrops:stone_pot",
+    "dragncrops:terracotta_pot"
+  ]
+}

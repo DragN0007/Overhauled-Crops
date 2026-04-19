@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "dragncrops:acacia_wine_barrel",
+    "dragncrops:birch_wine_barrel",
+    "dragncrops:cherry_wine_barrel",
+    "dragncrops:crimson_wine_barrel",
+    "dragncrops:dark_oak_wine_barrel",
+    "dragncrops:jungle_wine_barrel",
+    "dragncrops:mangrove_wine_barrel",
+    "dragncrops:oak_wine_barrel",
+    "dragncrops:spruce_wine_barrel",
+    "dragncrops:warped_wine_barrel"
+  ]
+}
