@@ -196,19 +196,11 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:berry_glazed_pork_rib_chop",
+      "id": "dragnloextras:beef_rib_steak",
       "required": false
     },
     {
-      "id": "dragnlivestock:berry_glazed_mutton_rib",
-      "required": false
-    },
-    {
-      "id": "dragnlivestock:beef_rib_steak",
-      "required": false
-    },
-    {
-      "id": "dragnlivestock:beef_sirloin_steak",
+      "id": "dragnloextras:beef_sirloin_steak",
       "required": false
     },
     {
@@ -216,11 +208,11 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:horse_rib_steak",
+      "id": "dragnloextras:horse_rib_steak",
       "required": false
     },
     {
-      "id": "dragnlivestock:horse_sirloin_steak",
+      "id": "dragnloextras:horse_sirloin_steak",
       "required": false
     },
     {
@@ -228,7 +220,7 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:caribou_rib_steak",
+      "id": "dragnloextras:caribou_rib_steak",
       "required": false
     },
     {
@@ -236,15 +228,15 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:unicorn_rib_steak",
+      "id": "dragnloextras:unicorn_rib_steak",
       "required": false
     },
     {
-      "id": "dragnlivestock:unicorn_sirloin_steak",
+      "id": "dragnloextras:unicorn_sirloin_steak",
       "required": false
     },
     {
-      "id": "dragnlivestock:caribou_sirloin_steak",
+      "id": "dragnloextras:caribou_sirloin_steak",
       "required": false
     },
     {
@@ -252,27 +244,27 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:llama_rib",
+      "id": "dragnloextras:llama_rib",
       "required": false
     },
     {
-      "id": "dragnlivestock:llama_loin",
+      "id": "dragnloextras:llama_loin",
       "required": false
     },
     {
-      "id": "dragnlivestock:mutton_rib",
+      "id": "dragnloextras:mutton_rib",
       "required": false
     },
     {
-      "id": "dragnlivestock:mutton_loin",
+      "id": "dragnloextras:mutton_loin",
       "required": false
     },
     {
-      "id": "dragnlivestock:pork_rib_chop",
+      "id": "dragnloextras:pork_rib_chop",
       "required": false
     },
     {
-      "id": "dragnlivestock:pork_tenderloin",
+      "id": "dragnloextras:pork_tenderloin",
       "required": false
     },
     {
@@ -280,19 +272,19 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:camel_rib",
+      "id": "dragnloextras:camel_rib",
       "required": false
     },
     {
-      "id": "dragnlivestock:camel_loin",
+      "id": "dragnloextras:camel_loin",
       "required": false
     },
     {
-      "id": "dragnlivestock:chicken_thigh",
+      "id": "dragnloextras:chicken_thigh",
       "required": false
     },
     {
-      "id": "dragnlivestock:rabbit_thigh",
+      "id": "dragnloextras:rabbit_thigh",
       "required": false
     },
     {
@@ -300,11 +292,11 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:chevon_rib",
+      "id": "dragnloextras:chevon_rib",
       "required": false
     },
     {
-      "id": "dragnlivestock:chevon_loin",
+      "id": "dragnloextras:chevon_loin",
       "required": false
     },
     {
@@ -316,11 +308,11 @@
       "required": false
     },
     {
-      "id": "dragnlivestock:salmon_fillet",
+      "id": "dragnloextras:salmon_fillet",
       "required": false
     },
     {
-      "id": "dragnlivestock:cod_fillet",
+      "id": "dragnloextras:cod_fillet",
       "required": false
     },
     {
