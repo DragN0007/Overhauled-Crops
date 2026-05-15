@@ -1,0 +1,33 @@
+{
+  "name": "Колючий ячмень",
+  "icon": "dragncrops:thorn_barley",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Зерновая $(br)$(l)Появляется в: $()Незер - Искажённый лес"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:thorn_barley"
+      },
+      "text": "Можно переработать в зерно для использования в хлебе или выпечке.",
+      "title": "Колючий ячмень"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Колючий ячмень",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:thorn_barley[age=7]",
+          "1": "minecraft:warped_nylium"
+        }
+      }
+    }
+  ]
+}

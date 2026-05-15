@@ -1,0 +1,23 @@
+{
+  "name": "Чай",
+  "icon": "dragncrops:terracotta_teapot",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:terracotta_teapot"
+      },
+      "text": "Чайники используются для заваривания чая из чайных листьев, а также, по желанию, различных фруктов для придания вкуса. Под чайниками должен быть источник тепла, например костёр или зажжённая печь, чтобы заварить чай.",
+      "title": "Чайник"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:tea_leaf"
+      },
+      "text": "Чайные листья, собранные с чайного растения, завариваются с водой для приготовления чая.",
+      "title": "Чайные листья"
+    }
+  ]
+}

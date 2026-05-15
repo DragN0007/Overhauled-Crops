@@ -1,0 +1,33 @@
+{
+  "name": "Золотой ревень",
+  "icon": "dragncrops:golden_rhubarb",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Овощ $(br)$(l)Появляется в: $()Незер"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:golden_rhubarb"
+      },
+      "text": "Можно использовать для приготовления овощных блюд, пирогов и супов, а также консервировать.",
+      "title": "Золотой ревень"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Золотой ревень",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:golden_rhubarb[age=7]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

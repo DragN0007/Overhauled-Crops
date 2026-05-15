@@ -1,0 +1,33 @@
+{
+  "name": "Голубика",
+  "icon": "dragncrops:blueberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:blueberry"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Голубика"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Голубика",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:blueberries[age=4]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

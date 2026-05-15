@@ -1,0 +1,33 @@
+{
+  "name": "Незерская свёкла",
+  "icon": "dragncrops:nether_beet",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Корнеплод $(br)$(l)Появляется в: $()Незер"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:nether_beet"
+      },
+      "text": "Можно использовать для приготовления овощных блюд и супов, а также консервировать.",
+      "title": "Незерская свёкла"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Незерская свёкла",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:nether_beet[age=7]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

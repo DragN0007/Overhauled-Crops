@@ -1,0 +1,33 @@
+{
+  "name": "Медовая дыня",
+  "icon": "dragncrops:honeydew",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:honeydew"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Медовая дыня"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Медовая дыня",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:honeydew[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

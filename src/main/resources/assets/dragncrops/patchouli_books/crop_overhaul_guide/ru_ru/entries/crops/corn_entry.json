@@ -1,0 +1,33 @@
+{
+  "name": "Кукуруза",
+  "icon": "dragncrops:corn",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Зерновая $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:corn"
+      },
+      "text": "Можно переработать в зерно для использования в хлебе или выпечке, а также консервировать.",
+      "title": "Кукуруза"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Кукуруза",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:corn[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

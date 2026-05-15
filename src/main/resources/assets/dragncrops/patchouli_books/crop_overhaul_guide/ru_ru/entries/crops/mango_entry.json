@@ -1,0 +1,31 @@
+{
+  "name": "Манго",
+  "icon": "dragncrops:mango",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()Жаркие биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mango"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Манго"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья манго",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:mango_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}

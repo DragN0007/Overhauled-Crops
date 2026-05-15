@@ -1,0 +1,33 @@
+{
+  "name": "Малина",
+  "icon": "dragncrops:raspberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Леса"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:raspberry"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Малина"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Малина",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:raspberries[age=4]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

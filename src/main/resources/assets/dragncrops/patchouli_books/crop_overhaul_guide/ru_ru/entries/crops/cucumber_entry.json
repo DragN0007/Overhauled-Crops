@@ -1,0 +1,33 @@
+{
+  "name": "Огурец",
+  "icon": "dragncrops:cucumber",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Корнеплод $(br)$(l)Появляется в: $()Влажные биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cucumber"
+      },
+      "text": "Можно консервировать или засаливать в банках.",
+      "title": "Огурец"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Огурцы",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cucumbers[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

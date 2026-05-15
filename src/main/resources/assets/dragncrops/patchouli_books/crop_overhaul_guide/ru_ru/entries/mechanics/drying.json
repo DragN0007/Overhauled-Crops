@@ -1,0 +1,35 @@
+{
+  "name": "Сушка",
+  "icon": "dragncrops:dried_beef_sausage",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Вяленые продукты можно получить, разместив сырые аналоги на стене на несколько дней, чтобы они высохли. После высыхания их можно подобрать и есть в любом количестве."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:dried_beef_sausage"
+      },
+      "text": "Создаётся путём размещения сырой колбасы на стене и высушивания в течение нескольких дней.",
+      "title": "Вяленая говяжья колбаса"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:fruit_jerky"
+      },
+      "text": "Создаётся путём размещения фруктовой пасты на стене и высушивания в течение нескольких дней.",
+      "title": "Фруктовая вяленая закуска"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mushroom_jerky"
+      },
+      "text": "Создаётся путём размещения грибной пасты на стене и высушивания в течение нескольких дней.",
+      "title": "Грибная вяленая закуска"
+    }
+  ]
+}

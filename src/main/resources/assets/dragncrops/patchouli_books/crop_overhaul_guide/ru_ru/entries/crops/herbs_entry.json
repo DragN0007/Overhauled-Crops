@@ -1,0 +1,75 @@
+{
+  "name": "Травы",
+  "icon": "dragncrops:rosemary",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Травяная $(br)$(l)Появляется в: $()$(br)-Равнины (Кинза) $(br)-Леса (Орегано) $(br)-Холодные биомы (Розмарин) $(br)-Незер (Ашерб)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:rosemary"
+      },
+      "text": "Используются в рецептах как приправа или консервант.",
+      "title": "Травы"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Кинза",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cilantro[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Орегано",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:oregano[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Розмарин",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:rosemary[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Ашерб",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:asherb[age=7]",
+          "1": "minecraft:soul_sand"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Канталупа",
+  "icon": "dragncrops:cantaloupe",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cantaloupe"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Канталупа"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Канталупа",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cantaloupe[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

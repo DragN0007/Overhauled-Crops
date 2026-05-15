@@ -1,0 +1,33 @@
+{
+  "name": "Пшеница",
+  "icon": "minecraft:wheat",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Зерновая $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "minecraft:wheat"
+      },
+      "text": "Можно переработать в зерно для использования в хлебе или выпечке.",
+      "title": "Пшеница"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Пшеница",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "minecraft:wheat[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

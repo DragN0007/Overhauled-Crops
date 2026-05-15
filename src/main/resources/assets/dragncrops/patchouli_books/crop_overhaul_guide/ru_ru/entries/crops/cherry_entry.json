@@ -1,0 +1,31 @@
+{
+  "name": "Вишня",
+  "icon": "dragncrops:cherries",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()Леса"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:cherries"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Вишня"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Вишнёвые листья",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:cherry_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}
