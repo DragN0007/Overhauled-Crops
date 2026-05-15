@@ -1,0 +1,33 @@
+{
+  "name": "Чай",
+  "icon": "dragncrops:tea_leaf",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Травяная $(br)$(l)Появляется в: $()Жаркие биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:tea_leaf"
+      },
+      "text": "Можно заварить в чайнике, по желанию добавив различные фруктовые вкусы.",
+      "title": "Чайные листья"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Чай",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:tea[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

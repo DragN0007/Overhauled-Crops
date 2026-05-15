@@ -1,0 +1,23 @@
+{
+  "name": "Зерно и мука",
+  "icon": "dragncrops:flour",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:grain"
+      },
+      "text": "Зерно можно получить, разместив пшеницу, кукурузу, рис или рожь на земле и разбив его цепом. Затем зерно можно переработать в муку.",
+      "title": "Зерно"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:flail"
+      },
+      "text": "Используется для разбивания зерна.",
+      "title": "Цеп"
+    }
+  ]
+}

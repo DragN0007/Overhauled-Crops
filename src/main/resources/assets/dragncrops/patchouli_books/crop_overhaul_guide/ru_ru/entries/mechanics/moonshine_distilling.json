@@ -1,0 +1,23 @@
+{
+  "name": "Перегонка самогона",
+  "icon": "dragncrops:distiller",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:distiller"
+      },
+      "text": "Самогонные аппараты используются для перегонки самогона из браги и различных фруктов для придания вкуса. Самогон может бродить довольно долго.",
+      "title": "Самогон"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:mash"
+      },
+      "text": "Брага, созданная из зерна, используется в процессе перегонки самогона.",
+      "title": "Брага"
+    }
+  ]
+}

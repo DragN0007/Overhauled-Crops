@@ -1,0 +1,61 @@
+{
+  "name": "Морковь",
+  "icon": "minecraft:carrot",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Корнеплод $(br)$(l)Появляется в: $()$(br)-Равнины (Классическая) $(br)-Жаркие биомы (Жёлтая) $(br)-Холодные биомы (Фиолетовая)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:yellow_carrot"
+      },
+      "text": "Можно использовать для приготовления овощных блюд и супов, а также консервировать.",
+      "title": "Морковь"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Морковь",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "minecraft:carrots[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Фиолетовая морковь",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:purple_carrots[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Жёлтая морковь",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:yellow_carrots[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

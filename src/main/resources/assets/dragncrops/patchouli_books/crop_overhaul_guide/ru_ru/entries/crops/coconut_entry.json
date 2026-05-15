@@ -1,0 +1,31 @@
+{
+  "name": "Кокос",
+  "icon": "dragncrops:coconut",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()Жаркие биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:coconut"
+      },
+      "text": "Можно использовать для приготовления пирогов и напитков.",
+      "title": "Кокос"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья кокоса",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:coconut_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}

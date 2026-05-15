@@ -1,0 +1,33 @@
+{
+  "name": "Багровая ягода",
+  "icon": "dragncrops:crimsonberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Незер"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:crimsonberry"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Багровая ягода"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Багровая ягода",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:crimsonberries[age=4]",
+          "1": "minecraft:crimson_nylium"
+        }
+      }
+    }
+  ]
+}

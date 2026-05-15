@@ -1,0 +1,55 @@
+{
+  "name": "Яблоки",
+  "icon": "minecraft:apple",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()$(br)-Равнины (Красное) $(br)-Жаркие биомы (Жёлтое) $(br)-Холодные биомы (Зелёное)"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:green_apple"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Яблоки"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья красной яблони",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:red_apple_leaves[age=3]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья жёлтой яблони",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:yellow_apple_leaves[age=3]"
+        }
+      }
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья зелёной яблони",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:green_apple_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}

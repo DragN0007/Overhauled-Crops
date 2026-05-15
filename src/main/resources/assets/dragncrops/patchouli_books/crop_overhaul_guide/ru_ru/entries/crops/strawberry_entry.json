@@ -1,0 +1,33 @@
+{
+  "name": "Клубника",
+  "icon": "dragncrops:strawberry",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Фрукт $(br)$(l)Появляется в: $()Равнины"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:strawberry"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Клубника"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Клубника",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:strawberries[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

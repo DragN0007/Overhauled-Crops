@@ -1,0 +1,15 @@
+{
+  "name": "Размещение",
+  "icon": "dragncrops:strawberry_jam",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:strawberry_jam"
+      },
+      "text": "Многие пищевые продукты можно размещать для хранения и украшения. Некоторые продукты даже можно ставить друг на друга.",
+      "title": "Клубничный джем"
+    }
+  ]
+}

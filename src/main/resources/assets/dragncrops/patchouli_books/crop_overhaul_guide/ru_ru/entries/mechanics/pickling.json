@@ -1,0 +1,19 @@
+{
+  "name": "Засолка",
+  "icon": "dragncrops:fermented_pickles",
+  "category": "dragncrops:mechanics_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Солёные огурцы можно приготовить, создав несолёные огурцы. После создания разместите их на земле на несколько дней для брожения."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:fermented_pickles"
+      },
+      "text": "Создаётся путём размещения несолёных огурцов на земле и брожения в течение нескольких дней.",
+      "title": "Солёные огурцы"
+    }
+  ]
+}

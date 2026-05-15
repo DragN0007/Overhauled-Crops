@@ -1,0 +1,33 @@
+{
+  "name": "Сахарная свёкла",
+  "icon": "dragncrops:sugar_beet",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Корнеплод $(br)$(l)Появляется в: $()Влажные биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:sugar_beet"
+      },
+      "text": "Можно использовать вместо сахара или консервировать.",
+      "title": "Сахарная свёкла"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Сахарная свёкла",
+      "multiblock": {
+        "pattern": [
+          [ "0" ],
+          [ "1" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:sugar_beets[age=7]",
+          "1": "minecraft:grass_block"
+        }
+      }
+    }
+  ]
+}

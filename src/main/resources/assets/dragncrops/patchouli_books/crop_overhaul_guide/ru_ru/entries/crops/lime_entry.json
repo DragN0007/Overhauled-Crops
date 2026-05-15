@@ -1,0 +1,31 @@
+{
+  "name": "Лайм",
+  "icon": "dragncrops:lime",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()Жаркие биомы"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:lime"
+      },
+      "text": "Можно использовать для приготовления пирогов и напитков.",
+      "title": "Лайм"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Листья лайма",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:lime_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Слива",
+  "icon": "dragncrops:plum",
+  "category": "dragncrops:crop_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)Тип: $()Древесный фрукт $(br)$(l)Появляется в: $()Леса"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": {
+        "item": "dragncrops:plum"
+      },
+      "text": "Можно использовать в различных рецептах.",
+      "title": "Слива"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Сливовые листья",
+      "multiblock": {
+        "pattern": [
+          [ "0" ]
+        ],
+        "mapping": {
+          "0": "dragncrops:plum_leaves[age=3]"
+        }
+      }
+    }
+  ]
+}
